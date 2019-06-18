@@ -1,23 +1,23 @@
 ---
 title: "/* */"
-title_expanded: block comment
+title_expanded: komentarz 
 categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+subCategories: [ "Składnia" ]
 ---
 
 
 
 
 
-= /* */ Block Comment
+= /* */ Komentarz blokowy
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 *Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
 [%hardbreaks]
 
@@ -26,17 +26,17 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 // NOTE TO THE EDITOR: The '\' before the '*' in certain places are to escape the '*' from making the text bolder.
 // In places were '\' is not used before '*', it is not actually required.
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 [source,arduino]
 ----
 /* This is a valid comment */
@@ -59,23 +59,23 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Uwagi i ostrzeżenia
 When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
