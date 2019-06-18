@@ -1,7 +1,7 @@
 ---
 title: "/* */"
 title_expanded: komentarz 
-categories: [ "Structure" ]
+categories: [ "Struktura" ]
 subCategories: [ "Składnia" ]
 ---
 
@@ -18,13 +18,13 @@ subCategories: [ "Składnia" ]
 
 [float]
 === Opis
-*Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
+*Komentarze* to linie w programie, które służą do informowania siebie lub innych o sposobie działania programu. Są one ignorowane przez kompilator i nie są przesyłane do procesora, więc nie zajmują miejsca w pamięci mikrokontrolera. Jedynym celem stosowania komentarzy jest pomoc w zrozumieniu (lub zapamiętaniu) albo poinformowaniu innych o tym, jak działa Twój program.
 [%hardbreaks]
 
-The beginning of a *block comment* or a *multi-line comment* is marked by the symbol `/\*` and the symbol `*/` marks its end. This type of a comment is called so as this can extend over more than one line; once the compiler reads the `/\*` it ignores whatever follows until it enounters a `*/`.
+*Komentarz blokowy* lub *komentarz wielolinijkowy* rozpoczyna się symbolem `/\*`, a kończy symbolem `*/`.Ten typ komentarza jest tak nazywany, ponieważ może on rozciągać się na więcej niż jedną linię; po odczytaniu symbolu `/\*` kompilator ignoruje to, co po nim następuje, aż do napotkania  `*/`.
 
-// NOTE TO THE EDITOR: The '\' before the '*' in certain places are to escape the '*' from making the text bolder.
-// In places were '\' is not used before '*', it is not actually required.
+// UWAGA DLA REDAKTORA: Znak '\' przed '*' w niektórych miejscach jest umieszczony po to zapobiec zinterpretowaniu '*' jako pogrubienia tekstu.
+// W miejscach, w których znak „/” nie jest używany przed „*”, nie jest wymagana taka operacja.
 --
 // KONIEC SEKCJI OPISOWEJ
 
@@ -39,28 +39,28 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 === Przykładowy kod
 [source,arduino]
 ----
-/* This is a valid comment */
+/* To jest poprawny komentarz */
 
 /*
   Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
+  Włącza cyklicznie diodę świecącą na sekundę, a następnie wyłącza ją na sekundę.
 
-  This example code is in the public domain.
-  (Another valid comment)
+  Ten przykładowy kod jest własnością publiczną.
+  (Inny przykład poprawnego komentarza)
 */
 
 /*
-  if (gwb == 0) { // single line comment is OK inside a multi-line comment
-    x = 3;          /* but not another multi-line comment - this is invalid */
+  if (gwb == 0) { // komentarz jednolinijkowy jest dopuszczalny wewnątrz komentarza blokowego
+    x = 3;          /* ale nie wewnątrz innego komentarza blokowego - to jest niepoprawne */
   }
-// don't forget the "closing" comment - they have to be balanced!
+// nie zapomnij "zamknąć" komentarza - muszą być sparowane!
 */
 ----
 [%hardbreaks]
 
 [float]
 === Uwagi i ostrzeżenia
-When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
+Podczas eksperymentowania z kodem "zakomentowanie" części programu jest wygodnym sposobem na usunięcie linii, które mogą być błędne. Linie zostają w kodzie programu, ale zmieniaja się w komentarze, więc kompilator po prostu je ignoruje. Może to być szczególnie przydatne podczas próby zlokalizowania problemu lub gdy program odmawia kompilacji, a błąd kompilatora jest tajemniczy lub nieużyteczny.
 [%hardbreaks]
 
 --
