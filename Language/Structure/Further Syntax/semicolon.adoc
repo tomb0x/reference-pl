@@ -1,38 +1,38 @@
 ---
 title: ";"
-title_expanded: semicolon
-categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+title_expanded: średnik
+categories: [ "Struktura" ]
+subCategories: [ "Składnia" ]
 ---
 
 
 
 
 
-= ; Semicolon
+= ; Średnik
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Used to end a statement.
+=== Opis
+Służy do zakończenia instrukcji.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
@@ -41,24 +41,24 @@ int a = 13;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Forgetting to end a line in a semicolon will result in a compiler error. The error text may be obvious, and refer to a missing semicolon, or it may not. If an impenetrable or seemingly illogical compiler error comes up, one of the first things to check is a missing semicolon, in the immediate vicinity, preceding the line at which the compiler complained.
+=== Uwagi i ostrzeżenia
+Pominięcie średnika na końcu linii spowoduje błąd kompilatora. Treść komunikatu o błędzie może wskazywać na brakujący średnik, ale nie musi tak być. Jeśli pojawi się niewytłumaczalny lub pozornie nielogiczny błąd kompilatora, jedną z pierwszych rzeczy, które trzeba zrobić to sprawić czy nie brakuje średnika w linii poprzedzającej miejsce wskazywane przez kompilator.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
