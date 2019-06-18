@@ -18,53 +18,53 @@ subCategories: [ "Składnia" ]
 
 [float]
 === Opis
-*Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
+*Komentarze* to linie w programie, które służą do informowania siebie lub innych o sposobie działania programu. Są one ignorowane przez kompilator i nie są przesyłane do procesora, więc nie zajmują miejsca w pamięci mikrokontrolera. Jedynym celem stosowania komentarzy jest pomoc w zrozumieniu (lub zapamiętaniu) albo poinformowaniu innych o tym, jak działa Twój program.
 [%hardbreaks]
 
-A *single line comment* begins with `//` (two adjacent slashes). This comment ends automatically at the end of a line. whatever follows `//` till the end of a line will be ignored by the compiler.
+*Komentarz jednolinijkowy* zaczyna się od `//` (dwóch sąsiadujących ukośników), a kończy się automatycznie na końcu linii. Wszystko co wystąpi po `//`, aż do końca linii, zostanie zignorowany przez kompilator.
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-There are two different ways of marking a line as a comment:
+=== Przykładowy kod
+Istnieją dwa sposoby oznaczania linii jako komentarz:
 
 [source,arduino]
 ----
-// pin 13 has an LED connected on most Arduino boards.
-// give it a name:
-int led = 13;
-digitalWrite(led, HIGH);  // turn the LED on (HIGH is the voltage level)
+// styk 13 jest połączony z diodą świecącą na większości płytek Arduino.
+// nadaj mu nazwę:
+int dioda = 13;
+digitalWrite(dioda, HIGH);  // włącz diodę świecącą (HIGH to wysoki poziom napięcia)
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
+=== Uwagi i ostrzeżenia
+Podczas eksperymentowania z kodem "zakomentowanie" części programu jest wygodnym sposobem na usunięcie linii, które mogą być błędne. Linie zostają w kodzie programu, ale zmieniaja się w komentarze, więc kompilator po prostu je ignoruje. Może to być szczególnie przydatne podczas próby zlokalizowania problemu lub gdy program odmawia kompilacji, a błąd kompilatora jest tajemniczy lub nieużyteczny.
 [%hardbreaks]
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
