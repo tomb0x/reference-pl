@@ -1,7 +1,7 @@
 ---
 title: byte()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Konwersja" ]
 ---
 
 
@@ -11,44 +11,44 @@ subCategories: [ "Conversion" ]
 = byte()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/byte[byte] data type.
+=== Opis
+Konwertuje wartość na typ danych link:../../data-types/byte[byte].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `byte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value. Allowed data types: any type.
+=== Parametry
+`x`: wartość. Dozwolone typy danych: dowolny typ.
 
 
 [float]
-=== Returns
-Data type: `byte`.
+=== Wartości zwracane
+Typ danych: `byte`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/byte[byte]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
