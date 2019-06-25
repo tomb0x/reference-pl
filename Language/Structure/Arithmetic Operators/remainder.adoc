@@ -47,12 +47,12 @@ Operacja *reszta* (nazywana też modulo) oblicza resztę z dzielenia jednej licz
 [source,arduino]
 ----
 int x = 0;
-x = 7 % 5;  // x wynosi 2
-x = 9 % 5;  // x wynosi 4
-x = 5 % 5;  // x wynosi 0
-x = 4 % 5;  // x wynosi 4
+x = 7 % 5;  // x wynosi  2
+x = 9 % 5;  // x wynosi  4
+x = 5 % 5;  // x wynosi  0
+x = 4 % 5;  // x wynosi  4
 x = -4 % 5; // x wynosi -4
-x = 4 % -5; // x wynosi 4
+x = 4 % -5; // x wynosi  4
 ----
 
 [source,arduino]
@@ -66,7 +66,7 @@ void setup() {}
 
 void loop() {
   wartosci[i] = analogRead(0);
-  i = (i + 1) % 10; // operator reszty zawija zmienną
+  i = (i + 1) % 10;             // operator reszty zawija zmienną
 }
 ----
 [%hardbreaks]
@@ -76,7 +76,7 @@ void loop() {
 1. Operator reszty nie działa na liczbach zmiennoprzecinkowych,
 
 2. Jeśli *pierwszy* argument będzie ujemny to wynik będzie ujemny (albo zerowy).
-Dlatego wynik `x % 10` nie zawsze będzie wynosił między 0 a 9, jeśli `x` będzie ujemne.
+Dlatego wynik `x % 10` nie zawsze będzie wynosił między 0 a 9 - w przypadku jeśli `x` będzie ujemne.
 [%hardbreaks]
 
 --
