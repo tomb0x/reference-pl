@@ -18,7 +18,7 @@ subCategories: [ "Operatory bitowe" ]
 
 [float]
 === Opis
-Operatorem bitowym NIE (negacji) jest w języku C++ znak fali `~`. W przeciwieństwie do & oraz | operator bitowy NIE jest stosowany do pojedynczego argumentu po jego prawej stronie. Bitowe NIE zmienia każdy bit na przeciwny: 0 staje się 1, a 1 staje się 0.
+Operatorem bitowym NIE (negacji) jest w języku C++ znak fali `~`. Operator bitowy NIE, w przeciwieństwie do & oraz | jest stosowany do pojedynczego argumentu po jego prawej stronie. Bitowe NIE zmienia każdy bit na przeciwny: 0 staje się 1, a 1 staje się 0.
 [%hardbreaks]
 
 Inymi słowy:
