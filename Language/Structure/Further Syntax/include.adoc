@@ -1,8 +1,8 @@
 ---
 title: "#include"
-title_expanded: include
-categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+title_expanded: dołącz
+categories: [ "Struktura" ]
+subCategories: [ "Składnia" ]
 ---
 
 
@@ -12,74 +12,74 @@ subCategories: [ "Further Syntax" ]
 = #include
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`#include` is used to include outside libraries in your sketch. This gives the programmer access to a large group of standard C libraries (groups of pre-made functions), and also libraries written especially for Arduino.
+=== Opis
+`#include` służy do dołączania do szkicu zewnętrznych bibliotek. Daje to programistom dostęp do dużej grupy standardowych bibliotek C (grup gotowych funkcji), a także bibliotek napisanych specjalnie dla Arduino.
 [%hardbreaks]
 
-The main reference page for AVR C libraries (AVR is a reference to the Atmel chips on which the Arduino is based) is http://www.nongnu.org/avr-libc/user-manual/modules.html[here^].
+Główna strona dokumentacji dla bibliotek AVR C (AVR jest oznaczeniem dla układów Atmel, na których opiera się Arduino) znajduje się http://www.nongnu.org/avr-libc/user-manual/modules.html[tutaj^]
 [%hardbreaks]
 
-Note that `#include`, similar to link:../define[`#define`], has no semicolon terminator, and the compiler will yield cryptic error messages if you add one.
+Zauważ, że `#include`, podobnie jak link:../define[`#define`], nie ma na końcu średnika, więc kiedy go tam postawisz to kompilator wygeneruje tajemnicze komunikaty o błędach.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-This example includes the Servo library so that its functions may be used to control a Servo motor.
+=== Przykładowy kod
+W tym przykładzie dołączona zostaje biblioteka Servo, dzięki czemu jej funkcje mogą być używane do sterowania serwomechanizmem.
 
 
 [source,arduino]
 ----
 #include <Servo.h>
 
-Servo myservo;  // create servo object to control a servo
+Servo mojeserwo;        // tworzenie objektu do kontroli serwomechanizmu
 
 void setup() {
-  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+  mojeserwo.attach(9);  // serwomechanizm podłączony do styku 9 będzie powiązany z obiektem typu Servo
 }
 
 void loop() {
-  for (int pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
-    // in steps of 1 degree
-    myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
+  for (int poz = 0; poz <= 180; poz += 1) { // od 0 do 180 stopni
+                                            // w krokach co 1 stopień
+    mojeserwo.write(poz);                   // powiedz serwomechanizmowi, aby usyawił się na pozycji 'poz'
+    delay(15);                              // czekaj 15ms, aż serwomechanizm osiągnie pozycję
   }
-  for (int pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-    myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
+  for (int poz = 180; poz >= 0; poz -= 1) { // od 180 do 0 stopni
+    mojeserwo.write(poz);                   // powiedz serwomechanizmowi, aby usyawił się na pozycji 'poz'
+    delay(15);                              // czekaj 15ms, aż serwomechanizm osiągnie pozycję
   }
 }
 ----
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
