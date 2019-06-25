@@ -18,7 +18,7 @@ subCategories: [ "Operatory arytmetyczne" ]
 
 [float]
 === Opis
-*Dzielenie* jest jednym z czterech podstawowych działań atytmetycznych. Operator `/` (ukośnik) działa na dwóch argumentach aby aby obliczyć ich iloraz.
+*Dzielenie* jest jednym z czterech podstawowych działań arytmetycznych. Operator `/` (ukośnik) działa na dwóch argumentach aby obliczyć ich iloraz.
 [%hardbreaks]
 
 
