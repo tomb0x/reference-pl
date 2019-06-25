@@ -1,72 +1,72 @@
 ---
 title: "{}"
-title_expanded: curly braces
-categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+title_expanded: nawiasy klamrowe
+categories: [ "Struktura" ]
+subCategories: [ "Składnia" ]
 ---
 
 
 
 
-= {} Curly Braces
+= {} Nawiasy klamrowe
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Curly braces (also referred to as just "braces" or as "curly brackets") are a major part of the C++ programming language. They are used in several different constructs, outlined below, and this can sometimes be confusing for beginners. +
-An opening curly brace `{` must always be followed by a closing curly brace `}`. This is a condition that is often referred to as the braces being balanced. The Arduino IDE (Integrated Development Environment) includes a convenient feature to check the balance of curly braces. Just select a brace, or even click the insertion point immediately following a brace, and its logical companion will be highlighted.
+=== Opis
+Nawiasy klamrowe (określane również jako "klamry") stanowią główną część języka programowania C++. Są one używane w kilku różnych konstrukcjach, opisanych poniżej i mogą czasami być mylące dla początkujących. +
+Po otwierającym nawiasie klamrowym `{` musi zawsze następować nawias zamykający `}`. To oznacza, że liczba nawiasów klamrowych w programie musi być zrównoważona (równa liczba otwierających i zamykających). Zintegrowane środowisko programistyczne Arduino (IDE - Integrated Development Environment) zawiera wygodną funkcję sprawdzania równowagi nawiasów klamrowych. Wystarczy zaznaczyć klamrę, a nawet kliknąć miejsce bezpośrednio po nawiasie klamrowym, a jego logiczny towarzysz zostanie podświetlony.
 [%hardbreaks]
-Beginners programmers, and programmers coming to C++ from the BASIC language often find using braces confusing or daunting. After all, the same curly braces replace the RETURN statement in a subroutine (function), the ENDIF statement in a conditional and the NEXT statement in a FOR loop.
+Początkujący programiści i programiści przenoszący się na C++ z języka BASIC często uważają używanie nawiasów klamrowych za mylące lub zniechęcające. Ale przecież nawiasy klamrowe zastępują instrukcję RETURN w podprogramie (funkcji), słowo kluczowe ENDIF w instrukcji warunkowej oraz NEXT w pętli FOR.
 [%hardbreaks]
-Unbalanced braces can often lead to cryptic, impenetrable compiler errors that can sometimes be hard to track down in a large program. Because of their varied usages, braces are also incredibly important to the syntax of a program and moving a brace one or two lines will often dramatically affect the meaning of a program.
+Niesymetryczne nawiasy klamrowe mogą często prowadzić do tajemniczych, niezrozumiałych błędów kompilatora, które czasami mogą być trudne do wyśledzenia w dużym programie. Ze względu na ich zróżnicowane zastosowania, nawiasy klamrowe są również niezwykle ważne dla składni programu i przesunięcie klamry o jedną lub dwie linie często znacznie wpłynie na sens programu.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-The main uses of curly braces are listed in the examples below.
+=== Przykładowy kod
+Główne zastosowania nawiasów klamrowych wymienione są w poniższych przykładach.
 
 
 [float]
-==== Functions
+==== Funkcje
 
 [source,arduino]
 ----
-void myfunction(datatype argument) {
-  // any statement(s)
+void mojafunkcja(typdanych argument) {
+  // dowolne instrukcje
 }
 ----
 [%hardbreaks]
 
 
 [float]
-==== Loops
+==== Pętle
 
 [source,arduino]
 ----
-while (boolean expression) {
-  // any statement(s)
+while (wyrażenie logiczne) {
+  // dowolne instrukcje
 }
 
 do {
-  // any statement(s)
-} while (boolean expression);
+  // dowolne instrukcje
+} while (wyrażenie logiczne);
 
-for (initialisation; termination condition; incrementing expr) {
-  // any statement(s)
+for (nadanie wartości początkowej; warunek zakończenia; wyrażenie aktualizujące) {
+  // dowolne instrukcje
 }
 ----
 [%hardbreaks]
@@ -75,35 +75,35 @@ for (initialisation; termination condition; incrementing expr) {
 
 
 [float]
-==== Conditional Statements
+==== Instrukcje warunkowe
 
 [source,arduino]
 ----
-if (boolean expression) {
-  // any statement(s)
+if (wyrażenie logiczne) {
+  // dowolne instrukcje
 }
 
-else if (boolean expression) {
-  // any statement(s)
+else if (wyrażenie logiczne) {
+  // dowolne instrukcje
 }
 else {
-  // any statement(s)
+  // dowolne instrukcje
 }
 ----
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
