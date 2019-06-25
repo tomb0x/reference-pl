@@ -1,6 +1,6 @@
 ---
 title: "||"
-title_expanded: logiczne lub
+title_expanded: logiczne LUB (suma logiczna / alternatywa)
 categories: [ "Struktura" ]
 subCategories: [ "Operatory logiczne" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Operatory logiczne" ]
 
 
 
-= || Logiczne LUB
+= || Logiczne LUB (suma logiczna)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
