@@ -50,7 +50,7 @@ subCategories: [ "Operatory arytmetyczne" ]
 int a = 5;
 int b = 10;
 int c = 0;
-c = a + b;  // po wykonaniu tej instrukcji zmienna 'c' otrzyma wartość 15
+c = a + b;   // po wykonaniu tej instrukcji zmienna 'c' otrzyma wartość 15
 ----
 [%hardbreaks]
 
