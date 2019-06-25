@@ -1,6 +1,6 @@
 ---
 title: "&&"
-title_expanded: logiczne I
+title_expanded: logiczne I (iloczyn logiczny)
 categories: [ "Struktura" ]
 subCategories: [ "Operatory logiczne" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Operatory logiczne" ]
 
 
 
-= && logiczne I
+= && logiczne I (iloczyn)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
