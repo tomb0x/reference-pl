@@ -18,7 +18,7 @@ subCategories: [ "Operatory porównania" ]
 
 [float]
 === Opis
-Porównuje zmienną po lewej stronie z wartością lub zmienną po prawej stronie operatora. Zwraca wartość prawdziwą, gdy dwa argumenty są różne (nie są sobie równe). Należy pamiętać, że można porównywać zmienne różnych typów, ale może to generować nieprzewidywalne wyniki, dlatego zaleca się porównywanie zmiennych tego samego typu, w tym typy ze znakiem i bez znaku.
+Porównuje zmienną po lewej stronie z wartością lub zmienną po prawej stronie operatora. Zwraca wartość prawdziwą, gdy dwa argumenty są różne (nie są sobie równe). Należy pamiętać, że można porównywać zmienne różnych typów, ale może to generować nieprzewidywalne wyniki, dlatego zaleca się porównywanie zmiennych tego samego typu, również ze znakiem i bez znaku.
 [%hardbreaks]
 
 
