@@ -51,7 +51,7 @@ subCategories: [ "Operatory arytmetyczne" ]
 int a = 5;
 int b = 10;
 int c = 0;
-c = a - b;  // zmienna 'c' otrzyma wartość -5 po wykonaniu tych instrukcji
+c = a - b;  // zmienna 'c' przyjmie wartość -5 po wykonaniu tych instrukcji
 ----
 [%hardbreaks]
 
@@ -68,7 +68,7 @@ c = a - b;  // zmienna 'c' otrzyma wartość -5 po wykonaniu tych instrukcji
 float a = 5.5;
 float b = 6.6;
 int c = 0;
-c = a - b;  // zmienna 'c' otrzyma wartość -1 zamiast oczekiwanej wartości -1,1
+c = a - b;  // zmienna 'c' przyjmie wartość -1 zamiast oczekiwanej wartości -1,1
 ----
 [%hardbreaks]
 
