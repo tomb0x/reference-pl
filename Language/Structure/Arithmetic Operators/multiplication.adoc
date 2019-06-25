@@ -18,7 +18,7 @@ subCategories: [ "Operatory arytmetyczne" ]
 
 [float]
 === Opis
-*Mnożenie* jest jednym z czterech podstawowych działań arytmetycznych. Operator `*` (gwiazdka) działa na dwóch argumentach aby obliczyć iloczyn.
+*Mnożenie* jest jednym z czterech podstawowych działań arytmetycznych. Operator `*` (gwiazdka) działa na dwóch argumentach (czynnikach) aby obliczyć iloczyn.
 [%hardbreaks]
 
 
