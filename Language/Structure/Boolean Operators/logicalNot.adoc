@@ -9,7 +9,7 @@ subCategories: [ "Operatory logiczne" ]
 
 
 
-= ! Logiczne NIE
+= ! Logiczne NIE (negacja)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
