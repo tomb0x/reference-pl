@@ -1,8 +1,8 @@
 ---
 title: "#define"
-title_expanded: define
-categories: [ "Structure" ]
-subCategories: [ "Further Syntax" ]
+title_expanded: definicja
+categories: [ "Struktura" ]
+subCategories: [ "Składnia" ]
 ---
 
 
@@ -12,84 +12,84 @@ subCategories: [ "Further Syntax" ]
 = #define
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`#define` is a useful C++ component that allows the programmer to give a name to a constant value before the program is compiled. Defined constants in arduino don't take up any program memory space on the chip. The compiler will replace references to these constants with the defined value at compile time.
+=== Opis
+`#define` jest użytecznym składnikiem C++, który pozwala programiście przypisać nazwę do stałej wartości przed skompilowaniem programu. Stałe zdefiniowane w arduino nie zajmują miejsca w pamięci programu mikrokontrolera. W trakcie kompilacji stałe zostaną zastąpione przez kompilator zdefiniowanymi wartościami.
 [%hardbreaks]
 
-This can have some unwanted side effects though, if for example, a constant name that had been #defined is included in some other constant or variable name. In that case the text would be replaced by the #defined number (or text).
+Może to mieć jednak pewne niepożądane efekty uboczne, jeśli na przykład definicja stałej jest zawarta w nazwie innej stałej lub zmiennej. W takim przypadku tekst zostanie zastąpiony przez zdefiniowaną liczbę (lub napis).
 [%hardbreaks]
 
-In general, the link:../../../variables/variable-scope\--qualifiers/const[const] keyword is preferred for defining constants and should be used instead of #define.
+Ogólnie rzecz biorąc, słowo kluczowe link:../../../variables/variable-scope\--qualifiers/const[const] bardziej nadaje się do definiowania stałych i powinno być używane zamiast #define.
 [%hardbreaks]
 
 [float]
-=== Syntax
-`#define constantName value`
+=== Składnia
+`#define nazwaStałej wartość`
 
 
 [float]
-=== Parameters
-`constantName`: the name of the macro to define. +
-`value`: the value to assign to the macro.
+=== Parametry
+`nazwaStałej`: nazwa do zdefiniowania. +
+`wartość`: wartość do przypisania.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-#define ledPin 3
-// The compiler will replace any mention of ledPin with the value 3 at compile time.
+#define stykDiody 3
+// W trakcie kompilacji każde wystąpienie napisu stykDiody kompilator zastąpi wartością 3.
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-There is no semicolon after the #define statement. If you include one, the compiler will throw cryptic errors further down the page.
+=== Uwagi i ostrzeżenia
+Po instrukcji #define nie ma średnika. Jeśli jakiś dołączysz to kompilator może zgłosić tajemnicze błędy gdzieś dalej na stronie.
 
 [source,arduino]
 ----
-#define ledPin 3; // this is an error
+#define stykDiody 3; // to jest błędne
 ----
 
-Similarly, including an equal sign after the #define statement will also generate a cryptic compiler error further down the page.
+Podobnie umieszczenie znaku równości po instrukcji #define spowoduje wygenerowanie tajemniczego błędu kompilatora w dalszej części strony.
 
 [source,arduino]
 ----
-#define ledPin  = 3 // this is also an error
+#define stykDiody  = 3 // to również jest błędne
 ----
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/variable-scope\--qualifiers/const[const]
-* #LANGUAGE# link:../../../variables/constants/constants[Constants]
+* #JĘZYK# link:../../../variables/variable-scope\--qualifiers/const[const]
+* #JĘZYK# link:../../../variables/constants/constants[Stałe]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
