@@ -18,7 +18,7 @@ subCategories: [ "Operatory arytmetyczne" ]
 
 [float]
 === Opis
-Pojedynczy znak równości `=` w języku programowania C++ nazywany jest operatorem przypisania. Ma inne znaczenie niż na lekcjach matematyki, gdzie oznacza równanie lub równość. Operator przypisania mówi mikrokontrolerowi, aby ocenił dowolną wartość lub wyrażenie po prawej stronie znaku równości i zapisał ją w zmiennej po lewej stronie znaku równości.
+Pojedynczy znak równości `=` w języku programowania C++ nazywany jest operatorem przypisania. Ma inne znaczenie niż na lekcjach matematyki, gdzie oznacza równanie lub równość. Operator przypisania mówi mikrokontrolerowi, aby obliczył wartość lub wyrażenie po prawej stronie znaku równości i zapisał ją w zmiennej po lewej stronie znaku równości.
 [%hardbreaks]
 
 --
