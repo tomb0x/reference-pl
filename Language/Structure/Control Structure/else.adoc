@@ -1,6 +1,6 @@
 ---
 title: else
-categories: [ "Structure" ]
+categories: [ "Struktura" ]
 subCategories: [ "Instrukcje sterujące" ]
 ---
 
@@ -54,13 +54,13 @@ Poniżej znajduje się wyciąg z kodu systemu czujników temperatury
 [source,arduino]
 ----
 if (temperatura >= 70) {
-  //Niebezpieczeństwo! Wyłącz system
+  // Niebezpieczeństwo! Wyłącz system
 }
 else if (temperatura >= 60 && temperatura < 70) {
-  //Ostrzeżenie! Wymagana jest uwaga użytkownika
+  // Ostrzeżenie! Wymagana jest uwaga użytkownika
 }
 else {
-  //Bezpiecznie! Kontynuuj zwykłe zadania...
+  // Bezpiecznie! Kontynuuj zwykłe zadania...
 }
 ----
 
