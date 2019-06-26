@@ -47,7 +47,7 @@ Jest to skrócona forma dodawania zmiennej do innej stałej lub zmiennej.
 [source,arduino]
 ----
 x = 2;
-x += 4; // x ma wartość 6
+x += 4; // x przyjmie wartość 6
 ----
 
 --
