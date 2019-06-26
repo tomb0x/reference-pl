@@ -1,8 +1,8 @@
 ---
 title: "++"
 title_expanded: zwiększenie
-categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+categories: [ "Struktura" ]
+subCategories: [ "Operatory złożone" ]
 ---
 
 
@@ -12,7 +12,7 @@ subCategories: [ "Compound Operators" ]
 = ++ Zwiększenie
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
@@ -24,8 +24,8 @@ Zwiększa wartość zmiennej o 1.
 
 [float]
 === Składnia
-`x\++;  // zwraca starą wartość x a następnie zwiększa x o jeden` +
-`++x;  // zwiększa x o jeden a następnie zwraca nową wartość x`
+`x\++;  // zwraca starą wartość x, a następnie zwiększa x o jeden` +
+`++x;  // zwiększa x o jeden, a następnie zwraca nową wartość x`
 
 
 [float]
@@ -37,11 +37,11 @@ Zwiększa wartość zmiennej o 1.
 Oryginalna lub nowa wartość zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
@@ -56,10 +56,10 @@ y = x++;  // x ma wartość 4, ale y ciągle ma wartość 3
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ y = x++;  // x ma wartość 4, ale y ciągle ma wartość 3
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
