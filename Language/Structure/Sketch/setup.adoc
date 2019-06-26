@@ -36,8 +36,8 @@ Funkcja `setup()` wywoływana jest na początku działania szkicu. Użyj jej aby
 int stykPrzycisku = 3;
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(stykPrzycisku, INPUT);
+  Serial.begin(9600);             // ustawia parametry łącza szeregowego
+  pinMode(stykPrzycisku, INPUT);  // określa styk, do którego podłączony jest przycisk
 }
 
 void loop() {
