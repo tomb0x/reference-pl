@@ -17,7 +17,7 @@ subCategories: [ "Cyfrowe We/Wy" ]
 
 [float]
 === Opis
-Z określonego styku cyfrowego odczytuje wartość WYSOKI (`HIGH`) lub NISKI (` LOW`).
+Z określonego styku płytki Arduino odczytaj stan `HIGH` (wysoki) lub `LOW` (niski).
 [%hardbreaks]
 
 
@@ -28,7 +28,7 @@ Z określonego styku cyfrowego odczytuje wartość WYSOKI (`HIGH`) lub NISKI (` 
 
 [float]
 === Parametry
-`styk`: numer styku cyfrowego, który chcesz odczytać
+`styk`: numer styku płytki Arduino, który chcesz odczytać
 
 
 [float]
@@ -47,12 +47,11 @@ Z określonego styku cyfrowego odczytuje wartość WYSOKI (`HIGH`) lub NISKI (` 
 
 [float]
 === Przykładowy kod
-// Dodaj przykładowy kod i opisz jego działanie   ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 Na styku 13 ustawia na taką samą wartość jaką ma styk 7, zadeklarowany jako wejście.
 
 [source,arduino]
 ----
-int stykDiody = 13;     // dioda świecąc podłączona do cyfrowego styku nr 13
+int stykDiody = 13;     // dioda świecąca podłączona do cyfrowego styku nr 13
 int stykWejscia = 7;    // przycisk podłączony do cyfrowego styku nr 7
 int wart = 0;           // zmienna przechowująca odczytaną wartość
 
