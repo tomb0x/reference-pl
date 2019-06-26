@@ -1,6 +1,6 @@
 ---
 title: "&"
-title_expanded: operator adresu
+title_expanded: operator pobrania adresu
 categories: [ "Struktura" ]
 subCategories: [ "Operatory wskaźnikowe" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Operatory wskaźnikowe" ]
 
 
 
-= & Operator adresu
+= & Operator pobrania adresu
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
