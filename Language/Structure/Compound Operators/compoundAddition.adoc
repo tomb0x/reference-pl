@@ -24,7 +24,7 @@ Jest to skrócona forma dodawania zmiennej do innej stałej lub zmiennej.
 
 [float]
 === Składnia
-`x += y; // odpowiednik wyrażenia x = x + y;`
+`x += y;    // odpowiednik wyrażenia x = x + y;`
 
 
 [float]
@@ -47,7 +47,7 @@ Jest to skrócona forma dodawania zmiennej do innej stałej lub zmiennej.
 [source,arduino]
 ----
 x = 2;
-x += 4; // x przyjmie wartość 6
+x += 4;         // x przyjmie wartość 6
 ----
 
 --
