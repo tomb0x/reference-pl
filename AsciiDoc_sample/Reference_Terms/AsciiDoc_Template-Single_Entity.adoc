@@ -63,7 +63,7 @@ Nic
 
 [float]
 === Przykładowy kod
-// Opisz, na jak działa przykładowy kod i go dodaj   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+// Opisz, jak działa przykładowy kod i dodaj go poniżej   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 Ustawia wartość na wyjściu dla diody proporcjonalną do wartości odczytanej z potencjometru.
 
 
