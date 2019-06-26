@@ -1,72 +1,72 @@
 ---
 title: "&"
-title_expanded: reference operator
-categories: [ "Structure" ]
-subCategories: [ "Pointer Access Operators" ]
+title_expanded: operator adresu
+categories: [ "Struktura" ]
+subCategories: [ "Operatory wskaźnikowe" ]
 ---
 
 
 
 
 
-= & Reference Operator
+= & Operator adresu
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Referencing is one of the features specifically for use with pointers. The ampersand operator `&` is used for this purpose. If `x` is a variable, then `&x` represents the address of the variable `x`.
+=== Opis
+Jednym ze sposobów użycia wskaźników jest adresowanie. Do tego celu stosuje się operator oznaczony znakiem ampersand `&`. Jeżeli `x` jest zmienną, to wtedy `&x` wyraża adres zmiennej `x`.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-int *p;       // declare a pointer to an int data type
+int *p;       // deklaruje wskaźnik do danych typu int
 int i = 5;
-int result = 0;
-p = &i;       // now 'p' contains the address of 'i'
-result = *p;  // 'result' gets the value at the address pointed by 'p'
-              // i.e., it gets the value of 'i' which is 5
+int wynik = 0;
+p = &i;       // teraz 'p' zawiera adres zmiennej 'i'
+wynik = *p;   // 'wynik' pobiera wartość spod adresu wskazywanego przez 'p'
+              // tzn. pobiera wartość 'i', która wynosi 5
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Pointers are one of the complicated subjects for beginners in learning C, and it is possible to write the vast majority of Arduino sketches without ever encountering pointers. However for manipulating certain data structures, the use of pointers can simplify the code, and knowledge of manipulating pointers is handy to have in one's toolkit.
+=== Uwagi i ostrzeżenia
+Wskaźniki są jednym z bardziej skomplikowanych tematów dla początkujących w nauce języka C i możliwe jest napisanie ogromnej większości szkiców dla Arduino bez wykorzystania wskaźników. Jednak do manipulowania pewnymi strukturami danych użycie wskaźników może uprościć kod, a znajomość manipulowania wskaźnikami może być przydatne.
 [%hardbreaks]
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 [role="definition"]
-* #DEFINITION#  https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29[Pointers^]
+* #DEFINICJA#  https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29[Wskaźniki^]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
