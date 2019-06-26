@@ -17,7 +17,7 @@ subCategories: [ "Bity i Bajty" ]
 
 [float]
 === Opis
-Oblicza wartość określonego bitu (bit 0 równy 1, bit 1 równy 2, bit 2 równy 4, itd.).
+Oblicza wartość podanego bitu (bit 0 równy 1, bit 1 równy 2, bit 2 równy 4, itd.).
 [%hardbreaks]
 
 
@@ -28,15 +28,31 @@ Oblicza wartość określonego bitu (bit 0 równy 1, bit 1 równy 2, bit 2 równ
 
 [float]
 === Parametry
-`n`: numer bitu do obliczenia
+`n`: numer bitu, który wartość będzie obliczona
 
 
 [float]
 === Wartości zwracane
-Wartość bitu.
+Wartość podanego bitu.
 
 --
 // KONIEC SEKCJI OPISOWEJ
+
+
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
+
+[float]
+=== Przykładowy kod
+
+[source,arduino]
+----
+x = bit(7);     // x otrzymuje wartość 128 (dwa do potęgi siódmej)
+----
+
+--
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 // POCZĄTEK SEKCJI ZOBACZ TAKŻE
