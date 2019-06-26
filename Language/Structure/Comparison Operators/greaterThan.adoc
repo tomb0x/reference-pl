@@ -24,7 +24,7 @@ Porównuje zmienną po lewej stronie z wartością lub zmienną po prawej stroni
 
 [float]
 === Składnia
-`x > y;  // prawda gdy x jest większe od y a fałsz gdy x jest równe lub mniejsze od y`
+`x > y;       // prawda gdy x jest większe od y a fałsz gdy x jest mniejsze bądź równe y`
 
 
 [float]
