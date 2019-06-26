@@ -19,7 +19,7 @@ subCategories: [ "Cyfrowe We/Wy" ]
 === Opis
 Konfiguruje określony styk, aby zachowywał się jako wejście lub wyjście. Szczegółowe informacje na temat funkcjonalności styków można znaleźć na stronie http://arduino.cc/en/Tutorial/DigitalPins[ Styków cyfrowych].
 [%hardbreaks]
-Począwszy od Arduino 1.0.1, możliwe jest włączenie wewnętrznych rezystorów podciągających w trybie INPUT_PULLUP. Dodatkowo tryb INPUT jawnie wyłącza podciągnięcie wewnętrzne.
+Począwszy od Arduino 1.0.1, możliwe jest włączenie wewnętrznych rezystorów podciągających w trybie INPUT_PULLUP. Dodatkowo tryb INPUT jawnie wyłącza wewnętrzne podciągnięcie.
 [%hardbreaks]
 
 
@@ -50,12 +50,12 @@ Nic
 
 [float]
 === Przykładowy kod
-Ten kod ustawia cyfrowy styk 13 jako wyjście (`OUTPUT`) i przełącza go w stan wysoki (`HIGH`) a nastęþnie niski (`LOW`)
+Ten kod ustawia cyfrowy styk 13 jako `OUTPUT` (wyjście) i przełącza go w stan `HIGH` (wysoki) a nastęþnie `LOW` (niski)
 
 [source,arduino]
 ----
 void setup() {
-  pinMode(13, OUTPUT);    // ustawia styk cyfrowy nr 13 jako wyjście
+  pinMode(13, OUTPUT);    // ustaw styk cyfrowy nr 13 jako wyjście
 }
 
 void loop() {
