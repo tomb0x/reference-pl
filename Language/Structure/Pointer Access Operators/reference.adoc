@@ -39,8 +39,8 @@ int *p;       // deklaruje wskaźnik do danych typu int
 int i = 5;
 int wynik = 0;
 p = &i;       // teraz 'p' zawiera adres zmiennej 'i'
-wynik = *p;   // 'wynik' pobiera wartość spod adresu wskazywanego przez 'p'
-              // tzn. pobiera wartość 'i', która wynosi 5
+wynik = *p;   // 'wynik' otrzymuje wartość spod adresu wskazywanego przez 'p'
+              // tzn. otrzymuje wartość zmiennej 'i', równą 5
 ----
 [%hardbreaks]
 
