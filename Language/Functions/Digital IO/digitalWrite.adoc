@@ -55,7 +55,6 @@ Nic
 
 [float]
 === Przykładowy kod
-// Dodaj przykładowy kod i opisz jego działanie   ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 Kod ustawia cyfrowy styk 13 jako wyjście (`OUTPUT`) i przełącza go na przemian między stanem wysokim (`HIGH`) a niskim (`LOW`) co jedną sekundę.
 
 [source,arduino]
