@@ -82,7 +82,7 @@ void loop() {
 
 [float]
 === Uwagi i ostrzeżenia
-Jeśli styk wejścia analogowego nie jest do niczego podłączony, to wartość zwracana przez analogRead() będzie się zmieniać w zależności od wielu czynników (np. wartości innych wejść analogowych, jak blisko twoja ręka jest płytki itp.).
+Jeśli styk wejścia analogowego nie jest do niczego podłączony, to wartość zwracana przez analogRead() będzie się zmieniać w zależności od wielu czynników (np. wartości innych wejść analogowych, jak blisko płytki jest twoja ręka itp.).
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ
