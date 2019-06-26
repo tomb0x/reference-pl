@@ -1,7 +1,7 @@
 ---
 title: Stałe zmiennoprzecinkowe
-categories: [ "Variables" ]
-subCategories: [ "Constants" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Stałe" ]
 ---
 
 
@@ -11,7 +11,7 @@ subCategories: [ "Constants" ]
 = Stałe zmiennoprzecinkowe
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
@@ -21,11 +21,11 @@ Podobnie jak stałe całkowite, również stałe zmiennoprzecinkowe są używane
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
@@ -62,12 +62,12 @@ Stałe zmiennoprzecinkowe mogą być również wyrażone w różnych notacjach n
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -77,4 +77,4 @@ Stałe zmiennoprzecinkowe mogą być również wyrażone w różnych notacjach n
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
