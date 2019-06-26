@@ -1,8 +1,8 @@
 ---
 title: "--"
 title_expanded: zmniejszenie
-categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+categories: [ "Struktura" ]
+subCategories: [ "Operatory złożone" ]
 ---
 
 
@@ -12,7 +12,7 @@ subCategories: [ "Compound Operators" ]
 = -- Zmniejszenie
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
@@ -38,11 +38,11 @@ Zmniejsza wartość zmiennej o 1.
 Oryginalna lub nowa, zmnejszona wartość zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
@@ -57,11 +57,11 @@ y = x--;  // x ma wartość 0, ale y ciągle ma wartość 1
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -71,4 +71,4 @@ y = x--;  // x ma wartość 0, ale y ciągle ma wartość 1
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
