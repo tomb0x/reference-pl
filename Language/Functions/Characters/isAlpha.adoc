@@ -28,7 +28,7 @@ Sprawdza czy znak jest alfabetyczny (to znaczy czy jest literą). Zwraca prawdę
 
 [float]
 === Parametry
-`tenZnak`: zmienna. Dozwolone typy danych: `char`.
+`tenZnak`: zmienna. Dozwolony typ danych: `char`.
 
 
 [float]
