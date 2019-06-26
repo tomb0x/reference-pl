@@ -18,7 +18,7 @@ subCategories: [ "Operatory wskaźnikowe" ]
 
 [float]
 === Opis
-Dereferencing is one of the features specifically for use with pointers. The asterisk operator `*` is used for this purpose. If `p` is a pointer, then `*p` represents the value contained in the address pointed by `p`.
+Jednym ze sposobów użycia wskaźników jest pobranie wartości. Do tego celu stosuje się operator oznaczony znakiem gwiazdki `*`. Jeżeli `p` jest wskaźnikiem, to wtedy `*p` wyraża wartość zawartą pod adresem wskazywanym przez `p`.
 [%hardbreaks]
 
 --
@@ -35,18 +35,18 @@ Dereferencing is one of the features specifically for use with pointers. The ast
 
 [source,arduino]
 ----
-int *p;       // declare a pointer to an int data type
+int *p;       // deklaruje wskaźnik do danych typu int
 int i = 5;
-int result = 0;
-p = &i;       // now 'p' contains the address of 'i'
-result = *p;  // 'result' gets the value at the address pointed by 'p'
-              // i.e., it gets the value of 'i' which is 5
+int wynik = 0;
+p = &i;       // teraz 'p' zawiera adres zmiennej 'i'
+wynik = *p;  // 'wynik' otrzymuje wartość spod adresu wskazywanego przez 'p'
+              // tzn., otrzymuje wartość zmiennej 'i' równą 5
 ----
 [%hardbreaks]
 
 [float]
 === Uwagi i ostrzeżenia
-Pointers are one of the complicated subjects for beginners in learning C, and it is possible to write the vast majority of Arduino sketches without ever encountering pointers. However for manipulating certain data structures, the use of pointers can simplify the code, and and knowledge of manipulating pointers is handy to have in one's toolkit.
+Wskaźniki są jednym z bardziej skomplikowanych tematów dla początkujących w nauce języka C i możliwe jest napisanie ogromnej większości szkiców dla Arduino bez wykorzystania wskaźników. Jednak do manipulowania pewnymi strukturami danych użycie wskaźników może uprościć kod, a znajomość manipulowania wskaźnikami może być przydatne.
 [%hardbreaks]
 
 --
@@ -65,7 +65,7 @@ Pointers are one of the complicated subjects for beginners in learning C, and it
 [role="language"]
 
 [role="definition"]
-* #DEFINITION#  https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29[Pointers^]
+* #DEFINICJA#  https://en.wikipedia.org/wiki/Pointer_%28computer_programming%29[Wskaźniki^]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
