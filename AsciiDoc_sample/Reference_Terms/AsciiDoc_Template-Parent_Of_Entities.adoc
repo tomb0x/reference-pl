@@ -1,9 +1,9 @@
 ---
 title: Tytuł wzoru elementu
-categories: [ "Kategorie" ]
+categories: [ "Kategoria" ]
 subCategories: [ "Nazwa Podkategorii" ]
 ---
-// ZNACZNIK DOKUMENTACJI JĘZYKA ARDUINO (powyższy)   ►►►►► ZAWSZE UMIESZCZAJ W SWOIM PLIKU ◄◄◄◄◄
+// ZNACZNIKI DOKUMENTACJI JĘZYKA ARDUINO (powyżej)   ►►►►► ZAWSZE UMIESZCZAJ W SWOIM PLIKU ◄◄◄◄◄
 // title: pojawi się w Indeksie wszystkich pojęć dokumentacji
 // categories: wybór pomiędzy: Struktura, Zmienne, Funkcje
 // subCategories: w ramach dostępnych w indeksie ("Cyfrowe We/Wy", "Operatory Arytmetyczne")
@@ -13,7 +13,7 @@ subCategories: [ "Nazwa Podkategorii" ]
 
 
 // TYTUŁ STRONY   ►►►►► TO JEST OBOWIĄZKOWE ◄◄◄◄◄
-= Tytuł wzoru elementu()
+= Wzór tytułu elementu()
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
