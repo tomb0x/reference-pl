@@ -11,7 +11,7 @@ subCategories: [ "Instrukcje sterujące" ]
 = if
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 [float]
@@ -24,7 +24,7 @@ Instrukcja `if` (ang. jeżeli) sprawdza warunek i wykonuje instrukcję lub ciąg
 [source,arduino]
 ----
 if (warunek) {
-  //instrukcj(-a/-e)
+  // dowolne instrukcje
 }
 ----
 
@@ -34,12 +34,12 @@ if (warunek) {
 `warunek`: wyrażenie logiczne (to znaczy, przyjmujące wartość `prawda` (true) lub `fałsz` (false) ).
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
@@ -86,16 +86,16 @@ Uważaj na przypadkowe użycie pojedynczego znaku równości (np. `if (x = 10)` 
 
 Dzieje się tak, dlatego że język C++ oblicza wartość wyrażenia `if (x=10)` następująco: 10 jest przypisywane do `x`
  (pamiętaj, że pojedyńczy znak równości jest (http://arduino.cc/en/Reference/Assignment[instrukcją przypisania^])), dlatego x ma wartość 10. Następnie warunek `if` oblicza 10, co zawsze oznacza prawdę (TRUE), ponieważ każda niezerowa liczba oznacza prawdę (TRUE). I dlatego, `if (x = 10)` zawsze będzie prawdziwe, co nie jest pożądanym wynikiem w przypadku użycia instrukcji `if`.
- Dodatkowo zmienna `x` dostanie wartość 10, co również nie jest działaniem pożądanym.
+ Dodatkowo zmienna `x` przyjmie wartość 10, co również nie będzie działaniem pożądanym.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -105,4 +105,4 @@ Dzieje się tak, dlatego że język C++ oblicza wartość wyrażenia `if (x=10)`
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
