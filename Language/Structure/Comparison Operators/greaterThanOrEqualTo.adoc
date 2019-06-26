@@ -24,7 +24,7 @@ Porównuje zmienną po lewej stronie z wartością lub zmienną po prawej stroni
 
 [float]
 === Składnia
-`x >= y; // prawda gdy x jest większe bądź równe y a fałsz gdy x jest mniesze od y`
+`x >= y;      // prawda gdy x jest większe bądź równe y, a fałsz gdy x jest mniesze od y`
 
 
 [float]
@@ -46,7 +46,7 @@ Porównuje zmienną po lewej stronie z wartością lub zmienną po prawej stroni
 
 [source,arduino]
 ----
-if (x >= y) { // sprawdza czy x jest większe bądź równe y
+if (x >= y) {    // sprawdza czy x jest większe bądź równe y
   // zrób coś tylko gdy porównanie da w wyniku prawdę
 }
 ----
