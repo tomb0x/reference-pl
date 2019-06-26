@@ -17,10 +17,7 @@ subCategories: [ "Szkic" ]
 
 [float]
 === Opis
-Po wykonaniu funkcji link:../setup[setup()], która inicjuje i ustawia wartości początkowe,
- funkcja `loop()` (ang. pętla) robi dokładnie to co sugeruje jej nazwa,
- czyli wykonuje się nieustannie, umożliwiając twojemu programowi na kontrolę zachowania się płytki Arduino poprzez
- wykonywanie różnych działań i reagowanie na zdarzenia.
+Po wykonaniu funkcji link:../setup[setup()], która inicjuje i ustawia wartości początkowe, funkcja `loop()` (ang. pętla) robi dokładnie to co sugeruje jej nazwa, czyli wykonuje się nieustannie, umożliwiając twojemu programowi na kontrolę zachowania się płytki Arduino poprzez wykonywanie różnych działań i reagowanie na zdarzenia.
 [%hardbreaks]
 
 --
@@ -37,14 +34,14 @@ Po wykonaniu funkcji link:../setup[setup()], która inicjuje i ustawia wartości
 ----
 int stykPrzycisku = 3;
 
-// setup inicjuje łącze szeregowe oraz styk przycisku
+// setup ustawia parametry łącza szeregowego oraz określa styk, do którego podłączony jest przycisk
 void setup() {
   Serial.begin(9600);
   pinMode(stykPrzycisku, INPUT);
 }
 
-// loop sprawdza przycisk za każdym razem
-// i przesyła przez łącze szeregowe jego stan
+// loop sprawdza cyklicznie stan przycisku
+// i przesyła go przez łącze szeregowe
 void loop() {
   if (digitalRead(stykPrzycisku) == HIGH) {
     Serial.write('H');
