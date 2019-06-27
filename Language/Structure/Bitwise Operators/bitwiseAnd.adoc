@@ -74,7 +74,7 @@ PORTD = PORTD & B00000011;  // wyczyść bity 2 - 7, pozostaw niezmienione styki
 
 
 [role="language"]
-* #JĘZYK# link:../../boolean-operators/logicaland[&& Logiczne AND]
+* #JĘZYK# link:../../boolean-operators/logicaland[&& Logiczne I]
 
 [role="example"]
 * #PRZYKŁAD# https://www.arduino.cc/playground/Code/BitMath[Przewodnik po arytmetyce bitowej^]
