@@ -3,7 +3,7 @@
 Reference-pl to repozytorium **polskiej** dokumentacji języka programowania Arduino.
 Wszystkie pliki niniejszej Dokumentacji są w formacie AsciiDoc.
 
-Dziękujemy za poświęcenie czasu na pracę przy zawartości ninieszego opracowania. Jest to naprawdę pomocne dla całej społeczności Arduino. Jeśli chcesz dowiedzieć się więcej o tym, jak przyczynić się do rozwoju tego projektu, sprawdź  https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[samouczek krok po kroku].
+Dziękujemy, że poświęcasz czas na pracę przy zawartości ninieszego opracowania. Jest to naprawdę pomocne dla całej społeczności Arduino. Jeśli chcesz dowiedzieć się więcej o tym, jak możesz przyczynić się do rozwoju tego projektu, sprawdź  https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[samouczek krok po kroku].
 
 == Tworzenie i edycja treści
 Jeśli chcesz dodać nową treść, utwórz nowy plik (dowolnym edytorem tekstu lub edytorem kodu źródłowego) i zapisz go jako .adoc.  
@@ -15,21 +15,20 @@ Jeśli chcesz dodać coś od siebie do Dokumentacji Języka lub redagować już 
 * Użyj https://raw.githubusercontent.com/arduino/reference-pl/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (pokazane https://www.arduino.cc/reference/pl/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[tutaj]) dla pojęć takich jak link:http://arduino.cc/pl/Reference/AnalogWrite[analogWrite].
 * Użyj https://raw.githubusercontent.com/arduino/reference-pl/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (pokazane https://www.arduino.cc/reference/pl/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[tutaj]) dla grup funkcji takich jak link:http://arduino.cc/pl/Reference/Serial[Serial].
 
-Należy pamiętać, że każdy plik Dokumentacji powinien zawierać co najmniej opis, jakiś przykładowy kod oraz łącza do innych istotnych informacji (sekcja Zobacz także). 
+Pamiętaj, że każdy plik Dokumentacji powinien zawierać co najmniej opis, jakiś przykładowy kod oraz łącza do innych istotnych informacji (sekcja Zobacz także). 
 
-Jeśli chcesz dodać obrazy do Asciidoc, utwórz folder o nazwie attachments w tym samym katalogu co plik Asciidoc. Obrazy można zapisywać w formacie SVG i PNG, a ich maksymalny rozmiar to 200 kB.
+Jeśli chcesz dodać obrazy do Asciidoc, utwórz folder o nazwie attachments w tym samym katalogu co plik Asciidoc. Obrazy możesz zapisywać w formacie SVG i PNG, a ich maksymalny rozmiar to 200 kB.
 
 == Przekazywanie treści na Github
 Jeśli nie umiesz posługiwać się programem Git, to możesz dodawać treści bezpośrednio na Github za pośrednictwem jego strony www. Przygotowaliśmy krótki samouczek, aby pokazać, jak to zrobić, https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[SPRAWDŹ TO!]
 
-link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[Możesz także prześledzić ten przewodnik] (napisany przez zespół Github) aby dowiedzieć się, jak edytować plik .adoc i zaproponować zespołowi Arduino zmianę pliku.  
-Sugerując zmianę, postępuj zgodnie z wytycznymi opisanymi w szablonach plików.
+link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[Możesz także prześledzić ten przewodnik] (napisany przez zespół Github) aby dowiedzieć się, jak edytować plik .adoc i zaproponować zespołowi Arduino zmianę zawartości pliku. Sugerując zmianę, postępuj zgodnie z wytycznymi opisanymi w szablonach plików.
 
 
 == Przesyłanie żądania ściągnięcia
 Cieszymy się, że chcesz przyczynić się do powstawania Dokumentacji języka Arduino: to najlepszy sposób, aby pomóc społeczności.
 
-Twój wkład polega na dodawaniu lub modyfikowaniu istniejącego kodu lub całych wpisów. Prosimy cię, abyś zawsze odnosił się do bieżącego wydania lub pobierał aktualne przed przesłaniem własnego materiału. 
+Twój wkład polega na dodawaniu lub modyfikowaniu istniejącego kodu lub całych wpisów. Prosimy cię, abyś zawsze odnosił się do bieżącego wydania lub pobierał aktualny materiał przed przesłaniem własnego. 
 
 === Struktura folderów
 [source]
