@@ -1,81 +1,81 @@
 ---
 title: "|"
-title_expanded: bitwise or
-categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+title_expanded: bitwowe lub
+categories: [ "Struktura" ]
+subCategories: [ "Operatory bitowe" ]
 ---
 
 
 
 
 
-= | Bitwise OR
+= | Bitowe LUB
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-The bitwise OR operator in C++ is the vertical bar symbol, |. Like the & operator, | operates independently each bit in its two surrounding integer expressions, but what it does is different (of course). The bitwise OR of two bits is 1 if either or both of the input bits is 1, otherwise it is 0.
+=== Opis
+W języku C++ operator bitowego LUB oznacza się symbolem pionowej kreski |. Podobnie jak operator &, również | działa niezależnie dla każdego bitu z dwóch otaczających wyrażeń całkowitych, ale robi to (oczywiście) inaczej. Bitowe LUB dwóch bitów wynosi 1, jeśli jeden lub oba bity wejściowe mają wartość 1, w przeciwnym razie wynikiem jest 0.
 [%hardbreaks]
 
-In other words:
+Innymi słowy:
 
-    0  0  1  1    operand1
-    0  1  0  1    operand2
+    0  0  1  1    argument1
+    0  1  0  1    argument2
     ----------
-    0  1  1  1    (operand1 | operand2) - returned result
+    0  1  1  1    (argument1 | argument2) - zwracany wynik
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-int a =  92;    // in binary: 0000000001011100
-int b = 101;    // in binary: 0000000001100101
-int c = a | b;  // result:    0000000001111101, or 125 in decimal.
+int a =  92;    // dwójkowo: 0000000001011100
+int b = 101;    // dwójkowo: 0000000001100101
+int c = a | b;  // wynik:    0000000001111101, lub dziesiętnie 125.
 ----
 [%hardbreaks]
 
-One of the most common uses of the Bitwise OR is to set multiple bits in a bit-packed number.
+Jednym z najczęstszych zastosowań bitowego LUB jest ustawienie wielu bitów jednocześnie w liczbie wielobitowej.
 
 [source,arduino]
 ----
-// Note: This code is AVR architecture specific
-// set direction bits for pins 2 to 7, leave PD0 and PD1 untouched (xx | 00 == xx)
-// same as pinMode(pin, OUTPUT) for pins 2 to 7 on Uno or Nano
+// Uwaga: ten kod jest specyficzny dla architektury AVR
+// jednoczesne ustawienie bitów dla styków od 2 do 7, pozostawiając niezmienione PD0 i PD1 (xx | 00 == xx)
+// tak samo jak pinMode(styk, OUTPUT) dla styków od 2 do 7 dla płytek Uno lub Nano
 DDRD = DDRD | B11111100;
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 
 [role="language"]
-* #LANGUAGE# link:../../boolean-operators/logicalor[|| Logical OR]
+* #JĘZYK# link:../../boolean-operators/logicalor[|| Logiczne LUB]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #PRZYKŁAD# https://www.arduino.cc/playground/Code/BitMath[Przewodnik po arytmetyce bitowej^]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
