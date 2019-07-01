@@ -1,23 +1,23 @@
 ---
 title: "^"
-title_expanded: bitwise xor
-categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+title_expanded: bitowe xor
+categories: [ "Struktura" ]
+subCategories: [ "Operatory bitowe" ]
 ---
 
 
 
 
 
-= ^ Bitwise XOR
+= ^ Bitowe XOR
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 There is a somewhat unusual operator in C++ called bitwise EXCLUSIVE OR, also known as bitwise XOR. (In English this is usually pronounced "eks-or".) The bitwise XOR operator is written using the caret symbol `^`. A bitwise XOR operation results in a 1 only if the input bits are different, else it results in a 0.
 [%hardbreaks]
 
@@ -30,16 +30,16 @@ Precisely,
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
@@ -68,18 +68,18 @@ void loop() {
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #PRZYKŁAD# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
