@@ -1,72 +1,72 @@
 ---
 title: "<<"
-title_expanded: bitshift left
-categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+title_expanded: przesunięcie bitowe w lewo
+categories: [ "Struktura" ]
+subCategories: [ "Operatory bitowe" ]
 ---
 
 
 
 
 
-= << Bitshift Left
+= << Przesunięcie bitowe w lewo
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-The left shift operator `<<` causes the bits of the left operand to be shifted *left* by the number of positions specified by the right operand.
+=== Opis
+Operator lewego przesunięcia `<<` powoduje przesunięcie bitów lewego argumentu *w lewo* o liczbę pozycji określonych przez prawy argument.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`variable << number_of_bits;`
+=== Składnia
+`zmienna << liczba_bitów;`
 
 
 [float]
-=== Parameters
-`variable`: Allowed data types: `byte`, `int`, `long`. +
-`number_of_bits`: a number that is < = 32. Allowed data types: `int`.
+=== Parametry
+`zmienna`: Dozwolone typy danych: `byte`, `int`, `long`. +
+`liczba_bitów`: liczba, która jest < = 32. Dozwolone typy danych: `int`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-int a = 5;      // binary: 0000000000000101
-int b = a << 3; // binary: 0000000000101000, or 40 in decimal
+int a = 5;           // dwójkowo: 0000000000000101
+int b = a << 3;      // dwójkowo: 0000000000101000, lub 40 dziesiętnie
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you shift a value x by y bits (x << y), the leftmost y bits in x are lost, literally shifted out of existence:
+=== Uwagi i ostrzeżenia
+Kiedy przesuniesz wartość x o y bitów (x << y), y lewych bitów w liczbie x będzie utracone, dosłownie wysunięte na bok:
 
 [source,arduino]
 ----
-int x = 5;  // binary: 0000000000000101
+int x = 5;           // dwójkowo: 0000000000000101
 int y = 14;
-int result = x << y;  // binary: 0100000000000000 - the first 1 in 101 was discarded
+int wynik = x << y;  // dwójkowo: 0100000000000000 - pierwsza jedynka w 101 zostanie odrzucona
 ----
 
-If you are certain that none of the ones in a value are being shifted into oblivion, a simple way to think of the left-shift operator is that it multiplies the left operand by 2 raised to the right operand power. For example, to generate powers of 2, the following expressions can be employed:
+Jeśli wiesz, że nie stracisz bezpowrotnie żadnej informacji w trakcie przesuwania, prostym sposobem myślenia o operatorze przesunięcia w lewo jest to, że mnoży lewy argument przez 2 podniesiony do potęgi prawego argumentu. Na przykład, aby wygenerować potęgi liczby 2, można zastosować następujące wyrażenia:
 
 [source,arduino]
 ----
-   Operation  Result
+   Operacja   Wynik
    ---------  ------
     1 <<  0      1
     1 <<  1      2
@@ -79,19 +79,17 @@ If you are certain that none of the ones in a value are being shifted into obliv
     ...
 ----
 
-The following example can be used to print out the value of a received byte to the serial monitor, using the left shift operator to move along the byte from bottom(LSB) to top (MSB), and print out its Binary value:
+Poniższy przykład może być użyty do wydrukowania wartości odebranego bajtu na monitorze szeregowym, przy użyciu operatora przesunięcia w lewo. Aby wydrukować dwójkową reprezentację bajtu, analiza rozpoczyna się od najmniej znaczącego bitu (LSB) do najbardziej znaczącego bitu (MSB):
 
 [source,arduino]
 ----
-// Prints out Binary value (1 or 0) of byte
-void printOut1(int c) {
-  for (int bits = 7; bits > -1; bits--) {
-    // Compare bits 7-0 in byte
-    if (c & (1 << bits)) {
-      Serial.print("1");
+void drukujBitowo(int c) {                // Drukuje wartość bajtu dwójkowo (zerami i jedynkami)
+  for (int bity = 7; bity > -1; bity--) {
+    if (c & (1 << bity)) {                // porównaj bity od 7 do 0 z podanym bajtem
+      Serial.print("1");                  // jeżeli wynik porównania bitu jest różny od 0
     }
     else {
-      Serial.print("0");
+      Serial.print("0"); 
     }
   }
 }
@@ -99,23 +97,23 @@ void printOut1(int c) {
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-//SEE ALSO SECTION STARTS
+//POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #PRZYKŁAD# https://www.arduino.cc/playground/Code/BitMath[Przewodnik po arytmetyce bitowej^]
 
 --
-//SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
 
