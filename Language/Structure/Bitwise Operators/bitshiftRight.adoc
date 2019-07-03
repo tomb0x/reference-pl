@@ -1,97 +1,97 @@
 ---
 title: ">>"
-title_expanded: bitshift right
-categories: [ "Structure" ]
-subCategories: [ "Bitwise Operators" ]
+title_expanded: przesunięcie bitowe w prawo
+categories: [ "Struktura" ]
+subCategories: [ "Operatory bitowe" ]
 ---
 
 
 
 
 
-= >> Bitshift Right
+= >> Przesunięcie bitowe w prawo
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-The right shift operator `>>` causes the bits of the left operand to be shifted *right* by the number of positions specified by the right operand.
+=== Opis
+Operator przesunięcia w prawo `>>` powoduje przesunięcie bitów lewego argumentu *w prawo* o liczbę pozycji określonych przez prawy argument.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`variable >> number_of_bits;`
+=== Składnia
+`zmienna >> liczba_bitów;`
 
 
 [float]
-=== Parameters
-`variable`: Allowed data types: `byte`, `int`, `long`. +
-`number_of_bits`: a number that is < = 32. Allowed data types: `int`.
+=== Parametry
+`zmienna`: Dozwolone typy danych: `byte`, `int`, `long`. +
+`liczba_bitów`: liczba, która jest < = 32. Dozwolone typy danych: `int`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-int a = 40;     // binary: 0000000000101000
-int b = a >> 3; // binary: 0000000000000101, or 5 in decimal
+int a = 40;     // dwójkowo: 0000000000101000
+int b = a >> 3; // dwójkowo: 0000000000000101, lub 5 dziesiętnie
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you shift x right by y bits (x >> y), and the highest bit in x is a 1, the behavior depends on the exact data type of x. If x is of type int, the highest bit is the sign bit, determining whether x is negative or not, as we have discussed above. In that case, the sign bit is copied into lower bits, for esoteric historical reasons:
+=== Uwagi i ostrzeżenia
+Kiedy przesuwasz liczbę x w prawo o y bitów (x >> y), a najbardziej znaczący bit w liczbie x to 1, wynik zależy od konkretnego typu danych liczby x. Jeśli x jest typu int, to najbardziej znaczący bit jest bitem znaku, określający, czy liczba x jest ujemna, czy nie. W takim przypadku bit znaku jest kopiowany na niższe bity, z tajemniczych, historycznych powodów:
 
 [source,arduino]
 ----
-int x = -16;  // binary: 1111111111110000
+int x = -16;         // dwójkowo: 1111111111110000
 int y = 3;
-int result = x >> y;  // binary: 1111111111111110
+int wynik = x >> y;  // dwójkowo: 1111111111111110
 ----
 This behavior, called sign extension, is often not the behavior you want. Instead, you may wish zeros to be shifted in from the left. It turns out that the right shift rules are different for unsigned int expressions, so you can use a typecast to suppress ones being copied from the left:
 
 [source,arduino]
 ----
-int x = -16;  // binary: 1111111111110000
+int x = -16;                       // dwójkowo: 1111111111110000
 int y = 3;
-int result = (unsigned int)x >> y;  // binary: 0001111111111110
+int wynik = (unsigned int)x >> y;  // dwójkowo: 0001111111111110
 ----
 If you are careful to avoid sign extension, you can use the right-shift operator `>>` as a way to divide by powers of 2. For example:
 
 [source,arduino]
 ----
 int x = 1000;
-int y = x >> 3; // integer division of 1000 by 8, causing y = 125.
+int y = x >> 3;                    // dzielenie całkowite 1000 przez 8, daje y = 125.
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# http://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #PRZYKŁAD# http://www.arduino.cc/playground/Code/BitMath[Przewodnik po arytmetyce bitowej^]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
