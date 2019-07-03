@@ -21,12 +21,12 @@ subCategories: [ "Operatory bitowe" ]
 There is a somewhat unusual operator in C++ called bitwise EXCLUSIVE OR, also known as bitwise XOR. (In English this is usually pronounced "eks-or".) The bitwise XOR operator is written using the caret symbol `^`. A bitwise XOR operation results in a 1 only if the input bits are different, else it results in a 0.
 [%hardbreaks]
 
-Precisely,
+Dokładnie działa to tak:
 
-    0  0  1  1    operand1
-    0  1  0  1    operand2
+    0  0  1  1    argument1
+    0  1  0  1    argument2
     ----------
-    0  1  1  0    (operand1 ^ operand2) - returned result
+    0  1  1  0    (argument1 ^ argument2) - wynik
 [%hardbreaks]
 
 --
@@ -43,9 +43,9 @@ Precisely,
 
 [source,arduino]
 ----
-int x = 12;     // binary: 1100
-int y = 10;     // binary: 1010
-int z = x ^ y;  // binary: 0110, or decimal 6
+int x = 12;     // dwójkowo: 1100
+int y = 10;     // dwójkowo: 1010
+int z = x ^ y;  // dwójkowo: 0110, lub dziesiętnie 6
 ----
 [%hardbreaks]
 
