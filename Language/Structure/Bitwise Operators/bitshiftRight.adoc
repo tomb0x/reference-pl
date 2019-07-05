@@ -46,8 +46,8 @@ Operator przesunięcia w prawo `>>` powoduje przesunięcie bitów lewego argumen
 
 [source,arduino]
 ----
-int a = 40;     // dwójkowo: 0000000000101000
-int b = a >> 3; // dwójkowo: 0000000000000101, lub 5 dziesiętnie
+int a = 40;        // dwójkowo: 0000000000101000
+int b = a >> 3;    // dwójkowo: 0000000000000101, lub 5 dziesiętnie
 ----
 [%hardbreaks]
 
@@ -61,7 +61,7 @@ int x = -16;         // dwójkowo: 1111111111110000
 int y = 3;
 int wynik = x >> y;  // dwójkowo: 1111111111111110
 ----
-This behavior, called sign extension, is often not the behavior you want. Instead, you may wish zeros to be shifted in from the left. It turns out that the right shift rules are different for unsigned int expressions, so you can use a typecast to suppress ones being copied from the left:
+Takie zachowanie, (powielanie bitu znaku), często nie jest tym, czego oczekujesz. Zamiast tego wolałbyś, aby zera były wsuwane z lewej strony. Okazuje się, że odpowiednie reguły przesuwania różnią się dla wyrażeń całkowitych bez znaku, więc aby wyłączyć to powielanie od lewej, możesz użyć rzutowania (jawnego określania typu):
 
 [source,arduino]
 ----
@@ -69,12 +69,12 @@ int x = -16;                       // dwójkowo: 1111111111110000
 int y = 3;
 int wynik = (unsigned int)x >> y;  // dwójkowo: 0001111111111110
 ----
-If you are careful to avoid sign extension, you can use the right-shift operator `>>` as a way to divide by powers of 2. For example:
+Jeśli zachowasz ostrożność, możesz użyć operatora przesunięcia w prawo `>>` jako sposobu dzielenia przez potęgi liczby 2. Na przykład:
 
 [source,arduino]
 ----
 int x = 1000;
-int y = x >> 3;                    // dzielenie całkowite 1000 przez 8, daje y = 125.
+int y = x >> 3;        // dzielenie całkowite 1000 przez 8 (dwa do potęgi trzeciej), daje y = 125.
 ----
 
 --
