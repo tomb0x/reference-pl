@@ -79,7 +79,7 @@ Jeśli wiesz, że nie stracisz bezpowrotnie żadnej informacji w trakcie przesuw
     ...
 ----
 
-Poniższy przykład może być użyty do wydrukowania wartości odebranego bajtu na monitorze szeregowym, przy użyciu operatora przesunięcia w lewo. Aby wydrukować dwójkową reprezentację bajtu, analiza rozpoczyna się od najmniej znaczącego bitu (LSB) do najbardziej znaczącego bitu (MSB):
+Poniższy przykład może być użyty do wydrukowania na monitorze szeregowym wartości odebranego bajtu, przy użyciu operatora przesunięcia w lewo. Aby wydrukować dwójkową reprezentację bajtu, analiza rozpoczyna się od najmniej znaczącego bitu (LSB) do najbardziej znaczącego bitu (MSB):
 
 [source,arduino]
 ----
