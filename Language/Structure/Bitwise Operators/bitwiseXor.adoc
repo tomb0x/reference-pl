@@ -53,15 +53,15 @@ Operator ^ jest często używany do przełączania (tj. zmiany z 0 na 1, a 1 na 
 
 [source,arduino]
 ----
-// Note: This code uses registers specific to AVR microcontrollers (Uno, Nano, Leonardo, Mega, etc.)
-// it will not compile for other architectures
+// Uwaga: Ten kod wykorzystuje rejestry specyficzne dla mikrokontrolerów AVR (Uno, Nano, Leonardo, Mega itp.)
+// Nie będzie kompilował się dla innych architektur
 void setup() {
-  DDRB = DDRB | B00100000;  // set PB5 (pin 13 on Uno/Nano, pin 9 on Leonardo/Micro, pin 11 on Mega) as OUTPUT
+  DDRB = DDRB | B00100000;  // ustaw PB5 (styk 13 na Uno/Nano, styk 9 na Leonardo/Micro, styk 11 na Mega) jako wyjście (OUTPUT)
   Serial.begin(9600);
 }
 
 void loop() {
-  PORTB = PORTB ^ B00100000;  // invert PB5, leave others untouched
+  PORTB = PORTB ^ B00100000;  // odwróć PB5, pozostałe pozostaw niezmienione
   delay(100);
 }
 ----
@@ -79,7 +79,7 @@ void loop() {
 === Zobacz także
 
 [role="example"]
-* #PRZYKŁAD# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #PRZYKŁAD# https://www.arduino.cc/playground/Code/BitMath[Przewodnik po arytmetyce bitowej^]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
