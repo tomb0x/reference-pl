@@ -1,69 +1,69 @@
 ---
 title: "-="
-title_expanded: compound subtraction
-categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+title_expanded: odejmowanie złożone
+categories: [ "Struktura" ]
+subCategories: [ "Operatory złożone" ]
 ---
 
 
 
 
 
-= -= Compound Subtraction
+= -= Odejmowanie złożone
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-This is a convenient shorthand to perform subtraction of a constant or a variable from a variable.
+=== Opis
+Jest to skrócona forma odejmowania stałej lub zmiennej od zmiennej.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`x -= y; // equivalent to the expression x = x - y;`
+=== Składnia
+`x -= y;        // odpowiednik wyrażenia x = x - y;`
 
 
 [float]
-=== Parameters
-`x`: variable. Allowed data types: `int`, `float`, `double`, `byte`, `short`, `long`. +
-`y`: variable or constant. Allowed data types: `int`, `float`, `double`, `byte`, `short`, `long`.
+=== Parametry
+`x`: zmienna. Dozwolone typy danych: `int`, `float`, `double`, `byte`, `short`, `long`. +
+`y`: zmienna lub stała. Dozwolone typy danych: `int`, `float`, `double`, `byte`, `short`, `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
 x = 20;
-x -= 2; // x now contains 18
+x -= 2;          // x przyjmie wartość 18
 ----
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE#  link:../../arithmetic-operators/subtraction[Normal Subtraction]
+* #JĘZYK#  link:../../arithmetic-operators/subtraction[zwykłe odejmowanie]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
