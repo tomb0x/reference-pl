@@ -8,12 +8,12 @@ subCategories: [ "Compound Operators" ]
 = ^= Compound Bitwise XOR
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 The compound bitwise XOR operator `^=` is often used with a variable and a constant to toggle (invert) particular bits in a variable.
 [%hardbreaks]
 
@@ -26,7 +26,7 @@ A review of the Bitwise XOR `^` operator:
 [%hardbreaks]
 
 [float]
-=== Syntax
+=== Składnia
 `x ^= y; // equivalent to x = x ^ y;`
 
 
@@ -36,16 +36,16 @@ A review of the Bitwise XOR `^` operator:
 `y`: variable or constant. Allowed data types: `char`, `int`, `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 Bits that are "bitwise XORed" with 0 are left unchanged. So if myByte is a byte variable,
 [source,arduino]
 ----
@@ -60,7 +60,7 @@ myByte ^ B11111111 = ~myByte;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Uwagi i ostrzeżenia
 Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero.
 [%hardbreaks]
 
@@ -93,20 +93,20 @@ myByte ^= B00000011 == B10101001;
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-//SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE#  link:../../bitwise-operators/bitwisexor[^ Bitwise XOR]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
