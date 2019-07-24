@@ -1,78 +1,78 @@
 ---
 title: "%="
-title_expanded: compound remainder
-categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+title_expanded: reszta złożona
+categories: [ "Struktura" ]
+subCategories: [ "Operatory złożone" ]
 ---
 
 
 
 
 
-= %= Compound Remainder
+= %= Reszta złożona
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-This is a convenient shorthand to calculate the remainder when one integer is divided by another and assign it back to the variable the calculation was done on.
+=== Opis
+Jest to wygodny skrót do obliczenia reszty, gdy jedna liczba całkowita jest podzielona przez inną i przypisana z powrotem do zmiennej, na której dokonano obliczenia.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`x %= divisor;   // equivalent to the expression x = x % divisor;`
+=== Składnia
+`x %= dzielnik;   // odpowiednik wyrażenia x = x % dzielnik;`
 
 
 [float]
-=== Parameters
-`x`: variable. Allowed data types: `int`. +
-`divisor`: *non zero* variable or constant. Allowed data types: `int`.
+=== Parametry
+`x`: zmienna. Dozwolone typy danych: `int`. +
+`dzielnik`: *niezerowa* zmienna lub stała. Dozwolone typy danych: `int`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
 int x = 7;
-x %= 5;    // x now contains 2
+x %= 5;        // x przyjmie wartość 2
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The compound remainder operator does not work on floats.
+=== Uwagi i Ostrzeżenia
+1. Złożony operator reszty nie działa na liczbach zmiennoprzecinkowych.
 
-2. If the *first* operand is negative, the result is negative (or zero).
-Therefore, the result of `x %= 10` will not always be between 0 and 9 if `x` can be negative.
+2. Jeżeli *pierwszy* argument jest ujemny to wynik będzie ujemny (lub zerowy).
+Dlatego wynik działania `x %= 10` nie zawsze będzie wynosił od 0 do 9, bo `x` może być ujemne.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
-//SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE#  link:../../arithmetic-operators/remainder[Remainder]
+* #JĘZYK#  link:../../arithmetic-operators/remainder[reszta]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
