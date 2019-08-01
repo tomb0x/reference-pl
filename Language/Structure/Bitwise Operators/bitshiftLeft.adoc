@@ -62,7 +62,7 @@ int y = 14;
 int wynik = x << y;  // dwójkowo: 0100000000000000 - pierwsza jedynka w 101 zostanie odrzucona
 ----
 
-Jeśli wiesz, że nie stracisz bezpowrotnie żadnej informacji w trakcie przesuwania, łatwo wyobrazić sobie operator przesunięcia w lewo jako, mnożenie lewyego argumentu przez 2 podniesione do potęgi prawego argumentu. Na przykład, aby wygenerować potęgi liczby 2, można zastosować następujące wyrażenia:
+Jeśli wiesz, że nie stracisz żadnej ważnej informacji w trakcie przesuwania, łatwo możesz wyobrazić sobie operator przesunięcia w lewo jako, mnożenie lewego argumentu przez 2 podniesione do potęgi prawego argumentu. Na przykład, aby wygenerować potęgi liczby 2, można zastosować następujące wyrażenia:
 
 [source,arduino]
 ----
