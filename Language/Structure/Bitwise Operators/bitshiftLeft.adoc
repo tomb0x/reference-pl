@@ -18,7 +18,7 @@ subCategories: [ "Operatory bitowe" ]
 
 [float]
 === Opis
-Operator lewego przesunięcia `<<` powoduje przesunięcie bitów lewego argumentu *w lewo* o liczbę pozycji określonych przez prawy argument.
+Operator przesunięcia w lewo `<<` powoduje przesunięcie bitów lewego argumentu *w lewo* o liczbę pozycji określonych przez prawy argument.
 [%hardbreaks]
 
 
@@ -62,7 +62,7 @@ int y = 14;
 int wynik = x << y;  // dwójkowo: 0100000000000000 - pierwsza jedynka w 101 zostanie odrzucona
 ----
 
-Jeśli wiesz, że nie stracisz bezpowrotnie żadnej informacji w trakcie przesuwania, prostym sposobem myślenia o operatorze przesunięcia w lewo jest to, że mnoży lewy argument przez 2 podniesiony do potęgi prawego argumentu. Na przykład, aby wygenerować potęgi liczby 2, można zastosować następujące wyrażenia:
+Jeśli wiesz, że nie stracisz bezpowrotnie żadnej informacji w trakcie przesuwania, łatwo wyobrazić sobie operator przesunięcia w lewo jako, mnożenie lewyego argumentu przez 2 podniesione do potęgi prawego argumentu. Na przykład, aby wygenerować potęgi liczby 2, można zastosować następujące wyrażenia:
 
 [source,arduino]
 ----
@@ -85,7 +85,7 @@ Poniższy przykład może być użyty do wydrukowania na monitorze szeregowym wa
 ----
 void drukujBitowo(int c) {                // Drukuje wartość bajtu dwójkowo (zerami i jedynkami)
   for (int bity = 7; bity > -1; bity--) {
-    if (c & (1 << bity)) {                // porównaj bity od 7 do 0 z podanym bajtem
+    if (c & (1 << bity)) {                // porównuje bity od 7 do 0 z podanym bajtem
       Serial.print("1");                  // jeżeli wynik porównania bitu jest różny od 0
     }
     else {
