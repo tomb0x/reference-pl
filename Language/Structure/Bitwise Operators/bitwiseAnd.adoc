@@ -54,7 +54,7 @@ int c = a & b;  // wynik:    0000000001000100, lub dziesiętnie 68.
 każdy z 16 bitów zmiennych a i b będzie przetwarzany przy użyciu bitowego I. Wszystkie 16 bitów wynikowych będzie przechowane w zmiennej c, co da wartość 01000100 w postaci dwójkowej, czyli 68 w postaci dziesiętnej.
 [%hardbreaks]
 
-Jednym z najczęstszych zastosowań bitowych I jest wybranie konkretnego bitu (lub bitów) z wartości całkowitej, często nazywanej maskowaniem. Zobacz poniższy przykład (specyficzny dla architektury AVR).
+Jednym z najczęstszych zastosowań bitowego I jest wybranie konkretnego bitu (lub bitów) z wartości całkowitej, często nazywanej maskowaniem. Zobacz poniższy przykład (specyficzny dla architektury AVR).
 
 [source,arduino]
 ----
