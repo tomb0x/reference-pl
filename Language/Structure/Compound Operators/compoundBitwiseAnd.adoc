@@ -1,15 +1,15 @@
 ---
 title: "&="
-title_expanded: compound bitwise and
-categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+title_expanded: złożone bitowe I
+categories: [ "Struktura" ]
+subCategories: [ "operatory złożone" ]
 ---
 
 
 
 
 
-= &= Compound Bitwise AND
+= &= Złożone bitowe I
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -18,25 +18,25 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Opis
-The compound bitwise AND operator `&=` is often used with a variable and a constant to force particular bits in a variable to the LOW state (to 0). This is often referred to in programming guides as "clearing" or "resetting" bits.
+Złożony operator bitowy I `&=` jest często używany do wymuszania poszczególnych bitów w zmiennej do stanu LOW (do 0). Jest to często określane w przewodnikach programowania jako "czyszczenie" lub "resetowanie" bitów.
 [%hardbreaks]
 
-A review of the Bitwise AND `&` operator:
+Działanie operatora bitowego I `&`:
 
-   0  0  1  1    operand1
-   0  1  0  1    operand2
+   0  0  1  1    argument1
+   0  1  0  1    argument2
    ----------
-   0  0  0  1    (operand1 & operand2) - returned result
+   0  0  0  1    (argument1 & argument2) - zwracany wynik
 [%hardbreaks]
 
 [float]
 === Składnia
-`x &= y; // equivalent to x = x & y;`
+`x &= y;       // odpowiednik x = x & y;`
 
 
 [float]
-=== Parameters
-`x`: variable. Allowed data types: `char`, `int`, `long`. +
+=== Parametry
+`x`: zmienna. Allowed data types: `char`, `int`, `long`. +
 `y`: variable or constant. Allowed data types: `char`, `int`, `long`.
 
 --
