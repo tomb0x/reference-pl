@@ -18,7 +18,7 @@ subCategories: [ "Operatory bitowe" ]
 
 [float]
 === Opis
-W C ++ istnieje niezwykły operator zwany bitowym ALBO, znany również bitową różnicą symetryczną. (W języku angielskim zwany XOR) Bitowy operator ALBO jest zapisywany za pomocą symbolu daszka `^`. Ta operacja daje w wyniku 1 tylko wtedy, gdy bity wejściowe są różne, w przeciwnym razie daje 0. Innymi słowy wynik bedzie 1 jeżeli jedna ALBO druga wartość będzie 1.
+W języku C ++ istnieje niezwykły operator zwany bitowym ALBO, nazywany również bitową różnicą symetryczną. (W języku angielskim zwany XOR) Bitowy operator ALBO jest zapisywany za pomocą symbolu daszka `^`. Ta operacja daje w wyniku 1 tylko wtedy, gdy bity wejściowe są różne, w przeciwnym razie daje 0. Innymi słowy wynik bedzie 1 jeżeli jedna ALBO druga wartość będzie 1.
 [%hardbreaks]
 
 Dokładnie działa to tak:
