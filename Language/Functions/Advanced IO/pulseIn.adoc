@@ -1,7 +1,7 @@
 ---
 title: pulseIn()
-categories: [ "Functions" ]
-subCategories: [ "Advanced I/O" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Zaawansowane We/Wy" ]
 ---
 
 
@@ -17,28 +17,28 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Opis
-Reads a pulse (either `HIGH` or `LOW`) on a pin. For example, if `value` is `HIGH`, `pulseIn()` waits for the pin to go from `LOW` to `HIGH`, starts timing, then waits for the pin to go `LOW` and stops timing. Returns the length of the pulse in microseconds or gives up and returns 0 if no complete pulse was received within the timeout.
+Odczytuje impuls (`HIGH` lub `LOW`) pojawiający sie na styku. Na przykład, jeśli `wartość` jest `HIGH`, `pulseIn()` oczekuje na zmianę stanu styku z niskiego (`LOW`) na wysoki (`HIGH`), rozpoczyna mierzyć czas, następnie czeka aż stan styku zmieni się na  niski (`LOW`) i zatrzymuje odmierzanie czasu. Zwraca długość impulsu w mikrosekondach albo zmraca 0 nie został odebrany kompletnyimpuls w ciągu wyznaczonego czasu.
 
-The timing of this function has been determined empirically and will probably show errors in longer pulses. Works on pulses from 10 microseconds to 3 minutes in length.
+Odliczanie czasu przez tą funkcję zostało ustalone doświadczalnie i prawdopodobnie będzie wykazywać błędy przy dłuższych impulsach. Działa dla impulsów o długości od 10 mikrosekund do 3 minut.
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`pulseIn(pin, value)` +
-`pulseIn(pin, value, timeout)`
+`pulseIn(styk, wartość)` +
+`pulseIn(styk, wartość, czas)`
 
 
 [float]
 === Parametry
-`pin`: the number of the Arduino pin on which you want to read the pulse. Allowed data types: `int`. +
-`value`: type of pulse to read: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. Allowed data types: `int`. +
-`timeout` (optional): the number of microseconds to wait for the pulse to start; default is one second. Allowed data types: `unsigned long`.
+`styk`: numer styku Arduino, z którego chcesz odczytać impuls. Dozwolony typ danych: `int`. +
+`wartość`: typ impulsu do odczytania: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. Allowed data types: `int`. +
+`czas` (opcjonalny): liczba mikrosekund oczekiwania na rozpoczęcie impulsu; domyślnie jedna sekunda. Dozwolony typ danych: `unsigned long`.
 
 
 [float]
 === Wartości zwracane
-The length of the pulse (in microseconds) or 0 if no pulse started before the timeout. Data type: `unsigned long`.
+Długość impulsu (w mikrosekundach) lub 0 jeśli w wyznaczonym czasie nie rozpoczął się żaden impuls. Typ danych: `unsigned long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
