@@ -17,7 +17,7 @@ subCategories: [ "Zaawansowane We/Wy" ]
 
 [float]
 === Opis
-Odczytuje impuls (`HIGH` lub `LOW`) pojawiający sie na styku. Na przykład, jeśli `wartość` jest `HIGH`, `pulseIn()` oczekuje na zmianę stanu styku z niskiego (`LOW`) na wysoki (`HIGH`), rozpoczyna mierzyć czas, następnie czeka aż stan styku zmieni się na  niski (`LOW`) i zatrzymuje odmierzanie czasu. Zwraca długość impulsu w mikrosekondach albo zmraca 0 nie został odebrany kompletnyimpuls w ciągu wyznaczonego czasu.
+Odczytuje impuls (wysoki `HIGH` lub niski `LOW`) pojawiający sie na styku. Na przykład, jeśli `wartość` jest `HIGH`, `pulseIn()` oczekuje na zmianę stanu styku z niskiego (`LOW`) na wysoki (`HIGH`), rozpoczyna mierzyć czas, następnie czeka aż stan styku zmieni się na  niski (`LOW`) i zatrzymuje odmierzanie czasu. Zwraca długość impulsu w mikrosekondach albo zmraca 0 nie został odebrany kompletnyimpuls w ciągu wyznaczonego czasu.
 
 Odliczanie czasu przez tą funkcję zostało ustalone doświadczalnie i prawdopodobnie będzie wykazywać błędy przy dłuższych impulsach. Działa dla impulsów o długości od 10 mikrosekund do 3 minut.
 [%hardbreaks]
@@ -32,7 +32,7 @@ Odliczanie czasu przez tą funkcję zostało ustalone doświadczalnie i prawdopo
 [float]
 === Parametry
 `styk`: numer styku Arduino, z którego chcesz odczytać impuls. Dozwolony typ danych: `int`. +
-`wartość`: typ impulsu do odczytania: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. Allowed data types: `int`. +
+`wartość`: rodzaj impulsu do odczytania: zobacz link:../../../variables/constants/constants/[HIGH] lub link:../../../variables/constants/constants/[LOW]. Dozwolone typy danych: `int`. +
 `czas` (opcjonalny): liczba mikrosekund oczekiwania na rozpoczęcie impulsu; domyślnie jedna sekunda. Dozwolony typ danych: `unsigned long`.
 
 
@@ -52,22 +52,22 @@ Długość impulsu (w mikrosekundach) lub 0 jeśli w wyznaczonym czasie nie rozp
 
 [float]
 === Przykładowy kod
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The example prints the time duration of a pulse on pin 7.
+// Opisz, na czym polega przykładowy kod i dodaj odpowiedni kod ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Przykład drukuje czas trwania impulsu na styku 7.
 
 [source,arduino]
 ----
-int pin = 7;
-unsigned long duration;
+int styk = 7;
+unsigned long trwanie;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(pin, INPUT);
+  pinMode(styk, INPUT);
 }
 
 void loop() {
-  duration = pulseIn(pin, HIGH);
-  Serial.println(duration);
+  trwanie = pulseIn(styk, HIGH);
+  Serial.println(trwanie);
 }
 ----
 [%hardbreaks]
