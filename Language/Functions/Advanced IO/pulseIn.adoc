@@ -32,7 +32,7 @@ Odliczanie czasu przez tą funkcję zostało ustalone doświadczalnie i prawdopo
 [float]
 === Parametry
 `styk`: numer styku Arduino, z którego chcesz odczytać impuls. Dozwolony typ danych: `int`. +
-`wartość`: rodzaj impulsu do odczytania: zobacz link:../../../variables/constants/constants/[HIGH] lub link:../../../variables/constants/constants/[LOW]. Dozwolone typy danych: `int`. +
+`wartość`: rodzaj impulsu do odczytania: link:../../../variables/constants/constants/[HIGH] lub link:../../../variables/constants/constants/[LOW]. Dozwolone typy danych: `int`. +
 `czas` (opcjonalny): liczba mikrosekund oczekiwania na rozpoczęcie impulsu; domyślnie jedna sekunda. Dozwolony typ danych: `unsigned long`.
 
 
