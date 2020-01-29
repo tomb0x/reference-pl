@@ -27,7 +27,7 @@ Zatrzymuje generowanie dźwięku wyzwolone przez `tone()`. Nie ma znaczenia, czy
 
 [float]
 === Parametry
-`styk`: styk, dla którego chcesz zatrzymać dźwięk
+`styk`: styk, dla którego chcesz zatrzymać generowanie dźwięku
 
 [float]
 === Wartości zwracane
