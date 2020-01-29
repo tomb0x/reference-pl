@@ -19,7 +19,7 @@ subCategories: [ "Zaawansowane We/Wy" ]
 === Opis
 Odbiera bajt danych bit po bicie. Zaczyna od najbardziej znaczącego (tj. najbardziej po lewej) lub najmniej (najbardziej po prawej) znaczącego bitu. Dla każdego bitu styk zegarowy jest podciągany do góry, następny bit jest odczytywany z linii danych, a następnie styk zegarowy jest sprowadzany w stan niski.
 
-Jeśli łączysz się z urządzeniem, które jest taktowane zboczami narastającymi, musisz upewnić się, że styk zegarowy jest niski przed pierwszym wywołaniem `shiftIn()`, np. w połączeniu z `digitalWrite (stykZegarowy, LOW)`.
+Jeśli łączysz się z urządzeniem, które jest taktowane zboczami narastającymi, musisz upewnić się, że styk zegarowy jest w stanie niskim przed pierwszym wywołaniem `shiftIn()`, np. w połączeniu z `digitalWrite (stykZegarowy, LOW)`.
 
 Uwaga: to jest implementacja programowa; Arduino zapewnia również link: https://www.arduino.cc/en/Reference/SPI [bibliotekę SPI], która korzysta z implementacji sprzętowej, która jest szybsza, ale działa tylko na określonych stykach.
 
