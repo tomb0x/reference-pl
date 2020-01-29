@@ -17,7 +17,7 @@ subCategories: [ "Zaawansowane We/Wy" ]
 
 [float]
 === Opis
-Wczytuje bajt danych bit po bicie. Zaczyna od najbardziej znaczącego (tj. najbardziej po lewej) lub najmniej (najbardziej po prawej) znaczącego bitu. Dla każdego bitu styk zegarowy jest podciągany do góry, następny bit jest odczytywany z linii danych, a następnie styk zegarowy jest sprowadzany w stan niski.
+Odbiera bajt danych bit po bicie. Zaczyna od najbardziej znaczącego (tj. najbardziej po lewej) lub najmniej (najbardziej po prawej) znaczącego bitu. Dla każdego bitu styk zegarowy jest podciągany do góry, następny bit jest odczytywany z linii danych, a następnie styk zegarowy jest sprowadzany w stan niski.
 
 Jeśli łączysz się z urządzeniem, które jest taktowane zboczami narastającymi, musisz upewnić się, że styk zegarowy jest niski przed pierwszym wywołaniem `shiftIn()`, np. w połączeniu z `digitalWrite (stykZegarowy, LOW)`.
 
@@ -28,7 +28,7 @@ Uwaga: to jest implementacja programowa; Arduino zapewnia również link: https:
 
 [float]
 === Składnia
-`byte wchodzący = shiftIn(stykDanych, stykZegarowy, kolejnośćBitów)`
+`byte odebrany = shiftIn(stykDanych, stykZegarowy, kolejnośćBitów)`
 
 
 [float]
@@ -40,7 +40,7 @@ Uwaga: to jest implementacja programowa; Arduino zapewnia również link: https:
 
 [float]
 === Wartości zwracane
-Odczytana wartość. Typ danych: `byte`.
+Odebrana wartość. Typ danych: `byte`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
