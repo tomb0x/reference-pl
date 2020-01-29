@@ -88,7 +88,7 @@ Jeśli styk wejścia analogowego nie jest do niczego podłączony, to wartość 
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
