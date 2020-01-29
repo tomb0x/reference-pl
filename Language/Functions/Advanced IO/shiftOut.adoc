@@ -1,18 +1,18 @@
 ---
 title: shiftOut()
-categories: [ "Functions" ]
-subCategories: [ "Advanced I/O" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Zaawansowane We/Wy" ]
 ---
 
 = shiftOut()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
 
 Note- if you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the call to `shiftOut()`, e.g. with a call to `digitalWrite(clockPin, LOW)`.
@@ -22,12 +22,12 @@ This is a software implementation; see also the https://www.arduino.cc/en/Refere
 
 
 [float]
-=== Syntax
+=== Składnia
 `shiftOut(dataPin, clockPin, bitOrder, value)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `dataPin`: the pin on which to output each bit. Allowed data types: `int`. +
 `clockPin`: the pin to toggle once the dataPin has been set to the correct value. Allowed data types: `int`. +
 `bitOrder`: which order to shift out the bits; either MSBFIRST or LSBFIRST. (Most Significant Bit First, or, Least Significant Bit First). +
@@ -35,58 +35,58 @@ This is a software implementation; see also the https://www.arduino.cc/en/Refere
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-For accompanying circuit, see the https://arduino.cc/en/Tutorial/ShiftOut[tutorial on controlling a 74HC595 shift register].
+=== Przykładowy kod
+// Opisz, na czym polega przykładowy kod i dodaj odpowiedni kod ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Obwód do tego przykładu znajduje się na https://arduino.cc/en/Tutorial/ShiftOut[samouczek na temat sterowania rejestrem przesuwnym 74HC595].
 
 [source,arduino]
 ----
 //**************************************************************//
-//  Name    : shiftOutCode, Hello World                         //
-//  Author  : Carlyn Maw,Tom Igoe                               //
-//  Date    : 25 Oct, 2006                                      //
-//  Version : 1.0                                               //
-//  Notes   : Code for using a 74HC595 Shift Register           //
-//          : to count from 0 to 255                            //
+//  Nazwa   : shiftOutCode, Hello World                         //
+//  Autorzy : Carlyn Maw,Tom Igoe                               //
+//  Data    : 25 Paż, 2006                                      //
+//  Wersja  : 1.0                                               //
+//  Opis    : Kod użycia rejestru przesuwnego 74HC595           //
+//          : do liczenia od 0 do 255                           //
 //****************************************************************
 
-//Pin connected to ST_CP of 74HC595
-int latchPin = 8;
-//Pin connected to SH_CP of 74HC595
-int clockPin = 12;
-////Pin connected to DS of 74HC595
-int dataPin = 11;
+//Styk podłączony do ST_CP układu 74HC595
+int stykZatrzask = 8;
+//Styk podłączony do SH_CP układu 74HC595
+int stykZegarowy = 12;
+//Styk podłączony do DS układu 74HC595
+int stykDanych = 11;
 
 void setup() {
-  //set pins to output because they are addressed in the main loop
-  pinMode(latchPin, OUTPUT);
-  pinMode(clockPin, OUTPUT);
-  pinMode(dataPin, OUTPUT);
+  //ustaw styki na wyjściowe ponieważ są one adresowane w pętli głównej
+  pinMode(stykZatrzask, OUTPUT);
+  pinMode(stykZegarowy, OUTPUT);
+  pinMode(stykDanych, OUTPUT);
 }
 
 void loop() {
-  //count up routine
+  //procedura licząca
   for (int j = 0; j < 256; j++) {
-    //ground latchPin and hold low for as long as you are transmitting
-    digitalWrite(latchPin, LOW);
-    shiftOut(dataPin, clockPin, LSBFIRST, j);
-    //return the latch pin high to signal chip that it
-    //no longer needs to listen for information
-    digitalWrite(latchPin, HIGH);
+    //ustaw w stan niski stykZatrzask i tak utrzymuj jak długo trwa transmisja
+    digitalWrite(stykZatrzask, LOW);
+    shiftOut(stykDanych, stykZegarowy, LSBFIRST, j);
+    //ustaw stan wysoki styku zatrzasku, aby zasygnalizować układowi,
+    //że nie musi już odbierać informacji
+    digitalWrite(stykZatrzask, HIGH);
     delay(1000);
   }
 }
@@ -94,38 +94,38 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The dataPin and clockPin must already be configured as outputs by a call to link:../../digital-io/pinmode[pinMode()].
+=== Uwagi i ostrzeżenia
+DataPin i clockPin muszą być już skonfigurowane jako wyjścia przez wywołanie link:../../digital-io/pinmode[pinMode()].
 
-shiftOut is currently written to output 1 byte (8 bits) so it requires a two step operation to output values larger than 255.
+shiftOut został napisywany aby wysłać 1 bajt (8 bitów), więc aby wysłać wartości większe niż 255 będzie wymagać operacji dwuetapowej.
 [source,arduino]
 ----
-// Do this for MSBFIRST serial
-int data = 500;
-// shift out highbyte
-shiftOut(dataPin, clock, MSBFIRST, (data >> 8));
-// shift out lowbyte
-shiftOut(dataPin, clock, MSBFIRST, data);
+// Dla pierwszego najbardziej znaczącego bitu
+int dane = 500;
+// wyślij bardziej znaczący bajt
+shiftOut(stykDanych, zegar, MSBFIRST, (dane >> 8));
+// wyślij mniej znaczący bajt
+shiftOut(stykDanych, zegar, MSBFIRST, dane);
 
-// Or do this for LSBFIRST serial
-data = 500;
-// shift out lowbyte
-shiftOut(dataPin, clock, LSBFIRST, data);
-// shift out highbyte
-shiftOut(dataPin, clock, LSBFIRST, (data >> 8));
+// lub dla najmniej znaczącego bitu jako pierwszego
+dane = 500;
+// wyślij mniej znaczący bajt
+shiftOut(stykDanych, zegar, LSBFIRST, dane);
+// wyślij bardziej znaczący bajt
+shiftOut(stykDanych, zegar, LSBFIRST, (dane >> 8));
 ----
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
