@@ -13,9 +13,9 @@ subCategories: [ "Zaawansowane We/Wy" ]
 
 [float]
 === Opis
-Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
+Wysyła bajt danych bit po bicie. Zaczyna od najbardziej znaczącego (tj. najbardziej po lewej) lub najmniej (najbardziej po prawej) znaczącego bitu. Każdy bit wysyłany jest kolejno na styk danych, po impulsie na styku zegarowym (ustawiany stan wysoki, a następnie niski), aby wskazać, że bit jest dostępny.
 
-Note- if you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the call to `shiftOut()`, e.g. with a call to `digitalWrite(clockPin, LOW)`.
+Jeśli łączysz się z urządzeniem, które jest taktowane zboczami narastającymi, musisz upewnić się, że styk zegarowy jest w stanie niskim przed pierwszym wywołaniem `shiftOut()`, np. w połączeniu z `digitalWrite (stykZegarowy, LOW)`.
 
 This is a software implementation; see also the https://www.arduino.cc/en/Reference/SPI[SPI library], which provides a hardware implementation that is faster but works only on specific pins.
 [%hardbreaks]
