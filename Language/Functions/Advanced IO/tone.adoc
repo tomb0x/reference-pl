@@ -1,7 +1,7 @@
 ---
 title: tone()
-categories: [ "Functions" ]
-subCategories: [ "Advanced I/O" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Zaawansowane We/Wy" ]
 ---
 
 
@@ -11,75 +11,75 @@ subCategories: [ "Advanced I/O" ]
 = tone()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Generates a square wave of the specified frequency (and 50% duty cycle) on a pin. A duration can be specified, otherwise the wave continues until a call to link:../noTone[noTone()]. The pin can be connected to a piezo buzzer or other speaker to play tones.
+=== Opis
+Generuje na styku falę prostokątną o określonej częstotliwości (i wypełnieniu 50%). Można określić czas trwania, w przeciwnym razie fala będzie kontynuowana do momentu wywołania link:../noTone[noTone()]. Aby odtwarzać dźwięki styk można podłączyć do brzęczyka piezoelektrycznego lub innego głośnika.
 
-Only one tone can be generated at a time. If a tone is already playing on a different pin, the call to tone() will have no effect. If the tone is playing on the same pin, the call will set its frequency.
+Jednorazowo można wygenerować tylko jeden dźwięk. Jeśli dźwięk jest już odtwarzany na innym styku, wywołanie tone() nie przyniesie żadnego efektu. Jeśli dźwięk był odtwarzany na tym samym styku, ustawi nową częstotliwość.
 
-Use of the `tone()` function will interfere with PWM output on pins 3 and 11 (on boards other than the Mega).
+Użycie funkcji `tone()` zakłóci wyjście PWM na pinach 3 i 11 (na płytkach innych niż Mega).
 
-It is not possible to generate tones lower than 31Hz. For technical details, see https://github.com/bhagman/Tone#ugly-details[Brett Hagman's notes].
+Nie jest możliwe generowanie tonów niższych niż 31 Hz. Aby uzyskać szczegółowe informacje techniczne, patrz https://github.com/bhagman/Tone#ugly-details[Notatki Bretta Hagmana].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`tone(pin, frequency)` +
-`tone(pin, frequency, duration)`
+=== Składnia
+`tone(styk, częstotliwość)` +
+`tone(styk, częstotliwość, długość)`
 
 
 [float]
-=== Parameters
-`pin`: the Arduino pin on which to generate the tone. +
-`frequency`: the frequency of the tone in hertz. Allowed data types: `unsigned int`. +
-`duration`: the duration of the tone in milliseconds (optional). Allowed data types: `unsigned long`.
+=== Parametry
+`styk`: pin Arduino, na którym ma być generowany dźwięk. +
+`częstotliwość`: częstotliwość tonu w hercach. Dozwolone typy danych: `unsigned int`. +
+`długość`: czas trwania tonu w milisekundach (opcjonalnie). Dozwolone typy danych: `unsigned long`.
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Notes and Warnings
-If you want to play different pitches on multiple pins, you need to call `noTone()` on one pin before calling `tone()` on the next pin.
+=== Uwagi i ostrzeżenia
+Jeśli chcesz odtwarzać różne dźwięki na wielu stykach, musisz najpierw zatrzymać dźwięk za pomocą noTone() na jednym styku, a następnie wygenerować nowy dźwięk za pomocą tone() na innym styku.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../analog-io/analogwrite[analogWrite()]
 
 [role="example"]
 
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Tone Melody^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/tonePitchFollower[Pitch Follower^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone3[Tone Keyboard^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone4[Tone Multiple^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Melodia^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/tonePitchFollower[Ton śledzący^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone3[Klawiatura dźwiękowa^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone4[Wiele dźwięków^]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
