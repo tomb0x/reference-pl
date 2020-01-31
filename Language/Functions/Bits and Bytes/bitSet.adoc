@@ -1,7 +1,7 @@
 ---
 title: bitSet()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Bity i Bajty" ]
 ---
 
 
@@ -11,41 +11,41 @@ subCategories: [ "Bits and Bytes" ]
 = bitSet()
 
 
-// OVERVIEW SECTION STARTS
-Sets (writes a 1 to) a bit of a numeric variable.
+// POCZĄTEK SEKCJI OPISOWEJ
+Ustawia (wpisuje wartość 1) bit w zmiennej liczbowej.
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `bitSet(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to set. +
-`n`: which bit to set, starting at 0 for the least-significant (rightmost) bit.
+=== Parametry
+`x`: zmienna liczbowa, której bit należy ustawić. +
+`n`: który bit do ustawienia, zaczynając od 0 dla najmniej znaczącego bitu (najbardziej po prawej).
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
