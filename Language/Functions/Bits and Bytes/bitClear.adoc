@@ -17,7 +17,7 @@ subCategories: [ "Bity i Bajty" ]
 
 [float]
 === Opis
-Czyści (wpisuje 0) bit zmiennej numerycznej.
+Czyści (ustawia na 0) bit zmiennej numerycznej.
 [%hardbreaks]
 
 
