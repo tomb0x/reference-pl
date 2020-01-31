@@ -8,7 +8,7 @@ subCategories: [ "Znaki" ]
 
 
 
-= isAlphaNumeric(thisChar)
+= isAlphaNumeric(tenZnak)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
