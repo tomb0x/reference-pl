@@ -1,7 +1,7 @@
 ---
 title: lowByte()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Bity i Bajty" ]
 ---
 
 
@@ -11,43 +11,43 @@ subCategories: [ "Bits and Bytes" ]
 = lowByte()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Extracts the low-order (rightmost) byte of a variable (e.g. a word).
+=== Opis
+Wyodrębnia bajt mniej znaczący (skrajnie prawy) ze zmiennej (np. typu word).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `lowByte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parametry
+`x`: wartość dowolnego typu
 
 
 [float]
-=== Returns
-Data type: `byte`.
+=== Wartości zwracane
+Typ danych: `byte`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/word[word()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
