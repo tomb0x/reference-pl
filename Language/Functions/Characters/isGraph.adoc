@@ -17,7 +17,7 @@ subCategories: [ "Znaki" ]
 
 [float]
 === Opis
-Analizuje czy znak jest drukowalny z jakąkolwiek zawartością (spacja jest drukowalna ale nie ma zawartości). Zwraca prawdę jeśli tenZnak jest drukowalny.
+Analizuje czy znak ma jakąś widzialną zawartość (spacja jest drukowalna ale nie ma zawartości). Zwraca prawdę jeśli tenZnak jest widzialny.
 [%hardbreaks]
 
 
@@ -32,7 +32,7 @@ Analizuje czy znak jest drukowalny z jakąkolwiek zawartością (spacja jest dru
 
 [float]
 === Wartości zwracane
-`true`: jeśli tenZnak jest drukowalny.
+`true`: jeśli tenZnak jest widzialny.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -48,11 +48,11 @@ Analizuje czy znak jest drukowalny z jakąkolwiek zawartością (spacja jest dru
 
 [source,arduino]
 ----
-if (isGraph(mójZnak)) {  // sprawdza czy mójZnak jest znakiem drukowalnym ale nie pustą spacją.
-  Serial.println("To jest znak drukowalny");
+if (isGraph(mójZnak)) {  // sprawdza czy mójZnak jest znakiem widzialnym ale nie pustą spacją.
+  Serial.println("To jest znak widzialny");
 }
 else {
-  Serial.println("To nie jest znak drukowalny");
+  Serial.println("To nie jest znak widzialny");
 }
 ----
 
