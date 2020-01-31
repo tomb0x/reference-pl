@@ -32,7 +32,7 @@ Wysyła na styk wartość analogową (http://arduino.cc/en/Tutorial/PWM[fala PWM
 | 101                  | 3, 5, 6, 9                      | styki 3 i 9: 490 Hz, styki 5 i 6: 980 Hz
 |====================================================================================================
 {empty}* Oprócz wyżej wymienionych możliwości styków PWM, karty MKR i Zero mają prawdziwe wyjście analogowe, gdy używa się `analogWrite()` na styku `DAC0` (`A0`). +
-{empty}** Oprócz wyżej wymienionych możliwości styków PWM, Due ma prawdziwe wyjście analogowe, gdy używa się `analogWrite()` na stykach `DAC0` i` DAC1`.
+{empty}** Oprócz wyżej wymienionych możliwości styków PWM, Due ma prawdziwe wyjście analogowe, gdy używa się `analogWrite()` na stykach `DAC0` i`DAC1`.
 
 [%hardbreaks]
 
