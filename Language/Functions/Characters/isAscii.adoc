@@ -1,78 +1,78 @@
 ---
 title: "isAscii()"
-categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Znaki" ]
 ---
 
 
 
 
 
-= isAscii(thisChar)
+= isAscii(tenZnak)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Analyse if a char is Ascii. Returns true if thisChar contains an Ascii character.
+=== Opis
+Analizuje czy znak jest ze zbioru znaków ASCII. Zwraca true, jeśli tenZnak zawiera znak ASCII.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`isAscii(thisChar)`
+=== Składnia
+`isAscii(tenZnak)`
 
 
 [float]
-=== Parameters
-`thisChar`: variable. Allowed data types: `char`.
+=== Parametry
+`tenZnak`: zmienna. Dozwolony typ danych: `char`.
 
 
 [float]
-=== Returns
-`true`: if thisChar is Ascii.
+=== Wartości zwracane
+`true`: jeżeli tenZnak jest ze zbioru ASCII.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-if (isAscii(myChar)) {  // tests if myChar is an Ascii character
-  Serial.println("The character is Ascii");
+if (isAscii(mójZnak)) {  // sprawdza czy mójZnak jest znakiem Ascii
+  Serial.println("To jest znak Ascii");
 }
 else {
-  Serial.println("The character is not Ascii");
+  Serial.println("To nie jest znak Ascii");
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
+* #LANGUAGE#  link:../../../structure/control-structure/if[if (instrukcje warunkowe)]
+* #LANGUAGE#  link:../../../structure/control-structure/while[while (instrukcje warunkowe)]
 * #LANGUAGE# link:../../communication/serial/read[read()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
