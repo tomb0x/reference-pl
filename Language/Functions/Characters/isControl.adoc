@@ -1,78 +1,78 @@
 ---
 title: "isControl()"
-categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Znaki" ]
 ---
 
 
 
 
 
-= isControl(thisChar)
+= isControl(tenZnak)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Analyse if a char is a control character. Returns true if thisChar is a control character.
+=== Opis
+Analizuje czy znak jest znakiem sterującym. Zwraca prawdę, jeśli tenZnak jest znakiem sterującym.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`isControl(thisChar)`
+=== Składnia
+`isControl(tenZnak)`
 
 
 [float]
-=== Parameters
-`thisChar`: variable. Allowed data types: `char`.
+=== Parametry
+`tenZnak`: zmienna. Dozwolony typ danych: `char`.
 
 
 [float]
-=== Returns
-`true`: if thisChar is a control character.
+=== Wartości zwracane
+`true`: jeśli jest znakiem sterującym.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-if (isControl(myChar)) {  // tests if myChar is a control character
-  Serial.println("The character is a control character");
+if (isControl(mójZnak)) {  // sprawdza czy mójZnak jest znakiem sterującym
+  Serial.println("To jest znak sterujący");
 }
 else {
-  Serial.println("The character is not a control character");
+  Serial.println("To nie jest znak sterujący");
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
+* #LANGUAGE#  link:../../../structure/control-structure/if[if (instrukcje warunkowe)]
+* #LANGUAGE#  link:../../../structure/control-structure/while[while (instrukcje warunkowe)]
 * #LANGUAGE# link:../../communication/serial/read[read()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
