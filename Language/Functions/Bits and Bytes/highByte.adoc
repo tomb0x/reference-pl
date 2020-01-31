@@ -1,7 +1,7 @@
 ---
 title: highByte()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Bity i Bajty" ]
 ---
 
 
@@ -11,43 +11,43 @@ subCategories: [ "Bits and Bytes" ]
 = highByte()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).
+=== Opis
+Wyodrębnia bajt bardziej znaczący (skrajnie lewy) ze słowa (lub drugi mniej znaczący dłuższego typu danych).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `highByte(x)`
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parametry
+`x`: wartość dowolnego typu
 
 
 [float]
-=== Returns
-Data type: `byte`.
+=== Wartości zwracane
+Typ danych: `byte`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/word[word()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
