@@ -1,7 +1,7 @@
 ---
 title: bitRead()
-categories: [ "Functions" ]
-subCategories: [ "Bits and Bytes" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Bity i Bajty" ]
 ---
 
 
@@ -11,41 +11,41 @@ subCategories: [ "Bits and Bytes" ]
 = bitRead()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Reads a bit of a number.
+=== Opis
+Odczytuje jeden bit podanej liczby.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `bitRead(x, n)`
 
 
 [float]
-=== Parameters
-`x`: the number from which to read. +
-`n`: which bit to read, starting at 0 for the least-significant (rightmost) bit.
+=== Parametry
+`x`: liczba z której należy odczytać. +
+`n`: który bit do odczytu, zaczynając od 0 dla najmniej znaczącego bitu (najbardziej po prawej).
 
 
 [float]
-=== Returns
-The value of the bit (0 or 1).
+=== Wartości zwracane
+Wartość bitu (0 lub 1).
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
