@@ -11,85 +11,85 @@ subCategories: [ "Analogowe We/wy" ]
 = analogReference()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Configures the reference voltage used for analog input (i.e. the value used as the top of the input range). The options are:
+=== Opis
+Konfiguruje napięcie odniesienia używane dla wejścia analogowego (tj. wartość wykorzystywaną jako górną część zakresu wejściowego). Dostępne są następujące opcje:
 
-Arduino AVR Boards (Uno, Mega, etc.)
+Płytki Arduino AVR (Uno, Mega, itp.)
 
-* DEFAULT: the default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
-* INTERNAL: an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328P and 2.56 volts on the ATmega8 (not available on the Arduino Mega)
-* INTERNAL1V1: a built-in 1.1V reference (Arduino Mega only)
-* INTERNAL2V56: a built-in 2.56V reference (Arduino Mega only)
-* EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
+* DOMYŚLNE: domyślne odniesienie analogowe do 5 woltów (na płytkach Arduino 5V) lub 3,3 wolta (na płytkach Arduino 3,3V)
+* WEWNĘTRZNE: wbudowane odniesienie, równe 1,1V w ATmega168 lub ATmega328P i 2,56 V w ATmega8 (niedostępne w Arduino Mega)
+* INTERNAL1V1: wbudowane napięcie odniesienia 1.1V (tylko Arduino Mega)
+* INTERNAL2V56: wbudowane napięcie odniesienia 2,56 V (tylko Arduino Mega)
+* ZEWNĘTRZNY: jako odniesienie służy napięcie podane na styk AREF (tylko od 0 do 5V).
 
-Arduino SAMD Boards (Zero, etc.)
+Płytki Arduino SAMD (Zero, itp.)
 
-* AR_DEFAULT: the default analog reference of 3.3V
-* AR_INTERNAL: a built-in 2.23V reference
-* AR_INTERNAL1V0: a built-in 1.0V reference
-* AR_INTERNAL1V65: a built-in 1.65V reference
-* AR_INTERNAL2V23: a built-in 2.23V reference
-* AR_EXTERNAL: the voltage applied to the AREF pin is used as the reference
+* AR_DEFAULT: domyślne odniesienie analogowe 3,3V.
+* AR_INTERNAL: wbudowane napięcie odniesienia 2,23V.
+* AR_INTERNAL1V0: wbudowane odniesienie 1,0V.
+* AR_INTERNAL1V65: wbudowane odniesienie 1,65V.
+* AR_INTERNAL2V23: wbudowane odniesienie 2,23V.
+* AR_EXTERNAL: jako odniesienie służy napięcie przyłożone do pinu AREF
 
-Arduino megaAVR Boards (Uno WiFi Rev2)
+Płytki Arduino megaAVR (Uno WiFi Rev2)
 
-* DEFAULT: a built-in 0.55V reference
-* INTERNAL: a built-in 0.55V reference
-* VDD: Vdd of the ATmega4809. 5V on the Uno WiFi Rev2
-* INTERNAL0V55: a built-in 0.55V reference
-* INTERNAL1V1: a built-in 1.1V reference
-* INTERNAL1V5: a built-in 1.5V reference
-* INTERNAL2V5: a built-in 2.5V reference
-* INTERNAL4V3: a built-in 4.3V reference
-* EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference
+* DOMYŚLNE: wbudowane napięcie odniesienia 0,55V.
+* WEWNĘTRZNE: wbudowane napięcie odniesienia 0,55V.
+* VDD: Vdd ATmega4809. 5V w Uno WiFi Rev2
+* INTERNAL0V55: wbudowane napięcie odniesienia 0,55V.
+* INTERNAL1V1: wbudowane napięcie odniesienia 1.1V
+* INTERNAL1V5: wbudowane napięcie odniesienia 1,5V.
+* INTERNAL2V5: wbudowane napięcie odniesienia 2,5V.
+* INTERNAL4V3: wbudowane napięcie odniesienia 4,3V.
+* ZEWNĘTRZNY: jako odniesienie służy napięcie przyłożone do styku AREF (tylko od 0 do 5V)
 
-Arduino SAM Boards (Due)
+Płytki Arduino SAM (Due)
 
-* AR_DEFAULT: the default analog reference of 3.3V. This is the only supported option for the Due.
+* AR_DEFAULT: domyślne odniesienie analogowe 3,3V. Jest to jedyna opcja obsługiwana przez Due.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`analogReference(type)`
+=== Składnia
+`analogReference(typ)`
 
 
 [float]
-=== Parameters
-`type`: which type of reference to use (see list of options in the description).
+=== Parametry
+`typ`: jakiego rodzaju odniesienia użyć (patrz lista opcji w opisie).
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Notes and Warnings
-After changing the analog reference, the first few readings from `analogRead()` may not be accurate.
+=== Uwagi i ostrzeżenia
+Po zmianie napięcia odniesienia kilka pierwszych odczytów z `analogRead()` może być niedokładnych.
 
-*Don't use anything less than 0V or more than 5V for external reference voltage on the AREF pin! If you're using an external reference on the AREF pin, you must set the analog reference to EXTERNAL before calling `analogRead()`.* Otherwise, you will short together the active reference voltage (internally generated) and the AREF pin, possibly damaging the microcontroller on your Arduino board.
+*Dla zewnętrznego napięcia odniesienia na styku AREF nie używaj mniejszych wartości niż 0V lub większych niż 5V! Jeśli używasz zewnętrznego odniesienia na styku AREF, musisz ustawić rodzaj odniesienia na ZEWNĘTRZNE przed wywołaniem `analogRead()`.* W przeciwnym razie zewrzesz razem aktywne napięcie odniesienia (generowane wewnętrznie) i styk AREF, prawdopodobnie uszkadzając mikrokontroler na płycie Arduino.
 
-Alternatively, you can connect the external reference voltage to the AREF pin through a 5K resistor, allowing you to switch between external and internal reference voltages. Note that the resistor will alter the voltage that gets used as the reference because there is an internal 32K resistor on the AREF pin. The two act as a voltage divider, so, for example, 2.5V applied through the resistor will yield 2.5 * 32 / (32 + 5) = ~2.2V at the AREF pin.
+Alternatywnie można podłączyć zewnętrzne napięcie odniesienia do styku AREF za pomocą rezystora 5K, umożliwiając przełączanie między zewnętrznymi i wewnętrznymi napięciami odniesienia. Zauważ, że rezystor zmieni napięcie, które zostanie użyte jako odniesienie, ponieważ na styku AREF znajduje się wewnętrzny rezystor 32K. Oba działają jak dzielnik napięcia, więc na przykład 2,5V podane przez rezystor da 2,5 * 32 / (32 + 5) = ~ 2,2V na styku AREF.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 // SEE ALSO SECTION
@@ -97,10 +97,10 @@ Alternatively, you can connect the external reference voltage to the AREF pin th
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Opis wejściowych styków analogowych^]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
