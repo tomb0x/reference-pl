@@ -28,7 +28,7 @@ Czyści (ustawia na 0) bit zmiennej numerycznej.
 
 [float]
 === Parametry
-`x`: zmienna numeryczna, której bit należy wyczyścić. +
+`x`: zmienna liczbowa, której bit należy wyczyścić. +
 `n`: który bit do wyczyszczenia, zaczynając od 0 dla najmniej znaczącego bitu (najbardziej po prawej).
 
 
