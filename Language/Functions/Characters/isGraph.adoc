@@ -1,77 +1,77 @@
 ---
 title: "isGraph()"
-categories: [ "Functions" ]
-subCategories: [ "Characters" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Znaki" ]
 ---
 
 
 
 
 
-= isGraph(thisChar)
+= isGraph(tenZnak)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Analyse if a char is printable with some content (space is printable but has no content). Returns true if thisChar is printable.
+=== Opis
+Analizuje czy znak jest drukowalny z jakąkolwiek zawartością (spacja jest drukowalna ale nie ma zawartości). Zwraca prawdę jeśli tenZnak jest drukowalny.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`isGraph(thisChar)`
+=== Składnia
+`isGraph(tenZnak)`
 
 [float]
-=== Parameters
-`thisChar`: variable. Allowed data types: `char`.
+=== Parametry
+`tenZnak`: zmienna. Dozwolone typy danych: `char`.
 
 
 [float]
-=== Returns
-`true`: if thisChar is printable.
+=== Wartości zwracane
+`true`: jeśli tenZnak jest drukowalny.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
-if (isGraph(myChar)) {  // tests if myChar is a printable character but not a blank space.
-  Serial.println("The character is printable");
+if (isGraph(mójZnak)) {  // sprawdza czy mójZnak jest znakiem drukowalnym ale nie pustą spacją.
+  Serial.println("To jest znak drukowalny");
 }
 else {
-  Serial.println("The character is not printable");
+  Serial.println("To nie jest znak drukowalny");
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
+* #LANGUAGE#  link:../../../structure/control-structure/if[if (instrukcje sterujące)]
+* #LANGUAGE#  link:../../../structure/control-structure/while[while (instrukcje sterujące)]
 * #LANGUAGE# link:../../communication/serial/read[read()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
