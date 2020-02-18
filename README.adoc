@@ -28,7 +28,7 @@ link:https://help.github.com/articles/editing-files-in-another-user-s-repository
 == Przesyłanie żądania ściągnięcia
 Cieszymy się, że chcesz przyczynić się do powstawania Dokumentacji języka Arduino: to najlepszy sposób, aby pomóc społeczności.
 
-Twój wkład polega na dodawaniu lub modyfikowaniu istniejącego kodu lub całych wpisów. Prosimy cię, abyś zawsze odnosił się do bieżącego wydania lub pobierał aktualny materiał przed przesłaniem własnego. 
+Twój wkład polega na dodawaniu lub modyfikowaniu istniejącego kodu lub całych plików. Prosimy cię, abyś zawsze odnosił się do bieżącego wydania lub pobierał aktualny materiał przed przesłaniem własnego. 
 
 === Struktura folderów
 [source]
