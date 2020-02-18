@@ -1,6 +1,6 @@
 ---
 title: "isSpace()"
-categories: [ "Functions" ]
+categories: [ "Funkcje" ]
 subCategories: [ "Characters" ]
 ---
 
