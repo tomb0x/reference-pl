@@ -1,7 +1,7 @@
 ---
 title: "isUpperCase()"
 categories: [ "Funkcje" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Znaki" ]
 ---
 
 = isUpperCase(thisChar)
@@ -12,18 +12,18 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
+=== Opis
 Analyse if a char is upper case (that is, a letter in upper case). Returns true if thisChar is upper case. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `isUpperCase(thisChar)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `thisChar`: variable. Allowed data types: `char`.
 
 

@@ -1,7 +1,7 @@
 ---
 title: "isWhitespace()"
 categories: [ "Funkcje" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Znaki" ]
 ---
 
 
@@ -16,18 +16,18 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
+=== Opis
 Analyse if a char is a space character. Returns true if the argument is a space or horizontal tab (`'\t'`).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `isWhitespace(thisChar)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `thisChar`: variable. Allowed data types: `char`.
 
 

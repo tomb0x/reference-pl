@@ -1,7 +1,7 @@
 ---
 title: "isLowerCase()"
 categories: [ "Funkcje" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Znaki" ]
 ---
 
 
@@ -16,18 +16,18 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
+=== Opis
 Analyse if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `isLowerCase(thisChar)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `thisChar`: variable. Allowed data types: `char`.
 
 

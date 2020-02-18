@@ -1,7 +1,7 @@
 ---
 title: "isPunct()"
 categories: [ "Funkcje" ]
-subCategories: [ "Characters" ]
+subCategories: [ "Znaki" ]
 ---
 
 
@@ -16,18 +16,18 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
+=== Opis
 Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation mark and so on). Returns true if thisChar is punctuation.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `isPunct(thisChar)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `thisChar`: variable. Allowed data types: `char`.
 
 
