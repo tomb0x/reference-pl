@@ -4,10 +4,10 @@ categories: [ "Funkcje" ]
 subCategories: [ "Znaki" ]
 ---
 
-= isUpperCase(thisChar)
+= isUpperCase(tenZnak)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
@@ -19,29 +19,29 @@ Analyse if a char is upper case (that is, a letter in upper case). Returns true 
 
 [float]
 === Składnia
-`isUpperCase(thisChar)`
+`isUpperCase(tenZnak)`
 
 
 [float]
 === Parametry
-`thisChar`: variable. Allowed data types: `char`.
+`tenZnak`: zmienna. Dozwolone typy danych: `char`.
 
 
 [float]
-=== Returns
-`true`: if thisChar is upper case.
+=== Wartości zwracane
+`true`: jeśli tenZnak jest wielką literą.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
@@ -54,15 +54,15 @@ else {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
@@ -71,4 +71,4 @@ else {
 * #LANGUAGE# link:../../communication/serial/read[read()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
