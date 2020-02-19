@@ -8,10 +8,10 @@ subCategories: [ "Znaki" ]
 
 
 
-= isHexadecimalDigit(thisChar)
+= isHexadecimalDigit(tenZnak)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
@@ -23,29 +23,29 @@ Analyse if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar c
 
 [float]
 === Składnia
-`isHexadecimalDigit(thisChar)`
+`isHexadecimalDigit(tenZnak)`
 
 
 [float]
 === Parametry
-`thisChar`: variable. Allowed data types: `char`.
+`tenZnak`: zmienna. Dozwolone typy danych: `char`.
 
 
 [float]
-=== Returns
-`true`: if thisChar is an hexadecimal digit.
+=== Wartości zwracane
+`true`: jeśli tenZnak jest cyfrą szesnastkową.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
@@ -58,15 +58,15 @@ else {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
@@ -75,4 +75,4 @@ else {
 * #LANGUAGE# link:../../communication/serial/read[read()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
