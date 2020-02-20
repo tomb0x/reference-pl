@@ -17,7 +17,7 @@ subCategories: [ "Znaki" ]
 
 [float]
 === Opis
-Analyse if a char is a space character. Returns true if the argument is a space or horizontal tab (`'\t'`).
+Sprawdza czy znak jest znakiem odstępu. Zwraca true jeśli argument to odstęp lub tabulator poziomy (`'\t'`).
 [%hardbreaks]
 
 
@@ -49,11 +49,11 @@ Analyse if a char is a space character. Returns true if the argument is a space 
 
 [source,arduino]
 ----
-if (isWhitespace(myChar)) { // tests if myChar is a space character
-  Serial.println("The character is a space or tab");
+if (isWhitespace(mojZnak)) { // sprawdza czy mojZnak jest odstępem
+  Serial.println("Znak jest odstępem lub tabulatorem");
 }
 else {
-  Serial.println("The character is not a space or tab");
+  Serial.println("Znak nie jest ani odstępem ani tabulatorem");
 }
 ----
 

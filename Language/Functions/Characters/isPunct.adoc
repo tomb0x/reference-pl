@@ -17,7 +17,7 @@ subCategories: [ "Znaki" ]
 
 [float]
 === Opis
-Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation mark and so on). Returns true if thisChar is punctuation.
+Sprawdza czy znak jest znakiem interpunkcyjnym (przecinek, średnik, wykrzyknik itd). Zwraca true jeśli tenZnak jest znakiem interpunkcyjnym.
 [%hardbreaks]
 
 
@@ -33,7 +33,7 @@ Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation ma
 
 [float]
 === Wartości zwracane
-`true`: jeśli tenZnak is a punctuation.
+`true`: jeśli tenZnak jest znakiem interpunkcyjnym.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -49,11 +49,11 @@ Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation ma
 
 [source,arduino]
 ----
-if (isPunct(myChar)) {  // tests if myChar is a punctuation character
-  Serial.println("The character is a punctuation");
+if (isPunct(mojZnak)) {  // sprawdza czy mojZnak jest znakiem interpunkcyjnym
+  Serial.println("To jest znak interpunkcyjny");
 }
 else {
-  Serial.println("The character is not a punctuation");
+  Serial.println("To nie jest znak interpunkcyjny");
 }
 ----
 

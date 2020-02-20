@@ -17,7 +17,7 @@ subCategories: [ "Znaki" ]
 
 [float]
 === Opis
-Analyse if a char is a white-space character. Returns true if the argument is a space, form feed (`'\f'`), newline (`'\n'`), carriage return (`'\r'`), horizontal tab (`'\t'`), or vertical tab (`'\v'`).
+Sprawdza czy znak jest znakiem niedrukowalnym. Zwraca true jeśli argument to odstęp (spacja), wysuw strony (ang.form feed) (`'\f'`), nowa linia (`'\n'`), powrót do początku linii (`'\r'`), tabulator poziomy (`'\t'`), or tabulator pionowy (`'\v'`).
 [%hardbreaks]
 
 
@@ -33,7 +33,7 @@ Analyse if a char is a white-space character. Returns true if the argument is a 
 
 [float]
 === Wartości zwracane
-`true`: jeśli tenZnak is a white-space character.
+`true`: jeśli tenZnak jest znakiem niedrukowalnym.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -49,11 +49,11 @@ Analyse if a char is a white-space character. Returns true if the argument is a 
 
 [source,arduino]
 ----
-if (isSpace(myChar)) {  // tests if myChar is a white-space character
-  Serial.println("The character is white-space");
+if (isSpace(mojZnak)) {  // sprawdza czy mojZnak jest znakiem niedrukowalnym
+  Serial.println("To jest znak niedrukowalny");
 }
 else {
-  Serial.println("The character is not white-space");
+  Serial.println("To nie jest znak niedrukowalny");
 }
 ----
 

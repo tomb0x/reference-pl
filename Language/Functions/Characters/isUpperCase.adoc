@@ -13,7 +13,7 @@ subCategories: [ "Znaki" ]
 
 [float]
 === Opis
-Analyse if a char is upper case (that is, a letter in upper case). Returns true if thisChar is upper case. 
+Spradza czy znak jest wielką literą (tylko ze zbioru ascii - nie wykryje np. wielkiej litery Ą). Zwraca true jeśli tenZnak jest wielką literą. 
 [%hardbreaks]
 
 
@@ -45,11 +45,11 @@ Analyse if a char is upper case (that is, a letter in upper case). Returns true 
 
 [source,arduino]
 ----
-if (isUpperCase(myChar)) {  // tests if myChar is an upper case letter
-  Serial.println("The character is upper case");
+if (isUpperCase(mojZnak)) {  // sprawdza czy mojZnak jest wielką literą
+  Serial.println("Znak jest wielką literą");
 }
 else {
-  Serial.println("The character is not upper case");
+  Serial.println("Znak nie jest wielką literą");
 }
 ----
 

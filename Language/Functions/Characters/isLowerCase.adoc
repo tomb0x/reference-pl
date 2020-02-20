@@ -17,7 +17,7 @@ subCategories: [ "Znaki" ]
 
 [float]
 === Opis
-Analyse if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case.
+Sprawdza czy znak jest małą literą (tylko ze zbioru ascii - nie wykryje np. małej litery ą). Zwraca true jeśli tenZnak zawiera małą literę.
 [%hardbreaks]
 
 
@@ -49,11 +49,11 @@ Analyse if a char is lower case (that is a letter in lower case). Returns true i
 
 [source,arduino]
 ----
-if (isLowerCase(myChar)) {  // tests if myChar is a lower case letter
-  Serial.println("The character is lower case");
+if (isLowerCase(mojZnak)) {  // sprawdza czy mojZnak jest małą literą
+  Serial.println("Znak jest małą literą");
 }
 else {
-  Serial.println("The character is not lower case");
+  Serial.println("Znak nie jest małą literą");
 }
 ----
 
