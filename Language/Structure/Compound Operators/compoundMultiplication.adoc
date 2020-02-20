@@ -18,7 +18,7 @@ subCategories: [ "Operatory złożone" ]
 
 [float]
 === Opis
-Jest to skrócowa forma mnożenia zmiennej przez inną zmienną lub stałą.
+Jest to skrócona forma mnożenia zmiennej przez inną zmienną lub stałą.
 [%hardbreaks]
 
 

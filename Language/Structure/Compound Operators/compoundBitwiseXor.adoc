@@ -1,11 +1,11 @@
 ---
 title: "^="
-title_expanded: compound bitwise xor
-categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+title_expanded: złożone bitowe ALBO
+categories: [ "Struktura" ]
+subCategories: [ "Operatory złożone" ]
 ---
 
-= ^= Compound Bitwise XOR
+= ^= Złożone bitowe ALBO
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -14,26 +14,26 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Opis
-The compound bitwise XOR operator `^=` is often used with a variable and a constant to toggle (invert) particular bits in a variable.
+Operator złożonego bitowego ALBO (ang. XOR) `^=` jest często używany ze zmienną i stałą do przełączania (odwracania) określonych bitów w zmiennej.
 [%hardbreaks]
 
-A review of the Bitwise XOR `^` operator:
+Jak działa operator bitowego ALBO `^`:
 
-   0  0  1  1    operand1
-   0  1  0  1    operand2
+   0  0  1  1    argument1
+   0  1  0  1    argument2
    ----------
-   0  1  1  0    (operand1 ^ operand2) - returned result
+   0  1  1  0    (argument1 ^ argument2) - zwracany wynik
 [%hardbreaks]
 
 [float]
 === Składnia
-`x ^= y; // equivalent to x = x ^ y;`
+`x ^= y; // odpowiednik wyrażenia x = x ^ y;`
 
 
 [float]
-=== Parameters
-`x`: variable. Allowed data types: `char`, `int`, `long`. +
-`y`: variable or constant. Allowed data types: `char`, `int`, `long`.
+=== Parametry
+`x`: zmienna. Allowed data types: `char`, `int`, `long`. +
+`y`: zmienna lub stała. Allowed data types: `char`, `int`, `long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ

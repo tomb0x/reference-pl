@@ -1,11 +1,11 @@
 ---
 title: "|="
-title_expanded: compound bitwise or
-categories: [ "Structure" ]
-subCategories: [ "Compound Operators" ]
+title_expanded: złożone bitowe LUB
+categories: [ "Struktura" ]
+subCategories: [ "Operatory złożone" ]
 ---
 
-= |= Compound Bitwise OR
+= |= Złożone bitowe LUB
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -14,7 +14,7 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Opis
-The compound bitwise OR operator `|=` is often used with a variable and a constant to "set" (set to 1) particular bits in a variable.
+Złożony operator bitowego LUB `|=` is often used with a variable and a constant to "set" (set to 1) particular bits in a variable.
 [%hardbreaks]
 
 A review of the Bitwise OR `|` operator:
@@ -22,12 +22,12 @@ A review of the Bitwise OR `|` operator:
    0  0  1  1    operand1
    0  1  0  1    operand2
    ----------
-   0  1  1  1    (operand1 | operand2) - returned result
+   0  1  1  1    (argument1 | argument2) - zwracany wynik
 [%hardbreaks]
 
 [float]
 === Składnia
-`x |= y; // equivalent to x = x | y;`
+`x |= y; // odpowiednik wyrażenia x = x | y;`
 
 
 [float]

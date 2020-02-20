@@ -2,7 +2,7 @@
 title: "&="
 title_expanded: złożone bitowe I
 categories: [ "Struktura" ]
-subCategories: [ "operatory złożone" ]
+subCategories: [ "Operatory złożone" ]
 ---
 
 
@@ -31,13 +31,13 @@ Działanie operatora bitowego I `&`:
 
 [float]
 === Składnia
-`x &= y;       // odpowiednik x = x & y;`
+`x &= y;       // odpowiednik wyrażenia x = x & y;`
 
 
 [float]
 === Parametry
-`x`: zmienna. Allowed data types: `char`, `int`, `long`. +
-`y`: variable or constant. Allowed data types: `char`, `int`, `long`.
+`x`: zmienna. Dozwolone typy danych: `char`, `int`, `long`. +
+`y`: zmienna lub stała. Dozwolone typy danych: `char`, `int`, `long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -50,51 +50,51 @@ Działanie operatora bitowego I `&`:
 
 [float]
 === Przykładowy kod
-Bits that are "bitwise ANDed" with 0 are cleared to 0 so, if myByte is a byte variable,
+Bity, które są "dodawane bitowo" do 0 są ustawiane na , jeśli mojBajt jest zmienną typu byte,
 
 [source,arduino]
 ----
-myByte & B00000000 = 0;
+mojBajt & B00000000 = 0;
 ----
 
-Bits that are "bitwise ANDed" with 1 are unchanged so,
+Bity, które są "dodawane bitowo" do 1 są niezmieniane,
 
 [source,arduino]
 ----
-myByte & B11111111 = myByte;
+mojBajt & B11111111 = mojBajt;
 ----
 [%hardbreaks]
 
 [float]
 === Uwagi i ostrzeżenia
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero (hmmm something philosophical there?)
+Podczas operowania bitami - wygodnie jest korzystać z dwójkowego przedstawiania stałych. Liczby mają taką samą wartość jak w innych sposobach przestawienia ale są łatwiejsze do zrozumienia. Również B00000000 jest pokazane dla przejrzystości, ale zero w dowolnym formacie to nadal zero (hmmm czy to jakaś filozofia?)
 
-Consequently - to clear (set to zero) bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise AND operator (&=) with the constant B11111100
+Więc aby wyczyścić (ustawić na zero) w zmiennej bity 0 i 1, pozostawiając niezmienioną resztę bitów, użyj złożonego operatora bitowego I (&=) ze stałą B11111100
 
-   1  0  1  0  1  0  1  0    variable
-   1  1  1  1  1  1  0  0    mask
+   1  0  1  0  1  0  1  0    zmienna
+   1  1  1  1  1  1  0  0    maska
    ----------------------
    1  0  1  0  1  0  0  0
 
-    bits unchanged
-                     bits cleared
+    bity niezmienione
+                     bity wyczyszczone
 
-Here is the same representation with the variable's bits replaced with the symbol x
+Tutaj przedstawione to samo z biltami zmiennej zastąpionymi symbolami x
 
-   x  x  x  x  x  x  x  x    variable
-   1  1  1  1  1  1  0  0    mask
+   x  x  x  x  x  x  x  x    zmienna
+   1  1  1  1  1  1  0  0    maska
    ----------------------
    x  x  x  x  x  x  0  0
 
-    bits unchanged
-                     bits cleared
+    bity niezmienione
+                     bity wyczyszczone
 
-So if:
+Inaczej:
 
 [source,arduino]
 ----
-myByte = B10101010;
-myByte &= B11111100;  // results in B10101000
+mojBajt = B10101010;
+mojBajt &= B11111100;  // mojBajt przyjmie wartość B10101000
 ----
 
 [%hardbreaks]
