@@ -11,12 +11,12 @@ subCategories: [ "Control Structure" ]
 = return
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Terminate a function and return a value from a function to the calling function, if desired.
 [%hardbreaks]
 
@@ -32,17 +32,17 @@ Terminate a function and return a value from a function to the calling function,
 `value`: Allowed data types: any variable or constant type.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 A function to compare a sensor input to a threshold
 
 [source,arduino]
@@ -72,19 +72,19 @@ void loop() {
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

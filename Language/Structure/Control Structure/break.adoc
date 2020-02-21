@@ -11,27 +11,27 @@ subCategories: [ "Control Structure" ]
 = break
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 [%hardbreaks]
 `break` is used to exit from a link:../for[for], link:../while[while] or link:../dowhile[do...while] loop, bypassing the normal loop condition. It is also used to exit from a link:../switchcase[switch case] statement.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 [float]
-=== Example Code
+=== Przykładowy kod
 In the following code, the control exits the `for` loop when the sensor value exceeds the threshold.
 [source,arduino]
 ----
@@ -48,18 +48,18 @@ for (int x = 0; x < 255; x++) {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

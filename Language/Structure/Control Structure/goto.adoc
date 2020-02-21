@@ -11,12 +11,12 @@ subCategories: [ "Control Structure" ]
 = goto
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Transfers program flow to a labeled point in the program
 [%hardbreaks]
 
@@ -31,17 +31,17 @@ goto label; // sends program flow to the label
 ----
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
@@ -69,18 +69,18 @@ With that said, there are instances where a `goto` statement can come in handy, 
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

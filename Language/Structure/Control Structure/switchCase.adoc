@@ -11,12 +11,12 @@ subCategories: [ "Control Structure" ]
 = switch...case statement
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Like link:../if[if] statements, link:../switchcase[switch case] controls the flow of programs by allowing programmers to specify different code that should be executed in various conditions. In particular, a switch statement compares the value of a variable to the values specified in case statements. When a case statement is found whose value matches that of the variable, the code in that case statement is run.
 [%hardbreaks]
 
@@ -53,17 +53,17 @@ switch (var) {
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
@@ -84,18 +84,18 @@ switch (var) {
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTIN BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

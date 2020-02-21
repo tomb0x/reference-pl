@@ -11,12 +11,12 @@ subCategories: [ "Control Structure" ]
 = do...while loop
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 [%hardbreaks]
 The `do...while` loop works in the same manner as the link:../while[while] loop, with the exception that the condition is tested at the end of the loop, so the do loop will always run at least once.
 
@@ -35,17 +35,17 @@ do {
 `condition`: a boolean expression that evaluates to `true` or `false`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
@@ -58,17 +58,17 @@ do {
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

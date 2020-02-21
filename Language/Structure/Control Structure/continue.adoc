@@ -11,28 +11,28 @@ subCategories: [ "Control Structure" ]
 = continue
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 [%hardbreaks]
 The `continue` statement skips the rest of the current iteration of a loop (link:../for[for], link:../while[while], or link:../dowhile[do...while]). It continues by checking the conditional expression of the loop, and proceeding with any subsequent iterations.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 The following code writes the value of 0 to 255 to the `PWMpin`, but skips the values in the range of 41 to 119.
 [source,arduino]
 ----
@@ -48,18 +48,18 @@ for (int x = 0; x <= 255; x ++) {
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
