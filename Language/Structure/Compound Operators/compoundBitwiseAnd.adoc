@@ -18,7 +18,7 @@ subCategories: [ "Operatory złożone" ]
 
 [float]
 === Opis
-Złożony operator bitowy I `&=` jest często używany do wymuszania poszczególnych bitów w zmiennej do stanu LOW (do 0). Jest to często określane w przewodnikach programowania jako "czyszczenie" lub "resetowanie" bitów.
+Złożony operator bitowy I (ang.AND) `&=` jest często używany do wymuszania poszczególnych bitów w zmiennej do stanu LOW (do 0). Jest to często określane w przewodnikach programowania jako "czyszczenie" lub "resetowanie" bitów.
 [%hardbreaks]
 
 Działanie operatora bitowego I `&`:
@@ -31,7 +31,7 @@ Działanie operatora bitowego I `&`:
 
 [float]
 === Składnia
-`x &= y;       // odpowiednik wyrażenia x = x & y;`
+`x &= y;         // odpowiednik wyrażenia x = x & y;`
 
 
 [float]
@@ -50,14 +50,14 @@ Działanie operatora bitowego I `&`:
 
 [float]
 === Przykładowy kod
-Bity, które są "dodawane bitowo" do 0 są ustawiane na , jeśli mojBajt jest zmienną typu byte,
+Bity, które są "mnożone bitowo" przez 0 są ustawiane na 0 więc, jeśli mojBajt jest zmienną typu byte,
 
 [source,arduino]
 ----
 mojBajt & B00000000 = 0;
 ----
 
-Bity, które są "dodawane bitowo" do 1 są niezmieniane,
+Bity, które są "mnożone bitowo" przez 1 są niezmieniane,
 
 [source,arduino]
 ----
@@ -113,7 +113,7 @@ mojBajt &= B11111100;  // mojBajt przyjmie wartość B10101000
 === Zobacz także
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwiseand[& Bitwise AND]
+* #LANGUAGE#  link:../../bitwise-operators/bitwiseand[& bitowe I]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE

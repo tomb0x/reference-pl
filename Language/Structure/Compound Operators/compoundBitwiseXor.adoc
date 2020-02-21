@@ -14,10 +14,10 @@ subCategories: [ "Operatory złożone" ]
 
 [float]
 === Opis
-Operator złożonego bitowego ALBO (ang. XOR) `^=` jest często używany ze zmienną i stałą do przełączania (odwracania) określonych bitów w zmiennej.
+Operator złożonego bitowego ALBO (ang. XOR) `^=` jest często używany do przełączania (odwracania) określonych bitów w zmiennej.
 [%hardbreaks]
 
-Jak działa operator bitowego ALBO `^`:
+Działanie operatora bitowego ALBO `^`:
 
    0  0  1  1    argument1
    0  1  0  1    argument2
@@ -27,13 +27,13 @@ Jak działa operator bitowego ALBO `^`:
 
 [float]
 === Składnia
-`x ^= y; // odpowiednik wyrażenia x = x ^ y;`
+`x ^= y;         // odpowiednik wyrażenia x = x ^ y;`
 
 
 [float]
 === Parametry
-`x`: zmienna. Allowed data types: `char`, `int`, `long`. +
-`y`: zmienna lub stała. Allowed data types: `char`, `int`, `long`.
+`x`: zmienna. Dozwolone typy danych: `char`, `int`, `long`. +
+`y`: zmienna lub stała. Dozwolone typy danych: `char`, `int`, `long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -46,50 +46,50 @@ Jak działa operator bitowego ALBO `^`:
 
 [float]
 === Przykładowy kod
-Bits that are "bitwise XORed" with 0 are left unchanged. So if myByte is a byte variable,
+Bity, które są "odwracane bitowo" zerami pozostają niezmienione. więc jeśli mójBajt jest zmienną typu byte,
 [source,arduino]
 ----
-myByte ^ B00000000 = myByte;
+mójBajt ^ B00000000 = mójBajt;
 ----
 
-Bits that are "bitwise XORed" with 1 are toggled so:
+Bity, które są "odwracane bitowo" jedynkami są przełączane w stan przeciwny:
 [source,arduino]
 ----
-myByte ^ B11111111 = ~myByte;
+mójBajt ^ B11111111 = ~mójBajt;
 ----
 [%hardbreaks]
 
 [float]
 === Uwagi i ostrzeżenia
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero.
+Podczas operowania bitami - wygodnie jest korzystać z dwójkowego przedstawiania stałych. Liczby mają taką samą wartość jak w innych sposobach przestawienia ale są łatwiejsze do zrozumienia. Również B00000000 jest pokazane dla przejrzystości, ale zero w dowolnym formacie to nadal zero.
 [%hardbreaks]
 
-Consequently - to toggle bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise XOR operator (^=) with the constant B00000011
+Więc aby w zmiennej odwrócić stan bitów 0 i 1, pozostawiając niezmienioną resztę bitów, użyj złożonego operatora bitowego ALBO (^=) ze stałą B00000011
 
-   1  0  1  0  1  0  1  0    variable
-   0  0  0  0  0  0  1  1    mask
+   1  0  1  0  1  0  1  0    zmienna
+   0  0  0  0  0  0  1  1    maska
    ----------------------
    1  0  1  0  1  0  0  1
 
-    bits unchanged
-                     bits toggled
+    bity niezmienione
+                     bity odwrócone
 
 
-Here is the same representation with the variables bits replaced with the symbol x. ~x represents the complement of x.
+Tutaj przedstawione to samo z biltami zmiennej zastąpionymi symbolami x. ~x oznacza zaprzeczenie x (czyli "nie x").
 
-   x  x  x  x  x  x  x  x    variable
-   0  0  0  0  0  0  1  1    mask
+   x  x  x  x  x  x  x  x    zmienna
+   0  0  0  0  0  0  1  1    maska
    ----------------------
    x  x  x  x  x  x ~x ~x
 
-    bits unchanged
-                     bits set
+    bity niezmienione
+                     bity odwrócone
 
-So if:
+Inaczej:
 [source,arduino]
 ----
-myByte = B10101010;
-myByte ^= B00000011 == B10101001;
+mójBajt = B10101010;
+mójBajt ^= B00000011 == B10101001;
 ----
 
 --
@@ -106,7 +106,7 @@ myByte ^= B00000011 == B10101001;
 === Zobacz także
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwisexor[^ Bitwise XOR]
+* #LANGUAGE#  link:../../bitwise-operators/bitwisexor[^ bitowe ALBO]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE

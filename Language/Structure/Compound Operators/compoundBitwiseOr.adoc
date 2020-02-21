@@ -14,26 +14,26 @@ subCategories: [ "Operatory złożone" ]
 
 [float]
 === Opis
-Złożony operator bitowego LUB `|=` is often used with a variable and a constant to "set" (set to 1) particular bits in a variable.
+Złożony operator bitowego LUB (ang.OR) `|=` jest często używany do "ustawiania" (nadania wartości 1) poszczególnych bitów w zmiennej.
 [%hardbreaks]
 
-A review of the Bitwise OR `|` operator:
+Działanie operatora bitowego LUB `|`:
 
-   0  0  1  1    operand1
-   0  1  0  1    operand2
+   0  0  1  1    argument1
+   0  1  0  1    argument2
    ----------
    0  1  1  1    (argument1 | argument2) - zwracany wynik
 [%hardbreaks]
 
 [float]
 === Składnia
-`x |= y; // odpowiednik wyrażenia x = x | y;`
+`x |= y;         // odpowiednik wyrażenia x = x | y;`
 
 
 [float]
-=== Parameters
-`x`: variable. Allowed data types: `char`, `int`, `long`. +
-`y`: variable or constant. Allowed data types: `char`, `int`, `long`.
+=== Parametry
+`x`: zmienna. Dozwolone typy danych: `char`, `int`, `long`. +
+`y`: zmienna lub stała. Dozwolone typy danych: `char`, `int`, `long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -46,50 +46,50 @@ A review of the Bitwise OR `|` operator:
 
 [float]
 === Przykładowy kod
-Bits that are "bitwise ORed" with 0 are unchanged, so if myByte is a byte variable,
+Bity, które są "dodawane bitowo" do 0 pozostają niezmienione, więc jeśli mójBajt jest zmienną typy byte,
 [source,arduino]
 ----
-myByte | B00000000 = myByte;
+mójBajt | B00000000 = mójBajt;
 ----
 
-Bits that are "bitwise ORed" with 1 are set to 1 so:
+Bity, które są "dodawane bitowo" do 1 są ustawiane na 1 więc:
 [source,arduino]
 ----
-myByte | B11111111 = B11111111;
+mójBajt | B11111111 = B11111111;
 ----
 [%hardbreaks]
 
 [float]
 === Uwagi i ostrzeżenia
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero.
+Podczas operowania bitami - wygodnie jest korzystać z dwójkowego przedstawiania stałych. Liczby mają taką samą wartość jak w innych sposobach przestawienia ale są łatwiejsze do zrozumienia. Również B00000000 jest pokazane dla przejrzystości, ale zero w dowolnym formacie to nadal zero.
 [%hardbreaks]
 
-Consequently - to set bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise OR operator (|=) with the constant B00000011
+Więc aby ustawić (zmienić na jeden) w zmiennej bity 0 i 1, pozostawiając niezmienioną resztę bitów, użyj złożonego operatora bitowego LUB (|=) ze stałą B00000011
 
-   1  0  1  0  1  0  1  0    variable
-   0  0  0  0  0  0  1  1    mask
+   1  0  1  0  1  0  1  0    zmienna
+   0  0  0  0  0  0  1  1    maska
    ----------------------
    1  0  1  0  1  0  1  1
 
-    bits unchanged
-                     bits set
+    bity niezmienione
+                     bity ustawione
 
 
-Here is the same representation with the variables bits replaced with the symbol x
+Tutaj przedstawione to samo z biltami zmiennej zastąpionymi symbolami x
 
-   x  x  x  x  x  x  x  x    variable
-   0  0  0  0  0  0  1  1    mask
+   x  x  x  x  x  x  x  x    zmienna
+   0  0  0  0  0  0  1  1    maska
    ----------------------
    x  x  x  x  x  x  1  1
 
-    bits unchanged
-                     bits set
+    bity niezmienione
+                     bity ustawione
 
-So if:
+Inaczej:
 [source,arduino]
 ----
-myByte = B10101010;
-myByte |= B00000011 == B10101011;
+mójBajt = B10101010;
+mójBajt |= B00000011 == B10101011;
 ----
 
 --
@@ -106,7 +106,7 @@ myByte |= B00000011 == B10101011;
 === Zobacz także
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwiseor[| Bitwise OR]
+* #LANGUAGE#  link:../../bitwise-operators/bitwiseor[| bitowe LUB]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
