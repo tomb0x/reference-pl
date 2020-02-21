@@ -1,7 +1,7 @@
 ---
 title: goto
-categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+categories: [ "Struktura" ]
+subCategories: [ "Instrukcje sterujące" ]
 ---
 
 
@@ -17,17 +17,17 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Opis
-Transfers program flow to a labeled point in the program
+Przenosi wykonywanie programu do oznaczonego miejsca w programie
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 [source,arduino]
 ----
 label:
 
-goto label; // sends program flow to the label
+goto miejsce;        // wysyła program w inne miejsce
 ----
 
 --
@@ -48,24 +48,24 @@ goto label; // sends program flow to the label
 for (byte r = 0; r < 255; r++) {
   for (byte g = 255; g > 0; g--) {
     for (byte b = 0; b < 255; b++) {
-      if (analogRead(0) > 250) {
-        goto bailout;
+      if (analogRead(0) > 250) {     // przekroczenie dopuszczalnej temperatury
+        goto ratunek;
       }
-      // more statements ...
+      // więcej instrukcji ...
     }
   }
 }
 
-bailout:
-// more statements ...
+ratunek:
+// więcej instrukcji ...
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The use of `goto` is discouraged in C++ programming, and some authors of C++ programming books claim that the `goto` statement is never necessary, but used judiciously, it can simplify certain programs. The reason that many programmers frown upon the use of goto is that with the unrestrained use of `goto` statements, it is easy to create a program with undefined program flow, which can never be debugged.
+=== Uwagi i ostrzeżenia
+Używanie `goto` jest odradzane podczas programowaniu w C++, a niektórzy autorzy książek do programowania w C++ twierdzą, że instrukcja` goto` nie jest nigdzie potrzebna, ale używana rozsądnie, może uprościć niektóre programy. Powodem, dla którego wielu programistów nie używa goto, jest to, że przy nieograniczonym użyciu instrukcji `goto` łatwo jest stworzyć program o nieokreślonym przebiegu, z którego nigdy nie można usunąć błędów.
 
-With that said, there are instances where a `goto` statement can come in handy, and simplify coding. One of these situations is to break out of deeply nested link:../for[for] loops, or link:../if[if] logic blocks, on a certain condition.
+Prawdę powiedziawszy, są przypadki, w których instrukcja `goto` może się przydać i uprościć programowanie. Jedną z takich sytuacji jest wyrwanie się w pewnych sytuacjach z głęboko zagnieżdżonych pętli link:../for[for], lub bloków warunków link:../if[if].
 [%hardbreaks]
 
 --

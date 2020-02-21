@@ -1,7 +1,7 @@
 ---
 title: float()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Konwersja" ]
 ---
 
 
@@ -11,32 +11,32 @@ subCategories: [ "Conversion" ]
 = float()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/float[float] data type.
+=== Opis
+Konwertuje wartość na typ danych link:../../data-types/float[float] (liczba zmiennoprzecinkowa).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `float(x)`
 
 
 [float]
-=== Parameters
-`x`: a value. Allowed data types: any type.
+=== Parametry
+`x`: wartość. Dozwolone typy danych: dowolny typ.
 
 
 [float]
-=== Returns
-Data type: `float`.
+=== Wartości zwracane
+Typ danych: `float`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
@@ -46,8 +46,8 @@ Data type: `float`.
 --
 
 [float]
-=== Notes and Warnings
-See the reference for link:../../data-types/float[float] for details about the precision and limitations of floating point numbers on Arduino.
+=== Uwagi i ostrzeżenia
+Zobacz informacje na temat link:../../data-types/float[float] aby uzyskać szczegółowe informacje na temat precyzji i ograniczeń liczb zmiennoprzecinkowych w Arduino.
 [%hardbreaks]
 
 --
@@ -55,16 +55,16 @@ See the reference for link:../../data-types/float[float] for details about the p
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/float[float]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

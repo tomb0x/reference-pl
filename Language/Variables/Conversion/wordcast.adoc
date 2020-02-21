@@ -1,7 +1,7 @@
 ---
 title: word()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Konwersja" ]
 ---
 
 
@@ -11,49 +11,49 @@ subCategories: [ "Conversion" ]
 = word()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/word[word] data type.
+=== Opis
+Konwertuje wartość na typ danych link:../../data-types/word[word] (słowo 16-bitowe).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `word(x)` +
 `word(h, l)`
 
 
 [float]
-=== Parameters
-`x`: a value. Allowed data types: any type. +
-`h`: the high-order (leftmost) byte of the word. +
-`l`: the low-order (rightmost) byte of the word.
+=== Parametry
+`x`: wartość. Dozwolone typy danych: dowolny typ. +
+`h`: bardziej znaczący (lewy) bajt słowa. +
+`l`: mniej znaczący (prawy) bajt słowa.
 
 
 [float]
-=== Returns
-Data type: `word`.
+=== Wartości zwracane
+Typ danych: `word`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/word[word]
 
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

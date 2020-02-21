@@ -1,7 +1,7 @@
 ---
 title: for
-categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+categories: [ "Struktura" ]
+subCategories: [ "Instrukcje sterujące" ]
 ---
 
 
@@ -17,25 +17,25 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Opis
-The `for` statement is used to repeat a block of statements enclosed in curly braces. An increment counter is usually used to increment and terminate the loop. The `for` statement is useful for any repetitive operation, and is often used in combination with arrays to operate on collections of data/pins.
+Instrukcja `for` służy do powtarzania bloku instrukcji zawartego w nawiasach klamrowych. Przyrost jest zwykle używany do zwiększania pewnej wartości i do zakończenia pętli. Instrukcja `for` jest przydatna do każdej powtarzalnej operacji i często jest używana w połączeniu z tablicami do operowania na zbiorach danych lub styków.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 [source,arduino]
 ----
-for (initialization; condition; increment) {
-  // statement(s);
+for (początek; warunek; przyrost) {
+  // instrukcj(a/e);
 }
 ----
 
 
 [float]
-=== Parameters
-`initialization`: happens first and exactly once. +
-`condition`: each time through the loop, `condition` is tested; if it's `true`, the statement block, and the *increment* is executed, then the *condition* is tested again. When the *condition* becomes `false`, the loop ends. +
-`increment`: executed each time through the loop when `contition` is true.
+=== Parametry
+`początek`: wykonuje się na początku i dokładnie tylko raz +
+`warunek`: w każdym przebiegu pętli sprawdzany jest 'warunek'; jeśli jest prawdziwy to wykonywany jest blok instrukcji a następnie *przyrost*, po czym *warunek* sprawdzany jest ponownie. Jeśli *warunek* stanie się fałszywy, kończy się wykonywanie pętli. +
+`przyrost`: wykonywane jest za każdym razem gdy `warunek` jest prawdziwy.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -52,15 +52,15 @@ for (initialization; condition; increment) {
 [source,arduino]
 ----
 // Dim an LED using a PWM pin
-int PWMpin = 10;  // LED in series with 470 ohm resistor on pin 10
+int stykPWM = 10;             // do styku numer 10 podłączone są szeregowo dioda świecąca i rezystor 470 om
 
 void setup() {
-  // no setup needed
+                  // nie jest potrzebna konfiguracja
 }
 
 void loop() {
   for (int i = 0; i <= 255; i++) {
-    analogWrite(PWMpin, i);
+    analogWrite(stykPWM, i);
     delay(10);
   }
 }
@@ -68,11 +68,11 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The C++ `for` loop is much more flexible than `for` loops found in some other computer languages, including BASIC. Any or all of the three header elements may be omitted, although the semicolons are required. Also the statements for initialization, condition, and increment can be any valid C++ statements with unrelated variables, and use any C++ datatypes including floats. These types of unusual `for` statements may provide solutions to some rare programming problems.
+=== Uwagi i ostrzeżenia
+Pętla `for` w języku C++ jest znacznie bardziej elastyczna niż pętle `for` występujące w niektórych innych językach komputerowych, w tym w języku BASIC. Dowolny lub wszystkie trzy elementy nagłówka pętli można pominąć, chociaż średniki są wymagane. Również instrukcje początku, warunku i przyrostu mogą być dowolnymi prawidłowymi instrukcjami C++ z dowolnymi zmiennymi i używać dowolnych typów danych C++, w tym liczb zmiennoprzecinkowych. Tegu typu niezwykłe instrukcje `for` mogą pomóc rozwiązać niektóre problemy programistyczne.
 [%hardbreaks]
 
-For example, using a multiplication in the increment line will generate a logarithmic progression:
+Na przykład użycie mnożenia w miejscu przyrostu wygeneruje postęp logarytmiczny:
 
 [source,arduino]
 ----
@@ -81,19 +81,19 @@ for (int x = 2; x < 100; x = x * 1.5) {
 }
 ----
 
-Generates: 2,3,4,6,9,13,19,28,42,63,94
+Wypisze: 2,3,4,6,9,13,19,28,42,63,94
 [%hardbreaks]
 
-Another example, fade an LED up and down with one `for` loop:
+Innym przykładem jest rozjaśnianie i ściemnianie diody świecącej za pomocą jednej tylko pętli `for`:
 
 [source,arduino]
 ----
 void loop() {
   int x = 1;
   for (int i = 0; i > -1; i = i + x) {
-    analogWrite(PWMpin, i);
+    analogWrite(stykPWM, i);
     if (i == 255) {
-      x = -1;  // switch direction at peak
+      x = -1;             // na końcu przełącz kierunek
     }
     delay(10);
   }

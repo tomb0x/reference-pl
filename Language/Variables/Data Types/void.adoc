@@ -1,39 +1,39 @@
 ---
 title: void
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = void
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-The `void` keyword is used only in function declarations. It indicates that the function is expected to return no information to the function from which it was called.
+=== Opis
+Słowo kluczowe `void` jest używane tylko w deklaracjach funkcji. Wskazuje, że oczekuje się, że funkcja nie zwróci żadnych informacji do funkcji, z której została wywołana.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code shows how to use `void`.
+=== Przykładowy kod
+// Opisz, na czym polega przykładowy kod i dodaj odpowiedni kod ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Kod pokazuje jak używać `void`.
 
 [source,arduino]
 ----
-// actions are performed in the functions "setup" and "loop"
-// but  no information is reported to the larger program
+// wszelkie czynności wykonywane są w funcjach "setup" i "loop"
+// ale żadna informacja nie będzie zwrócona do programy wywołującego je
 
 void setup() {
   // ...
@@ -46,18 +46,18 @@ void loop() {
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+* #LANGUAGE# link:../../constants/integerconstants[Stałe całkowite]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

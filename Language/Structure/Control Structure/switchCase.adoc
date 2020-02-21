@@ -1,14 +1,14 @@
 ---
 title: switch...case
-categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+categories: [ "Struktura" ]
+subCategories: [ "Instrukcje sterujące" ]
 ---
 
 
 
 
 
-= switch...case statement
+= instrukcja switch...case
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -17,40 +17,40 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Opis
-Like link:../if[if] statements, link:../switchcase[switch case] controls the flow of programs by allowing programmers to specify different code that should be executed in various conditions. In particular, a switch statement compares the value of a variable to the values specified in case statements. When a case statement is found whose value matches that of the variable, the code in that case statement is run.
+Podobnie jak instrukcje link:../if[if], również link:../switchcase[switch case] steruje przebiegiem programów umożliwiając programistom przełączenie(ang. switch) wykonania do różnych fragmentów kodu dla różnych przypadków (ang. case). W szczególności instrukcja switch porównuje wartość zmiennej z wartościami określonymi w instrukcjach case. Po znalezieniu instrukcji case, której wartość odpowiada wartości zmiennej, uruchamiany jest kod w tej instrukcji case.
 [%hardbreaks]
 
-The link:../break[break] keyword exits the switch statement, and is typically used at the end of each case. Without a break statement, the switch statement will continue executing the following expressions ("falling-through") until a break, or the end of the switch statement is reached.
+Słowo kluczowe link:../break[break] służy do opuszczenia instrukcji switch i zwykle jest używane na końcu każdego przypadku testowego (case). Bez instrukcji break instrukcja switch będzie kontynuować wykonywanie kolejnych przypadków ("przelatując przez nie"), aż do osiągnięcia break lub do końca instrukcji switch.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 [source,arduino]
 ----
-switch (var) {
-  case label1:
-    // statements
+switch (zmienna) {
+  case przypadek1:
+    // instrukcje
     break;
-  case label2:
-    // statements
+  case przypadek2:
+    // instrukcje
     break;
   default:
-    // statements
+    // instrukcje
     break;
 }
 ----
 
 
 [float]
-=== Parameters
-`var`: a variable whose value to compare with various cases. Allowed data types: `int`, `char`. +
-`label1`, `label2`: constants. Allowed data types: `int`, `char`.
+=== Parametry
+`zmienna`: a variable whose value to compare with various cases. Allowed data types: `int`, `char`. +
+`przypadek1`, `przypadek2`: stałe. Dozwolone typy danych: `int`, `char`.
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -67,16 +67,16 @@ Nothing
 
 [source,arduino]
 ----
-switch (var) {
+switch (zmienna) {
   case 1:
-    //do something when var equals 1
+    // zrób coś gdy zmienna równa się 1
     break;
   case 2:
-    //do something when var equals 2
+    // zrób coś gdy zmienna równa się 2
     break;
   default:
-    // if nothing else matches, do the default
-    // default is optional
+    // jeśli nic innego nie pasuje, zrób czynności domyślne
+    // default nie jest obowiązkowy
     break;
 }
 

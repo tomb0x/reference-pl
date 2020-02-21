@@ -1,7 +1,7 @@
 ---
 title: do...while
-categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+categories: [ "Struktura" ]
+subCategories: [ "Instrukcje sterujące" ]
 ---
 
 
@@ -18,21 +18,21 @@ subCategories: [ "Control Structure" ]
 [float]
 === Opis
 [%hardbreaks]
-The `do...while` loop works in the same manner as the link:../while[while] loop, with the exception that the condition is tested at the end of the loop, so the do loop will always run at least once.
+Pętla `do...while` działa w taki sam sposób jak pętla link:../while[while], z wyjątkiem tego, że warunek jest testowany na końcu pętli, więc pętla do..while wykonuje się co najmniej raz.
 
 [float]
-=== Syntax
+=== Składnia
 [source,arduino]
 ----
 do {
-  // statement block
-} while (condition);
+  // blok instrukcji
+} while (warunek);
 ----
 
 
 [float]
-=== Parameters
-`condition`: a boolean expression that evaluates to `true` or `false`.
+=== Parametry
+`warunek`: wyrażenie logiczne przyjmyjące wartości `true`(prawda) lub `false`(fałsz).
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -51,8 +51,8 @@ do {
 ----
 int x = 0;
 do {
-  delay(50);          // wait for sensors to stabilize
-  x = readSensors();  // check the sensors
+  delay(50);               // czekaj aż czujniki się ustabilizują
+  x = odczytajCzujniki();  // sprawdź czujniki
 } while (x < 100);
 ----
 

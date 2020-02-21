@@ -1,53 +1,64 @@
 ---
 title: byte
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = byte
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-A byte stores an 8-bit unsigned number, from 0 to 255.
+=== Opis
+Typ byte (bajt) przechowuje 8-bitową liczbę bez znaku (z zakresu od 0 do 255).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`byte var = val;`
+=== Składnia
+`byte zm = wart;`
 
 
 [float]
-=== Parameters
-`var`: variable name. +
-`val`: the value to assign to that variable.
+=== Parametry
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
---
-// HOW TO USE SECTION ENDS
+[float]
+=== Przykładowy kod
+// Opisz, na czym polega przykładowy kod i dodaj odpowiedni kod ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Zmienna b przechowuje w 1 bajcie liczbę 100.
 
-// SEE ALSO SECTION STARTS
+[source,arduino]
+----
+byte b = 100;
+----
+
+--
+// KONIEC SEKCJI JAK UŻYWAĆ
+
+
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../conversion/bytecast[byte()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

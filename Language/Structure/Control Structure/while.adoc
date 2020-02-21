@@ -1,7 +1,7 @@
 ---
 title: while
-categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+categories: [ "Struktura" ]
+subCategories: [ "Instrukcje sterujące" ]
 ---
 
 
@@ -18,21 +18,21 @@ subCategories: [ "Control Structure" ]
 [float]
 === Opis
 [%hardbreaks]
-A `while` loop will loop continuously, and infinitely, until the expression inside the parenthesis, () becomes false. Something must change the tested variable, or the while loop will never exit. This could be in your code, such as an incremented variable, or an external condition, such as testing a sensor.
+Pętla `while` będzie się zwykonywać ciągle w nieskończoność, aż wyrażenie w nawiasie () stanie się fałszywe. Coś musi zmienić testowaną zmienną, w przeciwnym razie pętla while nigdy się nie zakończy. Może to być w programie, na przykład zmienna przyrostowa, lub warunek zewnętrzny, taki jak testowanie czujnika.
 
 [float]
-=== Syntax
+=== Składnia
 [source,arduino]
 ----
-while (condition) {
-  // statement(s)
+while (warunek) {
+  // instrukcj(a/e)
 }
 ----
 
 
 [float]
-=== Parameters
-`condition`: a boolean expression that evaluates to `true` or `false`.
+=== Parametry
+`warunek`: wyrażenie logiczne przyjmujące wartość `true` (prawda) lub `false` (fałsz).
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -49,9 +49,9 @@ while (condition) {
 
 [source,arduino]
 ----
-var = 0;
-while (var < 200) {
-  // do something repetitive 200 times
+zmienna = 0;
+while (zmienna < 200) {
+  // zrób coś 200 razy
   var++;
 }
 ----

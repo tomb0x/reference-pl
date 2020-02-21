@@ -1,7 +1,7 @@
 ---
 title: "charAt()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,48 +11,56 @@ subCategories: [ "StringObject Function" ]
 = charAt()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Access a particular character of the String.
+=== Opis
+Dostęp do konkretnego znaku w ciągu znaków.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.charAt(n)`
+=== Składnia
+`mójNapis.charAt(n)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
-`n`: a variable. Allowed data types: `unsigned int`.
+=== Parametry
+`mójNapis`: zmienna typu `String`. +
+`n`: zmienna. Dozwolone typy danych: `unsigned int`.
 
 
 [float]
-=== Returns
-The n'th character of the String.
+=== Wartości zwracane
+Znak na pozycji n w ciągu znaków.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
-// HOW TO USE SECTION ENDS
+[float]
+=== Przykładowy kod
+// Opisz, na czym polega przykładowy kod i dodaj odpowiedni kod ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
-// SEE ALSO SECTION
+// KONIEC SEKCJI JAK UŻYWAĆ
+
+
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

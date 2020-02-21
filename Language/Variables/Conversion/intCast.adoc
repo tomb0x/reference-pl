@@ -1,7 +1,7 @@
 ---
 title: int()
-categories: [ "Variables" ]
-subCategories: [ "Conversion" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Konwersja" ]
 ---
 
 
@@ -11,46 +11,46 @@ subCategories: [ "Conversion" ]
 = int()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/int[int] data type.
+=== Opis
+Konwertuje wartość na typ danych link:../../data-types/int[int] (liczba całkowita).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `int(x)`
 
 
 [float]
-=== Parameters
-`x`: a value. Allowed data types: any type.
+=== Parametry
+`x`: wartość. Dozwolone typy danych: dowolny typ.
 
 
 [float]
-=== Returns
-Data type: `int`.
+=== Wartości zwracane
+Typ danych: `int`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/int[int]
 
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

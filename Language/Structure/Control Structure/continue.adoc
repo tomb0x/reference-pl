@@ -1,7 +1,7 @@
 ---
 title: continue
-categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+categories: [ "Struktura" ]
+subCategories: [ "Instrukcje sterujące" ]
 ---
 
 
@@ -18,7 +18,7 @@ subCategories: [ "Control Structure" ]
 [float]
 === Opis
 [%hardbreaks]
-The `continue` statement skips the rest of the current iteration of a loop (link:../for[for], link:../while[while], or link:../dowhile[do...while]). It continues by checking the conditional expression of the loop, and proceeding with any subsequent iterations.
+Instrukcja `continue` pomija resztę aktualnego przebiegu pętli (link:../for[for], link:../while[while], lub link:../dowhile[do...while]). Następnie sprawdzany jest warunek zakończenia pętli i jeśli to możliwe wykonywany jest następny przepieg.
 [%hardbreaks]
 
 --
@@ -33,15 +33,15 @@ The `continue` statement skips the rest of the current iteration of a loop (link
 
 [float]
 === Przykładowy kod
-The following code writes the value of 0 to 255 to the `PWMpin`, but skips the values in the range of 41 to 119.
+Poniższy program zapisuje wartości od 0 do 255 na `stykPWM`, ale pomija wartości z zakresu od 41 do 119.
 [source,arduino]
 ----
 for (int x = 0; x <= 255; x ++) {
-  if (x > 40 && x < 120) {  // create jump in values
+  if (x > 40 && x < 120) {         // przeskocz te wartości
     continue;
   }
 
-  analogWrite(PWMpin, x);
+  analogWrite(stykPWM, x);
   delay(50);
 }
 ----

@@ -1,41 +1,41 @@
 ---
 title: size_t
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = size_t
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`size_t` is a data type capable of representing the size of any object in bytes. Examples of the use of `size_t` are the return type of link:../../utilities/sizeof[sizeof()] and link:../../../functions/communication/serial/print[Serial.print()].
+=== Opis
+`size_t` jest typem danych zdolnym do reprezentowania w bajtach wielkości dowolnego obiektu. Przykładami użycia `size_t` są typy zwracane przez link:../../utilities/sizeof[sizeof()] i link:../../../functions/communication/serial/print[Serial.print()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`size_t var = val;`
+=== Składnia
+`size_t zm = wart;`
 
 
 [float]
-=== Parameters
-`var`: variable name. +
-`val`: the value to assign to that variable.
+=== Parametry
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

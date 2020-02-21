@@ -1,7 +1,7 @@
 ---
 title: return
-categories: [ "Structure" ]
-subCategories: [ "Control Structure" ]
+categories: [ "Struktura" ]
+subCategories: [ "Instrukcje sterujące" ]
 ---
 
 
@@ -17,19 +17,19 @@ subCategories: [ "Control Structure" ]
 
 [float]
 === Opis
-Terminate a function and return a value from a function to the calling function, if desired.
+Przerywa wykonanie funkcji i w razie potrzeby zwraca wartość do funkcji wywołującej.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `return;` +
-`return value;`
+`return wartość;`
 
 
 [float]
-=== Parameters
-`value`: Allowed data types: any variable or constant type.
+=== Parametry
+`wartość`: Dozwolone typy danych: zmienna lub stała dowolnego typu.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -43,11 +43,11 @@ Terminate a function and return a value from a function to the calling function,
 
 [float]
 === Przykładowy kod
-A function to compare a sensor input to a threshold
+Funcja badająca przekroczenie przekroczenie pewnej wartości odczytaniej z czujnika
 
 [source,arduino]
 ----
-int checkSensor() {
+int sprawdzCzujnik() {
   if (analogRead(0) > 400) {
     return 1;
   }
@@ -57,16 +57,16 @@ int checkSensor() {
 }
 ----
 
-The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
+Słowo kluczowe break jest przydatne do testowania fragmentów programu bez konieczności "komentowania" dużych obszarów potencjalnie błędnego kodu.
 [source,arduino]
 ----
 void loop() {
-  // brilliant code idea to test here
+  // tutaj przetestuj genialny pomysł
 
   return;
 
-  // the rest of a dysfunctional sketch here
-  // this code will never be executed
+  // reszta niedziałającego szkicu
+  // ten fragment nigdy nie zostanie wykonany
 }
 ----
 [%hardbreaks]
