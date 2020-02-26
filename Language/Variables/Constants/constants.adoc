@@ -4,7 +4,7 @@ categories: [ "Zmienne" ]
 subCategories: [ "Stałe" ]
 ---
 
-= Constants
+= Stałe
 
 
 // OVERVIEW SECTION STARTS
