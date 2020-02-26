@@ -1,7 +1,7 @@
 ---
 title: constants
-categories: [ "Variables" ]
-subCategories: [ "Constants" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Stałe" ]
 ---
 
 = Constants
@@ -12,39 +12,39 @@ subCategories: [ "Constants" ]
 --
 
 [float]
-== Description
-Constants are predefined expressions in the Arduino language. They are used to make the programs easier to read. We classify constants in groups:
+== Opis
+Stałe to wstępnie zdefiniowane wyrażenia w języku Arduino. Dzięki nim program może być łatwiejszy do czytania. Wyróżniamy następujące grupy
 
 [float]
-== Defining Logical Levels: true and false (Boolean Constants)
-There are two constants used to represent truth and falsity in the Arduino language: `true`, and `false`.
+== Definiowanie poziomów logicznych: prawda (ang.true) i fałsz (ang.false) (stałe logiczne)
+Istnieją dwie stałe reprezentujące prawdę i fałsz w języku Arduino: `true` i `false`.
 
 [float]
 === false
-`false` is the easier of the two to define. false is defined as 0 (zero).
+Z dwóch powyższych `false` jest łatwiejszy do zdefiniowania. zdefiniowany jest jako 0 (zero).
 [%hardbreaks]
 
 [float]
 === true
-`true` is often said to be defined as 1, which is correct, but true has a wider definition. Any integer which is non-zero is true, in a Boolean sense. So -1, 2 and -200 are all defined as true, too, in a Boolean sense.
+`true` jest często określana jako 1, co jest poprawne, ale ma szerszą definicję. Dowolna niezerowa liczba całkowita onzacza prawdę w sensie logicznym. Więc -1, 2 i -200 również oznaczają prawdę w sensie logicznym.
 [%hardbreaks]
 
-Note that the `true` and `false` constants are typed in lowercase unlike `HIGH`, `LOW`, `INPUT`, and `OUTPUT`.
+Zauważ, że stałe `true` i `false` pisane są małymi literami w przeciwnieństwie do `HIGH`, `LOW`, `INPUT`, i `OUTPUT`.
 [%hardbreaks]
 
 [float]
-== Defining Pin Levels: HIGH and LOW
-When reading or writing to a digital pin there are only two possible values a pin can take/be-set-to: `HIGH` and `LOW`.
+== Definiowanie poziomów logicznych na stykach: HIGH i LOW
+Podczas odczytu lub zapisu na styku cyfrowym są tylko dwie możliwe wartości, które styk może przyjąć/być ustawiony: `HIGH` (wysoki) i `LOW` (niski).
 
 [float]
 === HIGH
-The meaning of `HIGH` (in reference to a pin) is somewhat different depending on whether a pin is set to an `INPUT` or `OUTPUT`. When a pin is configured as an `INPUT` with link:../../../functions/digital-io/pinmode[pinMode()], and read with link:../../../functions/digital-io/digitalread[digitalRead()], the Arduino (ATmega) will report `HIGH` if:
+Znaczenie stanu wysokiego `HIGH` (w odniesieniu do styku) jest nieco inne, w zależności od tego czy styk jest ustawiony jako wejście (`INPUT`) lub wyjście (`OUTPUT`). Jeżeli styk ustawione jest jako wejście `INPUT` przy pomocy link:../../../functions/digital-io/pinmode[pinMode()], i odczytywany poprzez link:../../../functions/digital-io/digitalread[digitalRead()], Arduino (ATmega) zgłasza stan wysoki(`HIGH`) jeśli:
 
-  - a voltage greater than 3.0V is present at the pin (5V boards)
-  - a voltage greater than 2.0V volts is present at the pin (3.3V boards)
+  - na styku występuje napięcie większe niż 3.0V (płytki zasilane napięciem 5V)
+  - na styku występuje napięcie większe niż 2.0V (płytki 3.3V)
 [%hardbreaks]
 
-A pin may also be configured as an INPUT with `pinMode()`, and subsequently made HIGH with link:../../../functions/digital-io/digitalwrite[digitalWrite()]. This will enable the internal 20K pullup resistors, which will _pull up_ the input pin to a `HIGH` reading unless it is pulled `LOW` by external circuitry. This can done alternatively by passing `INPUT_PULLUP` as argument to the `pinMode()` funtion, as explained in more detail in the section "Defining Digital Pins modes: INPUT, INPUT_PULLUP, and OUTPUT" further below.
+Styk można również skonfigurować jako wejście (INPUT) przy pomocy `pinMode()`, a następnie ustawiony w stan wysoki przy pomocy link:../../../functions/digital-io/digitalwrite[digitalWrite()]. Zostaną włączone wewnętrzne rezystory podciągające (20k), które _podciągną_ styk wejściowy aby odczytywał stan wysoki, chyba, że zostanie sprowadzony w stan niski przez układ zewnętrzny. Można to też zrobić inaczej, podając argument `INPUT_PULLUP` w funkcji `pinMode()`, as explained in more detail in the section "Defining Digital Pins modes: INPUT, INPUT_PULLUP, and OUTPUT" further below.
 [%hardbreaks]
 
 When a pin is configured to OUTPUT with `pinMode()`, and set to `HIGH` with `digitalWrite()`, the pin is at:
