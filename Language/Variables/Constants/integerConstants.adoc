@@ -8,10 +8,10 @@ subCategories: [ "Stałe" ]
 
 
 
-= Integer Constants
+= Stałe całkowite
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
@@ -49,11 +49,11 @@ Normally, integer constants are treated as base 10 (decimal) integers, but speci
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 [float]
@@ -104,7 +104,7 @@ It is possible to generate a hard-to-find bug by (unintentionally) including a l
 Valid characters are 0 through 9 and letters A through F; A has the value 10, B is 11, up to F, which is 15. Hex values are indicated by the prefix "0x". Note that A-F may be upper (A-F) or lower case (a-f).
 
 [float]
-=== Example  Code:
+=== Przykładowy kod
 [source,arduino]
 ----
 n = 0x101;  // same as 257 decimal ((1 * 16^2) + (0 * 16^1) + 1)
@@ -113,7 +113,7 @@ n = 0x101;  // same as 257 decimal ((1 * 16^2) + (0 * 16^1) + 1)
 
 
 [float]
-=== Notes and Warnings
+=== Uwagi i ostrzeżenia
 *U & L formatters:*
 
 By default, an integer constant is treated as an int with the attendant limitations in values. To specify an integer constant with another data type, follow it with:
@@ -125,19 +125,19 @@ By default, an integer constant is treated as an int with the attendant limitati
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
