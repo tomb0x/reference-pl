@@ -49,8 +49,8 @@ Styk można również skonfigurować jako wejście (INPUT) przy pomocy `pinMode(
 
 When a pin is configured to OUTPUT with `pinMode()`, and set to `HIGH` with `digitalWrite()`, the pin is at:
 
-  - 5 volts (5V boards)
-  - 3.3 volts (3.3V boards)
+  - 5 woltów (płytki 5V)
+  - 3,3 woltów (płytki 3,3V)
 
 In this state it can source current, e.g. light an LED that is connected through a series resistor to ground.
 [%hardbreaks]
