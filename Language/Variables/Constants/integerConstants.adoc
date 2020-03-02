@@ -1,5 +1,5 @@
 ---
-title: Integer Constants
+title: Stałe całkowite
 categories: [ "Zmienne" ]
 subCategories: [ "Stałe" ]
 ---
@@ -17,34 +17,34 @@ subCategories: [ "Stałe" ]
 
 [float]
 === Opis
-Integer constants are numbers that are used directly in a sketch, like 123. By default, these numbers are treated as link:../../data-types/int[int] but you can change this with the U and L modifiers (see below).
+Stałe całkowite to po prostu używane w szkicu liczby (jak np. 123). Domyślnie te liczby traktowane są jako link:../../data-types/int[int] (całkowite) ale możesz to zmienić za pomocą modyfikatorów U i L (patrz poniżej).
 [%hardbreaks]
 
-Normally, integer constants are treated as base 10 (decimal) integers, but special notation (formatters) may be used to enter numbers in other bases.
+Zwykle stałe całkowite są traktowane jako liczby całkowite o podstawie 10 (dziesiętne), ale w celu użycia liczb o innych podstawach należy użyć specjalnej notacji (znaków formatujących).
 [%hardbreaks]
 
 |===
-|Base |Example |Formatter |Comment
+|Podstawa |Przykład |Znak formatu |Komentarz
 
-|10 (decimal)
+|10 (dziesiętna)
 |123
-|none
+|nic
 |
 
-|2 (binary)
+|2 (dwójkowa)
 |B1111011
-|leading 'B'
-|only works with 8 bit values (0 to 255)   characters 0&1 valid
+|przedrostek 'B'
+|działa tylko z wartościami 8-bitowymi (od 0 do 255)   dopuszczalne znaki to 0 i 1
 
-|8 (octal)
+|8 (ósemkowa)
 |0173
-|leading "0"
-|characters 0-7 valid
+|przedrostek "0"
+|dopuszczalne znaki: 0-7
 
-|16 (hexadecimal)
+|16 (szesnastkowa)
 |0x7B
-|leading "0x"
-|characters 0-9, A-F, a-f valid
+|przedrostek "0x"
+|dopuszczalne znaki: 0-9, A-F, a-f
 |===
 [%hardbreaks]
 
@@ -57,70 +57,70 @@ Normally, integer constants are treated as base 10 (decimal) integers, but speci
 [#howtouse]
 --
 [float]
-== Decimal (base 10)
-This is the common-sense math with which you are acquainted. Constants without other prefixes are assumed to be in decimal format.
+== Dziesiętne (o podstawie 10)
+Jest to podstawowy, znany ci system liczbowy. Zakłada się, że stałe bez przedrostków są w formacie dziesiętnym.
 
 [float]
-=== Example  Code:
+=== Przykładowy kod:
 [source,arduino]
 ----
-n = 101;  // same as 101 decimal ((1 * 10^2) + (0 * 10^1) + 1)
+n = 101;  // dziesiętne 101 ((1 * 10^2) + (0 * 10^1) + 1)
 ----
 [%hardbreaks]
 
 [float]
-== Binary (base 2)
-Only the characters 0 and 1 are valid.
+== Dwójkowe (o podstawie 2)
+Dopuszczalne są tylko znaki 0 i 1.
 
 [float]
-=== Example  Code:
+=== Przykładowy kod:
 [source,arduino]
 ----
-n = B101; // same as 5 decimal ((1 * 2^2) + (0 * 2^1) + 1)
+n = B101; // dziesiętnie 5 ((1 * 2^2) + (0 * 2^1) + 1)
 ----
 
-The binary formatter only works on bytes (8 bits) between 0 (B0) and 255 (B11111111). If it is convenient to input an int (16 bits) in binary form you can do it a two-step procedure such as:
+Zapis dwójkowy działa tylko dla bajtów (liczb 8-bitowych) od 0 (B0) do 255 (B11111111). Jeśli potrzebujesz wprowadzić liczbę całkowitą (16 bitową) w formacie dwójkowym możesz to zrobić następująco:
 [source,arduino]
 ----
-myInt = (B11001100 * 256) + B10101010;  // B11001100 is the high byte`
+mojaCalkowita = (B11001100 * 256) + B10101010;  // B11001100 to bardziej znaczący bajt`
 ----
 [%hardbreaks]
 
 [float]
-== Octal (base 8)
-Only the characters 0 through 7 are valid. Octal values are indicated by the prefix "0" (zero).
+== Ósemkowe (o podstawie 8)
+Dopuszczalne są tylko znaki od 0 do 7. Wartości ósemkowe są oznaczane przedstostkiem "0" (zero).
 
 [float]
-=== Example  Code:
+=== Przykładowy kod:
 [source,arduino]
 ----
-n = 0101; // same as 65 decimal ((1 * 8^2) + (0 * 8^1) + 1)
+n = 0101; // dziesiętnie 65 ((1 * 8^2) + (0 * 8^1) + 1)
 ----
-It is possible to generate a hard-to-find bug by (unintentionally) including a leading zero before a constant and having the compiler unintentionally interpret your constant as octal.
+Możliwe jest wygenerowanie trudnego do znalezienia błędu poprzez (niezamierzone) umieszczenie zera przed stałą i tym samym zmuszienie kompilatora do interpretacji stałej jako ósemkowej.
 [%hardbreaks]
 
 [float]
-== Hexadecimal (base 16)
-Valid characters are 0 through 9 and letters A through F; A has the value 10, B is 11, up to F, which is 15. Hex values are indicated by the prefix "0x". Note that A-F may be upper (A-F) or lower case (a-f).
+== Szesnastkowe (o podstawie 16)
+Dopuszczalne znaki to cyfry od 0 do 9 i litery od A do F; A ma wartość 10, B wartość 11, oż do F, które ma wartość 15. Wartości szesnastkowe oznaczane są przedrostkiem "0x". Zauważ, że litery A-F mogą być wielkie (A-F) jak i małe (a-f).
 
 [float]
 === Przykładowy kod
 [source,arduino]
 ----
-n = 0x101;  // same as 257 decimal ((1 * 16^2) + (0 * 16^1) + 1)
+n = 0x101;  // dziesiętnie 257 ((1 * 16^2) + (0 * 16^1) + 1)
 ----
 [%hardbreaks]
 
 
 [float]
 === Uwagi i ostrzeżenia
-*U & L formatters:*
+*Znaki formatujące U i L:*
 
-By default, an integer constant is treated as an int with the attendant limitations in values. To specify an integer constant with another data type, follow it with:
+Domyślnie stała całkowita traktowana jest jak każda liczba całkowita z określonymi ograniczeniami. Aby określić inny format danych dla stałej całkowitej zrób to za pomocą:
 
-  - a 'u' or 'U' to force the constant into an unsigned data format. Example: 33u
-  - a 'l' or 'L' to force the constant into a long data format. Example: 100000L
-  - a 'ul' or 'UL' to force the constant into an unsigned long constant. Example: 32767ul
+  - 'u' lub 'U' aby wymusić zapis stałej w formacie bez znaku. Przykład: 33u
+  - 'l' lub 'L' aby wymusic zapis stałej w formacie długim. Przykład: 100000L
+  - 'ul' lub 'UL' aby wymusić zapis stałej w formacie długim bez znaku. Przykład: 32767ul
 
 [%hardbreaks]
 
