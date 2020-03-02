@@ -1,58 +1,59 @@
 ---
 title: ">="
-title_expanded: greater than or equal to
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Operator" ]
+title_expanded: większy bądź równy
+categories: [ "Typy danych" ]
+subCategories: [ "operator obiektu String" ]
 ---
 
-= >= Greater Than Or Equal To
+= >= Większy bądź równy
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Tests if the String on the left is greater than, or equal to, the String on the right. This operator evaluate Strings in alphabetical order, on the first character where the two differ. So, for example "b" >= "a" and "2" >= "1", but "999" >= "1000" because 9 comes after 1.
+=== Opis
+Sprawdza, czy łańcuch znaków (String) po lewej jest większy lub równy łańcuchowi po prawej. Ten operator porównuje ciągi (łańcuchy) w kolejności alfabetycznej, aż do pierwszego znaku, którym oba się różnią. Więc, dla przykładu "b" >= "a" i "2" >= "1", ale "999" >= "1000" ponieważ 9 następuje (w układzie alfabetycznym) po 1.
 
-Caution: String comparison operators can be confusing when you're comparing numeric Strings, because the numbers are treated as Strings and not as numbers. If you need to compare numbers numerically, compare them as ints, floats, or longs, and not as Strings.
+Ostrożnie: operatory porównania ciągów mogą być mylące podczas porównywania ciągów liczbowych, ponieważ liczby są traktowane jako ciągi znaków, a nie jak liczby. Jeśli chcesz porównać liczby jako liczby, porównaj je jako liczby całkowite, zmiennoprzecinkowe lub długie, a nie ciągi znaków.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString1 >= myString2`
+=== Składnia
+`mójŁańcuch1 >= mójŁańcuch2`
 
 
 [float]
-=== Parameters
-`myString1`: variable of type String. +
-`myString2: variable of type String.
+=== Parametry
+`mójŁańcuch1`: zmienna typu String. +
+`mójŁańcuch2`: zmienna typu String.
 
 
 [float]
-=== Returns
-`true`: if myString1 is greater than or equal to myString2. +
-`false`: otherwise.
+=== Wartości zwracane
+`true`: jeśli mójŁańcuch1 jest większy bądź równy niż mójŁańcuch2. +
+`false`: w przeciwnym wypadku.
 
 --
 
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

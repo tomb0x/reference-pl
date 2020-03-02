@@ -1,61 +1,62 @@
 ---
 title: "[] "
-title_expanded: element access
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Operator" ]
+title_expanded: dostęp do elementu łańcucha
+categories: [ "Typy danych" ]
+subCategories: [ "operator obiektu String" ]
 ---
 
 
 
 
 
-= [] Element Access
+= [] Dostęp do elementu łańcucha
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Allows you access to the individual characters of a String.
+=== Opis
+Umożliwia dostęp do poszczególnych znaków ciągu (łańcucha).
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`char thisChar = myString1[n]`
+=== Składnia
+`char tenZnak = mójŁańcuch1[n]`
 
 
 [float]
-=== Parameters
-`thisChar`: Allowed data types: char. +
-`myString1`: Allowed data types: String. +
-`n`: a numeric variable.
+=== Parametry
+`tenZnak`: Dozwolone typy danych: char. +
+`mójŁańcuch1`: Dozwolone typy danych: String. +
+`n`: zmienna liczbowa.
 
 
 [float]
-=== Returns
-The nth char of the String. Same as charAt().
+=== Wartości zwracane
+N-ty znak ciągu. To samo co charAt().
 
 --
 
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

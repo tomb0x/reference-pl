@@ -1,8 +1,8 @@
 ---
 title: "+="
 title_expanded: append
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Operator" ]
+categories: [ "Typy danych" ]
+subCategories: [ "operator obiektu String" ]
 ---
 
 
@@ -12,48 +12,49 @@ subCategories: [ "StringObject Operator" ]
 = += Append
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-It concatenates Strings with other data.
+=== Opis
+Łączy łańcuchy z innymi danymi.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString1 += data`
+=== Składnia
+`mójŁańcuch1 += dane`
 
 
 [float]
-=== Parameters
-`myString1`: a String variable.
+=== Parametry
+`mójŁańcuch1`: zmienna typu String.
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
 
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
