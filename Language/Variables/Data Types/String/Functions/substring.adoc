@@ -1,7 +1,7 @@
 ---
 title: "substring()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,50 +11,50 @@ subCategories: [ "StringObject Function" ]
 = substring()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Get a substring of a String. The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring). If the ending index is omitted, the substring continues to the end of the String.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.substring(from)` +
-`myString.substring(from, to)`
+=== Składnia
+`mójŁańcuch.substring(from)` +
+`mójŁańcuch.substring(from, to)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
+=== Parametry
+`mójŁańcuch`: a variable of type `String`. +
 `from`: the index to start the substring at. +
 `to` (optional): the index to end the substring before.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The substring.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

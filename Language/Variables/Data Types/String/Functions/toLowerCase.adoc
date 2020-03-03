@@ -1,7 +1,7 @@
 ---
 title: "toLowerCase()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,47 +11,47 @@ subCategories: [ "StringObject Function" ]
 = toLowerCase()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the String in place rather than returning a new one.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.toLowerCase()`
+=== Składnia
+`mójŁańcuch.toLowerCase()`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`.
+=== Parametry
+`mójŁańcuch`: a variable of type `String`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

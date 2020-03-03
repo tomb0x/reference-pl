@@ -1,7 +1,7 @@
 ---
 title: "compareTo()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,51 +11,51 @@ subCategories: [ "StringObject Function" ]
 = compareTo()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Compares two Strings, testing whether one comes before or after the other, or whether they're equal. The strings are compared character by character, using the ASCII values of the characters. That means, for example, that 'a' comes before 'b' but after 'A'. Numbers come before letters.
+=== Opis
+Porównuje dwa ciągi, sprawdzając, czy jeden występuje przed, czy po drugim, czy też są równe. Ciągi znaków są porównywane znak po znaku, przy użyciu wartości ASCII znaków. Oznacza to na przykład, że 'a' występuje przed 'b', ale po 'A'. Liczby pojawiają się przed literami.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.compareTo(myString2)`
+=== Składnia
+`mójŁańcuch.compareTo(mójŁańcuch2)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
-`myString2`: another variable of type `String`.
+=== Parametry
+`mójŁańcuch`: zmienna typu `String`. +
+`mójŁańcuch2`: inna zmienna typu `String`.
 
 
 [float]
-=== Returns
-`a negative number`: if myString comes before myString2. +
-`0`: if String equals myString2. +
-`a positive number`: if myString comes after myString2.
+=== Wartości zwracane
+`liczba ujemna`: jeśli mójŁańcuch jest przed mójŁańcuch2. +
+`0`: jeśli mójŁańcuch jest równy mójŁańcuch2. +
+`liczba dodatnia`: jeśli mójŁańcuch jest za mójŁańcuch2.
 
 --
 
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

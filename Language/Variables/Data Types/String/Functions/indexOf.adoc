@@ -1,7 +1,7 @@
 ---
 title: "indexOf()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,12 +11,12 @@ subCategories: [ "StringObject Function" ]
 = indexOf()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Locates a character or String within another String. By default, searches from the beginning of the String, but can also start from a given index, allowing for the locating of all instances of the character or String.
 
 
@@ -24,38 +24,38 @@ Locates a character or String within another String. By default, searches from t
 
 
 [float]
-=== Syntax
-`myString.indexOf(val)` +
-`myString.indexOf(val, from)`
+=== Składnia
+`mójŁańcuch.indexOf(val)` +
+`mójŁańcuch.indexOf(val, from)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
+=== Parametry
+`mójŁańcuch`: a variable of type `String`. +
 `val`: the value to search for. Allowed data types: `char`, `String`. +
 `from`: the index to start the search from.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The index of val within the String, or -1 if not found.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

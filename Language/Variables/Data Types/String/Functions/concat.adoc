@@ -1,7 +1,7 @@
 ---
 title: "concat()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,49 +11,49 @@ subCategories: [ "StringObject Function" ]
 = concat()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Appends the parameter to a String.
+=== Opis
+Dołącza parametr do łańcucha.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.concat(parameter)`
+=== Składnia
+`mójŁańcuch.concat(parametr)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
-`parameter`: Allowed data types: `String`, `string`, `char`, `byte`, `int`, `unsigned int`, `long`, `unsigned long`, `float`, `double`, `__FlashStringHelper`(`F()` macro).
+=== Parametry
+`mójŁańcuch`: zmienna typu `String`. +
+`parameter`: Dozwolone typy danych: `String`, `string`, `char`, `byte`, `int`, `unsigned int`, `long`, `unsigned long`, `float`, `double`, `__FlashStringHelper`(`F()` macro).
 
 
 [float]
-=== Returns
-`true`: success. +
-`false`: failure (in which case the String is left unchanged).
+=== Wartości zwracane
+`true`: sukces. +
+`false`: błąd (w tym przypadku łańcuch pozostaje niezmieniony).
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

@@ -1,7 +1,7 @@
 ---
 title: "equals()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,48 +11,48 @@ subCategories: [ "StringObject Function" ]
 = equals()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Compares two Strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO".
+=== Opis
+Sprawdza czy dwa ciągi są jednakowe. Podczas porównania rozróżniana jest wielkość liter, co oznacza, że ciąg "hello" nie jest równy ciągowi "HELLO". 
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.equals(myString2)`
+=== Składnia
+`mójŁańcuch.equals(mójŁańcuch2)`
 
 
 [float]
-=== Parameters
-`myString, myString2`: variables of type `String`.
+=== Parametry
+`mójŁańcuch, mójŁańcuch2`: zmienne typu `String`.
 
 
 [float]
-=== Returns
-`true`: if string equals string2. +
-`false`: otherwise.
+=== Wartości zwracane
+`true`: jeśli ciągi są sobie równe. +
+`false`: w przeciwnym wypadku.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

@@ -1,7 +1,7 @@
 ---
 title: "startsWith()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,48 +11,48 @@ subCategories: [ "StringObject Function" ]
 = startsWith()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Tests whether or not a String starts with the characters of another String.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.startsWith(myString2)`
+=== Składnia
+`mójŁańcuch.startsWith(mójŁańcuch2)`
 
 
 [float]
-=== Parameters
-`myString, myString2`: a variable of type `String`.
+=== Parametry
+`mójŁańcuch, mójŁańcuch2`: a variable of type `String`.
 
 
 [float]
-=== Returns
-`true`: if myString starts with the characters of myString2. +
+=== Wartości zwracane
+`true`: if mójŁańcuch starts with the characters of mójŁańcuch2. +
 `false`: otherwise
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

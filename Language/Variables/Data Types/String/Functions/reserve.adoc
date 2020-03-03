@@ -1,7 +1,7 @@
 ---
 title: "reserve()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,34 +11,34 @@ subCategories: [ "StringObject Function" ]
 = reserve()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 The String reserve() function allows you to allocate a buffer in memory for manipulating Strings.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.reserve(size)`
+=== Składnia
+`mójŁańcuch.reserve(size)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
+=== Parametry
+`mójŁańcuch`: a variable of type `String`. +
 `size`: the number of bytes in memory to save for String manipulation. Allowed data types: `unsigned int`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 // HOW TO USE SECTION STARTS
 [#howtouse]
@@ -49,7 +49,7 @@ Nothing
 
 [source,arduino]
 ----
-String myString;
+String mójŁańcuch;
 
 void setup() {
   // initialize serial and wait for port to open:
@@ -58,13 +58,13 @@ void setup() {
     ; // wait for serial port to connect. Needed for native USB
   }
 
-  myString.reserve(26);
-  myString = "i=";
-  myString += "1234";
-  myString += ", is that ok?";
+  mójŁańcuch.reserve(26);
+  mójŁańcuch = "i=";
+  mójŁańcuch += "1234";
+  mójŁańcuch += ", is that ok?";
 
   // print the String:
-  Serial.println(myString);
+  Serial.println(mójŁańcuch);
 }
 
 void loop() {
@@ -72,17 +72,17 @@ void loop() {
 }
 ----
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

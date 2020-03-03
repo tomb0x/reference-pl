@@ -1,7 +1,7 @@
 ---
 title: "remove()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,36 +11,36 @@ subCategories: [ "StringObject Function" ]
 = remove()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Modify in place a String removing chars from the provided index to the end of the String or from the provided index to index plus count.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.remove(index)` +
-`myString.remove(index, count)`
+=== Składnia
+`mójŁańcuch.remove(index)` +
+`mójŁańcuch.remove(index, count)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
+=== Parametry
+`mójŁańcuch`: a variable of type `String`. +
 `index`: The position at which to start the remove process (zero indexed). Allowed data types: `unsigned int`. +
 `count`: The number of characters to remove. Allowed data types: `unsigned int`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 // HOW TO USE SECTION STARTS
@@ -57,17 +57,17 @@ greeting.remove(2, 2);  // greeting now contains "heo"
 ----
 [%hardbreaks]
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

@@ -1,7 +1,7 @@
 ---
 title: "c_str()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,47 +11,47 @@ subCategories: [ "StringObject Function" ]
 = c_str()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Converts the contents of a String as a C-style, null-terminated string. Note that this gives direct access to the internal String buffer and should be used with care. In particular, you should never modify the string through the pointer returned. When you modify the String object, or when it is destroyed, any pointer previously returned by c_str() becomes invalid and should not be used any longer.
+=== Opis
+Konwertuje zawartość ciągu na format w stylu języka C, zakończonego znakiem o kodzie 0. Zauważ, że daje to bezpośredni dostęp do wewnętrznego bufora String i należy tego używać ostrożnie. W szczególności nigdy nie należy modyfikować ciągu poprzez zwracany wskaźnik. Po zmodyfikowaniu obiektu String lub po jego zniszczeniu dowolny wskaźnik poprzednio zwrócony przez c_str () staje się nieprawidłowy i nie powinien być dłużej używany.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.c_str()`
+=== Składnia
+`mójŁańcuch.c_str()`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`.
+=== Parametry
+`mójŁańcuch`: zmienna typu `String`.
 
 
 [float]
-=== Returns
-A pointer to the C-style version of the invoking String.
+=== Wartości zwracane
+Wskaźnik odwołania się do łańcucha w stylu języka C.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

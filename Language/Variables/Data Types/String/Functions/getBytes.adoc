@@ -1,7 +1,7 @@
 ---
 title: "getBytes()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,49 +11,49 @@ subCategories: [ "StringObject Function" ]
 = getBytes()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Copies the String's characters to the supplied buffer.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.getBytes(buf, len)`
+=== Składnia
+`mójŁańcuch.getBytes(buf, len)`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`. +
+=== Parametry
+`mójŁańcuch`: a variable of type `String`. +
 `buf`: the buffer to copy the characters into. Allowed data types: array of `byte`s. +
 `len`: the size of the buffer. Allowed data types: `unsigned int`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 Nothing
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

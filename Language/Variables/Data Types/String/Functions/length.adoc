@@ -1,7 +1,7 @@
 ---
 title: "length()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,47 +11,47 @@ subCategories: [ "StringObject Function" ]
 = length()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Returns the length of the String, in characters. (Note that this doesn't include a trailing null character.)
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.length()`
+=== Składnia
+`mójŁańcuch.length()`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`.
+=== Parametry
+`mójŁańcuch`: a variable of type `String`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The length of the String in characters.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

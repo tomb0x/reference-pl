@@ -1,7 +1,7 @@
 ---
 title: "toInt()"
-categories: [ "Data Types" ]
-subCategories: [ "StringObject Function" ]
+categories: [ "Typy danych" ]
+subCategories: [ "Funkcja objektu String" ]
 ---
 
 
@@ -11,47 +11,47 @@ subCategories: [ "StringObject Function" ]
 = toInt()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Converts a valid String to an integer. The input String should start with an integer number. If the String contains non-integer numbers, the function will stop performing the conversion.
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`myString.toInt()`
+=== Składnia
+`mójŁańcuch.toInt()`
 
 
 [float]
-=== Parameters
-`myString`: a variable of type `String`.
+=== Parametry
+`mójŁańcuch`: a variable of type `String`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 If no valid conversion could be performed because the String doesn't start with a integer number, a zero is returned. Data type: `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
