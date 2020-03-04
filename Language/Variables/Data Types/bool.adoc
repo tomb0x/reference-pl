@@ -1,84 +1,83 @@
 ---
 title: bool
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = bool
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-A `bool` holds one of two values, `true` or `false`. (Each `bool` variable occupies one byte of memory.)
+=== Opis
+Typ `bool` oznacza jedną z dwóch wartości, `true` (prawda) lub `false` (fałsz). (Każda zmienna typu `bool` zajmuje jeden bajt pamięci.)
 
 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`bool var = val;`
+=== Składnia
+`bool zm = wart;`
 
 
 [float]
-=== Parameters
-`var`: variable name. +
-`val`: the value to assign to that variable.
+=== Parametry
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do tej zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-This code shows how to use the `bool` datatype.
+=== Przykładowy kod
+Ten kod pokazuje, jak używać danych typu `bool`.
 
 [source,arduino]
 ----
-int LEDpin = 5;     // LED on pin 5
-int switchPin = 13; // momentary switch on 13, other side connected to ground
+int stykLED = 5;        // dioda świecąca na styku nr 5
+int stykPrzycisku = 13; // przycisk na styku 13, druga strona podłączona do masy (minusa).
 
-bool running = false;
+bool pracuje = false;
 
 void setup() {
-  pinMode(LEDpin, OUTPUT);
-  pinMode(switchPin, INPUT);
-  digitalWrite(switchPin, HIGH);  // turn on pullup resistor
+  pinMode(stykLED, OUTPUT);
+  pinMode(stykPrzycisku, INPUT);
+  digitalWrite(stykPrzycisku, HIGH);  // włączenie rezystora podciągającego
 }
 
 void loop() {
-  if (digitalRead(switchPin) == LOW) {
-    // switch is pressed - pullup keeps pin high normally
-    delay(100);                     // delay to debounce switch
-    running = !running;             // toggle running variable
-    digitalWrite(LEDpin, running);  // indicate via LED
+  if (digitalRead(stykPrzycisku) == LOW) {
+    // przycisk przyciśnięty - podciągnięcie utrzymuje na styku stan wysoki.
+    delay(100);                     // opóźnienie w celu usunięcia drgań styków
+    pracuje = !pracuje;             // przełącznie zmiennej pracuje
+    digitalWrite(stykLED, pracuje);  // sygnalizacja za pomocą diody świecącej
   }
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/constants/constants[constants]
+* #LANGUAGE# link:../../../variables/constants/constants[stałe]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

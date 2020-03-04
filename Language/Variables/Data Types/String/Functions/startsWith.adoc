@@ -17,7 +17,7 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Tests whether or not a String starts with the characters of another String.
+Sprawdza, czy ciąg zaczyna się od znaków innego ciągu.
 
 [%hardbreaks]
 
@@ -29,19 +29,33 @@ Tests whether or not a String starts with the characters of another String.
 
 [float]
 === Parametry
-`mójŁańcuch, mójŁańcuch2`: a variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`
+`mójŁańcuch2``: zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-`true`: if mójŁańcuch starts with the characters of mójŁańcuch2. +
-`false`: otherwise
+`true`: jeśli mójŁańcuch rozpoczyna się znakami ciągu mójŁańcuch2. +
+`false`: w przeciwnym wypadku
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opis jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+// kod
+// kod
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

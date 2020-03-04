@@ -17,7 +17,8 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Get an upper-case version of a String. As of 1.0, toUpperCase() modifies the String in place rather than returning a new one.
+Dostarcza wersję ciągu pisaną wielkimi literami. Począwszy od wersji 1.0, toUpperCase() modyfikuje ciąg, zamiast zwracać nowy.
+
 [%hardbreaks]
 
 
@@ -28,18 +29,33 @@ Get an upper-case version of a String. As of 1.0, toUpperCase() modifies the Str
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+
+// kod
+// kod
+
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

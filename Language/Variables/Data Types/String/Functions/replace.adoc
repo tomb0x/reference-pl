@@ -17,32 +17,44 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-The String replace() function allows you to replace all instances of a given character with another character. You can also use replace to replace substrings of a String with a different substring.
+Funkcja replace() pozwala zastąpić wszystkie wystąpienia danego znaku innym znakiem. Możesz także użyć replace(), aby zastąpić fragmenty łańcucha innym fragmentem.
 
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`mójŁańcuch.replace(substring1, substring2)`
+`mójŁańcuch.replace(fragment1, fragment2)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`substring1`: another variable of type `String`. +
-`substring2`: another variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`. +
+`fragment1`: inna zmienna typu `String`. +
+`fragment2`: jeszcze inna zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
-
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+String pozdrowienie = "hello";
+pozdrowienie.replace("he","HE");  // teraz pozdrowienie zawiera ciąg "HEllo"
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

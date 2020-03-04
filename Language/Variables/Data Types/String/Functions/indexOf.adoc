@@ -17,7 +17,7 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Locates a character or String within another String. By default, searches from the beginning of the String, but can also start from a given index, allowing for the locating of all instances of the character or String.
+Lokalizuje znak lub ciąg w innym ciągu. Domyślnie wyszukiwanie zaczyna się od początku ciągu, ale może również zaczynać się od określonego miejsca, co pozwala na zlokalizowanie wszystkich wystąpień znaku lub ciągu.
 
 
 [%hardbreaks]
@@ -25,20 +25,20 @@ Locates a character or String within another String. By default, searches from t
 
 [float]
 === Składnia
-`mójŁańcuch.indexOf(val)` +
-`mójŁańcuch.indexOf(val, from)`
+`mójŁańcuch.indexOf(wart)` +
+`mójŁańcuch.indexOf(wart, od)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`val`: the value to search for. Allowed data types: `char`, `String`. +
-`from`: the index to start the search from.
+`mójŁańcuch`: zmienna typu `String`. +
+`wart`: poszukiwana wartość. Dozwolone typy danych: `char`, `String`. +
+`od`: miejsce od którego rozpocznie się wyszukiwanie.
 
 
 [float]
 === Wartości zwracane
-The index of val within the String, or -1 if not found.
+Pozycja w ciągu na której znaleziona została wartość, lub -1 jeśli jej nie znaleziono.
 
 --
 // KONIEC SEKCJI OPISOWEJ

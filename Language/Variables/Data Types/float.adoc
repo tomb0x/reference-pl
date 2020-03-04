@@ -1,7 +1,7 @@
 ---
 title: float
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 
@@ -11,99 +11,99 @@ subCategories: [ "Data Types" ]
 = float
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Datatype for floating-point numbers, a number that has a decimal point. Floating-point numbers are often used to approximate analog and continuous values because they have greater resolution than integers. Floating-point numbers can be as large as 3.4028235E+38 and as low as -3.4028235E+38. They are stored as 32 bits (4 bytes) of information.
+=== Opis
+Typ danych dla liczb zmiennoprzecinkowych, czyli liczb z przecinkiem dziesiętnym. Liczby zmiennoprzecinkowe są często używane do przybliżania wartości analogowych i ciągłych, ponieważ mają większą rozdzielczość niż liczby całkowite. Liczby zmiennoprzecinkowe mogą być w zakresie od -3,4028235E+38 do 3,4028235E+38. Przechowywane są jako liczby 32-bitowe (4-bajtowe).
 
 
 [%hardbreaks]
 
 [float]
-=== Syntax
-`float var = val;`
+=== Składnia
+`float zm = wart;`
 
 [float]
-=== Parameters
-`var`: variable name. +
-`val`: the value you assign to that variable.
+=== Parametry
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do tej zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-float myfloat;
-float sensorCalbrate = 1.117;
+float mojazm;
+float kalibCzujnika = 1.117;
 
 int x;
 int y;
 float z;
 
 x = 1;
-y = x / 2;          // y now contains 0, ints can't hold fractions
-z = (float)x / 2.0; // z now contains .5 (you have to use 2.0, not 2)
+y = x / 2;          // y zawiera teraz 0 ponieważ zmienne typu int nie mogą przechowywać ułamków
+z = (float)x / 2.0; // z zawiera teraz 0,5 (musisz użyć 2.0, zamiast 2)
 ----
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== Notes and Warnings
-If doing math with floats, you need to add a decimal point, otherwise it will be treated as an int. See the link:../../constants/floatingpointconstants[Floating point] constants page for details.
+=== Uwagi i ostrzeżenia
+Jeśli robisz obliczenia z liczbami zmiennoprzecinkowymi, musisz dodać kropkę dziesiętną, w przeciwnym razie liczba będzie traktowana jako całkowita. Aby uzyskać szczegółowe informacje, zobacz stronę link:../../constants/floatingpointconstants[Floating point].
 
-The float data type has only 6-7 decimal digits of precision. That means the total number of digits, not the number to the right of the decimal point. Unlike other platforms, where you can get more precision by using a double (e.g. up to 15 digits), on the Arduino, double is the same size as float.
+Typ danych zmiennoprzecinkowych ma dokładność tylko do 6-7 cyfr. Oznacza to całkowitą liczbę cyfr, a nie ilość cyfr po prawej stronie przecinka. W przeciwieństwie do innych platform, w których można uzyskać większą dokładność, używając typu double (np. do 15 cyfr), w Arduino double ma taki sam rozmiar jak typ float.
 
-Floating point numbers are not exact, and may yield strange results when compared. For example 6.0 / 3.0 may not equal 2.0. You should instead check that the absolute value of the difference between the numbers is less than some small number.
+Liczby zmiennoprzecinkowe nie są dokładne i mogą dawać dziwne wyniki przy porównywaniu. Na przykład 6.0/3.0 może nie być równe 2.0. Zamiast tego powinieneś sprawdzić, czy wartość bezwzględna różnicy między liczbami jest mniejsza niż jakaś niewielka liczba.
 
-Conversion from floating point to integer math results in truncation:
+Konwersja z liczb zmiennoprzecinkowych na całkowite powoduje obcięcie części ułamkowej (a nie zaokrąglanie):
 [source,arduino]
 ----
-float x = 2.9; // A float type variable
-int y = x;  // 2
+float x = 2.9; // zmienna typu zmiennoprzecinkowego
+int y = x;     // 2
 ----
 
-If, instead, you want to round off during the conversion process, you need to add `0.5`:
+Natomiast jeśli podczas procesu konwersji chcesz zaokrąglić wynik musisz dodać `0.5`:
 [source,arduino]
 ----
 float x = 2.9;
 int y = x + 0.5;  // 3
 ----
-or use the `round()` function:
+lub użyć funkcji `round()`:
 [source,arduino]
 ----
 float x = 2.9;
 int y = round(x);  // 3
 ----
 
-Floating point math is also much slower than integer math in performing calculations, so should be avoided if, for example, a loop has to run at top speed for a critical timing function. Programmers often go to some lengths to convert floating point calculations to integer math to increase speed.
+Matematyka zmiennoprzecinkowa jest również znacznie wolniejsza niż matematyka liczb całkowitych podczas wykonywania obliczeń, dlatego należy jej unikać, na przykład jeśli pętla musi działać z najwyższą prędkością, aby uzyskać krytyczną funkcję pomiaru czasu. Programiści często starają się przekształcić obliczenia zmiennoprzecinkowe w całkowitoliczbowe w celu zwiększenia prędkości.
 
 [%hardbreaks]
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

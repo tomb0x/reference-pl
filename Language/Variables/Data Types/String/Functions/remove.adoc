@@ -17,43 +17,42 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Modify in place a String removing chars from the provided index to the end of the String or from the provided index to index plus count.
+Modyfikuje ciąg usuwając znaki od podanego miejsca do końca ciągu lub podaną liczbę znaków.
 
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`mójŁańcuch.remove(index)` +
-`mójŁańcuch.remove(index, count)`
+`mójŁańcuch.remove(miejsce)` +
+`mójŁańcuch.remove(miejsce, liczba)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`index`: The position at which to start the remove process (zero indexed). Allowed data types: `unsigned int`. +
-`count`: The number of characters to remove. Allowed data types: `unsigned int`.
+`mójŁańcuch`: zmienna typu `String`. +
+`miejsce`: Miejsce rozpoczęcia procesu usuwania (liczone od zera). Dozwolone typy danych: `unsigned int`. +
+`liczba`: The number of characters to remove. Dozwolone typy danych: `unsigned int`.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
-
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 [source,arduino]
 ----
-String greeting = "hello";
-greeting.remove(2, 2);  // greeting now contains "heo"
+String pozdrowienie = "hello";
+pozdrowienie.remove(2, 2);  // teraz pozdrowienie zawiera ciąg "heo"
 ----
 [%hardbreaks]
 --

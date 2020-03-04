@@ -17,32 +17,47 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Copies the String's characters to the supplied buffer.
+Kopiuje znaki ciągu do podanego bufora.
 
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`mójŁańcuch.toCharArray(buf, len)`
+`mójŁańcuch.toCharArray(bufor, dlugość)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`buf`: the buffer to copy the characters into. Allowed data types: array of `char`s. +
-`len`: the size of the buffer. Allowed data types: `unsigned int`.
+`mójŁańcuch`: zmienna typu `String`. +
+`bufor`: bufor na kopiowane znaki. Dozwolone typy danych: array of `char`s. +
+`dlugość`: rozmiar bufora. Dozwolone typy danych: `unsigned int`.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+
+// kod
+// kod
+
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

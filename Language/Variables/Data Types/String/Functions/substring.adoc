@@ -17,33 +17,48 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Get a substring of a String. The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring). If the ending index is omitted, the substring continues to the end of the String.
+Pobiera fragment ciągu. Znak z pozycji początkowej jest pobierany do ciągu, a znak z opcjonalej końcowej pozycji już nie. Jeśli nie zostanie podana pozycja końcowa fragment będzie pobrany aż do końca ciągu.
 
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`mójŁańcuch.substring(from)` +
-`mójŁańcuch.substring(from, to)`
+`mójŁańcuch.substring(początek)` +
+`mójŁańcuch.substring(początek, koniec)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`from`: the index to start the substring at. +
-`to` (optional): the index to end the substring before.
+`mójŁańcuch`: zmienna tyou `String`. +
+`początek`: pozycja początkowa fragmentu. +
+`koniec` (opcjonalny): pozycja, przed którą kończy się fragment.
 
 
 [float]
 === Wartości zwracane
-The substring.
+Fragment ciągu.
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+
+// kod
+// kod
+
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

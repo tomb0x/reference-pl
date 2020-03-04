@@ -17,7 +17,7 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the String in place rather than returning a new one.
+Dostarcza wersję ciągu pisaną małymi literami. Począwszy od wersji 1.0, toLowerCase() modyfikuje ciąg, zamiast zwracać nowy.
 
 [%hardbreaks]
 
@@ -29,18 +29,33 @@ Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the Stri
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+
+// kod
+// kod
+
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

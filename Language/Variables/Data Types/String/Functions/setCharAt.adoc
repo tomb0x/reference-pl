@@ -17,32 +17,46 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Sets a character of the String. Has no effect on indices outside the existing length of the String.
+Ustawia znak ciągu. Nie ma wpływu na miejsca poza ciągiem.
 
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`mójŁańcuch.setCharAt(index, c)`
+`mójŁańcuch.setCharAt(miejsce, c)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`index`: the index to set the character at. +
-`c`: the character to store to the given location.
+`mójŁańcuch`: zmienna typu `String`. +
+`miejsce`: miejsce, w którym należy ustawić znak +
+`c`: znak do wpisania na podaną lokalizację.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opis jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
 
+// kod
+// kod
+
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

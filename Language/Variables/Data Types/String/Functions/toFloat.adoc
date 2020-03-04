@@ -17,7 +17,7 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Converts a valid String to a float. The input String should start with a digit. If the String contains non-digit characters, the function will stop performing the conversion. For example, the Strings "123.45", "123", and "123fish" are converted to 123.45, 123.00, and 123.00 respectively. Note that "123.456" is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer Strings might be truncated.
+Konwertuje prawidłowy ciąg znaków na liczbę zmiennoprzecinkową. Łańcuch wejściowy powinien zaczynać się cyfrą. Jeśli ciąg zawiera znaki inne niż cyfry, funkcja przerywa w tym miejscu wykonywanie konwersji. Na przykład ciągi "123.45", "123" i "123fish" są konwertowane odpowiednio na 123,45, 123,00 i 123,00. Pamiętaj, że "123.456" jest przybliżane do 123.46. Zauważ też, że precyzja liczb zmiennoprzecinkowych to tylko 6-7 cyfr i że dłuższe łańcuchy mogą zostać obcięte.
 
 [%hardbreaks]
 
@@ -29,18 +29,33 @@ Converts a valid String to a float. The input String should start with a digit. 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-If no valid conversion could be performed because the String doesn't start with a digit, a zero is returned. Data type: `float`.
+Jeśli nie można wykonać prawidłowej konwersji, ponieważ ciąg nie zaczyna się od cyfry, zwracane jest zero. Typ danych: `float`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+
+// kod
+// kod
+
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

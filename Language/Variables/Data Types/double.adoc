@@ -1,61 +1,61 @@
 ---
 title: double
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = double
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Double precision floating point number. On the Uno and other ATMEGA based boards, this occupies 4 bytes. That is, the double implementation is exactly the same as the float, with no gain in precision.
+=== Opis
+Liczba zmiennoprzecinkowa podwójnej precyzji. Na płytce Uno i innych opartych na ATMEGA zajmuje 4 bajty. Oznacza to, że podwójna implementacja jest dokładnie taka sama jak liczba typu float, bez zmiany precyzji.
 
-On the Arduino Due, doubles have 8-byte (64 bit) precision.
+W Arduino Due liczby typu double mają 8-bajtową (64-bitową) precyzję.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`double var = val;`
+=== Składnia
+`double zm = wart;`
 
 
 [float]
-=== Parameters
-`var`: variable name. +
-`val`: the value to assign to that variable.
+=== Parametry
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do tej zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 
 [float]
-=== Notes and Warnings
-Users who borrow code from other sources that includes double variables may wish to examine the code to see if the implied precision is different from that actually achieved on ATMEGA based Arduinos.
+=== Uwagi i ostrzeżenia
+Użytkownicy, którzy biorą kod z innych źródeł, który zawiera zmienne typu double, mogą sprawdzić kod, aby zobaczyć, czy oczekiwana dokładność różni się od tej faktycznie osiągniętej w płytkach Arduino opartych na ATMEGA.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

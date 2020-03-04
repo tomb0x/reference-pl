@@ -1,17 +1,17 @@
 ---
 title: "String()"
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = String()
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Constructs an instance of the String class. There are multiple versions that construct Strings from different data types (i.e. format them as sequences of characters), including:
 
 * a constant string of characters, in double quotes (i.e. a char array)
@@ -48,14 +48,14 @@ gives you the String "1101", which is the binary representation of 13.
 
 
 [float]
-=== Syntax
+=== Składnia
 `String(val)` +
 `String(val, base)` +
 `String(val, decimalPlaces)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `val`:  a variable to format as a String. Allowed data types: string, char, byte, int, long, unsigned int, unsigned long, float, double. +
 `base`: (optional) the base in which to format an integral value. +
 `decimalPlaces`: *only if val is float or double*. The desired decimal places.
@@ -66,16 +66,16 @@ gives you the String "1101", which is the binary representation of 13.
 An instance of the String class.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 All of the following are valid declarations for Strings.
 [source,arduino]
 ----
@@ -92,7 +92,7 @@ String stringOne = String(5.698, 3);                  // using a float and the d
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 [float]
@@ -142,14 +142,14 @@ String stringOne = String(5.698, 3);                  // using a float and the d
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

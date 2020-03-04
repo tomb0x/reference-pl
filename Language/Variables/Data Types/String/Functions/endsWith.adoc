@@ -17,7 +17,7 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Tests whether or not a String ends with the characters of another String.
+Sprawdza czy ciąg znaków kończy się znakami innego ciągu.
 
 [%hardbreaks]
 
@@ -29,14 +29,14 @@ Tests whether or not a String ends with the characters of another String.
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`mójŁańcuch2`: another variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`. +
+`mójŁańcuch2`: inna zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-`true`: if mójŁańcuch ends with the characters of mójŁańcuch2. +
-`false`: otherwise.
+`true`: jeśli na końcu ciągu mójŁańcuch jest ciąg mójŁańcuch2. +
+`false`: w przeciwnym wypadku.
 
 --
 // KONIEC SEKCJI OPISOWEJ

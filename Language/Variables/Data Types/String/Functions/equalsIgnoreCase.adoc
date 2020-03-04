@@ -35,7 +35,7 @@ Sprawdza czy dwa ciągi są jednakowe. Podczas porównania nie jest rozróżnian
 
 [float]
 === Wartości zwracane
-`true`: jeśli mójŁańcuch jest równy mójŁańcuch2 (ignorując wielkość liter). +
+`true`: jeśli ciąg mójŁańcuch jest równy ciągowi mójŁańcuch2 (ignorując wielkość liter). +
 `false`: w przeciwnym wypadku.
 
 --

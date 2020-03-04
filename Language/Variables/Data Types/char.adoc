@@ -1,69 +1,69 @@
 ---
 title: char
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = char
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-A data type used to store a character value. Character literals are written in single quotes, like this: 'A' (for multiple characters - strings - use double quotes: "ABC").
+=== Opis
+Typ danych używany do przechowywania wartości znaku. Literały znakowe są pisane w apostrofach, jak np.: 'A' (w przypadku wielu znaków - czyli ciągów - użyj cudzysłowów: "ABC").
 
-Characters are stored as numbers however. You can see the specific encoding in the link:https://www.arduino.cc/en/Reference/ASCIIchart[ASCII chart]. This means that it is possible to do arithmetic on characters, in which the ASCII value of the character is used (e.g. 'A' + 1 has the value 66, since the ASCII value of the capital letter A is 65). See link:../../../functions/communication/serial/println[`Serial.println`] reference for more on how characters are translated to numbers.
+Znaki są jednak przechowywane jako liczby. Możesz zobaczyć poszczególne kody znaków na stronie link:https://www.arduino.cc/en/Reference/ASCIIchart[tabela ASCII]. Oznacza to, że możliwe jest wykonywanie obliczeń na znakach, w których używana jest wartość ASCII znaku (np. 'A' + 1 da wartość 66, ponieważ wartość ASCII wielkiej litery A wynosi 65). Więcej informacji na temat tłumaczenia znaków na liczby można znaleźć w dokumentacji link:../../../functions/communication/serial/println[`Serial.println`].
 
-The size of the `char` datatype is at least 8 bits. It's recommended to only use `char` for storing characters. For an unsigned, one-byte (8 bit) data type, use the link:../byte[byte] data type.
+Rozmiar typu danych `char` wynosi co najmniej 8 bitów. Zaleca się używanie `char` tylko do przechowywania znaków. W przypadku liczby jednobajtowej (8-bitowej) bez znaku użyj typu link:../byte[byte].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`char var = val;`
+=== Składnia
+`char zm = wart;`
 
 
 [float]
-=== Parameters
-`var`: variable name. +
-`val`: the value to assign to that variable.
+=== Parametry
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do tej zmiennej.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 [source,arduino]
 ----
-char myChar = 'A';
-char myChar = 65; // both are equivalent
+char mójZnak = 'A';
+char mójZnak = 65; // oba zapisy oznaczają to samo
 ----
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/communication/serial/println[Serial.println]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

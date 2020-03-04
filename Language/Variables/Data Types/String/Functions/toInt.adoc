@@ -17,7 +17,7 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Converts a valid String to an integer. The input String should start with an integer number. If the String contains non-integer numbers, the function will stop performing the conversion.
+Konwertuje prawidłowy ciąg znaków na liczbę całkowitą. Łańcuch wejściowy powinien zaczynać się od liczby całkowitej. Jeśli ciąg nie zawiera liczby całkowitej, funkcja przestanie wykonywać konwersję.
 
 [%hardbreaks]
 
@@ -29,18 +29,33 @@ Converts a valid String to an integer. The input String should start with an int
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-If no valid conversion could be performed because the String doesn't start with a integer number, a zero is returned. Data type: `long`.
+Jeśli nie można wykonać prawidłowej konwersji, ponieważ ciąg nie zaczyna się od liczby całkowitej, zwracane jest zero. Typ danych: `long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
 
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
+[#howtouse]
+--
 
+[float]
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+[source,arduino]
+----
+
+// kod
+// kod
+
+----
+[%hardbreaks]
+--
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 

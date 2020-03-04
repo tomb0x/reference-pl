@@ -1,52 +1,51 @@
 ---
 title: int
-categories: [ "Variables" ]
-subCategories: [ "Data Types" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Typy danych" ]
 ---
 
 = int
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Integers are your primary data-type for number storage.
+=== Opis
+Liczby całkowite są podstawowym typem danych do przechowywania liczb.
 
-On the Arduino Uno (and other ATmega based boards) an int stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1).
-On the Arduino Due and SAMD based boards (like MKR1000 and Zero), an int stores a 32-bit (4-byte) value. This yields a range of -2,147,483,648 to 2,147,483,647 (minimum value of -2^31 and a maximum value of (2^31) - 1).
+Na Arduino Uno (i innych płytach opartych na ATmega) typ int przechowuje wartość 16-bitową (2-bajtową). Daje to zakres od -32.768 do 32.767 (minimalna wartość -2^15 i maksymalna wartość (2^15)-1).
+Na płytach opartych na Arduino Due i SAMD (takich jak MKR1000 i Zero), typ int przechowuje wartość 32-bitową (4-bajtową). Daje to zakres -2.147.483.648 do 2.147.483.647 (minimalna wartość -2^31 i maksymalna wartość (2^31)-1).
 
-int's store negative numbers with a technique called (http://en.wikipedia.org/wiki/2%27s_complement[2's complement math]). The highest bit, sometimes referred to as the "sign" bit, flags the number as a negative number. The rest of the bits are inverted and 1 is added.
+Typ int przechowuje liczby ujemne za pomocą techniki znanej jako (https://pl.wikipedia.org/wiki/Kod_uzupe%C5%82nie%C5%84_do_dw%C3%B3ch[Kod uzupełnień do dwóch]). Ustawiony najbardziej znaczący bit, czasami nazywany bitem "znaku", oznacza liczbę ujemną. Reszta bitów jest odwrócona i dodane jest 1.
 
-The Arduino takes care of dealing with negative numbers for you, so that arithmetic operations work transparently in the expected manner. There can be an unexpected complication in dealing with the link:../../../structure/bitwise-operators/bitshiftright/[bitshift right operator] (>>) however.
+Arduino dba o to, abyś radził sobie z liczbami ujemnymi, wykonując operacje arytmetyczne w oczekiwany sposób. There can be an unexpected complication in dealing with the link:../../../structure/bitwise-operators/bitshiftright/[bitshift right operator] (>>) however.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `int var = val;`
 
 
 [float]
-=== Parameters
+=== Parametry
 `var`: variable name. +
 `val`: the value you assign to that variable.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Przykładowy kod
 This code creates an integer called 'countUp', which is initially set as the number 0 (zero). The variable goes up by 1 (one) each loop, being displayed on the serial monitor.
 
 [source,arduino]
@@ -66,23 +65,23 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Uwagi i ostrzeżenia
 When signed variables are made to exceed their maximum or minimum capacity they _overflow_. The result of an overflow is unpredictable so this should be avoided. A typical symptom of an overflow is the variable "rolling over" from its maximum capacity to its minimum or vice versa, but this is not always the case. If you want this behavior, use link:../unsignedint/[unsigned int].
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

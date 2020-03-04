@@ -17,7 +17,7 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Returns the length of the String, in characters. (Note that this doesn't include a trailing null character.)
+Podaje długość ciągu, wyrażoną w znakach. (Zauważ, że nie obejmuje to końcowego znaku zerowego)
 
 [%hardbreaks]
 
@@ -29,12 +29,12 @@ Returns the length of the String, in characters. (Note that this doesn't include
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`.
+`mójŁańcuch`: zmienna typu `String`.
 
 
 [float]
 === Wartości zwracane
-The length of the String in characters.
+Długość ciągu w znakach.
 
 --
 // KONIEC SEKCJI OPISOWEJ

@@ -17,45 +17,45 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-The String reserve() function allows you to allocate a buffer in memory for manipulating Strings.
+Funkcja reserve() umożliwia zarezerwowanie w pamięci miejsca na manipulowanie napisami.
 
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`mójŁańcuch.reserve(size)`
+`mójŁańcuch.reserve(rozmiar)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`size`: the number of bytes in memory to save for String manipulation. Allowed data types: `unsigned int`.
+`mójŁańcuch`: zmienna typu `String`. +
+`rozmiar`: liczba bajtów w pamięci, które należy zarezerwować na potrzeby operacji na łańcuchach. Dozwolone typy danych: `unsigned int`.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
+=== Przykładowy kod
 
 [source,arduino]
 ----
 String mójŁańcuch;
 
 void setup() {
-  // initialize serial and wait for port to open:
+  // zainiciuj połączenie szeregowe i czekaj na otwarcie portu:
   Serial.begin(9600);
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB
+    ; // czekaj na port szeregowy aby się połączyć. Wymagane dla mikrokontrolerów z wbudowanymi portami USB
   }
 
   mójŁańcuch.reserve(26);
@@ -68,7 +68,7 @@ void setup() {
 }
 
 void loop() {
-  // nothing to do here
+  // tu nie ma nic do zrobienia
 }
 ----
 --

@@ -17,26 +17,26 @@ subCategories: [ "Funkcja objektu String" ]
 
 [float]
 === Opis
-Copies the String's characters to the supplied buffer.
+Kopiuje znaki ciągu do wskazanego bufora..
 
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`mójŁańcuch.getBytes(buf, len)`
+`mójŁańcuch.getBytes(buf, roz)`
 
 
 [float]
 === Parametry
-`mójŁańcuch`: a variable of type `String`. +
-`buf`: the buffer to copy the characters into. Allowed data types: array of `byte`s. +
-`len`: the size of the buffer. Allowed data types: `unsigned int`.
+`mójŁańcuch`: zmienna typu `String`. +
+`buf`: bufor do którego kopiowane są znaki. Dozwolone typy danych: tablica bajtów. +
+`roz`: rozmiar bufora. Dozwolone typy danych: `unsigned int`.
 
 
 [float]
 === Wartości zwracane
-Nothing
+Nic
 
 --
 // KONIEC SEKCJI OPISOWEJ
