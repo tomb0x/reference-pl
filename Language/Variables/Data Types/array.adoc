@@ -1,10 +1,10 @@
 ---
-title: array
+title: tablica
 categories: [ "Zmienne" ]
 subCategories: [ "Typy danych" ]
 ---
 
-= Arrays
+= Tablice
 
 // POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
@@ -12,63 +12,63 @@ subCategories: [ "Typy danych" ]
 
 [float]
 === Opis
-An array is a collection of variables that are accessed with an index number. Arrays in the C++ programming language Arduino sketches are written in can be complicated, but using simple arrays is relatively straightforward.
+Tablica to zbiór zmiennych dostępnych za pomocą numeru elementu (tzw. indeksu). Tablice w języku programowania C++ umieszczane w szkicach Arduino, mogą być skomplikowane, ale użycie prostych tablic jest stosunkowo proste.
 [float]
-=== Creating (Declaring) an Array
+=== Tworzenie (deklarowanie) tablicy
 
-All of the methods below are valid ways to create (declare) an array.
+Wszystkie poniższe metody są prawidłowymi sposobami tworzenia (deklarowania) tablicy.
 [source,arduino]
 ----
-  int myInts[6];
-  int myPins[] = {2, 4, 8, 3, 6};
-  int mySensVals[6] = {2, 4, -8, 3, 2};
-  char message[6] = "hello";
+  int mojeLiczby[6];
+  int mojeStyki[] = {2, 4, 8, 3, 6};
+  int mojeCzujniki[6] = {2, 4, -8, 3, 2};
+  char komunikat[6] = "witaj";
 ----
-You can declare an array without initializing it as in myInts.
+Możesz zadeklarować tablicę bez inicjowania jej (czyli bez przypisywania jej jakichkolwiek wartości) jak w mojeLiczby.
 {empty} +
-In myPins we declare an array without explicitly choosing a size. The compiler counts the elements and creates an array of the appropriate size.
+W mojeStyki deklarujemy tablicę bez jawnego podawania jej rozmiaru. Kompilator zlicza elementy i tworzy tablicę o odpowiednim rozmiarze.
 {empty} +
-Finally you can both initialize and size your array, as in mySensVals. Note that when declaring an array of type char, one more element than your initialization is required, to hold the required null character.
+Wreszcie możesz zarówno zainicjować, jak i podać rozmiar tablicy, tak jak w mojeCzujniki. Pamiętaj, że deklarując tablicę typu char, wymagany jest o jeden element więcej niż inicjowanie by wymagało, aby pomieścić wymagany znak null na końcu.
 [%hardbreaks]
 
 [float]
-=== Accessing an Array
-Arrays are zero indexed, that is, referring to the array initialization above, the first element of the array is at index 0, hence
+=== Dostęp do tablicy
+Tablice są indeksowane od zera, to znaczy, odnosząc się do deklaracji tablicy powyżej, pierwszy element tablicy ma indeks 0, stąd
 
-`mySensVals[0] == 2, mySensVals[1] == 4,` and so forth.
+`mojeStyki[0] == 2, mojeCzujniki[1] == 4,` i tak dalej.
 
-It also means that in an array with ten elements, index nine is the last element. Hence:
+Oznacza to również, że w tablicy z dziesięcioma elementami ostatnim elementem jest element numer dziwięć. W związku z tym:
 
 [source,arduino]
 ----
-int myArray[10]={9, 3, 2, 4, 3, 2, 7, 8, 9, 11};
-// myArray[9]    contains 11
-// myArray[10]   is invalid and contains random information (other memory address)
+int mojaTablica[10]={9, 3, 2, 4, 3, 2, 7, 8, 9, 11};
+// mojaTablica[9]    zawiera 11
+// mojaTablica[10]   jest nieprawidłowy i zawiera losowe informacje (inny adres pamięci)
 ----
-For this reason you should be careful in accessing arrays. Accessing past the end of an array (using an index number greater than your declared array size - 1) is reading from memory that is in use for other purposes. Reading from these locations is probably not going to do much except yield invalid data. Writing to random memory locations is definitely a bad idea and can often lead to unhappy results such as crashes or program malfunction. This can also be a difficult bug to track down.
+Z tego powodu należy zachować ostrożność podczas dostępu do tablic. Dostęp poza koniec tablicy (przy użyciu numeru elementu większego niż zadeklarowany rozmiar tablicy-1) oznacza odczyt z pamięci używanej do innych celów. Odczyt z takiej lokalizacji prawdopodobnie nie przyniesie wiele, poza uzyskaniem nieprawidłowych danych. Zapisywanie w losowych lokalizacjach pamięci jest zdecydowanie złym pomysłem i często może prowadzić do niepomyślnych sytuacji, takich jak awarie lub nieprawidłowe działanie programu. Tego typu błąd może być również trudny do wyśledzenia.
 [%hardbreaks]
 
-Unlike BASIC or JAVA, the C++ compiler does no checking to see if array access is within legal bounds of the array size that you have declared.
-[%hardbreaks]
-
-[float]
-=== To assign a value to an array:
-`mySensVals[0] = 10;`
+W przeciwieństwie do języków BASIC lub JAVA, kompilator C++ nie sprawdza, czy dostęp do tablicy mieści się w prawidłowych granicach zadeklarowanego rozmiaru tablicy.
 [%hardbreaks]
 
 [float]
-=== To retrieve a value from an array:
-`x = mySensVals[4];`
+=== Przypisanie wartości do tablicy:
+`mojeCzujniki[0] = 10;`
 [%hardbreaks]
 
 [float]
-=== Arrays and FOR Loops
-Arrays are often manipulated inside for loops, where the loop counter is used as the index for each array element. For example, to print the elements of an array over the serial port, you could do something like this:
+=== Pobranie wartości z tablicy:
+`x = mojeCzujniki[4];`
+[%hardbreaks]
+
+[float]
+=== Tablice i pętle FOR
+Operacje na tablicach często wykonuje się w pętlach, gdzie licznik pętli jest używany jako numer dla każdego elementu tablicy. Na przykład, aby wydrukować elementy tablicy na porcie szeregowym, możesz zrobić coś takiego:
 
 [source,arduino]
 ----
 for (byte i = 0; i < 5; i = i + 1) {
-  Serial.println(myPins[i]);
+  Serial.println(mojeStyki[i]);
 }
 ----
 [%hardbreaks]
@@ -83,7 +83,7 @@ for (byte i = 0; i < 5; i = i + 1) {
 
 [float]
 === Przykładowy kod
-For a complete program that demonstrates the use of arrays, see the (http://www.arduino.cc/en/Tutorial/KnightRider[Knight Rider example]) from the (http://www.arduino.cc/en/Main/LearnArduino[Tutorials]).
+Kompletny program demonstrujący użycie tablic pokazuje (http://www.arduino.cc/en/Tutorial/KnightRider[przykład Knight Rider]) ze strony: (http://www.arduino.cc/en/Main/LearnArduino[Przewodniki]).
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ

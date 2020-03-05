@@ -12,23 +12,23 @@ subCategories: [ "Typy danych" ]
 
 [float]
 === Opis
-An unsigned data type that occupies 1 byte of memory. Same as the link:../byte[byte] datatype.
+Typ danych bez znaku, który zajmuje 1 bajt pamięci. To samo co typ link:../byte[byte].
 
-The unsigned char datatype encodes numbers from 0 to 255.
+Typ danych char bez znaku koduje liczby od 0 do 255.
 
-For consistency of Arduino programming style, the byte data type is to be preferred.
+Aby zachować spójność stylu programowania Arduino, preferowany jest bajtowy typ danych.
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`unsigned char var = val;`
+`unsigned char zm = wart;`
 
 
 [float]
 === Parametry
-`var`: variable name. +
-`val`: the value to assign to that variable.
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do tej zmiennej.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -47,7 +47,7 @@ For consistency of Arduino programming style, the byte data type is to be prefer
 
 [source,arduino]
 ----
-unsigned char myChar = 240;
+unsigned char mójZnak = 240;
 ----
 
 --

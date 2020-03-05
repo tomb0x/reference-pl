@@ -1,10 +1,10 @@
 ---
-title: string
+title: ciągi znaków
 categories: [ "Zmienne" ]
 subCategories: [ "Typy danych" ]
 ---
 
-= string
+= ciągi (łańcuchy) znaków
 
 // POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
@@ -12,12 +12,12 @@ subCategories: [ "Typy danych" ]
 
 [float]
 === Opis
-Text strings can be represented in two ways. you can use the String data type, which is part of the core as of version 0019, or you can make a string out of an array of type char and null-terminate it. This page described the latter method. For more details on the String object, which gives you more functionality at the cost of more memory, see the link:../stringobject[String object] page.
+Ciągi tekstowe mogą być reprezentowane na dwa sposoby: możesz użyć typu danych String, który jest typem wbudowanym od wersji 0019, lub możesz utworzyć ciąg znaków z tablicy typu char i zakończyć go znakiem o kodzie zero (null). Ta strona opisuje drugą metodę. Aby uzyskać więcej informacji na temat obiektu String, który zapewnia większą funkcjonalność kosztem większej ilości pamięci, zajrzyj na stronę link:../stringobject[objekt String].
 [%hardbreaks]
 
 [float]
 === Składnia
-All of the following are valid declarations for strings.
+Wszystkie poniższe przykłady są poprawnymi deklaracjami ciągów.
 
 `char Str1[15];` +
 `char Str2[8] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};` +
@@ -26,43 +26,43 @@ All of the following are valid declarations for strings.
 `char Str5[8] = "arduino";` +
 `char Str6[15] = "arduino";`
 
-*Possibilities for declaring strings*
+*Sposoby deklarowania ciągów*
 
-* Declare an array of chars without initializing it as in Str1
-* Declare an array of chars (with one extra char) and the compiler will add the required null character, as in Str2
-* Explicitly add the null character, Str3
-* Initialize with a string constant in quotation marks; the compiler will size the array to fit the string constant and a terminating null character, Str4
-* Initialize the array with an explicit size and string constant, Str5
-* Initialize the array, leaving extra space for a larger string, Str6
+* Zadeklaruj tablicę znaków bez inicjowania jej jak w Str1
+* Zadeklaruj tablicę znaków (o wielkości o jeden większej od ilości znaków), a kompilator doda wymagany znak null, jak w Str2
+* Jawnie dodaj znak null, Str3
+* Zainicjuj za pomocą stałej znakowej w cudzysłowie; kompilator dopasuje tablicę do rozmiaru ciągu wraz ze znakiem zerowym na końcu, Str4
+* Zainicjuj tablicę jawnie podanym rozmiarem i stałą znakową, Str5
+* Zainicjuj tablicę, pozostawiając dodatkowe miejsce na większy ciąg, Str6
 
-*Null termination*
+*Zakończenie zerem*
 
-Generally, strings are terminated with a null character (ASCII code 0). This allows functions (like `Serial.print()`) to tell where the end of a string is. Otherwise, they would continue reading subsequent bytes of memory that aren't actually part of the string.
+Ogólnie, ciągi zakończone są znakiem zerowym (kod ASCII 0). Pozwala to funkcjom (takim jak `Serial.print ()`) stwierdzić, gdzie jest koniec ciągu. W przeciwnym razie kontynuowałyby czytanie kolejnych bajtów pamięci, które tak naprawdę nie są częścią ciągu.
 
-This means that your string needs to have space for one more character than the text you want it to contain. That is why Str2 and Str5 need to be eight characters, even though "arduino" is only seven - the last position is automatically filled with a null character. Str4 will be automatically sized to eight characters, one for the extra null. In Str3, we've explicitly included the null character (written '\0') ourselves.
+Oznacza to, że na końcu ciągu musi znajdować się miejsce na jeden znak więcej niż długość tekstu, który ma zawierać. Właśnie dlatego Str2 i Str5 muszą mieć osiem znaków, mimo że "arduino" ma tylko siedem znaków - ostatnia pozycja jest automatycznie wypełniana znakiem zerowym. Str4 będzie automatycznie powiększony do ośmiu znaków, o jeden więcej dla dodatkowego zera. W Str3 jawnie umieściliśmy znak zerowy (zapisany „\0”).
 
-Note that it's possible to have a string without a final null character (e.g. if you had specified the length of Str2 as seven instead of eight). This will break most functions that use strings, so you shouldn't do it intentionally. If you notice something behaving strangely (operating on characters not in the string), however, this could be the problem.
+Zauważ, że możliwe jest posiadanie ciągu bez końcowego znaku zerowego (np. jeśli długość podałeś Str2 jako siedem zamiast osiem). Spowoduje to uszkodzenie działania większości funkcji korzystających z ciągów, więc raczej nie powinieneś robić tego celowo. Jeśli zauważysz, że coś dziwnie się zachowuje (podczas operacji na znakach spoza ciągu), to w tym może być problem.
 
-*Single quotes or double quotes?*
+*Apostrofy czy cudzysłowy?*
 
-Strings are always defined inside double quotes ("Abc") and characters are always defined inside single quotes('A').
+Ciągi znaków są zawsze zdefiniowane w cudzysłowach ("Abc"), a znaki są zawsze zdefiniowane w apostrofach ('A').
 
-*Wrapping long strings*
+*Zawijanie długich ciągów*
 
-You can wrap long strings like this:
+Możesz zawijać długie łańcuchy w ten sposób:
 
 [source,arduino]
 ----
-char myString[] = "This is the first line"
-" this is the second line"
-" etcetera";
+char mójŁańcuch[] = "To jest pierwsza linia"
+" to jest druga linia"
+" i tak dalej";
 ----
 
-*Arrays of strings*
+*Tablice ciągów*
 
-It is often convenient, when working with large amounts of text, such as a project with an LCD display, to setup an array of strings. Because strings themselves are arrays, this is in actually an example of a two-dimensional array.
+Podczas pracy z dużymi ilościami tekstu, na przykład w projekcie z wyświetlaczem LCD, wygodne jest użycie tablicy ciągów. Ponieważ ciągie same są tablicami, jest to w rzeczywistości przykład tablicy dwuwymiarowej.
 
-In the code below, the asterisk after the datatype `char` "`char*`" indicates that this is an array of "`pointers`". All array names are actually pointers, so this is required to make an array of arrays. Pointers are one of the more esoteric parts of C++ for beginners to understand, but it isn't necessary to understand pointers in detail to use them effectively here.
+W poniższym programie gwiazdka po typie danych `char` "`char*`" wskazuje, że jest to tablica "wskaźników". Wszystkie nazwy tablic są w rzeczywistości wskaźnikami, więc jest to wymagane do utworzenia tablicy tablic. Dla początkujących Wskaźniki są jedną z bardziej tajemniczych części C++, ale zrozumienie wskaźników nie jest konieczne, aby skutecznie ich tutaj używać.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -81,8 +81,8 @@ In the code below, the asterisk after the datatype `char` "`char*`" indicates th
 
 [source,arduino]
 ----
-char *myStrings[] = {"This is string 1", "This is string 2", "This is string 3",
-                     "This is string 4", "This is string 5", "This is string 6"
+char *mojeNapisy[] = {"To jest napis 1", "To jest napis 2", "To jest napis 3",
+                      "To jest napis 4", "To jest napis 5", "To jest napis 6"
                     };
 
 void setup() {
@@ -91,7 +91,7 @@ void setup() {
 
 void loop() {
   for (int i = 0; i < 6; i++) {
-    Serial.println(myStrings[i]);
+    Serial.println(mojeNapisy[i]);
     delay(500);
   }
 }

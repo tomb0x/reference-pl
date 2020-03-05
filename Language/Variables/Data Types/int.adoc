@@ -20,19 +20,19 @@ Na płytach opartych na Arduino Due i SAMD (takich jak MKR1000 i Zero), typ int 
 
 Typ int przechowuje liczby ujemne za pomocą techniki znanej jako (https://pl.wikipedia.org/wiki/Kod_uzupe%C5%82nie%C5%84_do_dw%C3%B3ch[Kod uzupełnień do dwóch]). Ustawiony najbardziej znaczący bit, czasami nazywany bitem "znaku", oznacza liczbę ujemną. Reszta bitów jest odwrócona i dodane jest 1.
 
-Arduino dba o to, abyś radził sobie z liczbami ujemnymi, wykonując operacje arytmetyczne w oczekiwany sposób. There can be an unexpected complication in dealing with the link:../../../structure/bitwise-operators/bitshiftright/[bitshift right operator] (>>) however.
+Arduino dba o to, aby wykonywanie operacji arytmetycznych na liczbach ujemnych odbywało się w oczekiwany sposób. Niemniej jednak trzeba uważać na możliwe komplikacje przy operacjach gdzie użyty będzie link:../../../structure/bitwise-operators/bitshiftright/[Operator przesunięcia w prawo] (>>).
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`int var = val;`
+`int zm = wart;`
 
 
 [float]
 === Parametry
-`var`: variable name. +
-`val`: the value you assign to that variable.
+`zm`: nazwa zmiennej. +
+`wart`: wartość przypisana do tej zmiennej.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -46,19 +46,19 @@ Arduino dba o to, abyś radził sobie z liczbami ujemnymi, wykonując operacje a
 
 [float]
 === Przykładowy kod
-This code creates an integer called 'countUp', which is initially set as the number 0 (zero). The variable goes up by 1 (one) each loop, being displayed on the serial monitor.
+Ten kod tworzy liczbę całkowitą o nazwie „liczWGore”, która początkowo jest ustawiona na 0 (zero). Wartość zmiennej zwiększana o 1 (jeden) w każdym przebiegu pętli, wyświetlana jest na monitorze szeregowym.
 
 [source,arduino]
 ----
-int countUp = 0;            //creates a variable integer called 'countUp'
+int liczWGore = 0;           // tworzy zmienną całkowitą o nazwie 'liczWGore'
 
 void setup() {
-  Serial.begin(9600);       // use the serial port to print the number
+  Serial.begin(9600);       // użyj monitora szeregowego do drukowania liczb
 }
 
 void loop() {
-  countUp++;                //Adds 1 to the countUp int on every loop
-  Serial.println(countUp);  // prints out the current state of countUp
+  liczWGore++;                // Dodaj 1 do liczWGore za każdym razem
+  Serial.println(liczWGore);  // drukuj aktualny stan zmiennej liczWGore
   delay(1000);
 }
 ----
@@ -66,7 +66,7 @@ void loop() {
 
 [float]
 === Uwagi i ostrzeżenia
-When signed variables are made to exceed their maximum or minimum capacity they _overflow_. The result of an overflow is unpredictable so this should be avoided. A typical symptom of an overflow is the variable "rolling over" from its maximum capacity to its minimum or vice versa, but this is not always the case. If you want this behavior, use link:../unsignedint/[unsigned int].
+W przyadku przekroczenia maksymalnej lub minimalnej wartości zmiennej ze znakiem zmienne te _przepełniają się_. Wynik przepełnienia jest nieprzewidywalny, dlatego należy tego unikać. Typowym objawem przepełnienia jest zmienna "przeskakująca" od maksymalnej swojej wartości do minimalnej lub odwrotnie, ale nie zawsze tak jest. Jeśli celowo chcesz takiego zachowania, zastosuj typ link:../unsignedint/[unsigned int].
 
 
 --
@@ -81,7 +81,7 @@ When signed variables are made to exceed their maximum or minimum capacity they 
 === Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+* #LANGUAGE# link:../../constants/integerconstants[Stałe całkowite]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
