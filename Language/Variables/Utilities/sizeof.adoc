@@ -12,23 +12,23 @@ Zmienne
 
 [float]
 === Opis
-The `sizeof` operator returns the number of bytes in a variable type, or the number of bytes occupied by an array.
+Operator `sizeof` zwraca liczbę bajtów w określonym typie zmiennej lub liczbę bajtów zajmowanych przez tablicę.
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`sizeof(variable)`
+`sizeof(zmienna)`
 
 
 [float]
 === Parametry
-`variable`: The thing to get the size of. Allowed data types: any variable type or array (e.g. `int`, `float`, `byte`).
+`zmienna`: Rzecz, której chcesz poznać rozmiar. Dozwolone typy danych: dowolnego typu zmienne lub tablice (np. `int`, `float`, `byte`).
 
 
 [float]
 === Wartości zwracane
-The number of bytes in a variable or bytes occupied in an array. Data type: `size_t`.
+Liczba bajtów w zmiennej lub bajtów zajmowanych przez tablicy. Typ danych: `size_t`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -40,45 +40,45 @@ The number of bytes in a variable or bytes occupied in an array. Data type: `siz
 [float]
 === Przykładowy kod
 // Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
-The `sizeof` operator is useful for dealing with arrays (such as strings) where it is convenient to be able to change the size of the array without breaking other parts of the program.
+Operator `sizeof` jest przydatny do pracy z tablicami (łańcuchami), gdzie wygodnie jest móc zmienić rozmiar tablicy bez przerywania innych części programu.
 
-This program prints out a text string one character at a time. Try changing the text phrase.
+Ten program drukuje ciąg tekstowy znak po znaku. Spróbuj zmienić frazę tekstową.
 
 [source,arduino]
 ----
-char myStr[] = "this is a test";
+char napis[] = "to jest test";
 
 void setup() {
   Serial.begin(9600);
 }
 
 void loop() {
-  for (byte i = 0; i < sizeof(myStr) - 1; i++) {
+  for (byte i = 0; i < sizeof(napis) - 1; i++) {
     Serial.print(i, DEC);
     Serial.print(" = ");
-    Serial.write(myStr[i]);
+    Serial.write(napis[i]);
     Serial.println();
   }
-  delay(5000);  // slow down the program
+  delay(5000);  // spowalniamy program
 }
 ----
 [%hardbreaks]
 
 [float]
 === Uwagi i ostrzeżenia
-Note that `sizeof` returns the total number of bytes. So for arrays of larger variable types such as ints, the for loop would look something like this.
+Zauważ, że `sizeof` zwraca całkowitą liczbę bajtów. Tak więc w przypadku tablic większych typów zmiennych, takich jak int, pętla for wyglądałaby mniej więcej tak.
 
 [source,arduino]
 ----
-int myValues[] = {123, 456, 789};
+int wartosci[] = {123, 456, 789};
 
-// this for loop works correctly with an array of any type or size
-for (byte i = 0; i < (sizeof(myValues) / sizeof(myValues[0])); i++) {
-  // do something with myValues[i]
+// pętla for działa poprawnie z tablicą dowolnego typu i rozmiaru
+for (byte i = 0; i < (sizeof(wartosci) / sizeof(wartosci[0])); i++) {
+  // wykorzystaj do czegoś wartosci[i]
 }
 ----
 
-Note that a properly formatted string ends with the NULL symbol, which has ASCII value 0.
+Zauważ, że poprawnie sformatowany ciąg znaków kończy się znakiem NULL, który ma wartość ASCII 0.
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ
