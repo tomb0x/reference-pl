@@ -12,7 +12,7 @@ subCategories: [ "Typy danych" ]
 
 [float]
 === Opis
-Ciągi tekstowe mogą być reprezentowane na dwa sposoby: możesz użyć typu danych String, który jest typem wbudowanym od wersji 0019, lub możesz utworzyć ciąg znaków z tablicy typu char i zakończyć go znakiem o kodzie zero (null). Ta strona opisuje drugą metodę. Aby uzyskać więcej informacji na temat obiektu String, który zapewnia większą funkcjonalność kosztem większej ilości pamięci, zajrzyj na stronę link:../stringobject[objekt String].
+Ciągi tekstowe mogą być reprezentowane na dwa sposoby: możesz użyć typu danych String, który jest typem wbudowanym od wersji 0019, lub możesz utworzyć ciąg znaków z tablicy typu char i zakończyć go znakiem o kodzie zero (null). Ta strona opisuje drugą metodę. Aby uzyskać więcej informacji na temat obiektu String, który zapewnia większą funkcjonalność kosztem większej ilości pamięci, zajrzyj na stronę link:../stringobject[obiekt String].
 [%hardbreaks]
 
 [float]
@@ -45,7 +45,7 @@ Zauważ, że możliwe jest posiadanie ciągu bez końcowego znaku zerowego (np. 
 
 *Apostrofy czy cudzysłowy?*
 
-Ciągi znaków są zawsze zdefiniowane w cudzysłowach ("Abc"), a znaki są zawsze zdefiniowane w apostrofach ('A').
+Ciągi znaków zawsze definiowane są w cudzysłowach ("Abc"), a znaki zawsze definiowane są w apostrofach ('A').
 
 *Zawijanie długich ciągów*
 

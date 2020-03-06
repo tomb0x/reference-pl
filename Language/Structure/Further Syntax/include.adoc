@@ -46,7 +46,7 @@ W tym przykładzie dołączona zostaje biblioteka Servo, dzięki czemu jej funkc
 ----
 #include <Servo.h>
 
-Servo mojeserwo;        // tworzenie objektu do kontroli serwomechanizmu
+Servo mojeserwo;        // tworzenie obiektu do kontroli serwomechanizmu
 
 void setup() {
   mojeserwo.attach(9);  // serwomechanizm podłączony do styku 9 będzie powiązany z obiektem typu Servo

@@ -1,7 +1,7 @@
 ---
 title: "charAt()"
 categories: [ "Typy danych" ]
-subCategories: [ "Funkcja objektu String" ]
+subCategories: [ "Funkcja obiektu String" ]
 ---
 
 

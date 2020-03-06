@@ -1,7 +1,7 @@
 ---
 title: "c_str()"
 categories: [ "Typy danych" ]
-subCategories: [ "Funkcja objektu String" ]
+subCategories: [ "Funkcja obiektu String" ]
 ---
 
 

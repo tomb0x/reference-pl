@@ -12,58 +12,58 @@ subCategories: [ "Typy danych" ]
 
 [float]
 === Opis
-Constructs an instance of the String class. There are multiple versions that construct Strings from different data types (i.e. format them as sequences of characters), including:
+Tworzy instancję klasy String (obiekt tekstowy - napis). Istnieje wiele sposobów konstruowania ciągów z różnych typów danych (tj. przedstawiania ich jako sekwencji znaków), w tym:
 
-* a constant string of characters, in double quotes (i.e. a char array)
-* a single constant character, in single quotes
-* another instance of the String object
-* a constant integer or long integer
-* a constant integer or long integer, using a specified base
-* an integer or long integer variable
-* an integer or long integer variable, using a specified base
-* a float or double, using a specified decimal places
+* stała znakowa, w cudzysłowach (tablica znaków)
+* pojedynczy znak, w apostrofach
+* na podstawie innej instancji obiektu String
+* stała całkowita lub całkowita długa
+* stała całkowita lub całkowita długa, o określonej podstawie (np. dwójkowej, ósemkowej)
+* zmienna całkowita lub całkowita długa
+* zmienna całkowita lub całkowita długa, o określowej podstawie
+* liczba zmiennoprzecinkowa lub podwójna, o określonej liczbie miejsc dziesiętnych
 
-Constructing a String from a number results in a string that contains the ASCII representation of that number. The default is base ten, so
+Tworzenie obiektu tekstowego liczby daje ciąg zawierający reprezentację ASCII tej liczby. Domyślną podstawą sytemu liczbowego jest dziesięć, dlatego
 [source,arduino]
 ----
-String thisString = String(13);
+String napis = String(13);
 ----
-gives you the String "13". You can use other bases, however. For example,
+daje w wyniku napis "13". Można jednak użyć innych podstaw liczenia. Na przykład,
 
-
-[source,arduino]
-----
-String thisString = String(13, HEX);
-----
-
-gives you the String "D", which is the hexadecimal representation of the decimal value 13. Or if you prefer binary,
 
 [source,arduino]
 ----
-String thisString = String(13, BIN);
+String napis = String(13, HEX);
 ----
 
-gives you the String "1101", which is the binary representation of 13.
+daje w wyniku napis "D", który jest szesnastkową reprezentacją dziesiętnej liczby 13. Lub jeśli wolisz system dwójkowy,
+
+[source,arduino]
+----
+String napis = String(13, BIN);
+----
+
+daje w wyniku napis "1101", który jest dwójkową reprezentacją dziesiętnej liczby 13.
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`String(val)` +
-`String(val, base)` +
-`String(val, decimalPlaces)`
+`String(wart)` +
+`String(wart, pods)` +
+`String(wart, poPrzecinku)`
 
 
 [float]
 === Parametry
-`val`:  a variable to format as a String. Allowed data types: string, char, byte, int, long, unsigned int, unsigned long, float, double. +
-`base`: (optional) the base in which to format an integral value. +
-`decimalPlaces`: *only if val is float or double*. The desired decimal places.
+`wart`:  zmienna do przedstawienia jako ciąg znaków. Dozwolone typy danych: string, char, byte, int, long, unsigned int, unsigned long, float, double. +
+`pods`: (opcjonalnie) podstawa systemu liczbowego, w którym ma być przedstawiona liczba całkowita. +
+`poPrzecinku`: *tylko jeśli wart jest zmiennoprzecinkowa lub o podwójej precyzji (float lub double)*. Liczba miejsc po przecinku.
 
 
 [float]
-=== Returns
-An instance of the String class.
+=== Wartości zwracane
+Instancja klasy String - po prostu napis.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -76,19 +76,19 @@ An instance of the String class.
 
 [float]
 === Przykładowy kod
-All of the following are valid declarations for Strings.
+Wszystkie poniższe są poprawnymi deklaracjami ciągów.
 [source,arduino]
 ----
-String stringOne = "Hello String";                    // using a constant String
-String stringOne = String('a');                       // converting a constant char into a String
-String stringTwo = String("This is a string");        // converting a constant string into a String object
-String stringOne = String(stringTwo + " with more");  // concatenating two strings
-String stringOne = String(13);                        // using a constant integer
-String stringOne = String(analogRead(0), DEC);        // using an int and a base
-String stringOne = String(45, HEX);                   // using an int and a base (hexadecimal)
-String stringOne = String(255, BIN);                  // using an int and a base (binary)
-String stringOne = String(millis(), DEC);             // using a long and a base
-String stringOne = String(5.698, 3);                  // using a float and the decimal places
+String napisJeden = "Napis powitalny";                 // przy użyciu stałej znakowej
+String napisJeden = String('a');                       // konwertując pojedynczy znak na obiekt typu String
+String napisDwa   = String("To jest napis");           // konwertując stałą znakową na obiekt typu String
+String napisJeden = String(napisDwa + " z dodatkiem"); // łącząc dwa ciągi znaków
+String napisJeden = String(13);                        // przy użyciu stałej całkowitej
+String napisJeden = String(analogRead(0), DEC);        // przy użyciu liczby całkowitej w systemie dziesiętnym
+String napisJeden = String(45, HEX);                   // przy użyciu liczby całkowitej w systemie szesnastkowym
+String napisJeden = String(255, BIN);                  // przy użyciu liczby całkowitej w systemie dwójkowym
+String napisJeden = String(millis(), DEC);             // przy użyciu liczby całkowitej długiej w określonym systemie
+String napisJeden = String(5.698, 3);                  // przy użyciu liczby zmiennoprzecinkowej o określonej liczbie miejsc po przecinku
 ----
 
 --
@@ -96,7 +96,7 @@ String stringOne = String(5.698, 3);                  // using a float and the d
 
 
 [float]
-=== Functions
+=== Funkcje
 
 [role="language"]
 * #LANGUAGE# link:../string/functions/charat[charAt()]
@@ -125,18 +125,18 @@ String stringOne = String(5.698, 3);                  // using a float and the d
 * #LANGUAGE# link:../string/functions/trim[trim()]
 
 [float]
-=== Operators
+=== Operatory
 
 [role="language"]
 * #LANGUAGE# link:../string/operators/elementaccess[[\] (element access)]
 * #LANGUAGE# link:../string/operators/concatenation[+ (concatenation)]
 * #LANGUAGE# link:../string/operators/append[+= (append)]
-* #LANGUAGE# link:../string/operators/comparison[== (comparison)]
-* #LANGUAGE# link:../string/operators/greaterthan[> (greater than)]
-* #LANGUAGE# link:../string/operators/greaterthanorequalto[>= (greater than or equal to)]
-* #LANGUAGE# link:../string/operators/lessthan[< (less than)]
-* #LANGUAGE# link:../string/operators/lessthanorequalto[\<= (less than or equal to)]
-* #LANGUAGE# link:../string/operators/differentfrom[!= (different from)]
+* #LANGUAGE# link:../string/operators/comparison[== (równe)]
+* #LANGUAGE# link:../string/operators/greaterthan[> (większe niż)]
+* #LANGUAGE# link:../string/operators/greaterthanorequalto[>= (większe bądź równe)]
+* #LANGUAGE# link:../string/operators/lessthan[< (mniejsze niż)]
+* #LANGUAGE# link:../string/operators/lessthanorequalto[\<= (mniejsze bądź równe)]
+* #LANGUAGE# link:../string/operators/differentfrom[!= (różne od)]
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
