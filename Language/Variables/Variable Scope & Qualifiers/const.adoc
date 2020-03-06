@@ -1,40 +1,40 @@
 ---
 title: const
-categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Zasięg zmiennych i kwalifikatory" ]
 ---
 
 
 
 
 
-= const keyword
+= słowo kluczowe const (stała)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-The `const` keyword stands for constant. It is a variable _qualifier_ that modifies the behavior of the variable, making a variable "_read-only_". This means that the variable can be used just as any other variable of its type, but its value cannot be changed. You will get a compiler error if you try to assign a value to a `const` variable.
+=== Opis
+Słowo kluczowe `const` oznacza stałą. Jest to _kwalifikator_ zmiennej, który modyfikuje zachowanie zmiennej, tworząc ją "_tylko-do-odczytu_". Oznacza to, że takiej zmiennej można używać tak samo, jak każdej innej zmiennej jej typu, ale jej wartości nie można zmienić. Jeśli spróbujesz przypisać wartość do zmiennej `const` to pojawi się błąd kompilatora.
 
-Constants defined with the `const` keyword obey the rules of link:../scope[variable scoping] that govern other variables. This, and the pitfalls of using `#define`, makes the `const` keyword a superior method for defining constants and is preferred over using link:../../../structure/further-syntax/define[`#define`].
+Stałe zdefiniowane za pomocą słowa kluczowego `const` przestrzegają zasad, które określają link:../scope[zasięg zmiennych] jak w przypadku innych zmiennych. To i pułapki związane z używaniem `#define`, sprawiają, że słowo kluczowe `const` jest lepszą metodą definiowania stałych i jest preferowane niż użycie link:../../../structure/further-syntax/define[`#define`].
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -42,31 +42,31 @@ Constants defined with the `const` keyword obey the rules of link:../scope[varia
 const float pi = 3.14;
 float x;
 // ....
-x = pi * 2; // it's fine to use consts in math
-pi = 7;     // illegal - you can't write to (modify) a constant
+x = pi * 2; // dobrze jest używać stałych w obliczeniach
+pi = 7;     // nielegalne - nie możesz zapisać (modyfikować) stałej
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-*`#define` or `const`*
+=== Uwagi i ostrzeżenia
+*`#define` czy `const`*
 
-You can use either `const` or `#define` for creating numeric or string constants. For link:../../data-types/array[arrays], you will need to use `const`. In general `const` is preferred over `#define` for defining constants.
+Do tworzenia stałych liczbowych lub tekstowych można użyć albo `const` albo `#define`. Gdy definiujesz link:../../data-types/array[tablice], będziesz musiał użyć `const`. Ogólnie rzecz biorąc, do definiowania stałych preferowany jest `const` zamiast `#define`.
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../../structure/further-syntax/define[#define]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
