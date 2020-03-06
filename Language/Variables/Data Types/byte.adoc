@@ -38,7 +38,7 @@ Typ byte (bajt) przechowuje 8-bitową liczbę bez znaku (z zakresu od 0 do 255).
 
 [float]
 === Przykładowy kod
-// Opisz, na czym polega przykładowy kod i dodaj odpowiedni kod ►►►►► NINIEJSZA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 Zmienna b przechowuje w 1 bajcie liczbę 100.
 
 [source,arduino]

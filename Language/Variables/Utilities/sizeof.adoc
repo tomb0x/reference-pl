@@ -1,45 +1,45 @@
 ---
 title: sizeof()
-categories: [ "Variables" ]
-subCategories: [ "Utilities" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Narzędzia" ]
 ---
 
 = sizeof
 
-// OVERVIEW SECTION STARTS
+Zmienne
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 The `sizeof` operator returns the number of bytes in a variable type, or the number of bytes occupied by an array.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `sizeof(variable)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `variable`: The thing to get the size of. Allowed data types: any variable type or array (e.g. `int`, `float`, `byte`).
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The number of bytes in a variable or bytes occupied in an array. Data type: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 The `sizeof` operator is useful for dealing with arrays (such as strings) where it is convenient to be able to change the size of the array without breaking other parts of the program.
 
 This program prints out a text string one character at a time. Try changing the text phrase.
@@ -65,7 +65,7 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Uwagi i ostrzeżenia
 Note that `sizeof` returns the total number of bytes. So for arrays of larger variable types such as ints, the for loop would look something like this.
 
 [source,arduino]
@@ -81,15 +81,15 @@ for (byte i = 0; i < (sizeof(myValues) / sizeof(myValues[0])); i++) {
 Note that a properly formatted string ends with the NULL symbol, which has ASCII value 0.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
