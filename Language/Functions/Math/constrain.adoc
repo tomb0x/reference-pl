@@ -1,14 +1,14 @@
 ---
 title: constrain()
 categories: [ "Functions" ]
-subCategories: [ "Math" ]
+subCategories: [ "Matematyka" ]
 ---
 
 
 
 
 
-= constrain(x, a, b)
+= constrain(x, a, b) (ograniczenie)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -17,7 +17,7 @@ subCategories: [ "Math" ]
 
 [float]
 === Opis
-Constrains a number to be within a range.
+Ogranicza liczbę do określonego zakresu.
 [%hardbreaks]
 
 
@@ -28,16 +28,16 @@ Constrains a number to be within a range.
 
 [float]
 === Parametry
-`x`: the number to constrain Allowed data types: all data types. +
-`a`: the lower end of the range. Allowed data types: all data types. +
-`b`: the upper end of the range. Allowed data types: all data types.
+`x`: liczba do ograniczenia. Dozwolone typy danych: wszystkie typy danych. +
+`a`: dolna granica Dozwolone typy danych: wszystkie typy danych. +
+`b`: górna granica. Dozwolone typy danych: wszystkie typy danych.
 
 
 [float]
 === Wartości zwracane
-x: if x is between a and b. +
-a: if x is less than a. +
-b: if x is greater than b.
+x: jeśli x jest pomiędzy a i b. +
+a: jeśli x jest mniejsze niż a. +
+b: jeśli x jest większe niż b.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -45,40 +45,40 @@ b: if x is greater than b.
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code limits the sensor values to between 10 to 150.
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Program ogranicza wartości z czujników do wartości z przedziału od 10 do 150.
 
 [source,arduino]
 ----
-sensVal = constrain(sensVal, 10, 150);  // limits range of sensor values to between 10 and 150
+wartCzuj = constrain(wartCzuj, 10, 150);  // ogranicza wartość z czujnika do wartości z przedziału od 10 do 150.
 ----
 
 [float]
-=== Notes and Warnings
-Because of the way the `constrain()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== Uwagi i ostrzeżenia
+Ze względu na sposób implementacji funkcji `constrain()` unikaj używania innych funkcji wewnątrz nawiasów, bp może to prowadzić do niepoprawnych wyników.
 
-This code will yield incorrect results:
+Ten kod da nieprawidłowe wyniki:
 [source,arduino]
 ----
-int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue);   // avoid this
+int ograniczoneWejscie = constrain(Serial.parseInt(), wartoscMinimalna, wartoscMaksymalna);   // unikaj tego
 ----
 
-Use this instead:
+Zamiast tego użyj:
 [source,arduino]
 ----
-int input = Serial.parseInt();  // keep other operations outside the constrain function
-int constrainedInput = constrain(input, minimumValue, maximumValue);
+int wejscie = Serial.parseInt();  // inne działania wykonuj poza funkcją ograniczenia
+int ograniczoneWejscie = constrain(wejscie, wartoscMinimalna, wartoscMaksymalna);
 ----
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 // POCZĄTEK SEKCJI ZOBACZ TAKŻE
@@ -86,7 +86,7 @@ int constrainedInput = constrain(input, minimumValue, maximumValue);
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
