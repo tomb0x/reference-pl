@@ -1,56 +1,56 @@
 ---
 title: Serial
-categories: [ "Functions" ]
-subCategories: [ "Communication" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Komunikacja" ]
 ---
 
 
 
 
-= Serial()
+= Serial() (port szeregowy)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Used for communication between the Arduino board and a computer or other devices. All Arduino boards have at least one serial port (also known as a UART or USART), and some have several.
+=== Opis
+Służy do komunikacji między płytką Arduino a komputerem lub innymi urządzeniami. Wszystkie karty Arduino mają co najmniej jeden port szeregowy (znany również jako UART lub USART), a niektóre mają ich kilka.
 [options="header"]
-|================================================================================================================================================
-| Board                | USB CDC name                     | Serial pins                   | Serial1 pins     | Serial2 pins      | Serial3 pins
-| Uno, Nano, Mini      |                                  | 0(RX), 1(TX)                  |                  |                   |
-| Mega                 |                                  | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 17(RX), 16(TX)    | 15(RX), 14(TX)
-| Leonardo, Micro, Yún | Serial                           | 0(RX), 1(TX)                  |                  |                   |
-| Uno WiFi Rev.2       |                                  | Connected to USB              | 0(RX), 1(TX)     | Connected to NINA |
-| MKR boards           | Serial                           |                               | 13(RX), 14(TX)   |                   |
-| Zero                 | SerialUSB (Native USB Port only) | Connected to Programming Port | 0(RX), 1(TX)     |                   |
-| Due                  | SerialUSB (Native USB Port only) | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 17(RX), 16(TX)    | 15(RX), 14(TX)
-| 101                  | Serial                           |                               | 0(RX), 1(TX)     |                   |
-|================================================================================================================================================
+|===================================================================================================================================================================
+| Płytka               | nazwa klasy urządzenia USB           | styki portu szeregowego Serial    | styki portu Serial1 | styki portu Serial2 | styki portu Serial3
+| Uno, Nano, Mini      |                                      | 0(RX), 1(TX)                      |                     |                     |
+| Mega                 |                                      | 0(RX), 1(TX)                      | 19(RX), 18(TX)      | 17(RX), 16(TX)      | 15(RX), 14(TX)
+| Leonardo, Micro, Yún | Serial                               | 0(RX), 1(TX)                      |                     |                     |
+| Uno WiFi Rev.2       |                                      | podłączone do USB                 | 0(RX), 1(TX)        | podłączone do NINA  |
+| MKR boards           | Serial                               |                                   | 13(RX), 14(TX)      |                     |
+| Zero                 | SerialUSB (tylko wbudowany port USB) | podłączone do portu programowania | 0(RX), 1(TX)        |                     |
+| Due                  | SerialUSB (tylko wbudowany port USB) | 0(RX), 1(TX)                      | 19(RX), 18(TX)      | 17(RX), 16(TX)      | 15(RX), 14(TX)
+| 101                  | Serial                               |                                   | 0(RX), 1(TX)        |                     |
+|===================================================================================================================================================================
 
-On Uno, Nano, Mini, and Mega, pins 0 and 1 are used for communication with the computer. Connecting anything to these pins can interfere with that communication, including causing failed uploads to the board.
+W systemach Uno, Nano, Mini i Mega do komunikacji z komputerem używane są styki 0 i 1. Podłączenie czegokolwiek do tych styków może zakłócać tę komunikację, w tym powodować nieudane ładowanie programów do płytki.
 [%hardbreaks]
-You can use the Arduino environment's built-in serial monitor to communicate with an Arduino board. Click the serial monitor button in the toolbar and select the same baud rate used in the call to `begin()`.
+Możesz używać monitora szeregowego wbudowanego w środowisko Arduino do komunikowania się płytką Arduino. Kliknij przycisk monitora szeregowego na pasku narzędzi i wybierz tę samą prędkość transmisji, która została użyta w wywołaniu funkcji `begin()`.
 [%hardbreaks]
-Serial communication on pins TX/RX uses TTL logic levels (5V or 3.3V depending on the board). Don't connect these pins directly to an RS232 serial port; they operate at +/- 12V and can damage your Arduino board.
+Komunikacja szeregowa na stykach TX/RX wykorzystuje poziomy logiczne TTL (5V lub 3,3V w zależności od płytki). Nie podłączaj tych styków bezpośrednio do portu szeregowego RS232; działa on przy +/- 12V i może uszkodzić płytkę Arduino.
 [%hardbreaks]
-To use these extra serial ports to communicate with your personal computer, you will need an additional USB-to-serial adaptor, as they are not connected to the Mega's USB-to-serial adaptor. To use them to communicate with an external TTL serial device, connect the TX pin to your device's RX pin, the RX to your device's TX pin, and the ground of your Mega to your device's ground.
+Aby korzystać z tych dodatkowych portów szeregowych do komunikacji z komputerem osobistym, będziesz potrzebować dodatkowego adaptera USB-na-szeregowy, ponieważ w Mega nie są one podłączone do takiego adaptera. Aby użyć ich do komunikacji z zewnętrznym urządzeniem szeregowym TTL, podłącz styk TX do styku RX urządzenia, RX do styku TX urządzenia, a masę Mega do masy urządzenia.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// FUNCTIONS SECTION STARTS
+// START SEKCJI FUNKCJE
 [#functions]
 --
 
 '''
 
 [float]
-=== Functions
+=== Funkcje
 link:../serial/ifserial[if(Serial)] +
 link:../serial/available[available()] +
 link:../serial/availableforwrite[availableForWrite()] +
@@ -76,15 +76,15 @@ link:../serial/serialevent[serialEvent()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// KONIEC SEKCJI FUNKCJE
 
 
-// SEEALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# https://www.arduino.cc/en/Tutorial/ReadASCIIString[ReadASCIIString^]
@@ -97,4 +97,4 @@ link:../serial/serialevent[serialEvent()]
 
 
 --
-// SEEALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
