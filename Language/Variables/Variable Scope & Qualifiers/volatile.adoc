@@ -1,59 +1,59 @@
 ---
 title: volatile
-categories: [ "Variables" ]
-subCategories: [ "Variable Scope & Qualifiers" ]
+categories: [ "Zmienne" ]
+subCategories: [ "Zasięg zmiennych i kwalifikatory" ]
 ---
 
 
 
 
 
-= volatile keyword
+= Słowo kluczowe volatile
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`volatile` is a keyword known as a variable _qualifier_, it is usually used before the datatype of a variable, to modify the way in which the compiler and subsequent program treat the variable.
+=== Opis
+`volatile` (ulotne) jest słowem kluczowym znanym jako _kwalifikator_ zmiennej, zwykle jest używana przed typem zmiennej, aby zmodyfikować sposób, w jaki kompilator a następnie program potraktują zmienną.
 
-Declaring a variable `volatile` is a directive to the compiler. The compiler is software which translates your C/C++ code into the machine code, which are the real instructions for the Atmega chip in the Arduino.
+Zadeklarowanie zmiennej `volatile` jest dyrektywą dla kompilatora. Kompilator to program, które tłumaczy kod C/C++ na kod maszynowy, który jest prawdziwymi instrukcjami dla układu Atmega w Arduino.
 
-Specifically, it directs the compiler to load the variable from RAM and not from a storage register, which is a temporary memory location where program variables are stored and manipulated. Under certain conditions, the value for a variable stored in registers can be inaccurate.
+W tym przypadku instruuje to kompilator aby ładował zmiennej z pamięci RAM, a nie z rejestru, który jest tymczasową lokalizacją pamięci, w której zmienne programu są przechowywane i przetwarzane. W pewnych sytuacjach wartość zmiennej przechowywanej w rejestrach może być niedokładna.
 
-A variable should be declared `volatile` whenever its value can be changed by something beyond the control of the code section in which it appears, such as a concurrently executing thread. In the Arduino, the only place that this is likely to occur is in sections of code associated with interrupts, called an interrupt service routine.
+Zmienną należy zadeklarować jako `volatile`, ilekroć jej wartość może zostać zmieniona przez coś poza kontrolą sekcji kodu, w której się pojawia, na przykład przez jednocześnie wykonywany wątek. W Arduino jedynym miejscem, w którym może się to zdarzyć, są sekcje kodu związane z przerwaniami, zwane procedurą obsługi przerwań.
 
 [float]
-=== int or long volatiles
-If the `volatile` variable is bigger than a byte (e.g. a 16 bit int or a 32 bit long), then the microcontroller can not read it in one step, because it is an 8 bit microcontroller. This means that while your main code section (e.g. your loop) reads the first 8 bits of the variable, the interrupt might already change the second 8 bits. This will produce random values for the variable.
+=== zmienne volatile typu int lub long
+Jeśli zmienna `ulotna` jest większa niż bajt (np. całkowita 16-bitowa lub długa 32-bitowa), wówczas mikrokontroler nie może odczytać jej w jednym kroku, ponieważ jest to 8-bitowy mikrokontroler. Oznacza to, że podczas gdy główna sekcja kodu (np. loop) odczytuje pierwsze 8 bitów zmiennej, przerwanie może już zmienić drugie 8 bitów. Spowoduje to wygenerowanie losowych wartości dla zmiennej.
 
-Remedy:
+Lekarstwo:
 
-While the variable is read, interrupts need to be disabled, so they can't mess with the bits, while they are read.
-There are several ways to do this:
+Podczas odczytywania zmiennej przerwania muszą być wyłączone, aby nie mogły zepsuć bitów podczas odczytu.
+Można to zrobić na kilka sposobów:
 
 1. #LANGUAGE# link:../../../functions/interrupts/nointerrupts[noInterrupts]
 
-2. use the ATOMIC_BLOCK macro. Atomic operations are single MCU operations - the smallest possible unit.
+2. użyj makra ATOMIC_BLOCK. Operacje atomowe to pojedyncze operacje MCU - najmniejsza możliwa jednostka.
 
 
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -92,18 +92,18 @@ volatile int input_from_interrupt;
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION STARTS
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
