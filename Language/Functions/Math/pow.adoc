@@ -11,33 +11,33 @@ subCategories: [ "Math" ]
 = pow(base, exponent)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Calculates the value of a number raised to a power. `pow()` can be used to raise a number to a fractional power. This is useful for generating exponential mapping of values or curves.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `pow(base, exponent)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `base`: the number. Allowed data types: `float`. +
 `exponent`: the power to which the base is raised. Allowed data types: `float`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The result of the exponentiation. Data type: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 // HOW TO USE SECTION STARTS
@@ -59,7 +59,7 @@ See the (http://arduino.cc/playground/Main/Fscale[fscale]) sketch for a more com
 // HOW TO USE SECTION ENDS
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -71,4 +71,4 @@ See the (http://arduino.cc/playground/Main/Fscale[fscale]) sketch for a more com
 * #DEFENITION# link:../../../variables/data-types/double[double]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

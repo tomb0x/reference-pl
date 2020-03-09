@@ -11,12 +11,12 @@ subCategories: [ "Math" ]
 = map(value, fromLow, fromHigh, toLow, toHigh)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Re-maps a number from one range to another. That is, a value of *fromLow* would get mapped to *toLow*, a value of *fromHigh* to *toHigh*, values in-between to values in-between, etc.
 
 Does not constrain values to within the range, because out-of-range values are sometimes intended and useful. The `constrain()` function may be used either before or after this function, if limits to the ranges are desired.
@@ -36,12 +36,12 @@ The `map()` function uses integer math so will not generate fractions, when the 
 
 
 [float]
-=== Syntax
+=== Składnia
 `map(value, fromLow, fromHigh, toLow, toHigh)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `value`: the number to map. +
 `fromLow`: the lower bound of the value's current range. +
 `fromHigh`: the upper bound of the value's current range. +
@@ -50,11 +50,11 @@ The `map()` function uses integer math so will not generate fractions, when the 
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The mapped value.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
@@ -102,7 +102,7 @@ As previously mentioned, the map() function uses integer math. So fractions migh
 // HOW TO USE SECTION ENDS
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -110,4 +110,4 @@ As previously mentioned, the map() function uses integer math. So fractions migh
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

@@ -11,33 +11,33 @@ subCategories: [ "Math" ]
 = abs(x)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Calculates the absolute value of a number.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `abs(x)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `x`: the number
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 `x`: if x is greater than or equal to 0. +
 `-x`: if x is less than 0.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
@@ -65,7 +65,7 @@ a++;  // keep other math outside the function
 // HOW TO USE SECTION ENDS
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -73,4 +73,4 @@ a++;  // keep other math outside the function
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

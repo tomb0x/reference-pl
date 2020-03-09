@@ -1,45 +1,45 @@
 ---
 title: sqrt()
-categories: [ "Functions" ]
-subCategories: [ "Math" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Matematyka" ]
 ---
 
 
 
 
 
-= sqrt(x)
+= sqrt(x) (pierwiastek kwadratowy)
 
 
-// OVERVIEW SECTION STARTS
-Calculates the square root of a number.
+// POCZĄTEK SEKCJI OPISOWEJ
+Oblicza pierwiastek kwadratowy liczby.
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `sqrt(x)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `x`: the number. Allowed data types: any data type.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The number's square root. Data type: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -47,4 +47,4 @@ The number's square root. Data type: `double`.
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

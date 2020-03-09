@@ -11,36 +11,36 @@ subCategories: [ "Math" ]
 = constrain(x, a, b)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Constrains a number to be within a range.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `constrain(x, a, b)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `x`: the number to constrain Allowed data types: all data types. +
 `a`: the lower end of the range. Allowed data types: all data types. +
 `b`: the upper end of the range. Allowed data types: all data types.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 x: if x is between a and b. +
 a: if x is less than a. +
 b: if x is greater than b.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
@@ -81,7 +81,7 @@ int constrainedInput = constrain(input, minimumValue, maximumValue);
 // HOW TO USE SECTION ENDS
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -89,4 +89,4 @@ int constrainedInput = constrain(input, minimumValue, maximumValue);
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

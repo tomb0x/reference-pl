@@ -11,33 +11,33 @@ subCategories: [ "Math" ]
 = min(x, y)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Calculates the minimum of two numbers.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `min(x, y)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `x`: the first number. Allowed data types: any data type. +
 `y`: the second number. Allowed data types: any data type.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The smaller of the two numbers.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
@@ -75,7 +75,7 @@ a++;  // use this instead - keep other math outside the function
 // HOW TO USE SECTION ENDS
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -83,4 +83,4 @@ a++;  // use this instead - keep other math outside the function
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE

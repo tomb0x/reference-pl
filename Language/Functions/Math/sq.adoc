@@ -11,32 +11,32 @@ subCategories: [ "Math" ]
 = sq(x)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Calculates the square of a number: the number multiplied by itself.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `sq(x)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `x`: the number. Allowed data types: any data type.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The square of the number. Data type: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 // HOW TO USE SECTION STARTS
@@ -65,7 +65,7 @@ int inputSquared = sq(input);
 // HOW TO USE SECTION ENDS
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
@@ -73,4 +73,4 @@ int inputSquared = sq(input);
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
