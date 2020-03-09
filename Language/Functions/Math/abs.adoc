@@ -1,14 +1,14 @@
 ---
 title: abs()
-categories: [ "Functions" ]
-subCategories: [ "Math" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Matematyka" ]
 ---
 
 
 
 
 
-= abs(x)
+= abs(x) (wartość bezwzględna)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -17,7 +17,7 @@ subCategories: [ "Math" ]
 
 [float]
 === Opis
-Calculates the absolute value of a number.
+Oblicza wartość bezwzględną liczby.
 [%hardbreaks]
 
 
@@ -28,13 +28,13 @@ Calculates the absolute value of a number.
 
 [float]
 === Parametry
-`x`: the number
+`x`: liczba
 
 
 [float]
 === Wartości zwracane
-`x`: if x is greater than or equal to 0. +
-`-x`: if x is less than 0.
+`x`: jeśli x jest większe bądź równe od 0. +
+`-x`: jeśli x jest mniejsze od 0.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -42,27 +42,27 @@ Calculates the absolute value of a number.
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 
 [float]
-=== Notes and Warnings
-Because of the way the abs() function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== Uwagi i ostrzeżenia
+Ze względu na sposób implementacji funkcji abs() unikaj używania innych funkcji wewnątrz nawiasów, bo może to prowadzić do niepoprawnych wyników.
 [source,arduino]
 ----
-abs(a++); // avoid this - yields incorrect results
+abs(a++); // unikaj tego - daje nieprawidłowe wyniki
 
-// use this instead:
+// zamiast tego użyj:
 abs(a);
-a++;  // keep other math outside the function
+a++;   // inne działania wykonuj poza funkcją
 ----
 [%hardbreaks]
 
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 // POCZĄTEK SEKCJI ZOBACZ TAKŻE
@@ -70,7 +70,7 @@ a++;  // keep other math outside the function
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
