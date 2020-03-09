@@ -1,7 +1,7 @@
 ---
 title: Stream
-categories: [ "Functions" ]
-subCategories: [ "Communication" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Komunikacja" ]
 ---
 
 
@@ -10,12 +10,12 @@ subCategories: [ "Communication" ]
 = Stream
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Stream is the base class for character and binary based streams. It is not called directly, but invoked whenever you use a function that relies on it.
 
 Stream defines the reading functions in Arduino. When using any core functionality that uses a `read()` or similar method, you can safely assume it calls on the Stream class. For functions like `print()`, Stream inherits from the Print class.
@@ -29,17 +29,17 @@ Some of the libraries that rely on Stream include :
 
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// FUNCTIONS SECTION STARTS
+// START SEKCJI FUNKCJE
 [#functions]
 --
 
 '''
 
 [float]
-=== Functions
+=== Funkcje
 link:../stream/streamavailable[available()] +
 link:../stream/streamread[read()] +
 link:../stream/streamflush[flush()] +
@@ -57,15 +57,15 @@ link:../stream/streamsettimeout[setTimeout()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// KONIEC SEKCJI FUNKCJE
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
