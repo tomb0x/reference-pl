@@ -28,12 +28,12 @@ Oblicza pierwiastek kwadratowy liczby.
 
 [float]
 === Parametry
-`x`: the number. Allowed data types: any data type.
+`x`: liczba. Dozwolone typy danych: dowolny typ danych.
 
 
 [float]
 === Wartości zwracane
-The number's square root. Data type: `double`.
+Pierwiastek kwadratowy liczby. Typ danych: `double`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -44,7 +44,7 @@ The number's square root. Data type: `double`.
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
