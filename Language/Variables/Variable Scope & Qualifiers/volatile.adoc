@@ -21,7 +21,7 @@ subCategories: [ "Zasięg zmiennych i kwalifikatory" ]
 
 Zadeklarowanie zmiennej `volatile` jest dyrektywą dla kompilatora. Kompilator to program, które tłumaczy kod C/C++ na kod maszynowy, który jest prawdziwymi instrukcjami dla układu Atmega w Arduino.
 
-W tym przypadku instruuje to kompilator aby ładował zmiennej z pamięci RAM, a nie z rejestru, który jest tymczasową lokalizacją pamięci, w której zmienne programu są przechowywane i przetwarzane. W pewnych sytuacjach wartość zmiennej przechowywanej w rejestrach może być niedokładna.
+W tym przypadku instruuje to kompilator aby ładował zmienne z pamięci RAM, a nie z rejestru, który jest tymczasową lokalizacją pamięci, w której zmienne programu są przechowywane i przetwarzane. W pewnych sytuacjach wartość zmiennej przechowywanej w rejestrach może być nieprawidłowa.
 
 Zmienną należy zadeklarować jako `volatile`, ilekroć jej wartość może zostać zmieniona przez coś poza kontrolą sekcji kodu, w której się pojawia, na przykład przez jednocześnie wykonywany wątek. W Arduino jedynym miejscem, w którym może się to zdarzyć, są sekcje kodu związane z przerwaniami, zwane procedurą obsługi przerwań.
 
@@ -58,34 +58,34 @@ Można to zrobić na kilka sposobów:
 
 [source,arduino]
 ----
-// toggles LED when interrupt pin changes state
+// przełącza diodę świecącą, gdy pin zmienia stan toggles LED when interrupt pin changes state
 
-int pin = 13;
-volatile byte state = LOW;
+int styk = 13;
+volatile byte stan = LOW;
 
 void setup() {
-  pinMode(pin, OUTPUT);
-  attachInterrupt(digitalPinToInterrupt(2), blink, CHANGE);
+  pinMode(styk, OUTPUT);
+  attachInterrupt(digitalPinToInterrupt(2), migaj, CHANGE);
 }
 
 void loop() {
-  digitalWrite(pin, state);
+  digitalWrite(styk, stan);
 }
 
-void blink() {
-  state = !state;
+void migaj() {
+  stan = !stan;
 }
 ----
 
 
 [source,arduino]
 ----
-#include <util/atomic.h> // this library includes the ATOMIC_BLOCK macro.
+#include <util/atomic.h> // ta biblioteka zawiera makrodefinicję ATOMIC_BLOCK.
 volatile int input_from_interrupt;
 
   ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
-    // code with interrupts blocked (consecutive atomic operations will not get interrupted)
-    int result = input_from_interrupt;
+    // program z zablokowanymi przerwaniami (kolejne operacje atomowe nie zostaną przerwane)
+    int wynik = input_from_interrupt;
   }
 ----
 
