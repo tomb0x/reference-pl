@@ -40,7 +40,7 @@ The result of the exponentiation. Data type: `double`.
 // KONIEC SEKCJI OPISOWEJ
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
@@ -56,7 +56,7 @@ See the (http://arduino.cc/playground/Main/Fscale[fscale]) sketch for a more com
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 // POCZĄTEK SEKCJI ZOBACZ TAKŻE

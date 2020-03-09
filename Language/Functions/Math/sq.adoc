@@ -1,6 +1,6 @@
 ---
 title: sq()
-categories: [ "Functions" ]
+categories: [ "Funkcje" ]
 subCategories: [ "Math" ]
 ---
 
@@ -39,7 +39,7 @@ The square of the number. Data type: `double`.
 // KONIEC SEKCJI OPISOWEJ
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
@@ -62,7 +62,7 @@ int inputSquared = sq(input);
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
 // POCZĄTEK SEKCJI ZOBACZ TAKŻE
