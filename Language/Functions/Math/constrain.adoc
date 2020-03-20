@@ -1,10 +1,10 @@
 ---
 title: constrain()
-categories: [ "Functions" ]
+categories: [ "Funkcje" ]
 subCategories: [ "Matematyka" ]
 ---
 
-= constrain(x, a, b) (ograniczenie)
+= constrain(x, a, b) (ang. ograniczenie)
 
 // POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
@@ -36,8 +36,6 @@ b: jeśli x jest większe niż b.
 
 --
 // KONIEC SEKCJI OPISOWEJ
-
-
 
 
 // POCZĄTEK SEKCJI JAK UŻYWAĆ
