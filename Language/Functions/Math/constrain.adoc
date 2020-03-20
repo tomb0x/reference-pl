@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Matematyka" ]
 ---
 
-
-
-
-
 = constrain(x, a, b) (ograniczenie)
-
 
 // POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
@@ -72,7 +67,7 @@ int ograniczoneWejscie = constrain(Serial.parseInt(), wartoscMinimalna, wartoscM
 Zamiast tego użyj:
 [source,arduino]
 ----
-int wejscie = Serial.parseInt();  // inne działania wykonuj poza funkcją ograniczenia
+int wejscie = Serial.parseInt();  // inne działania wykonuj poza funkcją ograniczającą
 int ograniczoneWejscie = constrain(wejscie, wartoscMinimalna, wartoscMaksymalna);
 ----
 [%hardbreaks]
