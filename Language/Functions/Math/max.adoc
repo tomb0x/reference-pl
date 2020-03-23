@@ -44,7 +44,7 @@ Program upewnia się, że wartCzujnika wynosi co najmniej 20.
 
 [source,arduino]
 ----
-wartCzujnika = max(wartCzujnika, 20); // przypisuje zmiennej wartCzujnika większą z wartości wartCzujnika lub 20
+wartCzujnika = max(wartCzujnika, 20); // przypisuje zmiennej wartCzujnika większą z dwóch wartości: wartCzujnika lub 20
                                       // (upewniamy się, że wartość jest co najmniej równa 20)
 ----
 [%hardbreaks]
