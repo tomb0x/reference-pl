@@ -1,15 +1,10 @@
 ---
 title: min()
-categories: [ "Functions" ]
-subCategories: [ "Math" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Matematyka" ]
 ---
 
-
-
-
-
 = min(x, y)
-
 
 // POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Math" ]
 
 [float]
 === Opis
-Calculates the minimum of two numbers.
+Oblicza, która z dwóch liczb jest mniejsza.
 [%hardbreaks]
 
 
@@ -28,18 +23,16 @@ Calculates the minimum of two numbers.
 
 [float]
 === Parametry
-`x`: the first number. Allowed data types: any data type. +
-`y`: the second number. Allowed data types: any data type.
+`x`: pierwsza liczba. Dozwolone typy danych: dowolny typ danych. +
+`y`: druga liczba. Dozwolone typy danych: dowolny typ danych.
 
 
 [float]
 === Wartości zwracane
-The smaller of the two numbers.
+Mniejsza z wartości dwóch parametrów.
 
 --
 // KONIEC SEKCJI OPISOWEJ
-
-
 
 
 // POCZĄTEK SEKCJI JAK UŻYWAĆ
@@ -47,28 +40,29 @@ The smaller of the two numbers.
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code ensures that it never gets above 100.
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Program zapewnia, że nigdy nie przekroczymy wartości 100.
 
 [source,arduino]
 ----
-sensVal = min(sensVal, 100);  // assigns sensVal to the smaller of sensVal or 100
-                              // ensuring that it never gets above 100.
+wartCzujnika = min(wartCzujnika, 100);  // przypisuje zmiennej wartCzujnika mniejszą z dwóch wartości: wartCzujnika lub 100
+                                        // (upewniamy się, że wartość nigdy nie będzie większa niż 100)
 ----
 [%hardbreaks]
 
 [float]
 === Notes and Warnings
-Perhaps counter-intuitively, `max()` is often used to constrain the lower end of a variable's range, while `min()` is used to constrain the upper end of the range.
+Być może wbrew intuicji, `max()` jest często używane do ograniczenia dolnego końca zakresu zmiennej, podczas gdy `min()` jest używane do ograniczenia górnego końca zakresu.
 
-Because of the way the `min()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results
+Ze względu na sposób implementacji funkcji min() unikaj używania innych funkcji wewnątrz nawiasów, bo może to prowadzić do niepoprawnych wyników.
 [source,arduino]
 ----
-min(a++, 100);  // avoid this - yields incorrect results
+min(a++, 100);  // unikaj tego - daje nieprawidłowe wyniki
 
+// zamiast tego użyj:
 min(a, 100);
-a++;  // use this instead - keep other math outside the function
+a++;            // inne działania wykonuj poza funkcją
 ----
 
 --
@@ -80,7 +74,7 @@ a++;  // use this instead - keep other math outside the function
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
