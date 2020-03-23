@@ -1,14 +1,10 @@
 ---
 title: pow()
-categories: [ "Functions" ]
-subCategories: [ "Math" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Matematyka" ]
 ---
 
-
-
-
-
-= pow(base, exponent)
+= pow(podstawa, wykładnik)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -17,24 +13,24 @@ subCategories: [ "Math" ]
 
 [float]
 === Opis
-Calculates the value of a number raised to a power. `pow()` can be used to raise a number to a fractional power. This is useful for generating exponential mapping of values or curves.
+Oblicza wartość liczby podniesionej do potęgi. `pow()` może być użyte do podniesienia liczby do potęgi ułamkowej. Jest to przydatne do generowania wykładniczego odwzorowania wartości lub krzywych.
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`pow(base, exponent)`
+`pow(podstawa, wykładnik)`
 
 
 [float]
 === Parametry
-`base`: the number. Allowed data types: `float`. +
-`exponent`: the power to which the base is raised. Allowed data types: `float`.
+`podstawa`: liczba. Dozwolone typy danych: `float`. +
+`wykładnik`: potęga, do której podniesiona jest podstawa. Dozwolone typy danych: `float`.
 
 
 [float]
 === Wartości zwracane
-The result of the exponentiation. Data type: `double`.
+Wynik potęgowania. Typ danych: `double`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -45,14 +41,14 @@ The result of the exponentiation. Data type: `double`.
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Calculate the value of x raised to the power of y:
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Obliczyć wartość x podniesioną do potęgi y:
 [source,arduino]
 ----
 z = pow(x, y);
 ----
-See the (http://arduino.cc/playground/Main/Fscale[fscale]) sketch for a more complex example of the use of `pow()`.
+Zobacz bardziej złożony przykład użycia `pow()` w szkicu (http://arduino.cc/playground/Main/Fscale[fscale]).
 [%hardbreaks]
 
 --
@@ -64,7 +60,7 @@ See the (http://arduino.cc/playground/Main/Fscale[fscale]) sketch for a more com
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="definition"]
 * #DEFINITION# link:../../../variables/data-types/float[float]
