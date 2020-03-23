@@ -1,15 +1,10 @@
 ---
 title: max()
-categories: [ "Functions" ]
-subCategories: [ "Math" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Matematyka" ]
 ---
 
-
-
-
-
 = max(x, y)
-
 
 // POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
@@ -17,7 +12,7 @@ subCategories: [ "Math" ]
 
 [float]
 === Opis
-Calculates the maximum of two numbers.
+Oblicza, która z dwóch liczb jest większa.
 [%hardbreaks]
 
 
@@ -25,21 +20,17 @@ Calculates the maximum of two numbers.
 === Składnia
 `max(x, y)`
 
-
 [float]
 === Parametry
-`x`: the first number. Allowed data types: any data type. +
-`y`: the second number. Allowed data types: any data type.
-
+`x`: pierwsza liczba. Dozwolone typy danych: dowolny typ danych. +
+`y`: druga liczba. Dozwolone typy danych: dowolny typ danych.
 
 [float]
 === Wartości zwracane
-The larger of the two parameter values.
+Większa z wartości dwóch parametrów.
 
 --
 // KONIEC SEKCJI OPISOWEJ
-
-
 
 
 // POCZĄTEK SEKCJI JAK UŻYWAĆ
@@ -47,29 +38,29 @@ The larger of the two parameter values.
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code ensures that sensVal is at least 20.
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Program upewnia się, że wartCzujnika wynosi co najmniej 20.
 
 [source,arduino]
 ----
-sensVal = max(sensVal, 20); // assigns sensVal to the larger of sensVal or 20
-                            // (effectively ensuring that it is at least 20)
+wartCzujnika = max(wartCzujnika, 20); // przypisuje zmiennej wartCzujnika większą z wartości wartCzujnika lub 20
+                                      // (upewniamy się, że wartość jest co najmniej równa 20)
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Perhaps counter-intuitively, `max()` is often used to constrain the lower end of a variable's range, while `min()` is used to constrain the upper end of the range.
+=== Uwagi i ostrzeżenia
+Być może wbrew intuicji, `max()` jest często używane do ograniczenia dolnego końca zakresu zmiennej, podczas gdy `min()` jest używane do ograniczenia górnego końca zakresu.
 
-Because of the way the `max()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results
+Ze względu na sposób implementacji funkcji max() unikaj używania innych funkcji wewnątrz nawiasów, bo może to prowadzić do niepoprawnych wyników.
 [source,arduino]
 ----
-max(a--, 0);  // avoid this - yields incorrect results
+max(a--, 0);  // unikaj tego - daje nieprawidłowe wyniki
 
-// use this instead:
+// zamiast tego użyj:
 max(a, 0);
-a--;  // keep other math outside the function
+a--;          // inne działania wykonuj poza funkcją
 ----
 
 --
@@ -81,7 +72,7 @@ a--;  // keep other math outside the function
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
