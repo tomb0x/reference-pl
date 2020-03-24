@@ -52,7 +52,7 @@ wartCzujnika = min(wartCzujnika, 100);  // przypisuje zmiennej wartCzujnika mnie
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Uwagi i ostrzeżenia
 Być może wbrew intuicji, `max()` jest często używane do ograniczenia dolnego końca zakresu zmiennej, podczas gdy `min()` jest używane do ograniczenia górnego końca zakresu.
 
 Ze względu na sposób implementacji funkcji min() unikaj używania innych funkcji wewnątrz nawiasów, bo może to prowadzić do niepoprawnych wyników.
