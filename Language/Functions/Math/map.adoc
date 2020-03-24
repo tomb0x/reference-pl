@@ -1,14 +1,10 @@
 ---
 title: map()
-categories: [ "Functions" ]
-subCategories: [ "Math" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Matematyka" ]
 ---
 
-
-
-
-
-= map(value, fromLow, fromHigh, toLow, toHigh)
+= map(wartosc, odNiskie, odWysokie, doNiskie, doWysokie)
 
 
 // POCZĄTEK SEKCJI OPISOWEJ
@@ -17,41 +13,39 @@ subCategories: [ "Math" ]
 
 [float]
 === Opis
-Re-maps a number from one range to another. That is, a value of *fromLow* would get mapped to *toLow*, a value of *fromHigh* to *toHigh*, values in-between to values in-between, etc.
+Przekształca liczbę z jednego zakresu na inny. Oznacza to, że wartość *odNiskie* zostanie przekształcona w *doNiskie*, wartość *odWysokie* w *doWysokie*, odpowiednio również wartości pomiędzy nimi.
 
-Does not constrain values to within the range, because out-of-range values are sometimes intended and useful. The `constrain()` function may be used either before or after this function, if limits to the ranges are desired.
+Nie ogranicza to wartości do podanego zakresu, ponieważ przekroczenie zakresu może być czasem zamierzone i przydatne. Funkcja `constrain()` może być używana przed tą funkcją lub po niej, jeśli potrzebne będzie ograniczenie zakresu.
 
-Note that the "lower bounds" of either range may be larger or smaller than the "upper bounds" so the `map()` function may be used to reverse a range of numbers, for example
+Zauważ, że "dolne granice" zakresu mogą być większe lub mniejsze niż "górne granice", więc funkcja `map()` może być użyta do odwrócenia zakresu liczb, na przykład
 
 `y = map(x, 1, 50, 50, 1);`
 
-The function also handles negative numbers well, so that this example
+Ta funkcja również radzi sobie z liczbami ujemnymi, zatem poniższy przykład
 
 `y = map(x, 1, 50, 50, -100);`
 
-is also valid and works well.
+jest prawidłowy i działa poprawnie.
 
-The `map()` function uses integer math so will not generate fractions, when the math might indicate that it should do so. Fractional remainders are truncated, and are not rounded or averaged.
+Funkcja `map()` posługuje się liczbami całkowitymi, więc nie będzie zwracać w wyniku ułamków, gdy obliczenia będą wskazywać na to, że powinna to zrobić. Części ułamkowe będą obcinane a nie zaokrąglane czy uśredniane.
 [%hardbreaks]
-
 
 [float]
 === Składnia
-`map(value, fromLow, fromHigh, toLow, toHigh)`
+`map(wartość, odNiskie, odWysokie, doNiskie, doWysokie)`
 
 
 [float]
 === Parametry
-`value`: the number to map. +
-`fromLow`: the lower bound of the value's current range. +
-`fromHigh`: the upper bound of the value's current range. +
-`toLow`: the lower bound of the value's target range. +
-`toHigh`: the upper bound of the value's target range.
-
+`wartość`  : liczba do przekształcenia. +
+`odNiskie` : dolna granica bieżącego zakresu wartości. +
+`odWysokie`: górna granica bieżącego zakresu wartości. +
+`doNiskie` : dolna granica zakresu docelowego wartości. +
+`doWysokie`: górna granica zakresu docelowego wartości.
 
 [float]
 === Wartości zwracane
-The mapped value.
+Przekształcona wartość.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -64,39 +58,39 @@ The mapped value.
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Przykładowy kod
+// Poniżej dodaj przykładowy kod i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-/* Map an analog value to 8 bits (0 to 255) */
+/* Przekształć analogową wartość na liczbę ośmiobitową (z zakresu od 0 do 255) */
 void setup() {}
 
 void loop() {
-  int val = analogRead(0);
-  val = map(val, 0, 1023, 0, 255);
-  analogWrite(9, val);
+  int wart = analogRead(0);
+  wart = map(wart, 0, 1023, 0, 255);
+  analogWrite(9, wart);
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Appendix
+=== Dodatek
 
-For the mathematically inclined, here's the whole function
+Oto cała funkcja - dla miłośników matematyki, 
 
 [source,arduino]
 ----
-long map(long x, long in_min, long in_max, long out_min, long out_max) {
-  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+long map(long x, long wej_min, long wej_max, long wyj_min, long wyj_max) {
+  return (x - wej_min) * (wyj_max - wyj_min) / (wej_max - wej_min) + wyj_min;
 }
 ----
 
 [float]
-=== Notes & Warnings
+=== Uwagi i ostrzeżenia
 
-As previously mentioned, the map() function uses integer math. So fractions might get suppressed due to this. For example, fractions like 3/2, 4/3, 5/4 will all be returned as 1 from the map() function, despite their different actual values. So if your project requires precise calculations (e.g. voltage accurate to 3 decimal places), please consider avoiding map() and implementing the calculations manually in your code yourself.
+Jak wspomniano wcześniej, funkcja map() wykorzystuje obliczenia na liczbach całkowitych. Z tego powodu części ułamkowe liczb mogą zostać obcięte. Na przykład ułamki takie jak 3/2, 4/3, 5/4 funkcja map() zwróci jako 1, pomimo ich różnych rzeczywistych wartości. Jeśli więc twój projekt wymaga precyzyjnych obliczeń (np. napięcie z dokładnością do 3 miejsc po przecinku), wykonaj w programie niezbędne przekształcenia bez użycia funkcji map().
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ
@@ -107,7 +101,7 @@ As previously mentioned, the map() function uses integer math. So fractions migh
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
