@@ -1,54 +1,48 @@
 ---
 title: interrupts()
-categories: [ "Functions" ]
-subCategories: [ "Interrupts" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Przerwania" ]
 ---
-
-
-
-
 
 = interrupts()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Re-enables interrupts (after they've been disabled by link:../nointerrupts[nointerrupts()]. Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.
+=== Opis
+Ponownie włącza przerwania (po ich wyłączeniu przez link:../nointerrupts[nointerrupts()]. Przerwania pozwalają na wykonywanie niektórych ważnych zadań w tle i są domyślnie włączone. Niektóre funkcje nie będą działać, gdy przerwania są wyłączone, a komunikacja przychodząca może zostać zignorowana. Przerwania mogą jednak nieco zakłócać synchronizację kodu i mogą być wyłączone dla szczególnie krytycznych sekcji kodu.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `interrupts()`
 
 
 [float]
-=== Parameters
-None
+=== Parametry
+Brak
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-
-
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code enables Interrupts.
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Zezwolenie na przerwania.
 
 [source,arduino]
 ----
@@ -56,26 +50,26 @@ void setup() {}
 
 void loop() {
   noInterrupts();
-  // critical, time-sensitive code here
+  // tutaj instrukcje zależne od upływu czasu
   interrupts();
-  // other code here
+  // pozostałe instrukcje
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
 * #LANGUAGE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
 * #LANGUAGE# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
