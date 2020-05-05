@@ -1,7 +1,7 @@
 ---
 title: cos()
-categories: [ "Functions" ]
-subCategories: [ "Trigonometry" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Trygonometria" ]
 ---
 
 
@@ -11,44 +11,44 @@ subCategories: [ "Trigonometry" ]
 = cos(rad)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Calculates the cosine of an angle (in radians). The result will be between -1 and 1.
+=== Opis
+Oblicza kosinus kąta (w radianach). Wynik będzie pomiędzy -1 a 1.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `cos(rad)`
 
 
 [float]
-=== Parameters
-`rad`: The angle in radians. Allowed data types: `float`.
+=== Parametry
+`rad`: Kąt w radianach. Dozwolone typy danych: `float`.
 
 
 [float]
-=== Returns
-The cos of the angle. Data type: `double`.
+=== Wartości zwracane
+Kosinus kąta. Typ danych: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/float[float]
-* #LANGUAGE# link:../../../variables/data-types/double[double]
+* #JĘZYK# link:../../../variables/data-types/float[float]
+* #JĘZYK# link:../../../variables/data-types/double[double]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
