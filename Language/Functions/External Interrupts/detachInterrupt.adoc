@@ -17,21 +17,21 @@ subCategories: [ "Przerwania zewnętrzne" ]
 
 [float]
 === Opis
-Turns off the given interrupt.
+Wyłącza dane przerwanie.
 [%hardbreaks]
 
 
 [float]
 === Składnia
-`detachInterrupt(digitalPinToInterrupt(pin))` (recommended) +
-`detachInterrupt(interrupt)` (not recommended) +
-`detachInterrupt(pin)` (Not recommended. Additionally, this syntax only works on Arduino SAMD Boards, Uno WiFi Rev2, Due, and 101.)
+`detachInterrupt(digitalPinToInterrupt(styk))` (zalecana) +
+`detachInterrupt(przerwanie)` (nie zalecana) +
+`detachInterrupt(styk)` (Nie zalecana. Ponadto ta składnia działa tylko na płytach Arduino SAMD, Uno WiFi Rev2, Due i 101.)
 
 
 [float]
 === Parametry
-`interrupt`: the number of the interrupt to disable (see link:../attachinterrupt[attachInterrupt()] for more details). +
-`pin`: the Arduino pin number of the interrupt to disable
+`przerwanie`: number przerwania do wyłączenia (więcej szczegółów znajdziesz pod adresem link:../attachinterrupt[attachInterrupt()]). +
+`styk`: numer wyłączanego styku Arduino obsługującego przerwanie 
 
 
 [float]
