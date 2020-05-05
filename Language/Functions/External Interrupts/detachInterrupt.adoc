@@ -1,7 +1,7 @@
 ---
 title: detachInterrupt()
-categories: [ "Functions" ]
-subCategories: [ "External Interrupts" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Przerwania zewnętrzne" ]
 ---
 
 
@@ -11,43 +11,43 @@ subCategories: [ "External Interrupts" ]
 = detachInterrupt()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Turns off the given interrupt.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `detachInterrupt(digitalPinToInterrupt(pin))` (recommended) +
 `detachInterrupt(interrupt)` (not recommended) +
 `detachInterrupt(pin)` (Not recommended. Additionally, this syntax only works on Arduino SAMD Boards, Uno WiFi Rev2, Due, and 101.)
 
 
 [float]
-=== Parameters
+=== Parametry
 `interrupt`: the number of the interrupt to disable (see link:../attachinterrupt[attachInterrupt()] for more details). +
 `pin`: the Arduino pin number of the interrupt to disable
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
