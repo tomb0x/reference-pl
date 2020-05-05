@@ -1,7 +1,7 @@
 ---
 title: tan()
-categories: [ "Functions" ]
-subCategories: [ "Trigonometry" ]
+categories: [ "Funkcje" ]
+subCategories: [ "Trygonometria" ]
 ---
 
 
@@ -11,44 +11,44 @@ subCategories: [ "Trigonometry" ]
 = tan(rad)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Calculates the tangent of an angle (in radians). The result will be between negative infinity and infinity.
+=== Opis
+Oblicza tangens kąta (w radianach). Wynik będzie między ujemną a dodatnią nieskończonością.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `tan(rad)`
 
 
 [float]
-=== Parameters
-`rad`: The angle in radians. Allowed data types: `float`.
+=== Parametry
+`rad`: Kąt w radianach. Dozwolone typy danych: `float`.
 
 
 [float]
-=== Returns
-The tangent of the angle. Data type: `double`.
+=== Wartości zwracane
+Tangens kąta. Typ danych: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/float[float]
-* #LANGUAGE# link:../../../variables/data-types/double[double]
+* #JĘZYK# link:../../../variables/data-types/float[float]
+* #JĘZYK# link:../../../variables/data-types/double[double]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
