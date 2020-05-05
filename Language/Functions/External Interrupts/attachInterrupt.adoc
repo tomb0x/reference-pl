@@ -64,7 +64,7 @@ Aby uzyskać więcej informacji na temat przerwań, przeczytaj http://gammon.com
 
 [float]
 === Parametry
-`przerwanie`: the number of the interrupt. Allowed data types: `int`. +
+`przerwanie`: numer przerwania. Dozwolone typy danych: `int`. +
 `styk`: numer styku Arduino. +
 `PoP`: Procedure obsługi przerwania, którą wywołać, gdy nastąpi przerwanie; ta funkcja nie może przyjmować żadnych parametrów i niczego nie zwracać. +
 `tryb`: określa, kiedy ma zostać obsłużone przerwanie. Zdefiniowane są cztery stałe jako prawidłowe wartości: +
