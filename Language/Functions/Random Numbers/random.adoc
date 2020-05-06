@@ -1,7 +1,7 @@
 ---
 title: random()
-categories: [ "Funkcje" ]
-subCategories: [ "Liczby losowe" ]
+categories: [ "Functions" ]
+subCategories: [ "Random Numbers" ]
 ---
 
 

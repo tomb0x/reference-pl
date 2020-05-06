@@ -1,7 +1,7 @@
 ---
 title: constrain()
-categories: [ "Funkcje" ]
-subCategories: [ "Matematyka" ]
+categories: [ "Functions" ]
+subCategories: [ "Math" ]
 ---
 
 = constrain(x, a, b) (ang. ograniczenie)

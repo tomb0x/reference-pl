@@ -1,7 +1,7 @@
 ---
 title: attachInterrupt()
-categories: [ "Funkcje" ]
-subCategories: [ "Przerwania zewnętrzne" ]
+categories: [ "Functions" ]
+subCategories: [ "External Interrupts" ]
 ---
 
 = attachInterrupt()

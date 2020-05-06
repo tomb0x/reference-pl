@@ -1,7 +1,7 @@
 ---
 title: randomSeed()
-categories: [ "Funkcje" ]
-subCategories: [ "Liczby losowe" ]
+categories: [ "Functions" ]
+subCategories: [ "Random Numbers" ]
 ---
 
 

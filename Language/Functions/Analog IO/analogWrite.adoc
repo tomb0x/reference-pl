@@ -1,7 +1,7 @@
 ---
 title: analogWrite()
-categories: [ "Funkcje" ]
-subCategories: [ "Analogowe We/Wy" ]
+categories: [ "Functions" ]
+subCategories: [ "Analog I/O" ]
 ---
 
 

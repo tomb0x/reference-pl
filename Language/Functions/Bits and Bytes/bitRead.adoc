@@ -1,7 +1,7 @@
 ---
 title: bitRead()
-categories: [ "Funkcje" ]
-subCategories: [ "Bity i Bajty" ]
+categories: [ "Functions" ]
+subCategories: [ "Bits and Bytes" ]
 ---
 
 

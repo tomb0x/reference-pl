@@ -1,7 +1,7 @@
 ---
 title: max()
-categories: [ "Funkcje" ]
-subCategories: [ "Matematyka" ]
+categories: [ "Functions" ]
+subCategories: [ "Math" ]
 ---
 
 = max(x, y)
