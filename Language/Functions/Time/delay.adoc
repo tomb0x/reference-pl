@@ -5,87 +5,84 @@ subCategories: [ "Time" ]
 ---
 
 
-
-
-
 = delay()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Pauses the program for the amount of time (in milliseconds) specified as parameter. (There are 1000 milliseconds in a second.)
+=== Opis
+Wstrzymuje program na czas określony przez parametr (wyrażony w milisekundach). (Sekunda to 1000 milisekund).
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `delay(ms)`
 
 
 [float]
-=== Parameters
-`ms`: the number of milliseconds to pause. Allowed data types: `unsigned long`.
+=== Parametry
+`ms`: liczba millisekund do wstrzymania. Dozwolone typy danych: `unsigned long`.
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code pauses the program for one second before toggling the output pin.
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Kod wstrzymuje program na sekundę przed przełączeniem stanu styku wyjściowego.
 
 [source,arduino]
 ----
-int ledPin = 13;              // LED connected to digital pin 13
+int stykDiody = 13;              // dioda świecąca podłączona do styku 13
 
 void setup() {
-  pinMode(ledPin, OUTPUT);    // sets the digital pin as output
+  pinMode(stykDiody, OUTPUT);    // ustawienie styku cyfrowego jako wyjście
 }
 
 void loop() {
-  digitalWrite(ledPin, HIGH); // sets the LED on
-  delay(1000);                // waits for a second
-  digitalWrite(ledPin, LOW);  // sets the LED off
-  delay(1000);                // waits for a second
+  digitalWrite(stykDiody, HIGH); // włącz diodę
+  delay(1000);                   // czekaj sekundę
+  digitalWrite(stykDiody, LOW);  // wyłącz diodę
+  delay(1000);                   // czekaj sekundę
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-While it is easy to create a blinking LED with the `delay()` function, and many sketches use short delays for such tasks as switch debouncing, the use of `delay()` in a sketch has significant drawbacks. No other reading of sensors, mathematical calculations, or pin manipulation can go on during the delay function, so in effect, it brings most other activity to a halt. For alternative approaches to controlling timing see the link:http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay] sketch, which loops, polling the link:../millis[millis()] function until enough time has elapsed. More knowledgeable programmers usually avoid the use of `delay()` for timing of events longer than 10's of milliseconds unless the Arduino sketch is very simple.
+=== Uwagi i ostrzeżenia
+Chociaż łatwo jest uzyskać migającą diodę za pomocą funkcji `delay()`, a wiele szkiców używa krótkich czasów opóźnień w przypadku takich zadań, jak likwidacja drgań styków, to użycie `delay()` w szkicu ma znaczące wady. Podczas trwania funkcji opóźniającej nie może działać żadne odczytywanie czujników, obliczenia matematycznych lub manipulowanie stykami, więc w efekcie zatrzymuje się większość czynności. Aby zapoznać się z alternatywnym podejściem do sterowania czasem, zobacz szkid link:http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay], który odpytuje w pętli funkcję link:../ millis[millis ()] aż do określonego czasu. Bardziej doświadczeni programiści zwykle unikają użycia `delay()` do pomiaru czasu zdarzeń dłuższych niż 10 milisekund, chyba że szkic Arduino jest bardzo prosty.
 
-Certain things do go on while the delay() function is controlling the Atmega chip however, because the delay function does not disable interrupts. Serial communication that appears at the RX pin is recorded, PWM (link:../../analog-io/analogwrite[analogWrite]) values and pin states are maintained, and link:../../external-interrupts/attachinterrupt[interrupts] will work as they should.
+Pewne rzeczy dzieją się, gdy funkcja delay() kontroluje układ Atmega, ponieważ funkcja opóźnienia nie wyłącza przerwań. Rejestrowana jest komunikacja szeregowa pojawiająca się na styku RX, wartości PWM i stany styków są zachowywane (link:../../ analog-io/analogwrite[analogWrite]), a link:../../external-interrupts/attachinterrupt[interrupts] będzie działało tak, jak powininno.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay^]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
