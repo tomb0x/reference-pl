@@ -54,16 +54,16 @@ Program konfiguruje styk numer 8 aby pracował jako wyjście. Wysyła ciąg impu
 
 [source,arduino]
 ----
-int outPin = 8;               // styk cyfrowy numer 8
+int stykWyj = 8;               // styk cyfrowy numer 8
 
 void setup() {
-  pinMode(outPin, OUTPUT);    // ustaw styk cyfrowy jako wyjście
+  pinMode(stykWyj, OUTPUT);    // ustaw styk cyfrowy jako wyjście
 }
 
 void loop() {
-  digitalWrite(outPin, HIGH); // włącz styk
+  digitalWrite(stykWyj, HIGH); // włącz styk
   delayMicroseconds(50);      // przerwa na 50 mikrosekund
-  digitalWrite(outPin, LOW);  // wyłącz styk
+  digitalWrite(stykWyj, LOW);  // wyłącz styk
   delayMicroseconds(50);      // przerwa na 50 mikrosekund
 }
 ----
