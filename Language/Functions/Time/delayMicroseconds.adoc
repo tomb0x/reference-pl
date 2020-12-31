@@ -11,80 +11,80 @@ subCategories: [ "Time" ]
 = delayMicroseconds()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Pauses the program for the amount of time (in microseconds) specified as parameter. There are a thousand microseconds in a millisecond, and a million microseconds in a second.
+=== Opis
+Wstrzymuje program na określony czas podany jako parametr (w mikrosekundach). Milisekunda ma tysiąc mikrosekund, a sekunda milion mikrosekund.
 
-Currently, the largest value that will produce an accurate delay is 16383. This could change in future Arduino releases. For delays longer than a few thousand microseconds, you should use `delay()` instead.
+Obecnie największa wartość, która spowoduje dokładne opóźnienie, to 16383. Może się to zmienić w przyszłych wersjach Arduino. W przypadku opóźnień dłuższych niż kilka tysięcy mikrosekund należy zamiast tego użyć funkcji `delay()`.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `delayMicroseconds(us)`
 
 
 [float]
-=== Parameters
-`us`: the number of microseconds to pause. Allowed data types: `unsigned int`.
+=== Parametry
+`us`: liczba mikrosekund. Dozwolone typy danych: `unsigned int`.
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code configures pin number 8 to work as an output pin. It sends a train of pulses of approximately 100 microseconds period. The approximation is due to execution of the other instructions in the code.
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Program konfiguruje styk numer 8 aby pracował jako wyjście. Wysyła ciąg impulsów w okresie około 100 mikrosekund. Przybliżenie wynika z wykonania w programie również innych instrukcji.
 
 [source,arduino]
 ----
-int outPin = 8;               // digital pin 8
+int outPin = 8;               // styk cyfrowy numer 8
 
 void setup() {
-  pinMode(outPin, OUTPUT);    // sets the digital pin as output
+  pinMode(outPin, OUTPUT);    // ustaw styk cyfrowy jako wyjście
 }
 
 void loop() {
-  digitalWrite(outPin, HIGH); // sets the pin on
-  delayMicroseconds(50);      // pauses for 50 microseconds
-  digitalWrite(outPin, LOW);  // sets the pin off
-  delayMicroseconds(50);      // pauses for 50 microseconds
+  digitalWrite(outPin, HIGH); // włącz styk
+  delayMicroseconds(50);      // przerwa na 50 mikrosekund
+  digitalWrite(outPin, LOW);  // wyłącz styk
+  delayMicroseconds(50);      // przerwa na 50 mikrosekund
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-This function works very accurately in the range 3 microseconds and up. We cannot assure that delayMicroseconds will perform precisely for smaller delay-times.
+=== Uwagi i ostrzeżenia
+Ta funkcja działa bardzo dokładnie w zakresie 3 mikrosekund i więcej. Nie możemy jednak zapewnić, że delayMicroseconds będzie działać dokładnie dla mniejszych czasów opóźnienia.
 
-As of Arduino 0018, delayMicroseconds() no longer disables interrupts.
+Od Arduino 0018 funkcja delayMicroseconds() nie wyłącza już przerwań.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
