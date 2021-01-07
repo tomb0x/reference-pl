@@ -1,33 +1,33 @@
 ---
-title: Keyboard Modifiers
+title: Klawisze modyfikujące
 ---
 
 
 
 
-= Keyboard Modifiers
+= Klawisze modyfikujące
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-The `Keyboard.write()` and `Keyboard.press()` and `Keyboard.release()` commands don’t work with every possible ASCII character, only those that correspond to a key on the keyboard. For example, backspace works, but many of the other non-printable characters produce unpredictable results. For capital letters (and other keys), what’s sent is shift plus the character (i.e. the equivalent of pressing both of those keys on the keyboard).
+=== Opis
+Polecenia `Keyboard.write()`, `Keyboard.press()` i `Keyboard.release()` nie działają ze wszystkimi możliwymi znakami ASCII, tylko z tymi, które odpowiadają klawiszom na klawiaturze. Na przykład, backspace działa, ale wiele innych niedrukowalnych znaków daje nieprzewidywalne rezultaty. W przypadku wielkich liter (i innych tego typu klawiszy) wysyłany jest klawisz shift plus dany znak (czyli odpowiednik naciśnięcia obu tych klawiszy na klawiaturze).
 [%hardbreaks]
-A modifier key is a special key on a computer keyboard that modifies the normal action of another key when the two are pressed in combination.
+Klawisz modyfikujący to specjalny klawisz na klawiaturze komputera, który modyfikuje normalne działanie innego klawisza, w przypadku gdy oba będą wciśnięte razem.
 [%hardbreaks]
-For more on ASCII values and the characters or functions they represent, see http://www.asciitable.com/[asciitable.com]
+Aby uzyskać więcej informacji na temat wartości ASCII oraz znaków i funkcji, które reprezentują, zobacz http://www.asciitable.com/[asciitable.com]
 [%hardbreaks]
-For multiple key presses use link:../keyboardpress[Keyboard.press]()
+W przypadku naciśnięć wielu klawiszy użyj link:../keyboardpress[Keyboard.press]()
 [%hardbreaks]
-The definitions of the modifier keys are listed below:
+Definicje klawiszy modyfikujących są wymienione poniżej:
 [%hardbreaks]
 
 
 |===
-|Key	|Hexadecimal value	|Decimal value
+|Klawisz	|Wartość szesnastkowa	|Wartość dziesiętna
 
 |KEY_LEFT_CTRL  |0x80 |128
 |KEY_LEFT_SHIFT |0x81 |129
@@ -79,4 +79,4 @@ The definitions of the modifier keys are listed below:
 |===
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
