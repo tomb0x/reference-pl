@@ -8,77 +8,77 @@ title: Keyboard.releaseAll()
 = Keyboard.releaseAll()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Lets go of all keys currently pressed. See link:../keyboardpress[Keyboard.press()] for additional information.
+=== Opis
+Zwalnia wszystkie aktualnie naciśnięte klawisze. Zobacz link:../keyboardpress[Keyboard.press()] aby uzyskać dodatkowe informacje.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `Keyboard.releaseAll()`
 
 
 [float]
-=== Parameters
-None
+=== Parametry
+Brak
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 #include <Keyboard.h>
 
-// use this option for OSX:
-char ctrlKey = KEY_LEFT_GUI;
-// use this option for Windows and Linux:
-//  char ctrlKey = KEY_LEFT_CTRL;
+// użyj tej opcji dla OSX:
+//char ctrlKey = KEY_LEFT_GUI;
+// użyj tej opcji dla Windows i Linux:
+char ctrlKey = KEY_LEFT_CTRL;
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // ustaw styk 2 jako wejście i włącz
+  // rezystor podciągający do stanu wysokiego, chyba
+  // że jest podłączony do masy:
   pinMode(2, INPUT_PULLUP);
-  // initialize control over the keyboard:
+  // zainicjuj kontrolę nad klawiaturą:
   Keyboard.begin();
 }
 
 void loop() {
   while (digitalRead(2) == HIGH) {
-    // do nothing until pin 2 goes low
+    // nic nie rób, dopóki styk 2 nie będzie w stanie niskim
     delay(500);
   }
   delay(1000);
-  // new document:
+  // nowy dokument:
   Keyboard.press(ctrlKey);
   Keyboard.press('n');
   delay(100);
   Keyboard.releaseAll();
-  // wait for new window to open:
+  // poczekaj na otwarcie nowego okna:
   delay(1000);
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
