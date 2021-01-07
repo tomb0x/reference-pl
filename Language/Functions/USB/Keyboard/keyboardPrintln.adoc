@@ -8,46 +8,46 @@ title: Keyboard.println()
 = Keyboard.println()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Sends a keystroke to a connected computer, followed by a newline and carriage return.
+=== Opis
+Wysyła do podłączonego komputera naciśnięcie klawisza, po którym następuje znak nowej linii i powrót karetki.
 
-`Keyboard.println()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
+`Keyboard.println()` musi być wywołany po zainicjowaniu link:../keyboardbegin[Keyboard.begin()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `Keyboard.println()` +
-`Keyboard.println(character)`+
-`Keyboard.println(characters)`
+`Keyboard.println(znak)`+
+`Keyboard.println(znaki)`
 
 
 [float]
-=== Parameters
-`character`: a char or int to be sent to the computer as a keystroke, followed by newline and carriage return. +
-`characters`: a string to be sent to the computer as a keystroke, followed by a newline and carriage return.
+=== Parametry
+`znak`: znak lub liczba całkowita do wysłania do komputera jako naciśnięcie klawisza, a następnie znak nowej linii i powrót karetki. +
+`znaki`: ciąg, który ma zostać wysłany do komputera jako naciśnięcie klawisza, po którym następuje znak nowej linii i powrót karetki.
 
 
 [float]
-=== Returns
-Number of bytes sent. Data type: `size_t`.
+=== Wartości zwracane
+Liczba przesłanych bajtów. Typ danych: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -55,26 +55,26 @@ Number of bytes sent. Data type: `size_t`.
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // ustaw styk 2 jako wejście i włącz
+  // rezystor podciągający do stanu wysokiego, chyba
+  // że jest podłączony do masy:
   pinMode(2, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  // jeśli przycisk jest wciśnięty
   if (digitalRead(2) == LOW) {
-    //Send the message
-    Keyboard.println("Hello!");
+    // Wyślij komunikat
+    Keyboard.println("Serwus!");
   }
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the Keyboard.println() command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
+=== Uwagi i ostrzeżenia
+Kiedy używasz polecenia `Keyboard.println()`, Arduino przejmuje twoją klawiaturę! Upewnij się, że masz nad tym kontrolę, zanim użyjesz tego polecenia. Może być przydatny klawisz przełączający kontrolę nad klawiaturą.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
