@@ -8,43 +8,43 @@ title: Keyboard.release()
 = Keyboard.release()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Lets go of the specified key. See link:../keyboardpress[Keyboard.press()] for more information.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`Keyboard.release(key)`
+=== Składnia
+`Keyboard.release(klawisz)`
 
 
 [float]
-=== Parameters
-`key`: the key to release. Allowed data types: `char`.
+=== Parametry
+`klawisz`: the key to release. Allowed data types: `char`.
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The number of keys released. Data type: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -83,4 +83,4 @@ void loop() {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
