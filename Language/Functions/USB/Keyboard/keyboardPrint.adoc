@@ -8,47 +8,47 @@ title: Keyboard.print()
 = Keyboard.print()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Sends a keystroke to a connected computer.
+=== Opis
+Wysyła naciśnięcie klawisza do podłączonego komputera.
 
-`Keyboard.print()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
+`Keyboard.print()` musi być wywołany po zainicjowaniu link:../keyboardbegin[Keyboard.begin()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`Keyboard.print(character)` +
-`Keyboard.print(characters)`
+=== Składnia
+`Keyboard.print(znak)` +
+`Keyboard.print(znaki)`
 
 
 [float]
-=== Parameters
-`character`: a char or int to be sent to the computer as a keystroke. +
-`characters`: a string to be sent to the computer as a keystroke.
+=== Parametry
+`znak`: znak lub liczba całkowita do wysłania do komputera jako naciśnięcie klawisza. +
+`znaki`: ciąg, który ma być wysłany do komputera jako naciśnięcie klawisza.
 
 
 [float]
-=== Returns
-Number of bytes sent. Data type: `size_t`.
+=== Wartości zwracane
+Liczba przesłanych bajtów. Typ danych: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -56,26 +56,26 @@ Number of bytes sent. Data type: `size_t`.
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // ustaw styk 2 jako wejście i włącz
+  // rezystor podciągający do stanu wysokiego, chyba
+  // że jest podłączony do masy:
   pinMode(2, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  // jeśli przycisk jest wciśnięty
   if (digitalRead(2) == LOW) {
-    //Send the message
-    Keyboard.print("Hello!");
+    // Wyślij komunikat
+    Keyboard.print("Serwus!");
   }
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the `Keyboard.print()` command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
+=== Uwagi i ostrzeżenia
+Kiedy używasz polecenia `Keyboard.print()`, Arduino przejmuje twoją klawiaturę! Upewnij się, że masz nad tym kontrolę, zanim użyjesz tego polecenia. Może być przydatny klawisz przełączający kontrolę nad klawiaturą.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
