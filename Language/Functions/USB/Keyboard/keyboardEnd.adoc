@@ -8,43 +8,43 @@ title: Keyboard.end()
 = Keyboard.end()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Stops the keyboard emulation to a connected computer. To start keyboard emulation, use link:../keyboardbegin[Keyboard.begin()].
+=== Opis
+Zatrzymanie emulowania klawiatury podłączonej do komputera. Aby rozpocząć emulację użyj link:../keyboardbegin[Keyboard.begin()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `Keyboard.end()`
 
 
 [float]
-=== Parameters
-None
+=== Parametry
+Brak
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -52,18 +52,18 @@ Nothing
 #include <Keyboard.h>
 
 void setup() {
-  //start keyboard communication
+  // początek komunikacji klawiatury
   Keyboard.begin();
-  //send a keystroke
-  Keyboard.print("Hello!");
-  //end keyboard communication
+  // wysłanie naciśnięć klawiszy
+  Keyboard.print("Serwus!");
+  // koniec komunikacji klawiatury
   Keyboard.end();
 }
 
 void loop() {
-  //do nothing
+  // nic nie rób
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
