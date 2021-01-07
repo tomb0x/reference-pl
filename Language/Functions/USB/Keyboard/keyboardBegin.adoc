@@ -8,43 +8,43 @@ title: Keyboard.begin()
 = Keyboard.begin()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a keyboard connected to a computer. To end control, use link:../keyboardend[Keyboard.end()].
+=== Opis
+Podczas używania z kartą Leonardo lub Due, `Keyboard.begin()` zaczyna emulować klawiaturę podłączoną do komputera. Aby to zakończyć, użyj link:../keyboardend[Keyboard.end()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `Keyboard.begin()`
 
 
 [float]
-=== Parameters
-None
+=== Parametry
+Brak
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -52,21 +52,21 @@ Nothing
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // ustaw styk 2 jako wejście i włącz 
+  // rezystor podciągający do stanu wysokiego, chyba
+  // że jest podłączony do masy:
   pinMode(2, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  // jeśli przycisk jest wciśnięty
   if (digitalRead(2) == LOW) {
-    //Send the message
-    Keyboard.print("Hello!");
+    // Wyślij wiadomość
+    Keyboard.print("Serwus!");
   }
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
