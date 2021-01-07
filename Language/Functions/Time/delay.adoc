@@ -82,7 +82,7 @@ Pewne rzeczy dzieją się, gdy funkcja delay() kontroluje układ Atmega, poniewa
 === Zobacz także
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink bez Delay^]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
