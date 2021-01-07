@@ -12,34 +12,34 @@ subCategories: [ "USB" ]
 = Mouse
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-The mouse functions enable 32u4 or SAMD micro based boards to control cursor movement on a connected computer through their micro's native USB port. When updating the cursor position, it is always relative to the cursor's previous location.
+=== Opis
+Funkcje myszy umożliwiają płytom bazującym na 32u4 lub SAMD micro kontrolowanie ruchu kursora na podłączonym komputerze poprzez natywny port USB. Podczas uaktualniania pozycji kursora jest ona zawsze odniesiona do poprzedniego położenia kursora.
 [%hardbreaks]
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 [float]
-=== Notes and Warnings
-These core libraries allow the 32u4 and SAMD based boards (Leonardo, Esplora, Zero, Due and MKR Family) to appear as a native Mouse and/or Keyboard to a connected computer.
+=== Uwagi i ostrzeżenia
+Te podstawowe biblioteki pozwalają płytom bazującym na 32u4 i SAMD (Leonardo, Esplora, Zero, Due i rodzinie MKR) pojawiać się jako mysz i/lub klawiatura na podłączonym komputerze.
 [%hardbreaks]
-*A word of caution on using the Mouse and Keyboard libraries*: if the Mouse or Keyboard library is constantly running, it will be difficult to program your board. Functions such as `Mouse.move()` and `Keyboard.print()` will move your cursor or send keystrokes to a connected computer and should only be called when you are ready to handle them. It is recommended to use a control system to turn this functionality on, like a physical switch or only responding to specific input you can control. Refer to the Mouse and Keyboard examples for some ways to handle this.
+*Uwaga dotycząca korzystania z bibliotek myszy i klawiatury*: jeśli biblioteka myszy lub klawiatury jest stale uruchomiona, zaprogramowanie płytki będzie trudne. Funkcje takie jak `Mouse.move()` i `Keyboard.print()` przesuwają kursor lub wysyłają naciśnięcia klawiszy do podłączonego komputera i powinny być wywoływane tylko wtedy, gdy jest konieczna ich obsługa. Zaleca się użycie sterowania włączeniem tej funkcji fizycznym przełącznikiem lub reagowanie tylko na określone wejście, którym możesz sterować. Zapoznaj się z przykładami użycia myszy i klawiatury, aby dowiedzieć się, jak sobie z tym poradzić.
 [%hardbreaks]
-When using the Mouse or Keyboard library, it may be best to test your output first using link:../../communication/serial/print[Serial.print()]. This way, you can be sure you know what values are being reported.
+Korzystając z bibliotek myszy lub klawiatury, najlepiej najpierw przetestować wyjście za pomocą link:../../communication/serial/print[Serial.print()]. W ten sposób upewnisz się, jakie wartości będą zgłaszane.
 [%hardbreaks]
-// FUNCTIONS SECTION STARTS
+// POCZĄTEK SEKCJI FUNKCJE
 [#functions]
 --
 
 '''
 
 [float]
-=== Functions
+=== Funkcje
 link:../mouse/mousebegin[Mouse.begin()] +
 link:../mouse/mouseclick[Mouse.click()] +
 link:../mouse/mouseend[Mouse.end()] +
@@ -51,20 +51,19 @@ link:../mouse/mouseispressed[Mouse.isPressed()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// KONIEC SEKCJI FUNKCJE
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl^]: Demonstrates the Mouse and Keyboard commands in one program.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/ButtonMouseControl[ButtonMouseControl^]: Control cursor movement with 5 pushbuttons.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/JoystickMouseControl[JoystickMouseControl^]: Controls a computer's cursor movement with a Joystick when a button is pressed.
-
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl^]: Pokazuje polecenia myszy i klawiatury w jednym programie.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/ButtonMouseControl[ButtonMouseControl^]: Kontroluj ruch kursora za pomocą 5 przycisków.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/JoystickMouseControl[JoystickMouseControl^]: Steruje ruchem kursora komputera za pomocą joysticka po naciśnięciu przycisku.
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
