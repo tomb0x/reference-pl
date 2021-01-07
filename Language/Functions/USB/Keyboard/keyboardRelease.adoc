@@ -14,7 +14,7 @@ title: Keyboard.release()
 
 [float]
 === Opis
-Lets go of the specified key. See link:../keyboardpress[Keyboard.press()] for more information.
+Zwalnia poprzednio naciśnięty klawisz. Zobacz link:../keyboardpress[Keyboard.press()] aby uzyskać więcej informacji.
 [%hardbreaks]
 
 
@@ -25,12 +25,12 @@ Lets go of the specified key. See link:../keyboardpress[Keyboard.press()] for mo
 
 [float]
 === Parametry
-`klawisz`: the key to release. Allowed data types: `char`.
+`klawisz`: klawisz do zwolnienia. Dozwolone typy danych: `char`.
 
 
 [float]
 === Wartości zwracane
-The number of keys released. Data type: `size_t`.
+Liczba zwolnionych klawiszy. Typ danych: `size_t`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
@@ -51,33 +51,33 @@ The number of keys released. Data type: `size_t`.
 ----
 #include <Keyboard.h>
 
-// use this option for OSX:
-char ctrlKey = KEY_LEFT_GUI;
-// use this option for Windows and Linux:
-//  char ctrlKey = KEY_LEFT_CTRL;
+// użyj tej opcji dla OSX:
+//char ctrlKey = KEY_LEFT_GUI;
+// użyj tej opcji dla Windows i Linux:
+char ctrlKey = KEY_LEFT_CTRL;
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // ustaw styk 2 jako wejście i włącz
+  // rezystor podciągający do stanu wysokiego, chyba
+  // że jest podłączony do masy:
   pinMode(2, INPUT_PULLUP);
-  // initialize control over the keyboard:
+  // zainicjuj kontrolę nad klawiaturą:
   Keyboard.begin();
 }
 
 void loop() {
   while (digitalRead(2) == HIGH) {
-    // do nothing until pin 2 goes low
+    // nic nie rób, dopóki styk 2 nie będzie w stanie niskim
     delay(500);
   }
   delay(1000);
-  // new document:
+  // nowy dokument:
   Keyboard.press(ctrlKey);
   Keyboard.press('n');
   delay(100);
   Keyboard.release(ctrlKey);
   Keyboard.release('n');
-  // wait for new window to open:
+  // poczekaj na otwarcie nowego okna:
   delay(1000);
 }
 ----
