@@ -9,43 +9,43 @@ title: Mouse.begin()
 = Mouse.begin()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Begins emulating the mouse connected to a computer. `begin()` must be called before controlling the computer. To end control, use link:../mouseend[Mouse.end()].
+=== Opis
+Rozpoczyna emulację myszy podłączonej do komputera. `begin()` należy wywołać przed sterowaniem komputerem. Aby zakończyć sterowanie, użyj link:../mouseend[Mouse.end()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `Mouse.begin()`
 
 
 [float]
-=== Parameters
-None
+=== Parametry
+Brak
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -57,7 +57,7 @@ void setup() {
 }
 
 void loop() {
-  //initiate the Mouse library when button is pressed
+  // zainicjuj bibliotekę myszy po naciśnięciu przycisku
   if (digitalRead(2) == HIGH) {
     Mouse.begin();
   }
@@ -65,23 +65,23 @@ void loop() {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../mouseclick[Mouse.click()]
-* #LANGUAGE# link:../mouseend[Mouse.end()]
-* #LANGUAGE# link:../mousemove[Mouse.move()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
-* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+* #JĘZYK# link:../mouseclick[Mouse.click()]
+* #JĘZYK# link:../mouseend[Mouse.end()]
+* #JĘZYK# link:../mousemove[Mouse.move()]
+* #JĘZYK# link:../mousepress[Mouse.press()]
+* #JĘZYK# link:../mouserelease[Mouse.release()]
+* #JĘZYK# link:../mouseispressed[Mouse.isPressed()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
