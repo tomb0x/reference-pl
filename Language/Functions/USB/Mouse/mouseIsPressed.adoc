@@ -8,49 +8,49 @@ title: Mouse.isPressed()
 = Mouse.isPressed()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Checks the current status of all mouse buttons, and reports if any are pressed or not.
+=== Opis
+Sprawdza aktualny stan wszystkich przycisków myszy i informuje, czy któryś z nich jest naciśnięty, czy nie.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `Mouse.isPressed();` +
-`Mouse.isPressed(button);`
+`Mouse.isPressed(przycisk);`
 
 [float]
-=== Parameters
-When there is no value passed, it checks the status of the left mouse button.
+=== Parametry
+Gdy nie ma przekazanej wartości, sprawdza stan lewego przycisku myszy.
 
-`button`: which mouse button to check. Allowed data types: `char`.
+`przycisk`: który przycisk myszy sprawdzić. Dozwolone typy danych: `char`.
 
-* `MOUSE_LEFT (default)`
+* `MOUSE_LEFT (domyślnie)`
 * `MOUSE_RIGHT`
 * `MOUSE_MIDDLE`
 
 
 [float]
-=== Returns
-Reports whether a button is pressed or not. Data type: `bool`.
+=== Wartości zwracane
+Informuje, czy przycisk jest naciśnięty, czy nie. Typ danych: `bool`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -58,52 +58,52 @@ Reports whether a button is pressed or not. Data type: `bool`.
 #include <Mouse.h>
 
 void setup() {
-  //The switch that will initiate the Mouse press
+  // Przełącznik, który zainicjuje naciśnięcie przycisku myszy
   pinMode(2, INPUT);
-  //The switch that will terminate the Mouse press
+  // Przełącznik, który zakończy naciśnięcie przycisku myszy
   pinMode(3, INPUT);
-  //Start serial communication with the computer
+  // Uruchom komunikację szeregową z komputerem
   Serial.begin(9600);
-  //initiate the Mouse library
+  // zainicjuj bibliotekę myszy
   Mouse.begin();
 }
 
 void loop() {
-  //a variable for checking the button's state
-  int mouseState = 0;
-  //if the switch attached to pin 2 is closed, press and hold the left mouse button and save the state ina  variable
+  // zmienna do sprawdzania stanu przycisku
+  int stanMyszy = 0;
+  // jeśli przełącznik dołączony do styku 2 jest zamknięty, naciśnij i przytrzymaj lewy przycisk myszy i zapisz stan w zmiennej
   if (digitalRead(2) == HIGH) {
     Mouse.press();
-    mouseState = Mouse.isPressed();
+    stanMyszy = Mouse.isPressed();
   }
-  //if the switch attached to pin 3 is closed, release the left mouse button and save the state in a variable
+  // jeśli przełącznik dołączony do styku 3 jest zamknięty, zwolnij lewy przycisk myszy i zapisz stan w zmiennej
   if (digitalRead(3) == HIGH) {
     Mouse.release();
-    mouseState = Mouse.isPressed();
+    stanMyszy = Mouse.isPressed();
   }
-  //print out the current mouse button state
-  Serial.println(mouseState);
+  // wydrukować aktualny stan przycisku myszy
+  Serial.println(stanMyszy);
   delay(10);
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../mouseclick[Mouse.click()]
-* #LANGUAGE# link:../mouseend[Mouse.end()]
-* #LANGUAGE# link:../mousemove[Mouse.move()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
+* #JĘZYK# link:../mouseclick[Mouse.click()]
+* #JĘZYK# link:../mouseend[Mouse.end()]
+* #JĘZYK# link:../mousemove[Mouse.move()]
+* #JĘZYK# link:../mousepress[Mouse.press()]
+* #JĘZYK# link:../mouserelease[Mouse.release()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
