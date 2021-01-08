@@ -8,62 +8,62 @@ title: Mouse.move()
 = Mouse.move()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Moves the cursor on a connected computer. The motion onscreen is always relative to the cursor's current location. Before using `Mouse.move()` you must call link:../mousebegin[Mouse.begin()]
+=== Opis
+Przesuwa kursor na podłączonym komputerze. Ruch na ekranie jest zawsze względem aktualnego położenia kursora. Przed użyciem `Mouse.move()` musisz wywołać link:../mousebegin[Mouse.begin()]
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`Mouse.move(xVal, yVal, wheel)`
+=== Składnia
+`Mouse.move(xVal, yVal, kółko)`
 
 
 [float]
-=== Parameters
-`xVal`: amount to move along the x-axis. Allowed data types: `signed char`. +
-`yVal`: amount to move along the y-axis. Allowed data types: `signed char`. +
-`wheel`: amount to move scroll wheel. Allowed data types: `signed char`.
+=== Parametry
+`xVal`: odległość do przesunięcia wzdłuż osi X. Dozwolone typy danych: `signed char`. +
+`yVal`: odległość do przesunięcia wzdłuż osi y. Dozwolone typy danych: `signed char`. +
+`kółko`: ilość przesunięcia kółka myszy. Dozwolone typy danych: `signed char`.
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 #include <Mouse.h>
 
-const int xAxis = A1;         //analog sensor for X axis
-const int yAxis = A2;         // analog sensor for Y axis
+const int osX = A1;         // czujnik analogowy dla osi X
+const int osY = A2;         // czujnik analogowy dla osi Y
 
-int range = 12;               // output range of X or Y movement
-int responseDelay = 2;        // response delay of the mouse, in ms
-int threshold = range / 4;    // resting threshold
-int center = range / 2;       // resting position value
-int minima[] = {1023, 1023};  // actual analogRead minima for {x, y}
-int maxima[] = {0, 0};        // actual analogRead maxima for {x, y}
-int axis[] = {xAxis, yAxis};  // pin numbers for {x, y}
-int mouseReading[2];          // final mouse readings for {x, y}
+int zakres = 12;              // zakres wyjściowy ruchu X lub Y
+int przerwa = 2;              // opóźnienie odpowiedzi myszy w milisekundach
+int granica = zakres / 4;     // próg spoczynkowy
+int centrum = zakres / 2;     // wartość pozycji spoczynkowej
+int minimum[] = {1023, 1023}; // rzeczywiste minimalne wartości {x, y} z analogRead 
+int maximum[] = {0, 0};       // rzeczywiste maksymalne wartości {x, y} z analogRead 
+int osie[] = {osX, osY};      // numery styków dla {x, y}
+int mouseReading[2];          // końcowe odczyty myszy dla {x, y}
 
 
 void setup() {
@@ -71,77 +71,77 @@ void setup() {
 }
 
 void loop() {
-  // read and scale the two axes:
-  int xReading = readAxis(0);
-  int yReading = readAxis(1);
+  // odczytaj i przeskaluj dwie osie:
+  int odczytX = odczytOsi(0);
+  int odczytY = odczytOsi(1);
 
-  // move the mouse:
-  Mouse.move(xReading, yReading, 0);
-  delay(responseDelay);
+  // porusz myszą:
+  Mouse.move(odczytX, odczytY, 0);
+  delay(przerwa);
 }
 
 /*
-  reads an axis (0 or 1 for x or y) and scales the
-  analog input range to a range from 0 to <range>
+  odczytuje oś (0 lub 1 dla x lub y) i skaluje
+   zakres wejścia analogowego w zakresie od 0 do <zakres>
 */
 
-int readAxis(int axisNumber) {
-  int distance = 0; // distance from center of the output range
+int odczytOsi(int numerOsi) {
+  int dystans = 0; // odległość od środka zakresu wyjściowego
 
-  // read the analog input:
-  int reading = analogRead(axis[axisNumber]);
+  // odczyt wejścia analogowego:
+  int odczyt = analogRead(osie[numerOsi]);
 
   // of the current reading exceeds the max or min for this axis,
   // reset the max or min:
-  if (reading < minima[axisNumber]) {
-    minima[axisNumber] = reading;
+  if (odczyt < minimum[numerOsi]) {
+    minimum[numerOsi] = odczyt;
   }
-  if (reading > maxima[axisNumber]) {
-    maxima[axisNumber] = reading;
+  if (odczyt > maximum[numerOsi]) {
+    maximum[numerOsi] = odczyt;
   }
 
-  // map the reading from the analog input range to the output range:
-  reading = map(reading, minima[axisNumber], maxima[axisNumber], 0, range);
+  // odwzoruj odczyt z zakresu wejścia analogowego na zakres wyjściowy:
+  odczyt = map(odczyt, minimum[numerOsi], maximum[numerOsi], 0, zakres);
 
   // if the output reading is outside from the
   // rest position threshold,  use it:
-  if (abs(reading - center) > threshold) {
-    distance = (reading - center);
+  if (abs(odczyt - centrum) > granica) {
+    dystans = (odczyt - centrum);
   }
 
   // the Y axis needs to be inverted in order to
   // map the movemment correctly:
-  if (axisNumber == 1) {
-    distance = -distance;
+  if (numerOsi == 1) {
+    dystans = -dystans;
   }
 
-  // return the distance for this axis:
-  return distance;
+  // zwraca odległość dla tej osi:
+  return dystans;
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Uwagi i ostrzeżenia
 When you use the `Mouse.move()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../mouseclick[Mouse.click()]
-* #LANGUAGE# link:../mouseend[Mouse.end()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
-* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+* #JĘZYK# link:../mouseclick[Mouse.click()]
+* #JĘZYK# link:../mouseend[Mouse.end()]
+* #JĘZYK# link:../mousepress[Mouse.press()]
+* #JĘZYK# link:../mouserelease[Mouse.release()]
+* #JĘZYK# link:../mouseispressed[Mouse.isPressed()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
