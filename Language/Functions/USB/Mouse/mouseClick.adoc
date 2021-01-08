@@ -8,50 +8,50 @@ title: Mouse.click()
 = Mouse.click()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Sends a momentary click to the computer at the location of the cursor. This is the same as pressing and immediately releasing the mouse button.
+=== Opis
+Wysyła do komputera krótkie kliknięcie w miejscu, w którym znajduje się kursor. Działa to tak samo, jak naciśnięcie i natychmiastowe zwolnienie przycisku myszy.
 
-`Mouse.click()` defaults to the left mouse button.
+`Mouse.click()` domyślnie lewy przycisk myszy.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `Mouse.click()` +
-`Mouse.click(button)`
+`Mouse.click(przycisk)`
 
 
 [float]
-=== Parameters
-`button`: which mouse button to press. Allowed data types: `char`.
+=== Parametry
+`przycisk`: który przycisk myszy nacisnąć. Dozwolone typy danych: `char`.
 
-* `MOUSE_LEFT` (default)
+* `MOUSE_LEFT` (domyślnie)
 * `MOUSE_RIGHT`
 * `MOUSE_MIDDLE`
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
@@ -60,12 +60,12 @@ Nothing
 
 void setup() {
   pinMode(2, INPUT);
-  //initiate the Mouse library
+  // zainicjuj bibliotekę myszy
   Mouse.begin();
 }
 
 void loop() {
-  //if the button is pressed, send a left mouse click
+  // jeśli przycisk jest wciśnięty, kliknij lewym przyciskiem myszy
   if (digitalRead(2) == HIGH) {
     Mouse.click();
   }
@@ -74,26 +74,26 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the `Mouse.click()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+=== Uwagi i ostrzeżenia
+Kiedy używasz polecenia `Mouse.click()`, Arduino przejmuje kontrolę nad myszą! Upewnij się, że masz nad tym kontrolę, zanim użyjesz tego polecenia. Może być przydatny klawisz przełączający kontrolę nad myszą.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../mouseend[Mouse.end()]
-* #LANGUAGE# link:../mousemove[Mouse.move()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
-* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+* #JĘZYK# link:../mouseend[Mouse.end()]
+* #JĘZYK# link:../mousemove[Mouse.move()]
+* #JĘZYK# link:../mousepress[Mouse.press()]
+* #JĘZYK# link:../mouserelease[Mouse.release()]
+* #JĘZYK# link:../mouseispressed[Mouse.isPressed()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
