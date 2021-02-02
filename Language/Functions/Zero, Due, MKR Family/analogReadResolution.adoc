@@ -10,110 +10,111 @@ subCategories: [ "Zero, Due & MKR Family" ]
 = analogReadResolution()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-analogReadResolution() is an extension of the Analog API for the Arduino Due, Zero and MKR Family.
+=== Opis
+analogReadResolution () to rozszerzenie Analog API dla Arduino Due, Zero i rodziny MKR.
 
-Sets the size (in bits) of the value returned by `analogRead()`. It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
+Ustawia rozmiar (w bitach) wartości zwracanej przez `analogRead()`. Domyślnie jest to 10 bitów (zwraca wartości z zakresu 0-1023) w celu zapewnienia zgodności wstecznej z płytami opartymi na AVR.
 
-The *Due, Zero and MKR Family* boards have 12-bit ADC capabilities that can be accessed by changing the resolution to 12. This will return values from `analogRead()` between 0 and 4095.
+Płyty *Due, Zero i rodzina MKR* mają 12-bitowe funkcje ADC, z których można skorzystać, zmieniając rozdzielczość na 12.
+Wtedy `analogRead()` zwróci wartości z zakresu od 0 do 4095.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`analogReadResolution(bits)`
+=== Składnia
+`analogReadResolution(bity)`
 
 
 [float]
-=== Parameters
-`bits`: determines the resolution (in bits) of the value returned by the `analogRead()` function. You can set this between 1 and 32. You can set resolutions higher than 12 but values returned by `analogRead()` will suffer approximation. See the note below for details.
+=== Parametry
+`bity`: określa rozdzielczość (w bitach) wartości zwracanej przez funkcję `analogRead()`. Możesz podać wartości od 1 do 32. Możesz ustawić rozdzielczości wyższe niż 12, ale wartości zwracane przez `analogRead()` będą ulegać przybliżeniu. Szczegółowe informacje zawiera uwaga poniżej.
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code shows how to use ADC with different resolutions.
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Program pokazuje, jak używać ADC z różnymi rozdzielczościami
 
 [source,arduino]
 ----
 void setup() {
-  // open a serial connection
+  // otwórz połączenie szeregowe o szybkości 9600 bitów na sekundę
   Serial.begin(9600);
 }
 
 void loop() {
-  // read the input on A0 at default resolution (10 bits)
-  // and send it out the serial connection
+  // odczytaj wejście na A0 z domyślną rozdzielczością (10 bitów)
+  // i wyślij poprzez połączenie szeregowe
   analogReadResolution(10);
-  Serial.print("ADC 10-bit (default) : ");
+  Serial.print("ADC 10-bitów (domyślnie) : ");
   Serial.print(analogRead(A0));
 
-  // change the resolution to 12 bits and read A0
+  // zmień rozdzielczość na 12 bitów i odczytaj A0
   analogReadResolution(12);
-  Serial.print(", 12-bit : ");
+  Serial.print(", 12-bitów : ");
   Serial.print(analogRead(A0));
 
-  // change the resolution to 16 bits and read A0
+  // zmień rozdzielczość na 16 bitów i odczytaj A0
   analogReadResolution(16);
-  Serial.print(", 16-bit : ");
+  Serial.print(", 16-bitów : ");
   Serial.print(analogRead(A0));
 
-  // change the resolution to 8 bits and read A0
+  // zmień rozdzielczość na 8 bitów i przeczytaj A0
   analogReadResolution(8);
-  Serial.print(", 8-bit : ");
+  Serial.print(", 8-bitów : ");
   Serial.println(analogRead(A0));
 
-  // a little delay to not hog Serial Monitor
+  // małe opóźnienie, aby nie zablokować monitora szeregowego
   delay(100);
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-If you set the `analogReadResolution()` value to a value higher than your board's capabilities, the Arduino will only report back at its highest resolution, padding the extra bits with zeros.
+=== Uwagi i ostrzeżenia
+Jeśli ustawisz wartość `analogReadResolution()` na wartość wyższą niż możliwości twojej płyty, Arduino będzie raportować tylko w najwyższej rozdzielczości, wypełniając dodatkowe bity zerami
 
-For example: using the Due with `analogReadResolution(16)` will give you an approximated 16-bit number with the first 12 bits containing the real ADC reading and the last 4 bits *padded with zeros*.
+Na przykład: użycie Due z `analogReadResolution(16)` da przybliżoną 16-bitową liczbę z pierwszymi 12 bitami zawierającymi rzeczywisty odczyt ADC i ostatnimi 4 bitami *uzupełnionymi zerami*.
 
-If you set the `analogReadResolution()` value to a value lower than your board's capabilities, the extra least significant bits read from the ADC will be *discarded*.
+Jeśli ustawisz wartość `analogReadResolution()` na wartość niższą niż możliwości twojej płyty, dodatkowe najmniej znaczące bity odczytane z ADC zostaną *odrzucone*.
 
-Using a 16 bit resolution (or any resolution *higher* than actual hardware capabilities) allows you to write sketches that automatically handle devices with a higher resolution ADC when these become available on future boards without changing a line of code.
+Korzystanie z 16-bitowej rozdzielczości (lub dowolnej rozdzielczości *wyższej* niż rzeczywiste możliwości sprzętowe) pozwala na pisanie szkiców, które automatycznie będą obsługiwać urządzenia z przetwornikiem ADC o wyższej rozdzielczości, gdy staną się one dostępne na przyszłych płytach bez zmiany programu.
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins^]
+* #PRZYKŁAD# http://arduino.cc/en/Tutorial/AnalogInputPins[Opis styków wejść analogowych^]
 
 [role="language"]
-* #LANGUAGE# link:../../analog-io/analogread[analogRead()]
+* #JĘZYK# link:../../analog-io/analogread[analogRead()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
