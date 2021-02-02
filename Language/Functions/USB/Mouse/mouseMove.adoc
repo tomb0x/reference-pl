@@ -91,8 +91,8 @@ int odczytOsi(int numerOsi) {
   // odczyt wejścia analogowego:
   int odczyt = analogRead(osie[numerOsi]);
 
-  // of the current reading exceeds the max or min for this axis,
-  // reset the max or min:
+  // aktualny odczyt przekracza max lub min dla tej osi,
+  // ponownie ustaw maksimum lub minimum:
   if (odczyt < minimum[numerOsi]) {
     minimum[numerOsi] = odczyt;
   }
@@ -103,19 +103,19 @@ int odczytOsi(int numerOsi) {
   // odwzoruj odczyt z zakresu wejścia analogowego na zakres wyjściowy:
   odczyt = map(odczyt, minimum[numerOsi], maximum[numerOsi], 0, zakres);
 
-  // if the output reading is outside from the
-  // rest position threshold,  use it:
+  // jeśli odczyt z wyjścia jest poza progiem pozycji spoczynkowej,
+  // to użyj go
   if (abs(odczyt - centrum) > granica) {
     dystans = (odczyt - centrum);
   }
 
-  // the Y axis needs to be inverted in order to
-  // map the movemment correctly:
+  // oś Y musi zostać odwrócona, aby
+  // poprawnie odwzorować ruch
   if (numerOsi == 1) {
     dystans = -dystans;
   }
 
-  // zwraca odległość dla tej osi:
+  // zwraca przebytą odległość dla tej osi:
   return dystans;
 }
 ----
@@ -123,7 +123,7 @@ int odczytOsi(int numerOsi) {
 
 [float]
 === Uwagi i ostrzeżenia
-When you use the `Mouse.move()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+Kiedy używasz polecenia `Mouse.move()`, Arduino przejmuje twoją mysz! Upewnij się, że masz nad tym kontrolę, zanim użyjesz tego polecenia. Może być przydatny klawisz przełączający kontrolę nad myszą.
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ
