@@ -28,9 +28,9 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 
 [float]
 === Parametry
-`stream` : an instance of a class that inherits from Stream. +
-`cel`    : the string to search for. Allowed data types: `char`. +
-`długość`: length of the target. Allowed data types: `size_t`.
+`stream` : instancja klasy, która dziedziczy po Stream. +
+`cel`    : ciąg do wyszukania. Dozwolone typy danych: `char`. +
+`długość`: długość ciągu docelowego. Dozwolone typy danych: `size_t`.
 
 
 [float]
