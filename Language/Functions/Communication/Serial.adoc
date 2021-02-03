@@ -87,7 +87,7 @@ link:../serial/serialevent[serialEvent()]
 === Zobacz także
 
 [role="example"]
-Przykłady:
+Przykłady (w języku angielskim):
 
 #PRZYKŁAD# https://www.arduino.cc/en/Tutorial/ReadASCIIString[ReadASCIIString^] +
 #PRZYKŁAD# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^] +
