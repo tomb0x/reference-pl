@@ -207,8 +207,8 @@ Serial.print(F("Wypisz coś na monitorze szeregowym, co jest przechowywane w pam
 * #EXAMPLE# https://www.arduino.cc/playground/Learning/Memory[Typy pamięci dostępne w Arduino^]
 
 [role="definition"]
-* #DEFINITION# link:../../data-types/array[array]
-* #DEFINITION# link:../../data-types/string[string]
+#DEFINICJA# link:../../data-types/array[array] +
+#DEFINICJA# link:../../data-types/string[string] +
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE

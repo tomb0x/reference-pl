@@ -103,7 +103,7 @@ volatile int input_from_interrupt;
 === Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
+#JĘZYK# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt] +
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
