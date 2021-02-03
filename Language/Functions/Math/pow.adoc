@@ -63,8 +63,8 @@ Zobacz bardziej złożony przykład użycia `pow()` w szkicu (http://arduino.cc/
 === Zobacz także
 
 [role="definition"]
-* #DEFINITION# link:../../../variables/data-types/float[float]
-* #DEFENITION# link:../../../variables/data-types/double[double]
+* #DEFINICJA# link:../../../variables/data-types/float[float]
+* #DEFENICJA# link:../../../variables/data-types/double[double]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
