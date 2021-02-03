@@ -88,6 +88,7 @@ link:../serial/serialevent[serialEvent()]
 
 [role="example"]
 Przykłady:
+
 #PRZYKŁAD# https://www.arduino.cc/en/Tutorial/ReadASCIIString[ReadASCIIString^] +
 #PRZYKŁAD# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^] +
 #PRZYKŁAD# https://www.arduino.cc/en/Tutorial/Dimmer[Dimmer^] +
