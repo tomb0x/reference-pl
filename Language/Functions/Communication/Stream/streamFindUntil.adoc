@@ -30,8 +30,8 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 [float]
 === Parametry
 `stream`: instancja klasy, która dziedziczy po Stream. +
-`cel`   : the string to search for. Dozwolone typy danych: `char`. +
-`koniec`: ciąg kończący w wyszukiwaniu. Dozwolone typy danych: `char`.
+`cel`   : ciąg do wyszukania. Dozwolone typy danych: `char`. +
+`koniec`: ciąg kończący wyszukiwanie. Dozwolone typy danych: `char`.
 
 
 [float]
