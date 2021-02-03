@@ -8,34 +8,34 @@ title: Stream.find()
 = find()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`find()` reads data from the stream until the target is found. The function returns true if target is found, false if timed out (see link:../streamsettimeout[Stream.setTimeout()]).
+=== Opis
+`find()` odczytuje dane ze strumienia do momentu znalezienia celu. Funkcja zwraca `true`, jeśli cel zostanie znaleziony, `false`, jeśli przekroczono limit czasu (patrz link:../streamsettimeout[Stream.setTimeout()]). 
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[stream class] main page for more information.
+Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą klasę, która po niej dziedziczy (Wire, Serial itp.). Zobacz link:../../stream[stream class] aby uzyskać więcej informacji.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`stream.find(target)` +
-`stream.find(target, length)`
+=== Składnia
+`stream.find(cel)` +
+`stream.find(cel, długość)`
 
 
 [float]
-=== Parameters
-`stream`: an instance of a class that inherits from Stream. +
-`target`: the string to search for. Allowed data types: `char`. +
-`length`: length of the target. Allowed data types: `size_t`.
+=== Parametry
+`stream` : an instance of a class that inherits from Stream. +
+`cel`    : the string to search for. Allowed data types: `char`. +
+`długość`: length of the target. Allowed data types: `size_t`.
 
 
 [float]
-=== Returns
-Data type: `bool`.
+=== Wartości zwracane
+Typ danych: `bool`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
