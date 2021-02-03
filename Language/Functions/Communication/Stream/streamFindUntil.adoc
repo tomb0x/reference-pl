@@ -8,35 +8,35 @@ title: Stream.findUntil()
 = `findUntil()`
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`findUntil()` reads data from the stream until the target string of given length or terminator string is found, or it times out (see link:../streamsettimeout[Stream.setTimeout()]).
+=== Opis
+`findUntil()` odczytuje dane ze strumienia do momentu znalezienia ciągu o określonej długości lub ciągu kończącego lub przekroczenia limitu czasu (patrz link:../streamsettimeout[Stream.setTimeout()]). 
 
-The function returns `true` if target string is found, `false` if timed out.
+Funkcja zwraca `true`, jeśli zostanie znaleziony docelowy ciąg, lub `false`, jeśli przekroczono limit czasu. 
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą klasę, która po niej dziedziczy (Wire, Serial itp.). Zobacz link:../../stream[stream class] aby uzyskać więcej informacji.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`stream.findUntil(target, terminal)`
+=== Składnia
+`stream.findUntil(cel, koniec)`
 
 
 [float]
-=== Parameters
-`stream`: an instance of a class that inherits from Stream. +
-`target`: the string to search for. Allowed data types: `char`. +
-`terminal`: the terminal string in the search. Allowed data types: `char`.
+=== Parametry
+`stream`: instancja klasy, która dziedziczy po Stream. +
+`cel`   : the string to search for. Dozwolone typy danych: `char`. +
+`koniec`: ciąg kończący w wyszukiwaniu. Dozwolone typy danych: `char`.
 
 
 [float]
-=== Returns
-Data type: `bool`.
+=== Wartości zwracane
+Typ danych: `bool`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
