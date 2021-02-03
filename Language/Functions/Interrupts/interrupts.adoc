@@ -68,8 +68,8 @@ void loop() {
 === Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
-* #LANGUAGE# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
+#JĘZYK# link:../../external-interrupts/attachinterrupt[attachInterrupts()] +
+#JĘZYK# link:../../external-interrupts/detachinterrupt[detachInterrupts()] +
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
