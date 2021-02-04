@@ -8,35 +8,35 @@ title: Stream.readBytes()
 = readBytes()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`readBytes()` read characters from a stream into a buffer. The function terminates if the determined length has been read, or it times out (see link:../streamsettimeout[setTimeout()]).
+=== Opis
+`readBytes()` odczytuje znaki ze strumienia do bufora. Funkcja kończy działanie po odczytaniu określonej długości lub po przekroczeniu limitu czasu (patrz link:../streamsettimeout[setTimeout()]).
 
-`readBytes()` returns the number of bytes placed in the buffer. A 0 means no valid data was found.
+`readBytes()` zwraca liczbę bajtów umieszczonych w buforze. 0 oznacza, że nie znaleziono prawidłowych danych. 
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą klasę, która po niej dziedziczy (Wire, Serial itp.). Zobacz link:../../stream[stream class] aby uzyskać więcej informacji.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`stream.readBytes(buffer, length)`
+=== Składnia
+`stream.readBytes(bufor, długość)`
 
 
 [float]
-=== Parameters
-`stream`: an instance of a class that inherits from Stream. +
-`buffer`: the buffer to store the bytes in. Allowed data types: array of `char` or `byte`s. +
-`length`: the number of bytes to read. Allowed data types: `int`.
+=== Parametry
+`stream` : instancja klasy, która dziedziczy po Stream. +
+`bufor`  : bufor do przechowywania bajtów. Dozwolone typy danych: tablica typów `char` lub `byte`. +
+`długość`: liczba bajtów do odczytania. Dozwolone typy danych: `int`.
 
 
 [float]
-=== Returns
-The number of bytes placed in the buffer. Data type: `size_t`.
+=== Wartości zwracane
+Liczba bajtów umieszczonych w buforze. Typ danych: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
