@@ -8,49 +8,49 @@ title: Stream.readBytesUntil()
 = readBytesUntil()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`readBytesUntil()` reads characters from a stream into a buffer. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../streamsettimeout[setTimeout()]). The function returns the characters up to the last character before the supplied terminator. The terminator itself is not returned in the buffer.
+=== Opis
+`readBytesUntil()` odczytuje znaki ze strumienia do bufora. Funkcja kończy działanie po wykryciu znaku kończącego, odczytaniu określonej długości lub przekroczeniu limitu czasu (patrz link:../streamsettimeout[setTimeout()]). Funkcja zwraca znaki do ostatniego znaku przed podanym znakiem kończącym. Znak kończący nie jest zwracany w buforze. 
 
-`readBytesUntil()` returns the number of bytes placed in the buffer. A 0 means no valid data was found.
+`readBytesUntil()` zwraca liczbę bajtów umieszczonych w buforze. 0 oznacza, że nie znaleziono prawidłowych danych. 
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą klasę, która po niej dziedziczy (Wire, Serial itp.). Zobacz link:../../stream[stream class] aby uzyskać więcej informacji.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`stream.readBytesUntil(character, buffer, length)`
+=== Składnia
+`stream.readBytesUntil(znak, bufor, długość)`
 
 
 [float]
-=== Parameters
-`stream`: an instance of a class that inherits from Stream. +
-`character`: the character to search for. Allowed data types: `char`. +
-`buffer`: the buffer to store the bytes in. Allowed data types: array of `char` or `byte`s. +
-`length`: the number of bytes to read. Allowed data types: `int`.
+=== Parametry
+`stream`: instancja klasy, która dziedziczy po Stream. +
+`znak`: poszukiwany znak. Dozwolone typy danych: `char`. +
+`bufor`: bufor do przechowywania bajtów. Dozwolone typy danych: tablica typów `char` lub `byte`. +
+`długość`: liczba bajtów do odczytania. Dozwolone typy danych: `int`.
 
 
 [float]
-=== Returns
-The number of bytes placed in the buffer.
+=== Wartości zwracane
+Liczba bajtów umieszczonych w buforze.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Notes and Warnings
-The terminator character is discarded from the stream.
+=== Uwagi i ostrzeżenia
+Znak kończący jest usuwany ze strumienia.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
