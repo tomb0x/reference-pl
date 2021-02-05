@@ -20,7 +20,7 @@ title: Stream.getTimeout()
 
 [float]
 === Składnia
-`stream.getTimeout()`
+`strumień.getTimeout()`
 
 
 [float]
@@ -30,7 +30,7 @@ Brak
 
 [float]
 === Wartości zwracane
-Wartość limitu czasu ustawiona przez `stream.setTimeout()`. Typ danych: `unsigned long`.
+Wartość limitu czasu ustawiona przez `strumień.setTimeout()`. Typ danych: `unsigned long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
