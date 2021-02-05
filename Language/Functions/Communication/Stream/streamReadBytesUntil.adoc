@@ -14,7 +14,7 @@ title: Stream.readBytesUntil()
 
 [float]
 === Opis
-`readBytesUntil()` odczytuje znaki ze strumienia do bufora. Funkcja kończy działanie po wykryciu znaku kończącego, odczytaniu określonej długości lub przekroczeniu limitu czasu (patrz link:../streamsettimeout[setTimeout()]). Funkcja zwraca znaki do ostatniego znaku przed podanym znakiem kończącym. Znak kończący nie jest zwracany w buforze. 
+`readBytesUntil()` odczytuje znaki ze strumienia do bufora. Funkcja kończy działanie po wykryciu znaku kończącego, odczytaniu określonej długości lub przekroczeniu limitu czasu (zobacz link:../streamsettimeout[setTimeout()]). Funkcja zwraca znaki do ostatniego znaku przed podanym znakiem kończącym. Znak kończący nie jest zwracany w buforze. 
 
 `readBytesUntil()` zwraca liczbę bajtów umieszczonych w buforze. 0 oznacza, że nie znaleziono prawidłowych danych. 
 
@@ -24,12 +24,12 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 
 [float]
 === Składnia
-`stream.readBytesUntil(znak, bufor, długość)`
+`strumień.readBytesUntil(znak, bufor, długość)`
 
 
 [float]
 === Parametry
-`stream`: instancja klasy, która dziedziczy po Stream. +
+`strumień`: instancja klasy, która dziedziczy po Stream. +
 `znak`: poszukiwany znak. Dozwolone typy danych: `char`. +
 `bufor`: bufor do przechowywania bajtów. Dozwolone typy danych: tablica typów `char` lub `byte`. +
 `długość`: liczba bajtów do odczytania. Dozwolone typy danych: `int`.
