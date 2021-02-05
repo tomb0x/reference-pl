@@ -25,7 +25,7 @@ Wstrzymuje program na czas określony przez parametr (wyrażony w milisekundach)
 
 [float]
 === Parametry
-`ms`: liczba millisekund do wstrzymania. Dozwolone typy danych: `unsigned long`.
+`ms`: liczba milisekund do wstrzymania. Dozwolone typy danych: `unsigned long`.
 
 
 [float]
@@ -45,7 +45,7 @@ Nic
 [float]
 === Program przykładowy
 // Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
-Kod wstrzymuje program na sekundę przed przełączeniem stanu styku wyjściowego.
+Program wstrzymuje pracę na sekundę przed przełączeniem stanu na styku wyjściowym.
 
 [source,arduino]
 ----
@@ -66,9 +66,9 @@ void loop() {
 
 [float]
 === Uwagi i ostrzeżenia
-Chociaż łatwo jest uzyskać migającą diodę za pomocą funkcji `delay()`, a wiele szkiców używa krótkich czasów opóźnień w przypadku takich zadań, jak likwidacja drgań styków, to użycie `delay()` w szkicu ma znaczące wady. Podczas trwania funkcji opóźniającej nie może działać żadne odczytywanie czujników, obliczenia matematycznych lub manipulowanie stykami, więc w efekcie zatrzymuje się większość czynności. Aby zapoznać się z alternatywnym podejściem do sterowania czasem, zobacz szkid link:http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay], który odpytuje w pętli funkcję link:../ millis[millis ()] aż do określonego czasu. Bardziej doświadczeni programiści zwykle unikają użycia `delay()` do pomiaru czasu zdarzeń dłuższych niż 10 milisekund, chyba że szkic Arduino jest bardzo prosty.
+Chociaż łatwo jest uzyskać migającą diodę za pomocą funkcji `delay()`, a wiele szkiców używa krótkich czasów opóźnień w przypadku takich działań, jak likwidacja drgań styków, to użycie `delay()` w szkicu ma znaczące wady. Podczas trwania funkcji opóźniającej nie może działać żadne odczytywanie czujników, obliczenia matematycznych lub manipulowanie stykami, więc w efekcie zatrzymuje się większość czynności. Aby zapoznać się z alternatywnym podejściem do sterowania czasem, zobacz szkic link:http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink bez Delay], który odpytuje w pętli funkcję link:../millis[millis()] aż do określonego czasu. Bardziej doświadczeni programiści zwykle unikają użycia `delay()` do zdarzeń dłuższych niż 10 milisekund, chyba że szkic Arduino jest bardzo prosty.
 
-Pewne rzeczy dzieją się, gdy funkcja delay() kontroluje układ Atmega, ponieważ funkcja opóźnienia nie wyłącza przerwań. Rejestrowana jest komunikacja szeregowa pojawiająca się na styku RX, wartości PWM i stany styków są zachowywane (link:../../ analog-io/analogwrite[analogWrite]), a link:../../external-interrupts/attachinterrupt[interrupts] będzie działało tak, jak powininno.
+Pewne rzeczy dzieją się, gdy funkcja delay() kontroluje układ Atmega, ponieważ funkcja opóźnienia nie wyłącza przerwań. Rejestrowana jest komunikacja szeregowa pojawiająca się na styku RX, wartości PWM i stany styków są zachowywane (link:../../analog-io/analogwrite[analogWrite]), a link:../../external-interrupts/attachinterrupt[interrupts] będzie działało tak, jak powininno.
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ
@@ -82,7 +82,7 @@ Pewne rzeczy dzieją się, gdy funkcja delay() kontroluje układ Atmega, poniewa
 === Zobacz także
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink bez Delay^]
+* #PRZYKŁAD# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink bez Delay^]
 
 --
 // KONIEC SEKCJI ZOBACZ TAKŻE
