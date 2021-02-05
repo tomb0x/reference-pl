@@ -8,12 +8,12 @@ title: if(Serial)
 = if (Serial)
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Indicates if the specified Serial port is ready.
 
 On the boards with native USB, `if (Serial)` (or `if(SerialUSB)` on the Due) indicates whether or not the USB CDC serial connection is open. For all other boards, and the non-USB CDC ports, this will always return true.
@@ -23,48 +23,48 @@ This was introduced in Arduino IDE 1.0.1.
 
 
 [float]
-=== Syntax
+=== Składnia
 `if (Serial)`
 
 
 [float]
-=== Parameters
+=== Parametry
 None
 
 
 [float]
-=== Returns
-Returns true if the specified serial port is available. This will only return false if querying the Leonardo's USB CDC serial connection before it is ready. Data type: `bool`.
+=== Wartości zwracane
+Zwraca wartość `true`, jeśli określony port szeregowy jest dostępny. Zwróci `false`, jeśli zapytasz o połączenie szeregowe urządzenie USB płyty Leonardo, zanim będzie gotowe. Typ danych: „bool”. 
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 void setup() {
-  //Initialize serial and wait for port to open:
+  // Zainicjuj port szeregowy i poczekaj na jego otwarcie:
   Serial.begin(9600);
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB
+    ; // poczekaj na połączenie portu szeregowego. Potrzebny do macierzystego portu USB 
   }
 }
 
 void loop() {
-  //proceed normally
+  // normalne działanie
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
