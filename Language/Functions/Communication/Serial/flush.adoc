@@ -8,54 +8,54 @@ title: Serial.flush()
 = flush()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Waits for the transmission of outgoing serial data to complete. (Prior to Arduino 1.0, this instead removed any buffered incoming serial data.)
+=== Opis
+Czeka na zakończenie transmisji wychodzących danych szeregowych. (Przed Arduino 1.0 wszelkie buforowane przychodzące dane szeregowe były usuwane). 
 
-`flush()` inherits from the link:../flush[Stream] utility class.
+`flush()` dziedziczy po klasie link:../flush[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `_Serial_.flush()`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial].
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../print[print()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
-* #LANGUAGE# link:../serialevent[SerialEvent()]
-* #LANGUAGE# link:../../stream/streamflush[stream.flush()]
+* #JĘZYK# link:../begin[begin()]
+* #JĘZYK# link:../end[end()]
+* #JĘZYK# link:../available[available()]
+* #JĘZYK# link:../read[read()]
+* #JĘZYK# link:../peek[peek()]
+* #JĘZYK# link:../print[print()]
+* #JĘZYK# link:../println[println()]
+* #JĘZYK# link:../write[write()]
+* #JĘZYK# link:../serialevent[SerialEvent()]
+* #JĘZYK# link:../../stream/streamflush[stream.flush()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
