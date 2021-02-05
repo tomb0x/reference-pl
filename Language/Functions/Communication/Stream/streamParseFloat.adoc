@@ -14,7 +14,7 @@ title: Stream.parseFloat()
 
 [float]
 === Opis
-`parseFloat()` zwraca pierwszą poprawną liczbę zmiennoprzecinkową od bieżącej pozycji. `parseFloat()` zakończy pierwszy znak, który nie jest liczbą zmiennoprzecinkową. Funkcja kończy działanie, jeśli upłynie limit czasu (patrz link:../streamsettimeout[Stream.setTimeout()]). 
+`parseFloat()` zwraca pierwszą poprawną liczbę zmiennoprzecinkową od bieżącej pozycji. `parseFloat()` zakończy pierwszy znak, który nie jest liczbą zmiennoprzecinkową. Funkcja kończy działanie, jeśli upłynie limit czasu (zobacz link:../streamsettimeout[Stream.setTimeout()]). 
 
 Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą klasę, która po niej dziedziczy (Wire, Serial itp.). Zobacz link:../../stream[stream class] aby uzyskać więcej informacji.
 [%hardbreaks]
@@ -22,15 +22,15 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 
 [float]
 === Składnia
-`stream.parseFloat()` +
-`stream.parseFloat(poszukiwany)` +
-`stream.parseFloat(poszukiwany, ignorowany)`
+`strumień.parseFloat()` +
+`strumień.parseFloat(oczekiwany)` +
+`strumień.parseFloat(oczekiwany, ignorowany)`
 
 
 [float]
 === Parametry
-`stream` : instancja klasy, która dziedziczy po Stream. +
-`poszukiwany`: tryb poszukiwania liczby zmiennoprzecinkowej w strumieniu. Dozwolone typy danych: `LookaheadMode`. Dozwolone wartości parametru `poszukiwany`:
+`strumień` : instancja klasy, która dziedziczy po Stream. +
+`poszukiwany`: sposób wyszukiwania liczby zmiennoprzecinkowej w strumieniu. Dozwolone typy danych: `LookaheadMode`. Dozwolone wartości parametru `oczekiwany`:
 
 * `SKIP_ALL`: wszystkie znaki inne niż znak minus, kropka dziesiętna lub cyfry są ignorowane podczas analizowania strumienia w poszukiwaniu liczby zmiennoprzecinkowej. To jest domyślny sposób działania.
 * `SKIP_NONE`: Nic nie jest pomijane, a strumień nie jest pobierany, chyba że pierwszy oczekujący znak jest prawidłowy.
