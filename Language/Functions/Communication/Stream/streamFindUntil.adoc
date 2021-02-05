@@ -14,7 +14,7 @@ title: Stream.findUntil()
 
 [float]
 === Opis
-`findUntil()` odczytuje dane ze strumienia do momentu znalezienia ciągu o określonej długości lub ciągu kończącego lub przekroczenia limitu czasu (patrz link:../streamsettimeout[Stream.setTimeout()]). 
+`findUntil()` odczytuje dane ze strumienia do momentu znalezienia ciągu o określonej długości lub ciągu kończącego lub przekroczenia limitu czasu (zobacz link:../streamsettimeout[Stream.setTimeout()]). 
 
 Funkcja zwraca `true`, jeśli zostanie znaleziony docelowy ciąg, lub `false`, jeśli przekroczono limit czasu. 
 
@@ -24,12 +24,12 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 
 [float]
 === Składnia
-`stream.findUntil(cel, koniec)`
+`strumień.findUntil(cel, koniec)`
 
 
 [float]
 === Parametry
-`stream`: instancja klasy, która dziedziczy po Stream. +
+`strumień`: instancja klasy, która dziedziczy po Stream. +
 `cel`   : ciąg do wyszukania. Dozwolone typy danych: `char`. +
 `koniec`: ciąg kończący wyszukiwanie. Dozwolone typy danych: `char`.
 
