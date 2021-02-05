@@ -20,12 +20,12 @@ title: Stream.setTimeout()
 
 [float]
 === Składnia
-`stream.setTimeout(czas)`
+`strumień.setTimeout(czas)`
 
 
 [float]
 === Parametry
-`stream`: instancja klasy, która dziedziczy po Stream. +
+`strumień`: instancja klasy, która dziedziczy po Stream. +
 `czas` : limit czasu w milisekundach. Dozwolone typy danych : `long`.
 
 
