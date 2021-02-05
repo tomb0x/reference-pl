@@ -13,7 +13,7 @@ title: Stream.available()
 
 [float]
 === Opis
-`available()` podaje liczbę bajtów dostępnych w strumieniu. Dotyczy to tylko bajtów, które już odczytane przyszły. 
+`available()` podaje liczbę bajtów dostępnych w strumieniu. Dotyczy tylko już odebranych bajtów.
 
 Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą klasę, która po niej dziedziczy (Wire, Serial itp.). Zobacz link:../../stream[stream class] aby uzyskać więcej informacji.
 [%hardbreaks]
@@ -21,17 +21,17 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 
 [float]
 === Składnia
-`stream.available()`
+`strumień.available()`
 
 
 [float]
 === Parametry
-`stream`: instancja klasy, która dziedziczy po Stream.
+`strumień`: instancja klasy, która dziedziczy po Stream.
 
 
 [float]
 === Wartości zwracane
-Liczba dostępnych do odczytania bajtów. Typ danych : `int`.
+Liczba bajtów dostępnych do odczytania. Typ danych : `int`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
