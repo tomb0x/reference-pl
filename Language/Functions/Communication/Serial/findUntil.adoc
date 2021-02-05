@@ -8,50 +8,50 @@ title: Serial.findUntil()
 = Serial.findUntil()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`Serial.findUntil()` reads data from the serial buffer until a target string of given length or terminator string is found.
+=== Opis
+`Serial.findUntil()` odczytuje dane z bufora szeregowego do momentu znalezienia ciągu docelowego o określonej długości lub ciągu kończącego.
 
-The function returns true if the target string is found, false if it times out.
+Funkcja zwraca wartość `true`, jeśli zostanie znaleziony ciąg docelowy, lub `false`, jeśli upłynie limit czasu.
 
-`Serial.findUntil()` inherits from the link:../../stream[Stream] utility class.
+`Serial.findUntil()` dziedziczy po klasie link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`_Serial_.findUntil(target, terminal)`
+=== Składnia
+`_Serial_.findUntil(cel, koniec)`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
-`target`: the string to search for. Allowed data types: `char`. +
-`terminal`: the terminal string in the search. Allowed data types: `char`.
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial]. +
+`cel`: poszukiwany ciąg. Dozwolone typy danych: `char`. +
+`koniec`: ciąg kończący wyszukiwanie. Dozwolone typy danych: `char`.
 
 
 [float]
-=== Returns
-Data type: `bool`.
+=== Wartości zwracane
+Typ danych: `bool`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream] +
-* #LANGUAGE# link:../../stream/streamfinduntil[stream.findUntil()]
+* #JĘZYK# link:../../stream[stream] +
+* #JĘZYK# link:../../stream/streamfinduntil[stream.findUntil()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
