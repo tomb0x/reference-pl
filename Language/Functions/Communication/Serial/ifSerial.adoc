@@ -14,11 +14,11 @@ title: if(Serial)
 
 [float]
 === Opis
-Indicates if the specified Serial port is ready.
+Wskazuje, czy określony port szeregowy jest gotowy.
 
-On the boards with native USB, `if (Serial)` (or `if(SerialUSB)` on the Due) indicates whether or not the USB CDC serial connection is open. For all other boards, and the non-USB CDC ports, this will always return true.
+Na płytach z macierzystym USB, `if (Serial)` (lub `if(SerialUSB)` w Due) wskazuje, czy połączenie szeregowe urządzenia klasy USB jest otwarte. W przypadku wszystkich innych płyt i portów innych klas niż USB zawsze zwróci `true` 
 
-This was introduced in Arduino IDE 1.0.1.
+Zostało to wprowadzone w Arduino IDE 1.0.1.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ This was introduced in Arduino IDE 1.0.1.
 
 [float]
 === Parametry
-None
+Brak
 
 
 [float]
 === Wartości zwracane
-Zwraca wartość `true`, jeśli określony port szeregowy jest dostępny. Zwróci `false`, jeśli zapytasz o połączenie szeregowe urządzenie USB płyty Leonardo, zanim będzie gotowe. Typ danych: „bool”. 
+Zwraca wartość `true`, jeśli określony port szeregowy jest dostępny. Zwróci `false`, jeśli zapytasz o połączenie szeregowe urządzenie USB płyty Leonardo, zanim będzie gotowe. Typ danych: `bool`. 
 
 --
 // KONIEC SEKCJI OPISOWEJ
