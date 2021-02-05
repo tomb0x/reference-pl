@@ -8,52 +8,52 @@ title: Serial.availableForWrite()
 = availableForWrite()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Get the number of bytes (characters) available for writing in the serial buffer without blocking the write operation.
+=== Opis
+Pobiera liczbę bajtów (znaków) dostępnych do zapisu w buforze szeregowym bez blokowania operacji zapisu. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `_Serial_.availableForWrite()`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial].
 
 
 [float]
-=== Returns
-The number of bytes available to write.
+=== Wartości zwracane
+Liczba bajtów dostępnych do zapisu.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streamavailable[Stream.available()]
+* #JĘZYK# link:../begin[begin()] +
+* #JĘZYK# link:../end[end()] +
+* #JĘZYK# link:../read[read()] +
+* #JĘZYK# link:../peek[peek()] +
+* #JĘZYK# link:../flush[flush()] +
+* #JĘZYK# link:../print[print()] +
+* #JĘZYK# link:../println[println()] +
+* #JĘZYK# link:../write[write()] +
+* #JĘZYK# link:../serialevent[SerialEvent()] +
+* #JĘZYK# link:../../stream/streamavailable[Stream.available()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
