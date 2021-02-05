@@ -14,7 +14,7 @@ title: Stream.find()
 
 [float]
 === Opis
-`find()` odczytuje dane ze strumienia do momentu znalezienia celu. Funkcja zwraca `true`, jeśli cel zostanie znaleziony, `false`, jeśli przekroczono limit czasu (patrz link:../streamsettimeout[Stream.setTimeout()]). 
+`find()` odczytuje dane ze strumienia do momentu znalezienia celu. Funkcja zwraca `true`, jeśli cel zostanie znaleziony, `false`, jeśli przekroczono limit czasu (zobacz link:../streamsettimeout[Stream.setTimeout()]). 
 
 Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą klasę, która po niej dziedziczy (Wire, Serial itp.). Zobacz link:../../stream[stream class] aby uzyskać więcej informacji.
 [%hardbreaks]
@@ -22,13 +22,13 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 
 [float]
 === Składnia
-`stream.find(cel)` +
-`stream.find(cel, długość)`
+`strumień.find(cel)` +
+`strumień.find(cel, długość)`
 
 
 [float]
 === Parametry
-`stream` : instancja klasy, która dziedziczy po Stream. +
+`strumień` : instancja klasy, która dziedziczy po Stream. +
 `cel`    : ciąg do wyszukania. Dozwolone typy danych: `char`. +
 `długość`: długość ciągu docelowego. Dozwolone typy danych: `size_t`.
 
