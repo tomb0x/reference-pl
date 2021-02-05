@@ -5,67 +5,67 @@ title: Serial.available()
 = available()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Get the number of bytes (characters) available for reading from the serial port. This is data that's already arrived and stored in the serial receive buffer (which holds 64 bytes).
+=== Opis
+Pobiera liczbę bajtów (znaków) dostępnych do odczytu z portu szeregowego. Są to dane, które już dotarły i są przechowywane w buforze odbioru szeregowego (który zawiera 64 bajty). 
 
-`Serial.available()` inherits from the link:../../stream[Stream] utility class.
+`Serial.available()` dziedziczy po klasie link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `_Serial_.available()`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial].
 
 
 [float]
-=== Returns
-The number of bytes available to read.
+=== Wartości zwracane
+Liczba bajtów dostępnych do odczytania.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The following code returns a character received through the serial port.
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Poniższy program zwraca znak odebrany przez port szeregowy
 
 [source,arduino]
 ----
-int incomingByte = 0; // for incoming serial data
+int przychBajt = 0; // dla przychodzących danych szeregowych
 
 void setup() {
-  Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
+  Serial.begin(9600); // otwiera port szeregowy, ustawia szybkość transmisji danych na 9600 bitów na sekundę
 }
 
 void loop() {
-  // reply only when you receive data:
+  // odpowiadaj tylko, gdy otrzymasz dane:
   if (Serial.available() > 0) {
-    // read the incoming byte:
-    incomingByte = Serial.read();
+    // odczytaj przychodzący bajt:
+    przychBajt = Serial.read();
 
-    // say what you got:
-    Serial.print("I received: ");
-    Serial.println(incomingByte, DEC);
+    // powiedz, co masz:
+    Serial.print("Odebrane: ");
+    Serial.println(przychBajt, DEC);
   }
 }
 ----
 [%hardbreaks]
 
-*Arduino Mega example:*
-This code sends data received in one serial port of the Arduino Mega to another. This can be used, for example, to connect a serial device to the computer through the Arduino board.
+*przykład dla Arduino Mega:*
+Ten program przesyła dane otrzymane z jednego portu szeregowego Arduino Mega do innego. Można to wykorzystać np. do podłączenia urządzenia szeregowego do komputera poprzez płytkę Arduino. 
 
 [source,arduino]
 ----
@@ -75,41 +75,41 @@ void setup() {
 }
 
 void loop() {
-  // read from port 0, send to port 1:
+  // odczytaj z portu 0, wysyłaj do portu 1:
   if (Serial.available()) {
-    int inByte = Serial.read();
-    Serial1.print(inByte, DEC);
+    int przychBajt = Serial.read();
+    Serial1.print(przychBajt, DEC);
   }
-  // read from port 1, send to port 0:
+  // odczytaj z portu 1, wysyłaj do portu 0:
   if (Serial1.available()) {
-    int inByte = Serial1.read();
-    Serial.print(inByte, DEC);
+    int przychBajt = Serial1.read();
+    Serial.print(przychBajt, DEC);
   }
 }
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streamavailable[Stream.available()]
+* #JĘZYK# link:../begin[begin()] +
+* #JĘZYK# link:../end[end()] +
+* #JĘZYK# link:../read[read()] +
+* #JĘZYK# link:../peek[peek()] +
+* #JĘZYK# link:../flush[flush()] +
+* #JĘZYK# link:../print[print()] +
+* #JĘZYK# link:../println[println()] +
+* #JĘZYK# link:../write[write()] +
+* #JĘZYK# link:../serialevent[SerialEvent()] +
+* #JĘZYK# link:../../stream/streamavailable[Stream.available()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
