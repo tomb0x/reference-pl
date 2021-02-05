@@ -8,55 +8,55 @@ title: Serial.getTimeout()
 = Serial.getTimeout()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`Serial.getTimeout()` returns the timeout value set by `Serial.setTimeout()`.
+=== Opis
+`Serial.getTimeout()` zwraca wartość limitu czasu ustawioną przez `Serial.setTimeout()`.
 
-`Serial.getTimeout()` inherits from the link:../../stream[Stream] utility class.
+`Serial.getTimeout()` dziedziczy po klasie link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `_Serial_.getTimeout()`
 
 
 [float]
-=== Parameters
-None
+=== Parametry
+Brak
 
 
 [float]
-=== Returns
-The timeout value set by `Serial.setTimeout()`. Data type: `unsigned long`.
+=== Wartości zwracane
+Wartość limitu czasu ustawiona przez `Serial.setTimeout()`. Typ danych: `unsigned long`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream]
-* #LANGUAGE# link:../../stream/streamsettimeout[stream.setTimeout()]
-* #LANGUAGE# link:../../stream/streamgettimeout[stream.getTimeout()]
+* #JĘZYK# link:../../stream[stream]
+* #JĘZYK# link:../../stream/streamsettimeout[stream.setTimeout()]
+* #JĘZYK# link:../../stream/streamgettimeout[stream.getTimeout()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
