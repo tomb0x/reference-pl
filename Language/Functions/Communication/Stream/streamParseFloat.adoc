@@ -30,7 +30,7 @@ Ta funkcja jest częścią klasy Stream i może być wywołana przez każdą kla
 [float]
 === Parametry
 `strumień` : instancja klasy, która dziedziczy po Stream. +
-`poszukiwany`: sposób wyszukiwania liczby zmiennoprzecinkowej w strumieniu. Dozwolone typy danych: `LookaheadMode`. Dozwolone wartości parametru `oczekiwany`:
+`oczekiwany`: sposób wyszukiwania liczby zmiennoprzecinkowej w strumieniu. Dozwolone typy danych: `LookaheadMode`. Dozwolone wartości parametru `oczekiwany`:
 
 * `SKIP_ALL`: wszystkie znaki inne niż znak minus, kropka dziesiętna lub cyfry są ignorowane podczas analizowania strumienia w poszukiwaniu liczby zmiennoprzecinkowej. To jest domyślny sposób działania.
 * `SKIP_NONE`: Nic nie jest pomijane, a strumień nie jest pobierany, chyba że pierwszy oczekujący znak jest prawidłowy.
