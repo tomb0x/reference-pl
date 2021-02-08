@@ -62,15 +62,15 @@ Nic
 --
 
 [float]
-=== Przykładowy kod
-// Opisz, jak działa przykładowy kod i dodaj go poniżej   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
-Ustawia wartość na wyjściu dla diody proporcjonalną do wartości odczytanej z potencjometru.
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Ustawia dla diody wartość na wyjściu proporcjonalną do wartości odczytanej z potencjometru.
 
 
 [source,arduino]
-// Dodaj odpowiedni kod, który jest przykładem użycia danego terminu
+// Dodaj odpowiedni program, który jest przykładem użycia danego terminu
 // Pamiętaj, że czasami podczas wklejania kodu może dodać się kilka odstępów na początku każdego wiersza.
-// Jeśli się tak stanie, usun proszę dodatkowe te odstępy. Dzięki!
+// Jeśli się tak stanie, usun proszę te dodatkowe odstępy. Dzięki!
 ----
 int stykDiody = 9;     // dioda świecąca podłączona do cyfrowego styku nr 9
 int stykAnalogowy = 3; // potencjometr podłączony do analogowego styku nr 3
@@ -124,12 +124,12 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 [role="definition"]
 // Należy pamiętać, że wszystkie odnośniki do materiałów zewnętrznych muszą być otwierane w nowym oknie/karcie poprzez dodanie
-// znaku ^ zaraz po ostatnim nawiasie kwadratowym
+// znaku ^ tuż przed ostatnim nawiasem kwadratowym
 * #DEFINICJA# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 [role="example"]
 // Należy pamiętać, że wszystkie odnośniki do materiałów zewnętrznych muszą być otwierane w nowym oknie/karcie poprzez dodanie
-// znaku ^ zaraz po ostatnim nawiasie kwadratowym
+// znaku ^ tuż przed ostatnim nawiasem kwadratowym
 * #PRZYKŁAD# http://arduino.cc/en/Tutorial/Blink[Blink^]
 
 --
