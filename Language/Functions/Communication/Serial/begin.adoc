@@ -8,33 +8,33 @@ title: Serial.begin()
 = begin()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Sets the data rate in bits per second (baud) for serial data transmission. For communicating with Serial Monitor, make sure to use one of the baud rates listed in the menu at the bottom right corner of its screen. You can, however, specify other rates - for example, to communicate over pins 0 and 1 with a component that requires a particular baud rate.
+=== Opis
+Ustawia szybkość transmisji danych w bitach na sekundę (bodach) dla szeregowej transmisji danych. Aby komunikować się z monitorem portu szeregowego, upewnij się, że używasz jednej z szybkości transmisji wymienionych w menu w prawym dolnym rogu jego ekranu. Możesz jednak określić inne szybkości - na przykład, aby komunikować się przez styki 0 i 1 z elementem wymagającym określonej szybkości transmisji. 
 
-An optional second argument configures the data, parity, and stop bits. The default is 8 data bits, no parity, one stop bit.
+Opcjonalny drugi parametr konfiguruje dane, parzystość i bity stopu. Wartość domyślna to 8 bitów danych, bez parzystości, jeden bit stopu. 
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`_Serial_.begin(speed)` +
-`_Serial_.begin(speed, config)`
+=== Składnia
+`_Serial_.begin(szybkość)` +
+`_Serial_.begin(szybkość, konfiguracja)`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
-`speed`: in bits per second (baud). Allowed data types: `long`. +
-`config`: sets data, parity, and stop bits. Valid values are: +
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial]. +
+`szybkość`: w bitach na sekundę (bodach). Dozwolone typy danych: `long`. +
+`konfiguracja`: bity danych, parzystość i bity stopu. Poprawne wartości to: +
 `SERIAL_5N1` +
 `SERIAL_6N1` +
 `SERIAL_7N1` +
-`SERIAL_8N1` (the default) +
+`SERIAL_8N1` (domyślnie) +
 `SERIAL_5N2` +
 `SERIAL_6N2` +
 `SERIAL_7N2` +
@@ -58,40 +58,40 @@ An optional second argument configures the data, parity, and stop bits. The defa
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 void setup() {
-    Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
+    Serial.begin(9600); // otwiera port szeregowy, ustawia szybkość transmisji danych na 9600 bitów na sekundę
 }
 
 void loop() {}
 ----
 [%hardbreaks]
 
-*Arduino Mega example:*
+*przykład dla Arduino Mega:*
 [source,arduino]
 ----
-// Arduino Mega using all four of its Serial ports
+// Arduino Mega przy użyciu wszystkich czterech portów szeregowych 
 // (Serial, Serial1, Serial2, Serial3),
-// with different baud rates:
+// z różnymi szybkościami transmisji:
 
 void setup() {
   Serial.begin(9600);
@@ -99,21 +99,21 @@ void setup() {
   Serial2.begin(19200);
   Serial3.begin(4800);
 
-  Serial.println("Hello Computer");
-  Serial1.println("Hello Serial 1");
-  Serial2.println("Hello Serial 2");
-  Serial3.println("Hello Serial 3");
+  Serial.println("Serwus Komputer");
+  Serial1.println("Serwus Serial 1");
+  Serial2.println("Serwus Serial 2");
+  Serial3.println("Serwus Serial 3");
 }
 void loop() {}
 ----
 [%hardbreaks]
-Thanks to Jeff Gray for the mega example
+Podziękowania dla Jeffa Graya za przykład dla Mega
 
 
 [float]
-=== Notes and Warnings
-For USB CDC serial ports (e.g. `Serial` on the Leonardo), `Serial.begin()` is irrelevant. You can use any baud rate and configuration for serial communication with these ports. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Uwagi i ostrzeżenia
+Dla portów szeregowych w urządzeniach klasy USB (np. `Serial` na płycie Leonardo), `Serial.begin()` nie ma znaczenia. Do komunikacji szeregowej z tymi portami można użyć dowolnej szybkości transmisji w dowolnej konfiguracji. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial].
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
