@@ -61,7 +61,7 @@ void setup() {
 
   // jeżeli analogowe wejście nr 0 nie będzie podłączone,
   // losowy szum spowoduje, że wywołanie randomSeed()
-  // wygeneruje różne liczby 'zarodków generatora' za każdym razem, gdy szkic zostanie uruchomiony.
+  // wygeneruje różne liczby 'ziarna generatora' za każdym razem, gdy szkic zostanie uruchomiony.
   // Następnie randomSeed() przetasuje funkcję losową.
   randomSeed(analogRead(0));
 }
