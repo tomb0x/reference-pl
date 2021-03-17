@@ -16,11 +16,11 @@ subCategories: [ "Communication" ]
 
 [float]
 === Opis
-Stream is the base class for character and binary based streams. It is not called directly, but invoked whenever you use a function that relies on it.
+Stream jest klasą bazową dla strumieni opartych na znakach i plikach binarnych. Nie jest wywoływana bezpośrednio, tylko wtedy, gdy używasz funkcji, która na niej opiera się.
 
-Stream defines the reading functions in Arduino. When using any core functionality that uses a `read()` or similar method, you can safely assume it calls on the Stream class. For functions like `print()`, Stream inherits from the Print class.
+Stream definiuje funkcje odczytu w Arduino. Korzystając z dowolnej podstawowej funkcji, która używa metody `read()` lub podobnej, można bezpiecznie założyć, że wywołuje ona klasę Stream. W przypadku funkcji takich jak `print()` Stream dziedziczy po klasie Print.
 
-Some of the libraries that rely on Stream include :
+Niektóre biblioteki korzystające z usługi Stream to:
 
 * link:../serial[Serial]
 * link:https://www.arduino.cc/en/Reference/Wire[Wire]
