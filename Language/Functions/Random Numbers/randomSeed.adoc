@@ -27,12 +27,12 @@ I odwrotnie, czasami przydatne może być użycie pseudolosowych sekwencji, któ
 
 [float]
 === Składnia
-`randomSeed(seed)`
+`randomSeed(ziarno)`
 
 
 [float]
 === Parametry
-`seed`: liczba inicjująca sekwencję pseudolosową. Dozwolone typy danych: `unsigned long`.
+`ziarno`: liczba inicjująca sekwencję pseudolosową. Dozwolone typy danych: `unsigned long`.
 
 
 [float]
