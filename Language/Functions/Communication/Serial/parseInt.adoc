@@ -8,34 +8,34 @@ title: Serial.parseInt()
 = parseInt()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Looks for the next valid integer in the incoming serial. The function terminates if it times out (see link:../settimeout[Serial.setTimeout()]).
+=== Opis
+Szuka następnej prawidłowej liczby całkowitej w przychodzącej transmisji szeregowej. Funkcja kończy się, jeśli upłynie limit czasu (zobacz link:../settimeout[Serial.setTimeout()]).
 
-`Serial.parseInt()` inherits from the link:../../stream[Stream] utility class.
+`Serial.parseInt()` dziedziczy po klasie link:../../stream[Stream].
 
 
-In particular:
+W szczególności:
 
-* Parsing stops when no characters have been read for a configurable time-out value, or a non-digit is read; +
-* If no valid digits were read when the time-out (see Serial.setTimeout()) occurs, 0 is returned;
+* Analiza zatrzymuje się, gdy żadne znaki nie zostały odczytane w konfigurowanym limicie czasu lub odczytywana została wartość niecyfrowa; +
+* Jeśli w momencie przekroczenia limitu czasu (patrz Serial.setTimeout ()) nie zostały odczytane żadne prawidłowe cyfry, zwracane jest 0;
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 `_Serial_.parseInt()` +
-`_Serial_.parseInt(lookahead)` +
-`_Serial_.parseInt(lookahead, ignore)`
+`_Serial_.parseInt(oczekiwany)` +
+`_Serial_.parseInt(oczekiwany, ignorowany)`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej karty na stronie głównej link:../../serial[Serial]. +
 `lookahead`: the mode used to look ahead in the stream for an integer. Allowed data types: `LookaheadMode`. Allowed `lookahead` values:
 
 * `SKIP_ALL`: all characters other than digits or a minus sign are ignored when scanning the stream for an integer. This is the default mode.
@@ -46,32 +46,32 @@ In particular:
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 The next valid integer. Data type: `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../available[available()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streamparsefloat[Stream.parseFloat()]
+* #JĘZYK# link:../begin[begin()] +
+* #JĘZYK# link:../end[end()] +
+* #JĘZYK# link:../available[available()] +
+* #JĘZYK# link:../read[read()] +
+* #JĘZYK# link:../peek[peek()] +
+* #JĘZYK# link:../flush[flush()] +
+* #JĘZYK# link:../print[print()] +
+* #JĘZYK# link:../println[println()] +
+* #JĘZYK# link:../write[write()] +
+* #JĘZYK# link:../serialevent[SerialEvent()] +
+* #JĘZYK# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
