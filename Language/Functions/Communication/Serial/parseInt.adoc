@@ -14,7 +14,7 @@ title: Serial.parseInt()
 
 [float]
 === Opis
-Szuka następnej prawidłowej liczby całkowitej w przychodzącej transmisji szeregowej. Funkcja kończy się, jeśli upłynie limit czasu (zobacz link:../settimeout[Serial.setTimeout()]).
+Szuka następnej prawidłowej liczby całkowitej w przychodzącej transmisji szeregowej. Funkcja kończy działanie, jeśli upłynie limit czasu (zobacz link:../settimeout[Serial.setTimeout()]).
 
 `Serial.parseInt()` dziedziczy po klasie link:../../stream[Stream].
 
@@ -35,19 +35,19 @@ W szczególności:
 
 [float]
 === Parametry
-`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej karty na stronie głównej link:../../serial[Serial]. +
-`lookahead`: the mode used to look ahead in the stream for an integer. Allowed data types: `LookaheadMode`. Allowed `lookahead` values:
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na stronie głównej klasy link:../../serial[Serial]. +
+`oczekiwany`: sposób wyszukiwania liczby całkowitej. Dozwolone typy danych: `LookaheadMode`. Dozwolone wartości parametru `oczekiwany`:
 
-* `SKIP_ALL`: all characters other than digits or a minus sign are ignored when scanning the stream for an integer. This is the default mode.
-* `SKIP_NONE`: Nothing is skipped, and the stream is not touched unless the first waiting character is valid.
-* `SKIP_WHITESPACE`: Only tabs, spaces, line feeds, and carriage returns are skipped.
+* `SKIP_ALL`: wszystkie znaki inne niż cyfry lub znak minus są ignorowane podczas skanowania strumienia w poszukiwaniu liczby całkowitej. To jest tryb domyślny.
+* `SKIP_NONE`: Nic nie jest pomijane, a strumień nie jest pobierany, chyba że pierwszy oczekujący znak jest prawidłowy.
+* `SKIP_WHITESPACE`: Pomijane są tylko znaki tabulatora, odstępu, nowego wiersza i powrotu karetki.
 
-`ignore`: used to skip the indicated char in the search. Used for example to skip thousands divider. Allowed data types: `char`
+`ignorowany`: używany do pominięcia wskazanego znaku w wyszukiwaniu. Na przykład do pominięcia separatora grup trzycyfrowych (tysięcy). Dozwolone typy danych: `char`
 
 
 [float]
 === Wartości zwracane
-The next valid integer. Data type: `long`.
+Następna prawidłowa liczba całkowita. Typ danych: `long`.
 
 --
 // KONIEC SEKCJI OPISOWEJ
