@@ -8,82 +8,82 @@ title: Serial.print()
 = print()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Prints data to the serial port as human-readable ASCII text. This command can take many forms. Numbers are printed using an ASCII character for each digit. Floats are similarly printed as ASCII digits, defaulting to two decimal places. Bytes are sent as a single character. Characters and strings are sent as is. For example-
+=== Opis
+Drukuje dane do portu szeregowego jako czytelny dla człowieka tekst ASCII. To polecenie może przybierać różne formy. Liczby są drukowane przy użyciu znaku ASCII dla każdej cyfry. Liczby zmiennoprzecinkowe podobnie - jako cyfry ASCII, domyślnie z dwoma miejscami po przecinku. Bajty są wysyłane jako pojedynczy znak. Znaki i łańcuchy są wysyłane bez zmian. Na przykład:
 
-* `Serial.print(78)` gives "78" +
-* `Serial.print(1.23456)` gives "1.23" +
-* `Serial.print('N')` gives "N" +
-* `Serial.print("Hello world.")` gives "Hello world."
+* `Serial.print(78)` daje "78" +
+* `Serial.print(1.23456)` daje "1.23" +
+* `Serial.print('N')` daje "N" +
+* `Serial.print("Hello world.")` daje "Hello world."
 
 
-An optional second parameter specifies the base (format) to use; permitted values are `BIN(binary, or base 2)`, `OCT(octal, or base 8)`, `DEC(decimal, or base 10)`, `HEX(hexadecimal, or base 16)`. For floating point numbers, this parameter specifies the number of decimal places to use. For example-
+Opcjonalny drugi parametr określa używany podstawę systemu liczbowego (lub format); dozwolone wartości to `BIN(dwójkowy, lub podstawa 2)`, `OCT(ósemkowy, lub podstawa 8)`, `DEC(dziesiętny, lub podstawa 10)`, `HEX(szesnastkowy, lub podstawa 16)`. W przypadku liczb zmiennoprzecinkowych ten parametr określa liczbę używanych miejsc dziesiętnych. Na przykład:
 
-* `Serial.print(78, BIN)` gives "1001110" +
-* `Serial.print(78, OCT)` gives "116" +
-* `Serial.print(78, DEC)` gives "78" +
-* `Serial.print(78, HEX)` gives "4E" +
-* `Serial.print(1.23456, 0)` gives "1" +
-* `Serial.print(1.23456, 2)` gives "1.23" +
-* `Serial.print(1.23456, 4)` gives "1.2346"
+* `Serial.print(78, BIN)` daje "1001110" +
+* `Serial.print(78, OCT)` daje "116" +
+* `Serial.print(78, DEC)` daje "78" +
+* `Serial.print(78, HEX)` daje "4E" +
+* `Serial.print(1.23456, 0)` daje "1" +
+* `Serial.print(1.23456, 2)` daje "1.23" +
+* `Serial.print(1.23456, 4)` daje "1.2346"
 
-You can pass flash-memory based strings to Serial.print() by wrapping them with link:../../../../variables/utilities/progmem[F()]. For example:
+Możesz przekazać ciągi oparte na pamięci flash do Serial.print(), opakowując je za pomocą link:../../../../variables/utilities/progmem[F()]. Na przykład:
 
 `Serial.print(F(“Hello World”))`
 
-To send data without conversion to its representation as characters, use link:../write[Serial.write()].
+Aby przesłać dane bez konwersji do postaci znaków, użyj link:../write[Serial.write()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`_Serial_.print(val)` +
-`_Serial_.print(val, format)`
+=== Składnia
+`_Serial_.print(wart)` +
+`_Serial_.print(wart, format)`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
-`val`: the value to print. Allowed data types: any data type.
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial]. +
+`wart`: wartość do wydrukowania. Dozwolone typy danych: dowolny typ danych.
 
 
 [float]
-=== Returns
-`print()` returns the number of bytes written, though reading that number is optional. Data type: `size_t`.
+=== Wartości zwracane
+`print()` zwraca liczbę zapisanych bajtów, chociaż odczyt tej liczby jest opcjonalny. Typ danych: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 /*
-  Uses a for loop to print numbers in various formats.
+  Użycie pętli for do drukowania liczb w różnych formatach.
 */
 void setup() {
-  Serial.begin(9600); // open the serial port at 9600 bps:
+  Serial.begin(9600); // otwórz port szeregowy przy prędkości 9600 bps:
 }
 
 void loop() {
-  // print labels
-  Serial.print("NO FORMAT");  // prints a label
-  Serial.print("\t");         // prints a tab
+  // drukowanie etykiet
+  Serial.print("BEZ FORMATU");  // drukuj etykietę
+  Serial.print("\t");           // drukuj znak tabulacji
 
   Serial.print("DEC");
   Serial.print("\t");
@@ -95,57 +95,57 @@ void loop() {
   Serial.print("\t");
 
   Serial.print("BIN");
-  Serial.println();        // carriage return after the last label
+  Serial.println();        // znak powrotu karetki po ostatniej etykiecie
 
-  for (int x = 0; x < 64; x++) { // only part of the ASCII chart, change to suit
-    // print it out in many formats:
-    Serial.print(x);       // print as an ASCII-encoded decimal - same as "DEC"
-    Serial.print("\t\t");  // prints two tabs to accomodate the label lenght
+  for (int x = 0; x < 64; x++) { // tylko część tablicy ASCII, zmień na odpowiedni
+    // drukowanie w wielu formatach:
+    Serial.print(x);       // drukuj jako liczbę dziesiętną zakodowaną w ASCII - to samo co "DEC"
+    Serial.print("\t\t");  // drukuj dwa tabulatory, aby dopasować długość etykiety
 
-    Serial.print(x, DEC);  // print as an ASCII-encoded decimal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, DEC);  // drukuj jako liczbę dziesiętną zakodowaną w ASCII
+    Serial.print("\t");    // drukuj tabulator
 
-    Serial.print(x, HEX);  // print as an ASCII-encoded hexadecimal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, HEX);  // drukuj jako liczbę szesnastkową zakodowaną w ASCII
+    Serial.print("\t");    // drukuj tabulator
 
-    Serial.print(x, OCT);  // print as an ASCII-encoded octal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, OCT);  // drukuj jako liczbę ósemkową zakodowaną w ASCII
+    Serial.print("\t");    // drukuj tabulator
 
-    Serial.println(x, BIN);  // print as an ASCII-encoded binary
-    // then adds the carriage return with "println"
-    delay(200);            // delay 200 milliseconds
+    Serial.println(x, BIN);  // drukuj jako liczbę dwójkową zakodowaną w ASCII
+    // następnie dodaj znak powrotu karetki w "println"
+    delay(200);            // opóźnienie 200 milisekund
   }
-  Serial.println();        // prints another carriage return
+  Serial.println();        // drukuj kolejny znak powrotu karetki
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-For information on the asyncronicity of `Serial.print()`, see the Notes and Warnings section of the link:../write#howtouse[Serial.write() reference page].
+=== Uwagi i Ostrzeżenia
+Informacje na temat asynchroniczności `Serial.print()` można znaleźć w sekcji Uwagi i ostrzeżenia link:../write#howtouse[strona dokumentacji Serial.write()].
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../flush[flush()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
-* #LANGUAGE# link:../serialevent[SerialEvent()]
-* #LANGUAGE# link:https://www.arduino.cc/en/Tutorial/Memory[Memory]
+* #JĘZYK# link:../begin[begin()]
+* #JĘZYK# link:../end[end()]
+* #JĘZYK# link:../available[available()]
+* #JĘZYK# link:../read[read()]
+* #JĘZYK# link:../peek[peek()]
+* #JĘZYK# link:../flush[flush()]
+* #JĘZYK# link:../println[println()]
+* #JĘZYK# link:../write[write()]
+* #JĘZYK# link:../serialevent[SerialEvent()]
+* #JĘZYK# link:https://www.arduino.cc/en/Tutorial/Memory[Memory]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
