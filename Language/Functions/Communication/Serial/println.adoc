@@ -8,83 +8,83 @@ title: Serial.println()
 = println()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n'). This command takes the same forms as link:../print[Serial.print()].
+=== Opis
+Drukuje dane do portu szeregowego jako czytelny dla człowieka tekst ASCII zakończony znakiem powrotu karetki (ASCII 13, lub '\r') oraz znakiem nowej linii (ASCII 10, lub '\n'). To polecenie ma taką samą postać jak link:../print[Serial.print()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`_Serial_.println(val)` +
-`_Serial_.println(val, format)`
+=== Składnia
+`_Serial_.println(wart)` +
+`_Serial_.println(wart, format)`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
-`val`: the value to print. Allowed data types: any data type. +
-`format`: specifies the number base (for integral data types) or number of decimal places (for floating point types).
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial]. +
+`wart`: wartość do wydrukowania. Dozwolone typy danych: dowolny typ danych. +
+`format`: określa podstawę liczb (dla całkowitych typów danych) lub liczbę miejsc po przecinku (dla typów zmiennoprzecinkowych).
 
 
 [float]
-=== Returns
-`println()` returns the number of bytes written, though reading that number is optional. Data type: `size_t`.
+=== Wartości zwracane
+`println()` zwraca liczbę zapisanych bajtów, chociaż odczyt tej liczby jest opcjonalny. Typ danych: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Program przykładowy
+// Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 /*
- Analog input reads an analog input on analog in 0, prints the value out.
- created 24 March 2006
- by Tom Igoe
+ Odczytywane jest wejście analogowe na styku numer 0 i drukowana jest ta wartość.
+ dnia 24 marca 2006
+ stworzył Tom Igoe
  */
 
-int analogValue = 0;    // variable to hold the analog value
+int wartAnalogowa = 0;    // zmienna do przechowywania wartości analogowej
 
 void setup() {
-  // open the serial port at 9600 bps:
+  // otwórz port szeregowy przy prędkości 9600 bps:
   Serial.begin(9600);
 }
 
 void loop() {
-  // read the analog input on pin 0:
-  analogValue = analogRead(0);
+  // odczytaj wejście analogowe na styku 0:
+  wartAnalogowa = analogRead(0);
 
-  // print it out in many formats:
-  Serial.println(analogValue);       // print as an ASCII-encoded decimal
-  Serial.println(analogValue, DEC);  // print as an ASCII-encoded decimal
-  Serial.println(analogValue, HEX);  // print as an ASCII-encoded hexadecimal
-  Serial.println(analogValue, OCT);  // print as an ASCII-encoded octal
-  Serial.println(analogValue, BIN);  // print as an ASCII-encoded binary
+  // drukowanie w wielu formatach:
+  Serial.println(wartAnalogowa);       // drukuj jako liczbę dziesiętną zakodowaną w ASCII
+  Serial.println(wartAnalogowa, DEC);  // drukuj jako liczbę dziesiętną zakodowaną w ASCII
+  Serial.println(wartAnalogowa, HEX);  // drukuj jako liczbę szesnastkową zakodowaną w ASCII
+  Serial.println(wartAnalogowa, OCT);  // drukuj jako liczbę ósemkową zakodowaną w ASCII
+  Serial.println(wartAnalogowa, BIN);  // drukuj jako liczbę dwójkową zakodowaną w ASCII
 
-  // delay 10 milliseconds before the next reading:
+  // opóźnienie 10 milisekund przed następnym odczytem:
   delay(10);
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-For information on the asyncronicity of `Serial.println()`, see the Notes and Warnings section of the link:../write#howtouse[Serial.write() reference page].
+=== Uwagi i Ostrzeżenia
+Informacje na temat asynchroniczności `Serial.println()`, można znaleźć w sekcji Uwagi i ostrzeżenia link:../write#howtouse[strony dokumentacji Serial.write()].
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
