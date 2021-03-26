@@ -8,12 +8,12 @@ title: Serial.readBytesUntil()
 = Serial.readBytesUntil()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
+=== Opis
 Serial.readBytesUntil() reads characters from the serial buffer into an array. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]). The function returns the characters up to the last character before the supplied terminator. The terminator itself is not returned in the buffer.
 
 `Serial.readBytesUntil()` returns the number of characters read into the buffer. A 0 means no valid data was found.
@@ -23,12 +23,12 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 
 
 [float]
-=== Syntax
+=== Składnia
 `_Serial_.readBytesUntil(character, buffer, length)`
 
 
 [float]
-=== Parameters
+=== Parametry
 `_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
 `character`: the character to search for. Allowed data types: `char`. +
 `buffer`: the buffer to store the bytes in. Allowed data types: array of `char` or `byte`s. +
@@ -36,36 +36,36 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 
 
 [float]
-=== Returns
+=== Wartości zwracane
 Data type: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Notes and Warnings
-The terminator character is discarded from the serial buffer.
+=== Uwagi i Ostrzeżenia
+Znak końca jest usuwany z bufora szeregowego.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../stream[Stream]
-* #LANGUAGE# link:../../stream/streamreadbytesuntil[Stream.readBytesUntil()]
+* #JĘZYK# link:../../stream[Stream]
+* #JĘZYK# link:../../stream/streamreadbytesuntil[Stream.readBytesUntil()]
 
 --
 // SEE ALSO SECTION ENDS
