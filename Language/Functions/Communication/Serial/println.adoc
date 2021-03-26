@@ -84,7 +84,7 @@ void loop() {
 
 [float]
 === Uwagi i Ostrzeżenia
-Informacje na temat asynchroniczności `Serial.println()`, można znaleźć w sekcji Uwagi i ostrzeżenia link:../write#howtouse[strony dokumentacji Serial.write()].
+Informacje na temat asynchroniczności `Serial.println()`, można znaleźć w sekcji Uwagi i ostrzeżenia na link:../write#howtouse[stronie dokumentacji Serial.write()].
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ
