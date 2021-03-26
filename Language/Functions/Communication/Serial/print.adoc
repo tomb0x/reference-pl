@@ -122,7 +122,7 @@ void loop() {
 
 [float]
 === Uwagi i Ostrzeżenia
-Informacje na temat asynchroniczności `Serial.print()` można znaleźć w sekcji Uwagi i ostrzeżenia link:../write#howtouse[strona dokumentacji Serial.write()].
+Informacje na temat asynchroniczności `Serial.print()` można znaleźć w sekcji Uwagi i ostrzeżenia na link:../write#howtouse[stronie dokumentacji Serial.write()].
 
 --
 // KONIEC SEKCJI JAK UŻYWAĆ
