@@ -8,50 +8,50 @@ title: Serial.readBytes()
 = Serial.readBytes()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-`Serial.readBytes()` reads characters from the serial port into a buffer. The function terminates if the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]).
+=== Opis
+`Serial.readBytes()` odczytuje znaki z portu szeregowego do bufora. Funkcja kończy działanie po odczytaniu określonej długości lub po przekroczeniu limitu czasu (zobacz link:../settimeout[Serial.setTimeout()]).
 
-`Serial.readBytes()` returns the number of characters placed in the buffer. A 0 means no valid data was found.
+`Serial.readBytes()` zwraca liczbę znaków umieszczonych w buforze. 0 oznacza, że nie znaleziono prawidłowych danych.
 
-`Serial.readBytes()` inherits from the link:../../stream[Stream] utility class.
+`Serial.readBytes()` dziedziczy po klasie link:../../stream[Stream].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
-`_Serial_.readBytes(buffer, length)`
+=== Składnia
+`_Serial_.readBytes(bufor, ile)`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
-`buffer`: the buffer to store the bytes in. Allowed data types: or array of `char` or `byte`s. +
-`length`: the number of bytes to read. Allowed data types: `int`.
+=== Parametry
+`_Serial_`: obiekt portu szeregowego. Zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial]. +
+`bufor`: bufor do przechowywania bajtów. Dozwolone typy danych: tablica typów `char` lub `byte`. +
+`ile`: liczba bajtów do odczytania. Dozwolone typy danych: `int`.
 
 
 [float]
-=== Returns
-The number of bytes placed in the buffer. Data type: `size_t`.
+=== Wartości zwracane
+Liczba bajtów umieszczonych w buforze. Typ danych: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream]
-* #LANGUAGE# link:../../stream/streamreadbytes[stream.readBytes()]
+* #JĘZYK# link:../../stream[stream]
+* #JĘZYK# link:../../stream/streamreadbytes[stream.readBytes()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
