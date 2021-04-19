@@ -14,7 +14,7 @@ title: Serial.readBytes()
 
 [float]
 === Opis
-`Serial.readBytes()` odczytuje znaki z portu szeregowego do bufora. Funkcja kończy działanie po odczytaniu określonej długości lub po przekroczeniu limitu czasu (zobacz link:../settimeout[Serial.setTimeout()]).
+`Serial.readBytes()` wczytuje do bufora znaki z portu szeregowego. Funkcja kończy działanie po odczytaniu określonej długości lub po przekroczeniu limitu czasu (zobacz link:../settimeout[Serial.setTimeout()]).
 
 `Serial.readBytes()` zwraca liczbę znaków umieszczonych w buforze. 0 oznacza, że nie znaleziono prawidłowych danych.
 
