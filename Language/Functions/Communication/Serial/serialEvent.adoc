@@ -8,92 +8,92 @@ title: serialEvent()
 = serialEvent()
 
 
-// OVERVIEW SECTION STARTS
+// POCZĄTEK SEKCJI OPISOWEJ
 [#overview]
 --
 
 [float]
-=== Description
-Called when data is available. Use `Serial.read()` to capture this data.
+=== Opis
+Wywoływane, gdy dostępne są dane. Użyj `Serial.read()` aby przechwycić te dane.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Składnia
 
 [source,arduino]
 ----
 void serialEvent() {
-  //statements
+  // polecenia
 }
 ----
-For boards with additional serial ports (see the list of available serial ports for each board on the link:../../serial[Serial main page]):
+Dla płytek z dodatkowymi portami szeregowymi (zobacz listę dostępnych portów szeregowych dla każdej płytki na link:../../serial[stronie głównej klasy Serial]):
 [source,arduino]
 ----
 void serialEvent1() {
-  //statements
+  // polecenia
 }
 
 void serialEvent2() {
-  //statements
+  // polecenia
 }
 
 void serialEvent3() {
-  //statements
+  // polecenia
 }
 ----
 
 
 [float]
-=== Parameters
-`statements`: any valid statements
+=== Parametry
+`polecenia`: wszelkie prawidłowe polecenia
 
 
 [float]
-=== Returns
-Nothing
+=== Wartości zwracane
+Nic
 
 --
-// OVERVIEW SECTION ENDS
+// KONIEC SEKCJI OPISOWEJ
 
 
-// HOW TO USE SECTION STARTS
+// POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
 
 [float]
-=== Notes and Warnings
-`serialEvent()` doesn't work on the Leonardo, Micro, or Yún.
+=== Uwagi i Ostrzeżenia
+`serialEvent()` nie działa na Leonardo, Micro i Yún.
 
-`serialEvent()` and `serialEvent1()` don't work on the Arduino SAMD Boards
+`serialEvent()` i `serialEvent1()` nie działa na płytkach Arduino SAMD
 
-`serialEvent()`, `serialEvent1()``serialEvent2()`, and `serialEvent3()`  don't work on the Arduino Due.
+`serialEvent()`, `serialEvent1()``serialEvent2()`, i `serialEvent3()`  nie działa na Arduino Due.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// KONIEC SEKCJI JAK UŻYWAĆ
 
 
-// SEE ALSO SECTION
+// POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
 
 [float]
-=== See also
+=== Zobacz także
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event^]
+* #PRZYKŁAD# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event^]
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../flush[flush()]
-* #LANGUAGE# link:../print[print()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
+* #JĘZYK# link:../begin[begin()]
+* #JĘZYK# link:../end[end()]
+* #JĘZYK# link:../available[available()]
+* #JĘZYK# link:../read[read()]
+* #JĘZYK# link:../peek[peek()]
+* #JĘZYK# link:../flush[flush()]
+* #JĘZYK# link:../print[print()]
+* #JĘZYK# link:../println[println()]
+* #JĘZYK# link:../write[write()]
 
 --
-// SEE ALSO SECTION ENDS
+// KONIEC SEKCJI ZOBACZ TAKŻE
