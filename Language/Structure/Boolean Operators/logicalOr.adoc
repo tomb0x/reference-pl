@@ -1,8 +1,8 @@
 ---
 title: "||"
 title_expanded: logiczne LUB (suma logiczna / alternatywa)
-categories: [ "Struktura" ]
-subCategories: [ "Operatory logiczne" ]
+categories: [ "Structure" ]
+subCategories: [ "Boolean Operators" ]
 ---
 
 
