@@ -1,8 +1,8 @@
 ---
 title: "%"
 title_expanded: "reszta"
-categories: [ "Struktura" ]
-subCategories: [ "Operatory arytmetyczne" ]
+categories: [ "Structure" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 
