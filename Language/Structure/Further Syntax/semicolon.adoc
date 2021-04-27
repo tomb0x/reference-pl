@@ -1,8 +1,8 @@
 ---
 title: ";"
 title_expanded: średnik
-categories: [ "Struktura" ]
-subCategories: [ "Składnia" ]
+categories: [ "Structure" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 
