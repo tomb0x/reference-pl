@@ -1,8 +1,8 @@
 ---
 title: "^="
 title_expanded: złożone bitowe ALBO
-categories: [ "Struktura" ]
-subCategories: [ "Operatory złożone" ]
+categories: [ "Structure" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 = ^= Złożone bitowe ALBO
