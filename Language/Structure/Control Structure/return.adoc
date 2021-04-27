@@ -1,7 +1,7 @@
 ---
 title: return
-categories: [ "Struktura" ]
-subCategories: [ "Instrukcje sterujące" ]
+categories: [ "Structure" ]
+subCategories: [ "Control Structure" ]
 ---
 
 
