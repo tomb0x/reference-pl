@@ -1,8 +1,8 @@
 ---
 title: "&&"
 title_expanded: logiczne I (iloczyn logiczny)
-categories: [ "Struktura" ]
-subCategories: [ "Operatory logiczne" ]
+categories: [ "Structure" ]
+subCategories: [ "Boolean Operators" ]
 ---
 
 
