@@ -1,8 +1,8 @@
 ---
 title: "/"
 title_expanded: "dzielenie"
-categories: [ "Struktura" ]
-subCategories: [ "Operatory arytmetyczne" ]
+categories: [ "Structure" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 
