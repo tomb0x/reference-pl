@@ -1,8 +1,8 @@
 ---
 title: "#include"
 title_expanded: dołącz
-categories: [ "Struktura" ]
-subCategories: [ "Składnia" ]
+categories: [ "Structure" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 
