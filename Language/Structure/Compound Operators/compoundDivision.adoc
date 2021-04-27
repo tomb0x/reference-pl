@@ -1,8 +1,8 @@
 ---
 title: "/="
 title_expanded: dzielenie złożone
-categories: [ "Struktura" ]
-subCategories: [ "Operatory złożone" ]
+categories: [ "Structure" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 
