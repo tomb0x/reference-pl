@@ -1,8 +1,8 @@
 ---
 title: "!"
 title_expanded: logiczne NIE
-categories: [ "Struktura" ]
-subCategories: [ "Operatory logiczne" ]
+categories: [ "Structure" ]
+subCategories: [ "Boolean Operators" ]
 ---
 
 
