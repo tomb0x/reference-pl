@@ -1,8 +1,8 @@
 ---
 title: "|"
 title_expanded: bitwowe lub
-categories: [ "Struktura" ]
-subCategories: [ "Operatory bitowe" ]
+categories: [ "Structure" ]
+subCategories: [ "Bitwise Operators" ]
 ---
 
 
