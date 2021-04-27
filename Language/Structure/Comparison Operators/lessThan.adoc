@@ -1,8 +1,8 @@
 ---
 title: "<"
 title_expanded: mniejsze niż
-categories: [ "Struktura" ]
-subCategories: [ "Operatory porównania" ]
+categories: [ "Structure" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 
