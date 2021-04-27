@@ -1,8 +1,8 @@
 ---
 title: "{}"
 title_expanded: nawiasy klamrowe
-categories: [ "Struktura" ]
-subCategories: [ "Składnia" ]
+categories: [ "Structure" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 
