@@ -1,8 +1,8 @@
 ---
 title: "%="
 title_expanded: reszta złożona
-categories: [ "Struktura" ]
-subCategories: [ "Operatory złożone" ]
+categories: [ "Structure" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 
