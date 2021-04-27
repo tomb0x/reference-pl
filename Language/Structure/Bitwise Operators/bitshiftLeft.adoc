@@ -1,8 +1,8 @@
 ---
 title: "<<"
 title_expanded: przesunięcie bitowe w lewo
-categories: [ "Struktura" ]
-subCategories: [ "Operatory bitowe" ]
+categories: [ "Structure" ]
+subCategories: [ "Bitwise Operators" ]
 ---
 
 
