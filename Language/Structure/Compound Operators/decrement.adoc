@@ -1,8 +1,8 @@
 ---
 title: "--"
 title_expanded: zmniejszenie
-categories: [ "Struktura" ]
-subCategories: [ "Operatory złożone" ]
+categories: [ "Structure" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 
