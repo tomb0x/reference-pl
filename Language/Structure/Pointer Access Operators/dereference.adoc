@@ -1,8 +1,8 @@
 ---
 title: "*"
 title_expanded: operator pobrania wartości
-categories: [ "Struktura" ]
-subCategories: [ "Operatory wskaźnikowe" ]
+categories: [ "Structure" ]
+subCategories: [ "Pointer Access Operators" ]
 ---
 
 
