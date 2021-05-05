@@ -1,7 +1,7 @@
 ---
 title: Stałe zmiennoprzecinkowe
-categories: [ "Zmienne" ]
-subCategories: [ "Stałe" ]
+categories: [ "Variables" ]
+subCategories: [ "Constants" ]
 ---
 
 
