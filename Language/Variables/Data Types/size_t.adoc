@@ -1,7 +1,7 @@
 ---
 title: size_t
-categories: [ "Zmienne" ]
-subCategories: [ "Typy danych" ]
+categories: [ "Variables" ]
+subCategories: [ "Data Types" ]
 ---
 
 = size_t
