@@ -1,7 +1,7 @@
 ---
 title: word
-categories: [ "Zmienne" ]
-subCategories: [ "Typy danych" ]
+categories: [ "Variables" ]
+subCategories: [ "Data Types" ]
 ---
 
 = word
