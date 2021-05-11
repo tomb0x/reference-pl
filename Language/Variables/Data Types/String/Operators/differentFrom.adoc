@@ -1,8 +1,8 @@
 ---
 title: "!="
 title_expanded: różny od
-categories: [ "Typy danych" ]
-subCategories: [ "operator obiektu String" ]
+categories: [ "Data Types" ]
+subCategories: [ "StringObject Operator" ]
 ---
 
 
