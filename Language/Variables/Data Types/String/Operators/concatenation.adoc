@@ -1,8 +1,8 @@
 ---
 title: "+"
 title_expanded: concatenation
-categories: [ "Typy danych" ]
-subCategories: [ "operator obiektu String" ]
+categories: [ "Data Types" ]
+subCategories: [ "StringObject Operator" ]
 ---
 
 
