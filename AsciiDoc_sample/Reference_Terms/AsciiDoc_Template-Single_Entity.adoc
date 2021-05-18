@@ -1,16 +1,14 @@
 ---
 title: Tytuł Elementu
 title_expanded: Mniejsze bądź równe
-categories: [ "Struktura" ]
-subCategories: [ "Nazwa podkategorii" ]
+categories: [ "Structure" ]
+subCategories: [ "Subcategory Name" ]
 ---
-// ZNACZNIK DOKUMENTACJI JĘZYKA ARDUINO (powyższy)   ►►►►► ZAWSZE UMIESZCZAJ W SWOIM PLIKU ◄◄◄◄◄
-// title: pojawi się w Indeksie wszystkich pojęć dokumentacji
+// ZNACZNIKI DOKUMENTACJI JĘZYKA ARDUINO (powyższy)   ►►►►► ZAWSZE UMIESZCZAJ W SWOIM PLIKU ◄◄◄◄◄
+// title: pojawi się w indeksie wszystkich pojęć dokumentacji
 // Jeśli title jest operatorem, zapisz go słowami w title_expanded
-// categories: wybór pomiędzy: Struktura, Zmienne, Funkcje
-// subCategories: w ramach dostępnych w indeksie ("Cyfrowe We/Wy", "Operatory Arytmetyczne")
-
-
+// categories: wybór pomiędzy: Structure, Variable lub Function
+// subCategories: Podkategoria w ramach dostępnych w indeksie ("Digital I/O", "Arithmetic Operators")
 
 
 
@@ -25,8 +23,8 @@ subCategories: [ "Nazwa podkategorii" ]
 
 [float]
 === Opis
-// Opis czym jest ten termin w dokumentacji i do czego służy ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
-Wpisuje wartość analogową (http://arduino.cc/en/Tutorial/PWM[modulacja PWM]) do styku. Może być używane do włączania diod świecących z różną jasnością lub napędzania silnika różnymi prędkościami. Po wywołaniu `analogWrite()` na styku generowana jest fala prostokątna o określonym stopniu wypełnienia aż do następnego wywołania `analogWrite()` (albo wywołania `digitalRead()` lub `digitalWrite()` dla tego samego styku). Częstotliwość sygnału PWM na większości styków wynosi około 490 Hz. Na płytkach Uno i podobnych, styki 5 i 6 pracują z częstotliwością około 980 Hz.
+// Opis czym jest to pojęcie w dokumentacji i do czego służy ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+Wysyła na styk wartość analogową (http://arduino.cc/en/Tutorial/PWM[modulacja PWM]). Może być używane do włączania diod świecących z różną jasnością lub napędzania silnika różnymi prędkościami. Po wywołaniu `analogWrite()` na styku generowana jest fala prostokątna o określonym stopniu wypełnienia aż do następnego wywołania `analogWrite()` (albo wywołania `digitalRead()` lub `digitalWrite()` dla tego samego styku). Częstotliwość sygnału PWM na większości styków wynosi około 490 Hz. Na płytkach Uno i podobnych, styki 5 i 6 pracują z częstotliwością około 980 Hz.
 [%hardbreaks]
 
 image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="", title="Piękne Arduino UNO"]
@@ -35,14 +33,14 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 [float]
 === Składnia
-// Wprowadź składnię terminu w dokumentacji, podaj wszystkie dostępne parametry  ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
+// Wprowadź składnię opisywanego pojęcia, podaj wszystkie dostępne parametry  ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 `analogWrite(styk, wartość)`
 
 
 [float]
 === Parametry
 // Lista wszystkich dostępnych parametrów, proszę opisać je pojedynczo, dodając typ danych (np. int, boolean, char, String, float, long, double...)  ►►►►► TA SEKCJA JEST OBOWIĄZKOWA DLA FUNKCJI ◄◄◄◄◄
-`styk`: numer styku do zapisu. Dozwolone typy danych: int. +
+`styk`: numer styku do zapisu. Dozwolone typy danych: int. 
 `wartość`: stopień wypełnienia między 0 (zawsze wyłączone) a 255 (zawsze włączone). Dozwolone typy danych: int.
 
 
@@ -56,7 +54,6 @@ Nic
 
 
 
-
 // POCZĄTEK SEKCJI JAK UŻYWAĆ
 [#howtouse]
 --
@@ -66,11 +63,10 @@ Nic
 // Poniżej dodaj przykładowy program i opisz jego działanie   ►►►►► TA SEKCJA JEST OBOWIĄZKOWA ◄◄◄◄◄
 Ustawia dla diody wartość na wyjściu proporcjonalną do wartości odczytanej z potencjometru.
 
-
 [source,arduino]
-// Dodaj odpowiedni program, który jest przykładem użycia danego terminu
+// Dodaj odpowiedni program, który jest przykładem użycia danego pojęcia
 // Pamiętaj, że czasami podczas wklejania kodu może dodać się kilka odstępów na początku każdego wiersza.
-// Jeśli się tak stanie, usun proszę te dodatkowe odstępy. Dzięki!
+// Jeśli się tak stanie, usuń proszę te dodatkowe odstępy. Dzięki!
 ----
 int stykDiody = 9;     // dioda świecąca podłączona do cyfrowego styku nr 9
 int stykAnalogowy = 3; // potencjometr podłączony do analogowego styku nr 3
@@ -100,6 +96,7 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 // KONIEC SEKCJI JAK UŻYWAĆ
 
 
+
 // POCZĄTEK SEKCJI ZOBACZ TAKŻE
 [#see_also]
 --
@@ -109,7 +106,6 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 // Istotna kategoria treści np. inne pojęcie w dokumentacji (proszę dodać znacznik #JĘZYK#),
 // definicje (proszę dodać znacznik #DEFINICJA#), oraz przykłady Projektów i Samouczków
 // przykłady: (proszę dodać znacznik #PRZYKŁAD#)
-
 
 [role="language"]
 // Zawsze gdy chcesz dać odnośnik do innego pojęcia z Dokumentacji, lub ogólnie użyć odnośnika względnego,
