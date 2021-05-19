@@ -7,7 +7,7 @@
 
 
 // OGÓLNE WYTYCZNE
-// [Odstęp] + wysyła tekst do nowej linii, to znaczy generuje znak <br> na wyjściu HTML, np .:
+// [Odstęp]+ wysyła tekst do nowej linii, to znaczy generuje znak <br> w wyjściowym pliku HTML, np .:
 // To jest jakiś napis. +
 // To jest jakiś napis w nowej linii
 
@@ -19,7 +19,7 @@
 // Jeśli chcesz dodać pustą linię między sekcjami strony, możesz użyć:
 // {empty} +
 
-// Dobrą praktyką jest używanie [%hardbreaks] na końcu.
+// Dobrą praktyką jest używanie [%hardbreaks] na końcu bloku.
 // [%hardbreaks] zamyka znaczniki HTMLs, tworząc czysty wyjściowy kod HTML.
 
 // To ''' oddziela linie
@@ -32,7 +32,7 @@
 [#nazwa_id]
 --
 
-// Dodaj tutaj swoje treści...
+// Dodaj tutaj swoją treść...
 
 // W przypadku, gdy dane wyjściowe są plikiem HTML, ten znacznik utworzy opakowanie div o podanym identyfikatorze, np .:
 // <div id="nazwa_id" class="openblock"></div>
@@ -55,7 +55,7 @@
 '''
 
 // STYLE NAPISÓW
-To jest normalny <p> napis +
+To jest zwykły <p> napis +
 *To jest wytłuszczony <strong> napis* +
 _To jest pochylony <em> napis_ +
 *_To jest wytłuszczony+pochylony <strong><em> napis_* +
@@ -138,8 +138,8 @@ for (int i = 0; i <= 99; i++) {
 // Jeśli chcesz dodać obraz do Asciidoc, utwórz folder o nazwie "attachments" w tym samym katalogu co plik Asciidoc,
 // umieść tam obraz i odwołaj się do niego jak pokazano poniżej. Obrazy mogą być w formacie SVG i PNG, maksymalny rozmiar to 200 kB.
 
-// Aby dołączyć obraz we własnej linii (tzw. Obraz blokowy), użyj przedrostka image:: przed nazwą pliku i nawiasami kwadratowymi po niej []
-// Upewnij się, że dodajesz [%hardbreaks] między dowolnym tekstem a obrazem
+// Aby wstawić obraz we własnej linii (tzw. Obraz blokowy), użyj przedrostka image:: przed nazwą pliku i nawiasami kwadratowymi po niej []
+// Upewnij się, że dodajesz [%hardbreaks] pomiędzy każdym tekstem a obrazem
 
 To jest obraz blokowy z adresem URL
 [%hardbreaks]
@@ -167,7 +167,7 @@ a to jest jeszcze inny film z YouTube
 ++++
 <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=6cRFf4qkcTw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 ++++
-// WSKAZÓWKA: Pamiętaj, aby ustawić szerokość iframe na 100%, aby film reagował na wszystkie nasze platformy
+// WSKAZÓWKA: Pamiętaj, aby ustawić szerokość iframe na 100%, aby film odpowiadał wszystkim platformom
 
 {empty} +
 
@@ -175,7 +175,7 @@ A tu kilka slajdów ze Slideshare, tak!
 ++++
 <iframe src="https://www.slideshare.net/slideshow/embed_code/4430242" width="100%" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/damellis/introduction-to-arduino-4430242" title="Introduction to Arduino" target="_blank">Introduction to Arduino</a> </strong> from <strong><a href="//www.slideshare.net/damellis" target="_blank">David Mellis</a></strong> </div>
 ++++
-// WSKAZÓWKA: Pamiętaj, aby ustawić szerokość iframe na 100%, aby pokaz slajdów był reagujący na wszystkie nasze platformy
+// WSKAZÓWKA: Pamiętaj, aby ustawić szerokość iframe na 100%, aby pokaz slajdów odpowiadał wszystkim platformom
 
 {empty} +
 
@@ -183,4 +183,4 @@ A to jest trochę dźwięku z SoundCloud
 ++++
 <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/55323777&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 ++++
-// WSKAZÓWKA: Pamiętaj, aby ustawić szerokość iframe na 100%, aby interfejs dźwiękowy reagował na wszystkie nasze platformy
+// WSKAZÓWKA: Pamiętaj, aby ustawić szerokość iframe na 100%, aby interfejs dźwiękowy odpowiadał wszystkim platformom
